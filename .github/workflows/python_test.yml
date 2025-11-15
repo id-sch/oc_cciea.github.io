@@ -25,6 +25,11 @@ jobs:
       - name: Run Python script
         run: python hello_world.py
 
+      - uses: actions/upload-artifact@v3
+        with:
+        name: Build
+        path: 
+
 
       - name: Commit and Push Changes
         run: |
