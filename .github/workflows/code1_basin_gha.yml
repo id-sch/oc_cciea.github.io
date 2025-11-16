@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-      - run: python -m pip install -r code1_basin_gha_requirements
+      - run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
 
       - name: Run Python script
         run: python code_gha/download_basin_gha.py
