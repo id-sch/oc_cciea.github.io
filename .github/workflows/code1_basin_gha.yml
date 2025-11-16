@@ -29,5 +29,4 @@ jobs:
       - name: test upload artifacts
         uses: actions/upload-artifact@v3
         with:
-        
-        path: data_gha
+          path: data_gha
