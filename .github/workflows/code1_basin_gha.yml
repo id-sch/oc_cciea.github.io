@@ -26,6 +26,9 @@ jobs:
       - name: Run Python script
         run: python code_gha/download_basin_gha.py
 
+      - name: git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v7
+
       - name: test upload artifacts
         uses: actions/upload-artifact@v4
         with:
