@@ -28,8 +28,3 @@ jobs:
 
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
-
-      - name: test upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          path: data_gha

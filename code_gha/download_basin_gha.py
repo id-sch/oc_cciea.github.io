@@ -47,7 +47,7 @@ yr_end = today.year
 
 file_type = 'nc'
 
-dir_out = './data_gha/'
+dir_out = './data_gha/BasinScaleIndicators/'
 # -- End: Input variables, change these
 # -------------------------------------------------------
 
@@ -63,12 +63,29 @@ except OSError:
 
 # loop over all erddap data wanted
 for i in range(0, num_wnt):
-    fn_out = dir_out + 'ts_{}.{}'.format(name_wnt[i], file_type)
+    fn_out = dir_out + 'ts_{}_{}_{:02d}.{}'.format(name_wnt[i], yr_end, mon_wnt2, file_type)
 
     # -------------------------------------------------------
     # --now, call function to download the data from ERDDAP
-    url_erddap = fun_get_ts_erddap(
-        yr_bgn, yr_end, mon_wnt1, mon_wnt2, name_wnt[i], fn_out, file_type)
 
 
-    print(url_erddap)
+
+    # File path
+    a = fn_out
+
+    # Check if the file exists and is a file
+    if os.path.isfile(fn_out):
+        print("File exists, if you want to download then delete fn_out and run code again.")
+    else:
+        # remove old files
+        files_old = os.listdir(dir_out)
+
+        for j in range(len(files_old)):
+            file_pre = 'ts_{}'.format(name_wnt[i])
+            if files_old[j].startswith(file_pre):
+                os.remove('./{}/{}'.format(dir_out, files_old[j]))
+        
+        # download the data
+        url_erddap = fun_get_ts_erddap(yr_bgn, yr_end, mon_wnt1, mon_wnt2, name_wnt[i], fn_out, file_type)
+
+        print(url_erddap)
