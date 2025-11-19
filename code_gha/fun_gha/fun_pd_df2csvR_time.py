@@ -21,10 +21,29 @@ import pandas as pd
 # 1) filename of CSV file (dir and fn)
 # --------------------------------------------------------------
 def fun_pd_df2csvR_time(clmns_iea, df_list, lat, lon, depth, metric_lbl, timeseries_lbl, dir_out, fn_out, yr_bgn, yr_end):
+    '''
+    Write "R" style CSV files for IEA time series
 
+    The function expects a list of pd df, each member of the list
+    is a unique IEA time series. The time series are distinguished
+    by a "order" number
+
+    Input variables:
+    1) column names of the desired CSV file
+    2) list of pd df, each df is  (df have columns of year/mon, mean, sd)
+    3) lat, lon, depth (single value variables or list)
+    4) metric, timeseries (strings (or list) of y-label and list of titles)
+    5) dir_out, fn_out (directory and filename of the CSV file)
+    6) yr_bgn, yr_end (subset the df by the year range set by these limits)
+    Output:
+    1) filename of CSV file (dir and fn)
+    '''
+
+    # number of time series
     num_order = len(df_list)
 
-    # initialize a "empty" pd df, this df will have "order" number of time series
+    # initialize a "empty" pd df, this df will have "order"
+    # number of time series
     df_all = pd.DataFrame()
     for iii in range(0, num_order):
         df_iii = df_list[iii]
@@ -54,7 +73,8 @@ def fun_pd_df2csvR_time(clmns_iea, df_list, lat, lon, depth, metric_lbl, timeser
             mons = df_yrs.index.month.values
             in_mrkr = 2
 
-        # --3) Day, if requested (if 'All' data is requested, ie don't do monthly or seasonal means)
+        # --3) Day, if requested (if 'All' data is requested,
+        #      ie don't do monthly or seasonal means)
         if len(in_day) == 1:
             df_order[clmns_iea[in_day[0]]] = df_yrs.index.day
             days = df_yrs.index.day.values

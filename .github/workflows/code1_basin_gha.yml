@@ -40,5 +40,8 @@ jobs:
       - name: Run Python save data to R style CSV Seasonal
         run: python code_gha/BasinScaleIndicators/create_oc_basin_S_std.py
 
+      - name: Run Python plot R style CSV both Monthly and Seasonal
+        run: python code_gha/BasinScaleIndicators/plot_IEA_figs_MS.py
+
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
