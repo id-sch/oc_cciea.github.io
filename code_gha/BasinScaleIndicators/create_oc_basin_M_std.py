@@ -64,10 +64,11 @@ for i in range(0, num_basin):
     # --create input filename
     file_basin_pre = 'ts_{}'.format(basin_wnt[i])
 
-    in_file = np.where(np.array(files_minus_date) == file_basin_pre)[0]
-    file_basin = np.array(files)[in_file]
+    in_file = np.where(np.array(files_minus_date) == file_basin_pre)[0][0]
+    file_basin = files[in_file]
 
-    fn_in = dir_in + file_basin[0]
+    fn_in = '{}{}'.format(dir_in, file_basin)
+    print(fn_in)
 
     # --open the netcdf files as an xarray
     dall = xr.open_dataset(fn_in)
