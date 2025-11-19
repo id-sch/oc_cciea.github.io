@@ -59,9 +59,10 @@ for i in range(0, num_basin):
 
     # --create input filename
     file_basin_pre = 'ts_{}'.format(basin_wnt[i])
-    print(file_basin_pre)
+    print('1: {}, 2: {}'.format(file_basin_pre, files[i].startswith(file_basin_pre)))
     if files[i].startswith(file_basin_pre):
         file_basin = files[i]
+        print('hello: {}'.format(file_basin))
 
     fn_in = dir_in + file_basin
 
