@@ -59,6 +59,7 @@ for i in range(0, num_basin):
 
     # --create input filename
     file_basin_pre = 'ts_{}'.format(basin_wnt[i])
+    print(file_basin_pre)
     if files[i].startswith(file_basin_pre):
         file_basin = files[i]
 
