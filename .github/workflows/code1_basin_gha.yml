@@ -23,6 +23,11 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
       - run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
 
+      - name: set pythonpath
+        run: |
+          echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
+
+
       - name: Run Python download data from Erddap
         run: python code_gha/BasinScaleIndicators/download_basin_gha.py
 

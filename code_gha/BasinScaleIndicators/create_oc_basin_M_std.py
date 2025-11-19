@@ -8,9 +8,6 @@ from fun_pd_df2csvR_time import fun_pd_df2csvR_time
 # pylint: disable=C0103
 
 
-sys.path.append("/home/runner/work/oc_cciea.github.io/oc_cciea.github.io/code_gha/fun_gha/")
-print(sys.path)
-
 # ----------------------------------------------------------------------
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
