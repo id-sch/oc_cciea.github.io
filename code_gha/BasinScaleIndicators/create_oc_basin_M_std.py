@@ -16,7 +16,6 @@ from fun_pd_df2csvR_time import fun_pd_df2csvR_time
 basin_wnt = ['ONI', 'PDO', 'NPGO']
 
 # --input directory
-dir_in = '~/data_files/Work/TS/data/python_erddap/oni_pdo_npgo/'
 dir_in = './data_gha/BasinScaleIndicators/'
 
 # --input file type extension
@@ -56,6 +55,8 @@ files = os.listdir(dir_in)
 
 
 for i in range(0, num_basin):
+    print(files[i])
+
     # --create input filename
     file_basin_pre = 'ts_{}'.format(basin_wnt[i])
     if files[i].startswith(file_basin_pre):
