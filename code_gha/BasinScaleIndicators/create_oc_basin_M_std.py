@@ -50,22 +50,19 @@ yr_csv_bgn = 1900
 # size of input variables
 num_basin = len(basin_wnt)
 
+
 # list basin files that have been downloaded from erddap
 files = os.listdir(dir_in)
 
-# The month and year in the filenames give a little problem, remove the date
-files_minus_date = []
-for i in range(len(files)):
-    file_basin_pre = 'ts_{}'.format(basin_wnt[i])
-    len1 = len(file_basin_pre)
-    files_minus_date.append(files[i][0:len1])
+indx = []
+for i in range(num_basin):
+    for j in range(len(files)):
+        if basin_wnt[i] in files[j]:
+            indx.append(j)
 
 for i in range(0, num_basin):
     # --create input filename
-    file_basin_pre = 'ts_{}'.format(basin_wnt[i])
-
-    in_file = np.where(np.array(files_minus_date) == file_basin_pre)[0].tolist()[0]
-    file_basin = files[in_file]
+    file_basin = files[indx[i]]
 
     fn_in = '{}{}'.format(dir_in, file_basin)
     print(fn_in)
