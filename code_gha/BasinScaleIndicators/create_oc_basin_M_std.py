@@ -59,8 +59,9 @@ for i in range(0, num_basin):
 
     # --create input filename
     file_basin_pre = 'ts_{}'.format(basin_wnt[i])
-    print('1: {}, 2: {}'.format(file_basin_pre, files[i].startswith(file_basin_pre)))
-    if files[i].startswith(file_basin_pre):
+    len1 = len(file_basin_pre)
+    print('1: {}, 2: {}'.format(file_basin_pre, files[i][0:len1]))
+    if files[i][0:len1] == file_basin_pre:
         file_basin = files[i]
         print('hello: {}'.format(file_basin))
 
