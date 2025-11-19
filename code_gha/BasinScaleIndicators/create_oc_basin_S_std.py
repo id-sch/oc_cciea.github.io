@@ -26,7 +26,7 @@ var_wnt = basin_wnt
 att_wnt = ['title']
 
 # --IEA file names
-file_pre = 'oc_'
+file_pre = 'oc'
 
 # --IEA file columns
 y_lbl = basin_wnt
@@ -40,7 +40,6 @@ var_time = 'time'
 # --output CSV file
 dir_out = './csv_for_erddap/'
 yr_csv_bgn = 1900
-
 
 # ----------------------------------------------------------------------
 # --END: Change These
@@ -62,6 +61,7 @@ for i in range(0, num_basin):
     file_basin = files[indx[i]]
 
     fn_in = '{}{}'.format(dir_in, file_basin)
+    print(fn_in)
 
     # --open the netcdf files as an xarray
     dall = xr.open_dataset(fn_in)
@@ -77,29 +77,42 @@ for i in range(0, num_basin):
     yr_csv_end = dfi.index.year[-1]
 
     # --resample by taking 'M' means, i.e. monthly means
-    dfMmn = dfi.resample('ME').mean()
-    dfMsd = dfi.resample('ME').std()
+    dfQmn = dfi.resample('QE-MAR').mean()
+    dfQsd = dfi.resample('QE-MAR').std()
 
     # --combine mean and sd into one pd.df
-    dfM = dfMmn.rename(index=str, columns={var_wnt[i]: "data"})
-    # dfM['Datetime'] = pd.to_datetime(dfM.index, infer_datetime_format=True)
-    dfM['Datetime'] = pd.to_datetime(dfM.index)
-    dfM = dfM.set_index('Datetime')
-    dfM['sd'] = dfMsd.values
+    dfQ = dfQmn.rename(index=str, columns={var_wnt[i]: "data"})
+    # dfQ['Datetime'] = pd.to_datetime(dfQ.index, infer_datetime_format=True)
+    dfQ['Datetime'] = pd.to_datetime(dfQ.index)
+    dfQ = dfQ.set_index('Datetime')
 
-    ts_lbl1 = 'Monthly ' + title
+    dfQ['sd'] = dfQsd.values
+
+    in1 = dfQ.index.month == 3
+    in2 = dfQ.index.month == 6
+    in3 = dfQ.index.month == 9
+    in4 = dfQ.index.month == 12
+    dfQ1 = dfQ[in1]
+    dfQ2 = dfQ[in2]
+    dfQ3 = dfQ[in3]
+    dfQ4 = dfQ[in4]
+    ts_lbl1 = 'Winter ' + title
+    ts_lbl2 = 'Spring ' + title
+    ts_lbl3 = 'Summer ' + title
+    ts_lbl4 = 'Fall ' + title
+
     # --Create monthly CSV, 'fun_pd_df2csvR' expects a list of pd.df. For
-    # --the case of monthly means this list only consists of dfM, but a
+    # --the case of monthly means this list only consists of dfQ, but a
     # --CSV for seasonal means will need a list of 4 pd.df for each season.
-    df_list = [dfM]
+    df_list = [dfQ1, dfQ2, dfQ3, dfQ4]
     num_order = len(df_list)
 
-    # fn_out = file_pre + re.sub(r'[^\w]', '', basin_wnt[i]) + '.csv'
-    fn_out = '{}{}_M.csv'.format(file_pre, basin_wnt[i])
+    # fn_out = file_pre + '_' + re.sub(r'[^\w]', '', basin_wnt[i]) + '.csv'
+    fn_out = '{}_{}_S.csv'.format(file_pre, basin_wnt[i])
 
     metric_lbl = y_lbl[i]
-    ts_lbl = [ts_lbl1]
-    clmns_iea = ['year', 'month', 'time', 'index', 'error', 'SElo', 'SEup',
+    ts_lbl = [ts_lbl1, ts_lbl2, ts_lbl3, ts_lbl4]
+    clmns_iea = ['year', 'time', 'index', 'error', 'SElo', 'SEup',
                  'metric', 'timeseries', 'lat', 'lon', 'depth', 'order']
 
     fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_list, lat, lon, depth,

@@ -21,6 +21,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
       - run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
 
       - name: set pythonpath
@@ -31,8 +32,11 @@ jobs:
       - name: Run Python download data from Erddap
         run: python code_gha/BasinScaleIndicators/download_basin_gha.py
 
-      - name: Run Python save data to R style CSV
+      - name: Run Python save data to R style CSV Monthly
         run: python code_gha/BasinScaleIndicators/create_oc_basin_M_std.py
+
+      - name: Run Python save data to R style CSV Seasonal
+        run: python code_gha/BasinScaleIndicators/create_oc_basin_S_std.py
 
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
