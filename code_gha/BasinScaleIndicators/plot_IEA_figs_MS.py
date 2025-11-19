@@ -19,7 +19,7 @@ rcParams.update({'font.size': 12})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-<<iea_yr>>
+iea_yr = 2025
 
 # --basin index wanted
 basin_wnt = ['ONI', 'PDO', 'NPGO']
@@ -47,7 +47,7 @@ nr = 4
 nc = 1
 
 # --plot directory
-<<dir_plots_out>>
+dir_plot_out = './figures_gha/BasinScaleIndicators/'
 
 # dir_plots = '/home/isaac/data_files/Work/IEA/2018/fig_samples_for_SoCC/'
 fig_type = '.png'
