@@ -64,7 +64,7 @@ for i in range(0, num_basin):
     # --create input filename
     file_basin_pre = 'ts_{}'.format(basin_wnt[i])
 
-    in_file = np.where(np.array(files_minus_date) == file_basin_pre)[0][0]
+    in_file = np.where(np.array(files_minus_date) == file_basin_pre)[0].tolist()[0]
     file_basin = files[in_file]
 
     fn_in = '{}{}'.format(dir_in, file_basin)
