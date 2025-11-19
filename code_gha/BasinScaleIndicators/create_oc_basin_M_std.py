@@ -53,19 +53,21 @@ num_basin = len(basin_wnt)
 # list basin files that have been downloaded from erddap
 files = os.listdir(dir_in)
 
-
-for i in range(0, num_basin):
-    print(files[i])
-
-    # --create input filename
+# The month and year in the filenames give a little problem, remove the date
+files_minus_date = []
+for i in range(len(files)):
     file_basin_pre = 'ts_{}'.format(basin_wnt[i])
     len1 = len(file_basin_pre)
-    print('1: {}, 2: {}'.format(file_basin_pre, files[i][0:len1]))
-    if files[i][0:len1] == file_basin_pre:
-        file_basin = files[i]
-        print('hello: {}'.format(file_basin))
+    files_minus_date.append(files[i][0:len1])
 
-    fn_in = dir_in + file_basin
+for i in range(0, num_basin):
+    # --create input filename
+    file_basin_pre = 'ts_{}'.format(basin_wnt[i])
+
+    in_file = np.where(np.array(files_minus_date) == file_basin_pre)[0]
+    file_basin = np.array(files)[in_file]
+
+    fn_in = dir_in + file_basin[0]
 
     # --open the netcdf files as an xarray
     dall = xr.open_dataset(fn_in)
