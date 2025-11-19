@@ -58,7 +58,7 @@ fig_type = '.png'
 # ----------------------------------------------------------------------
 
 # create plot output directory
-dir_plots = '{}{}/'.format(dir_plots_out, iea_yr)
+dir_plots = '{}{}/'.format(dir_plot_out, iea_yr)
 
 # check if directory exist, if it doesn't then create
 try:
