@@ -1,0 +1,334 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "145ca66c",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "lightbox: true\n",
+    "bibliography: ../../esr-bibliography.bib\n",
+    "format:\n",
+    " html:\n",
+    "  code-fold: true\n",
+    "  self-contained: true\n",
+    "---\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "a0d9c6cf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# importing module\n",
+    "import sys\n",
+    "\n",
+    "# appending a path\n",
+    "sys.path.append('../../')\n",
+    "from script_IDS import fun_script_IDS\n",
+    "\n",
+    "import pandas as pd\n",
+    "\n",
+    "cciea_yr = 2024\n",
+    "\n",
+    "\n",
+    "fn_meta = '../../metadata.csv'\n",
+    "df1 = pd.read_csv(fn_meta)\n",
+    "cell2_wnt = ['Component_Section', 'Subcomponent', 'ERDDAP_Dataset_ID', 'PI', 'Contact']\n",
+    "\n",
+    "ds_id_oni = 'cciea_OC_ONI'\n",
+    "ts_id_list = ['cciea_OC_ONI']\n",
+    "vec2_oni, ds_id_lbl_oni, rgn_lbl_oni = fun_script_IDS(df1, cell2_wnt, ds_id_oni, ts_id_list)\n",
+    "\n",
+    "ds_id_pdo = 'cciea_OC_PDO'\n",
+    "ts_id_list = ['cciea_OC_PDO']\n",
+    "vec2_pdo, ds_id_lbl_pdo, rgn_lbl_pdo = fun_script_IDS(df1, cell2_wnt, ds_id_pdo, ts_id_list)\n",
+    "\n",
+    "ds_id_npgo = 'cciea_OC_NPGO'\n",
+    "ts_id_list = ['cciea_OC_NPGO']\n",
+    "vec2_npgo, ds_id_lbl_npgo, rgn_lbl_npgo = fun_script_IDS(df1, cell2_wnt, ds_id_npgo, ts_id_list)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8c91be91",
+   "metadata": {
+    "user_expressions": [
+     {
+      "expression": "vec2_oni[['Component_Section']]",
+      "result": {
+       "data": {
+        "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Component_Section</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>Climate and Ocean Drivers</td>\n    </tr>\n  </tbody>\n</table>\n</div>",
+        "text/plain": "           Component_Section\n0  Climate and Ocean Drivers"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "vec2_oni[['PI']]",
+      "result": {
+       "data": {
+        "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>PI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>Schroeder</td>\n    </tr>\n  </tbody>\n</table>\n</div>",
+        "text/plain": "          PI\n0  Schroeder"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "vec2_oni[['Contact']]",
+      "result": {
+       "data": {
+        "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Contact</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>isaac.schroeder@noaa.gov</td>\n    </tr>\n  </tbody>\n</table>\n</div>",
+        "text/plain": "                    Contact\n0  isaac.schroeder@noaa.gov"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "ds_id_oni",
+      "result": {
+       "data": {
+        "text/plain": "'cciea_OC_ONI'"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "ds_id_pdo",
+      "result": {
+       "data": {
+        "text/plain": "'cciea_OC_PDO'"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "ds_id_npgo",
+      "result": {
+       "data": {
+        "text/plain": "'cciea_OC_NPGO'"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "ds_id_lbl_oni",
+      "result": {
+       "data": {
+        "text/plain": "'cciea_OC_ONI'"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "ds_id_lbl_pdo",
+      "result": {
+       "data": {
+        "text/plain": "'cciea_OC_PDO'"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "ds_id_lbl_npgo",
+      "result": {
+       "data": {
+        "text/plain": "'cciea_OC_NPGO'"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "rgn_lbl_oni",
+      "result": {
+       "data": {
+        "text/plain": "'NA'"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "rgn_lbl_pdo",
+      "result": {
+       "data": {
+        "text/plain": "'NA'"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "rgn_lbl_npgo",
+      "result": {
+       "data": {
+        "text/plain": "'NA'"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "cciea_yr",
+      "result": {
+       "data": {
+        "text/plain": "2024"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "cciea_yr",
+      "result": {
+       "data": {
+        "text/plain": "2024"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "cciea_yr",
+      "result": {
+       "data": {
+        "text/plain": "2024"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "cciea_yr",
+      "result": {
+       "data": {
+        "text/plain": "2024"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     },
+     {
+      "expression": "cciea_yr",
+      "result": {
+       "data": {
+        "text/plain": "2024"
+       },
+       "metadata": {},
+       "status": "ok"
+      }
+     }
+    ]
+   },
+   "source": [
+    "# Basin-Scale Indicators\n",
+    "\n",
+    "**Description**  &nbsp; &nbsp;\n",
+    "The CCLME is driven by atmosphere–ocean energy exchange that occurs on many temporal and spatial scales. \n",
+    "Large-scale variability is represented by three indices: the status of the equatorial El Niño–Southern Oscillation (ENSO), described by the Oceanic Niño Index (ONI, <https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php>); the Pacific Decadal Oscillation [PDO, @Mantua1997]; and the North Pacific Gyre Oscillation [NPGO, @DiLorenzo2008]. \n",
+    "Positive ONI and PDO values and negative NPGO values usually denote conditions that lead to low CCLME productivity, whereas negative ONI and PDO values and positive NPGO values are associated with periods of high CCE productivity. \n",
+    "\n",
+    "\n",
+    "**Indicator Category**  &nbsp; &nbsp;\n",
+    "`{python} vec2_oni[['Component_Section']]`\n",
+    " \n",
+    "**Data Steward**  &nbsp; &nbsp;\n",
+    "`{python} vec2_oni[['PI']]` (`{python} vec2_oni[['Contact']]`)\n",
+    "\n",
+    "**Erddap Dataset ID**   &nbsp; &nbsp;\n",
+    "`{python} ds_id_oni`, `{python} ds_id_pdo`, `{python} ds_id_npgo`\n",
+    "\n",
+    "**CCIEA timeseries ID**   &nbsp; &nbsp;\n",
+    "`{python} ds_id_lbl_oni`, `{python} ds_id_lbl_pdo`, `{python} ds_id_lbl_npgo`\n",
+    "\n",
+    "**Region**  &nbsp; &nbsp;\n",
+    "`{python} rgn_lbl_oni`, `{python} rgn_lbl_pdo`, `{python} rgn_lbl_npgo`\n",
+    "\n",
+    "**Additional Information**   &nbsp; &nbsp;\n",
+    "ENSO events impact the CCLME by modifying the jet stream and storm tracks, changing the nearshore thermocline, and influencing coastal currents that affect poleward transport and distribution of equatorial and subequatorial waters (and species).\n",
+    "A positive ONI greater than 0.5°C indicates El Niño conditions, which usually means more storms to the south, weaker upwelling, and lower primary productivity in the CCLME.\n",
+    "A negative ONI less than -0.5°C means La Niña conditions, which usually lead to higher productivity. \n",
+    "The PDO is related to sea surface temperature (SST), and is derived from sea surface temperature anomalies (SSTa) in the Northeast Pacific, which often persist in “regimes” that last for many years.\n",
+    "In positive PDO regimes, coastal SSTa along North American tend to be warmer, while those in the central North Pacific tend to be cooler.\n",
+    "Positive PDO values are associated with lower productivity in the CCLME. \n",
+    "\n",
+    "The NPGO is a low-frequency variation of sea surface height, indicating variations in the circulation of the North Pacific Subtropical Gyre and the Alaskan Gyre, which in turn relate to the source waters for the CCLME.\n",
+    "Positive NPGO values are associated with increased equatorward flow, along with increased surface salinities, nutrients, and chlorophyll-a.\n",
+    "Negative NPGO values are associated with decreases in such values, implying less subarctic source water and generally lower productivity. \n",
+    "\n",
+    "Oceanic Niño Index information and data are from the NOAA Climate Prediction Center (<https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php>). \n",
+    "Pacific Decadal Oscillation data are from N. Mantua, NMFS/SWFSC, and are served on the CCIEA ERDDAP server (<https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_PDO.html>). \n",
+    "North Pacific Gyre Oscillation data are from E. Di Lorenzo, Brown University (<https://www.o3d.org/npgo/index.html>).\n",
+    "\n",
+    "\n",
+    "**Figures**\n",
+    "\n",
+    "::: {#fig-oni_pdo_npgo_M}\n",
+    "![](../../figures_gha/ids/oc_ONI_PDO_NPGO_Monthly.png){width=70%}\n",
+    "\n",
+    "Monthly values of the Oceanic Niño Index (ONI), the Pacific Decadal Oscillation (PDO), and the North Pacific Gyre Oscillation (NPGO), starting 1950 and ending: October `{python} cciea_yr` (ONI), November `{python} cciea_yr` (PDO), and October `{python} cciea_yr` (NPGO). \n",
+    "\n",
+    "\n",
+    ":::\n",
+    "\n",
+    "<br>\n",
+    "<br>\n",
+    "<br>\n",
+    "\n",
+    "::: {#fig-oni_pdo_npgo_S layout-ncol=3, layout=\"[50,-1,50,-1,50]\"  }\n",
+    "\n",
+    "![ONI](../../figures_gha/ids/oc_ONI_Season.png){#fig-oni_S}\n",
+    "\n",
+    "![PDO](../../figures_gha/ids/oc_PDO_Season.png){#fig-pdo_S}\n",
+    "\n",
+    "![NPGO](../../figures_gha/ids/oc_NPGO_Season.png){#fig-npgo_S}\n",
+    "\n",
+    "Seasonal values of the Oceanic Niño Index (ONI), Pacific Decadal Oscillation (PDO), North Pacific Gyre Oscillation (NPGO) from 1950-`{python} cciea_yr`. \n",
+    "\n",
+    ":::\n",
+    "\n",
+    "**`{python} cciea_yr` Conditions**\n",
+    "\n",
+    "+ @fig-oni_pdo_npgo_M and @fig-oni_pdo_npgo_S show monthly and seasonal means of the three indices.\n",
+    "+ El Niño event spanned the winter and spring 2023-24 and ENSO neutral by summer 2024 (@fig-oni_pdo_npgo_M and @fig-oni_S).\n",
+    "+ Short duration La Niña conditions are expected by Jan 2024 (59% chance), with a quick transition to ENSO neutral by March-May 2024 (61% chance), see <https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/>.\n",
+    "+ PDO and NPGO both have the 5-year mean below 1 standard deviation (@fig-oni_pdo_npgo_M), with the PDO having a negative 5-year trend.\n",
+    "\n",
+    "**References**"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3",
+   "path": "/home/isaac/ids_python/py312/share/jupyter/kernels/python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

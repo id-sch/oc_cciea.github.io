@@ -1,0 +1,118 @@
+---
+lightbox: true
+bibliography: ../../esr-bibliography.bib
+format:
+ html:
+  code-fold: true
+  self-contained: true
+---
+
+
+```{python}
+# importing module
+import sys
+
+# appending a path
+sys.path.append('../../')
+from script_IDS import fun_script_IDS
+
+import pandas as pd
+
+cciea_yr = 2024
+
+
+fn_meta = '../../metadata.csv'
+df1 = pd.read_csv(fn_meta)
+cell2_wnt = ['Component_Section', 'Subcomponent', 'ERDDAP_Dataset_ID', 'PI', 'Contact']
+
+ds_id_oni = 'cciea_OC_ONI'
+ts_id_list = ['cciea_OC_ONI']
+vec2_oni, ds_id_lbl_oni, rgn_lbl_oni = fun_script_IDS(df1, cell2_wnt, ds_id_oni, ts_id_list)
+
+ds_id_pdo = 'cciea_OC_PDO'
+ts_id_list = ['cciea_OC_PDO']
+vec2_pdo, ds_id_lbl_pdo, rgn_lbl_pdo = fun_script_IDS(df1, cell2_wnt, ds_id_pdo, ts_id_list)
+
+ds_id_npgo = 'cciea_OC_NPGO'
+ts_id_list = ['cciea_OC_NPGO']
+vec2_npgo, ds_id_lbl_npgo, rgn_lbl_npgo = fun_script_IDS(df1, cell2_wnt, ds_id_npgo, ts_id_list)
+
+
+
+```
+
+
+# Basin-Scale Indicators
+
+**Description**  &nbsp; &nbsp;
+The CCLME is driven by atmosphere–ocean energy exchange that occurs on many temporal and spatial scales. 
+Large-scale variability is represented by three indices: the status of the equatorial El Niño–Southern Oscillation (ENSO), described by the Oceanic Niño Index (ONI, <https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php>); the Pacific Decadal Oscillation [PDO, @Mantua1997]; and the North Pacific Gyre Oscillation [NPGO, @DiLorenzo2008]. 
+Positive ONI and PDO values and negative NPGO values usually denote conditions that lead to low CCLME productivity, whereas negative ONI and PDO values and positive NPGO values are associated with periods of high CCE productivity. 
+
+
+**Indicator Category**  &nbsp; &nbsp;
+`{python} vec2_oni[['Component_Section']]`
+ 
+**Data Steward**  &nbsp; &nbsp;
+`{python} vec2_oni[['PI']]` (`{python} vec2_oni[['Contact']]`)
+
+**Erddap Dataset ID**   &nbsp; &nbsp;
+`{python} ds_id_oni`, `{python} ds_id_pdo`, `{python} ds_id_npgo`
+
+**CCIEA timeseries ID**   &nbsp; &nbsp;
+`{python} ds_id_lbl_oni`, `{python} ds_id_lbl_pdo`, `{python} ds_id_lbl_npgo`
+
+**Region**  &nbsp; &nbsp;
+`{python} rgn_lbl_oni`, `{python} rgn_lbl_pdo`, `{python} rgn_lbl_npgo`
+
+**Additional Information**   &nbsp; &nbsp;
+ENSO events impact the CCLME by modifying the jet stream and storm tracks, changing the nearshore thermocline, and influencing coastal currents that affect poleward transport and distribution of equatorial and subequatorial waters (and species).
+A positive ONI greater than 0.5°C indicates El Niño conditions, which usually means more storms to the south, weaker upwelling, and lower primary productivity in the CCLME.
+A negative ONI less than -0.5°C means La Niña conditions, which usually lead to higher productivity. 
+The PDO is related to sea surface temperature (SST), and is derived from sea surface temperature anomalies (SSTa) in the Northeast Pacific, which often persist in “regimes” that last for many years.
+In positive PDO regimes, coastal SSTa along North American tend to be warmer, while those in the central North Pacific tend to be cooler.
+Positive PDO values are associated with lower productivity in the CCLME. 
+
+The NPGO is a low-frequency variation of sea surface height, indicating variations in the circulation of the North Pacific Subtropical Gyre and the Alaskan Gyre, which in turn relate to the source waters for the CCLME.
+Positive NPGO values are associated with increased equatorward flow, along with increased surface salinities, nutrients, and chlorophyll-a.
+Negative NPGO values are associated with decreases in such values, implying less subarctic source water and generally lower productivity. 
+
+Oceanic Niño Index information and data are from the NOAA Climate Prediction Center (<https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php>). 
+Pacific Decadal Oscillation data are from N. Mantua, NMFS/SWFSC, and are served on the CCIEA ERDDAP server (<https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_PDO.html>). 
+North Pacific Gyre Oscillation data are from E. Di Lorenzo, Brown University (<https://www.o3d.org/npgo/index.html>).
+
+
+**Figures**
+
+::: {#fig-oni_pdo_npgo_M}
+![](../../figures_gha/ids/oc_ONI_PDO_NPGO_Monthly.png){width=70%}
+
+Monthly values of the Oceanic Niño Index (ONI), the Pacific Decadal Oscillation (PDO), and the North Pacific Gyre Oscillation (NPGO), starting 1950 and ending: October `{python} cciea_yr` (ONI), November `{python} cciea_yr` (PDO), and October `{python} cciea_yr` (NPGO). 
+
+
+:::
+
+<br>
+<br>
+<br>
+
+::: {#fig-oni_pdo_npgo_S layout-ncol=3, layout="[50,-1,50,-1,50]"  }
+
+![ONI](../../figures_gha/ids/oc_ONI_Season.png){#fig-oni_S}
+
+![PDO](../../figures_gha/ids/oc_PDO_Season.png){#fig-pdo_S}
+
+![NPGO](../../figures_gha/ids/oc_NPGO_Season.png){#fig-npgo_S}
+
+Seasonal values of the Oceanic Niño Index (ONI), Pacific Decadal Oscillation (PDO), North Pacific Gyre Oscillation (NPGO) from 1950-`{python} cciea_yr`. 
+
+:::
+
+**`{python} cciea_yr` Conditions**
+
++ @fig-oni_pdo_npgo_M and @fig-oni_pdo_npgo_S show monthly and seasonal means of the three indices.
++ El Niño event spanned the winter and spring 2023-24 and ENSO neutral by summer 2024 (@fig-oni_pdo_npgo_M and @fig-oni_S).
++ Short duration La Niña conditions are expected by Jan 2024 (59% chance), with a quick transition to ENSO neutral by March-May 2024 (61% chance), see <https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/>.
++ PDO and NPGO both have the 5-year mean below 1 standard deviation (@fig-oni_pdo_npgo_M), with the PDO having a negative 5-year trend.
+
+**References**

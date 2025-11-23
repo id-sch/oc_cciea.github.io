@@ -3,11 +3,17 @@ project:
 
 book:
   title: "oc_cciea.github.io"
-  author: "Norah Jones"
+  author: "I. D. Schroeder"
   date: "11/9/2025"
   chapters:
     - index.qmd
     - intro.qmd
+    - part: "2024"
+      chapters:
+        - ./qmd_part/BasinScaleIndicators/BasinScaleIndicators_2024.qmd
+    - part: "2025"
+      chapters:
+        - ./qmd_part/BasinScaleIndicators/BasinScaleIndicators_2025.qmd
     - summary.qmd
     - references.qmd
 
@@ -20,6 +26,3 @@ format:
       - brand
   pdf:
     documentclass: scrreprt
-
-
-
