@@ -41,8 +41,7 @@ vec2_npgo, ds_id_lbl_npgo, rgn_lbl_npgo = fun_script_IDS(df1, cell2_wnt, ds_id_n
 
 ```
 
-
-# Basin-Scale Indicators
+# 2024 Basin-Scale Indicators
 
 **Description**  &nbsp; &nbsp;
 The CCLME is driven by atmosphere–ocean energy exchange that occurs on many temporal and spatial scales. 
@@ -51,10 +50,10 @@ Positive ONI and PDO values and negative NPGO values usually denote conditions t
 
 
 **Indicator Category**  &nbsp; &nbsp;
-`{python} vec2_oni[['Component_Section']]`
+`{python} vec2_oni['Component_Section'].values[0]`
  
 **Data Steward**  &nbsp; &nbsp;
-`{python} vec2_oni[['PI']]` (`{python} vec2_oni[['Contact']]`)
+`{python} vec2_oni['PI'].values[0]` (`{python} vec2_oni['Contact'].values[0]`)
 
 **Erddap Dataset ID**   &nbsp; &nbsp;
 `{python} ds_id_oni`, `{python} ds_id_pdo`, `{python} ds_id_npgo`
@@ -85,7 +84,7 @@ North Pacific Gyre Oscillation data are from E. Di Lorenzo, Brown University (<h
 **Figures**
 
 ::: {#fig-oni_pdo_npgo_M}
-![](../../figures_gha/ids/oc_ONI_PDO_NPGO_Monthly.png){width=70%}
+![](../../figures_gha/BasinScaleIndicators/2024/oc_ONI_PDO_NPGO_Monthly.png){width=70%}
 
 Monthly values of the Oceanic Niño Index (ONI), the Pacific Decadal Oscillation (PDO), and the North Pacific Gyre Oscillation (NPGO), starting 1950 and ending: October `{python} cciea_yr` (ONI), November `{python} cciea_yr` (PDO), and October `{python} cciea_yr` (NPGO). 
 
@@ -98,11 +97,11 @@ Monthly values of the Oceanic Niño Index (ONI), the Pacific Decadal Oscillation
 
 ::: {#fig-oni_pdo_npgo_S layout-ncol=3, layout="[50,-1,50,-1,50]"  }
 
-![ONI](../../figures_gha/ids/oc_ONI_Season.png){#fig-oni_S}
+![ONI](../../figures_gha/BasinScaleIndicators/2024/oc_ONI_Season.png){#fig-oni_S}
 
-![PDO](../../figures_gha/ids/oc_PDO_Season.png){#fig-pdo_S}
+![PDO](../../figures_gha/BasinScaleIndicators/2024/oc_PDO_Season.png){#fig-pdo_S}
 
-![NPGO](../../figures_gha/ids/oc_NPGO_Season.png){#fig-npgo_S}
+![NPGO](../../figures_gha/BasinScaleIndicators/2024/oc_NPGO_Season.png){#fig-npgo_S}
 
 Seasonal values of the Oceanic Niño Index (ONI), Pacific Decadal Oscillation (PDO), North Pacific Gyre Oscillation (NPGO) from 1950-`{python} cciea_yr`. 
 

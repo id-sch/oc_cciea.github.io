@@ -18,7 +18,7 @@ from script_IDS import fun_script_IDS
 
 import pandas as pd
 
-cciea_yr = 2024
+cciea_yr = 2025
 
 
 fn_meta = '../../metadata.csv'
@@ -38,11 +38,13 @@ ts_id_list = ['cciea_OC_NPGO']
 vec2_npgo, ds_id_lbl_npgo, rgn_lbl_npgo = fun_script_IDS(df1, cell2_wnt, ds_id_npgo, ts_id_list)
 
 
+cndtns = 'Had high PDO'
+
+
 
 ```
 
-
-# Basin-Scale Indicators
+# 2025 Basin-Scale Indicators
 
 **Description**  &nbsp; &nbsp;
 The CCLME is driven by atmosphere–ocean energy exchange that occurs on many temporal and spatial scales. 
@@ -51,10 +53,10 @@ Positive ONI and PDO values and negative NPGO values usually denote conditions t
 
 
 **Indicator Category**  &nbsp; &nbsp;
-`{python} vec2_oni[['Component_Section']]`
+`{python} vec2_oni['Component_Section'].values[0]`
  
 **Data Steward**  &nbsp; &nbsp;
-`{python} vec2_oni[['PI']]` (`{python} vec2_oni[['Contact']]`)
+`{python} vec2_oni['PI'].values[0]` (`{python} vec2_oni['Contact'].values[0]`)
 
 **Erddap Dataset ID**   &nbsp; &nbsp;
 `{python} ds_id_oni`, `{python} ds_id_pdo`, `{python} ds_id_npgo`
@@ -85,7 +87,7 @@ North Pacific Gyre Oscillation data are from E. Di Lorenzo, Brown University (<h
 **Figures**
 
 ::: {#fig-oni_pdo_npgo_M}
-![](../../figures/ids/oc_ONI_PDO_NPGO_Monthly.png){width=70%}
+![](../../figures_gha/BasinScaleIndicators/2025/oc_ONI_PDO_NPGO_Monthly.png){width=70%}
 
 Monthly values of the Oceanic Niño Index (ONI), the Pacific Decadal Oscillation (PDO), and the North Pacific Gyre Oscillation (NPGO), starting 1950 and ending: October `{python} cciea_yr` (ONI), November `{python} cciea_yr` (PDO), and October `{python} cciea_yr` (NPGO). 
 
@@ -98,21 +100,17 @@ Monthly values of the Oceanic Niño Index (ONI), the Pacific Decadal Oscillation
 
 ::: {#fig-oni_pdo_npgo_S layout-ncol=3, layout="[50,-1,50,-1,50]"  }
 
-![ONI](../../figures/ids/oc_ONI_Season.png){#fig-oni_S}
+![ONI](../../figures_gha/BasinScaleIndicators/2025/oc_ONI_Season.png){#fig-oni_S}
 
-![PDO](../../figures/ids/oc_PDO_Season.png){#fig-pdo_S}
+![PDO](../../figures_gha/BasinScaleIndicators/2025/oc_PDO_Season.png){#fig-pdo_S}
 
-![NPGO](../../figures/ids/oc_NPGO_Season.png){#fig-npgo_S}
+![NPGO](../../figures_gha/BasinScaleIndicators/2025/oc_NPGO_Season.png){#fig-npgo_S}
 
 Seasonal values of the Oceanic Niño Index (ONI), Pacific Decadal Oscillation (PDO), North Pacific Gyre Oscillation (NPGO) from 1950-`{python} cciea_yr`. 
 
 :::
 
 **`{python} cciea_yr` Conditions**
-
-+ @fig-oni_pdo_npgo_M and @fig-oni_pdo_npgo_S show monthly and seasonal means of the three indices.
-+ El Niño event spanned the winter and spring 2023-24 and ENSO neutral by summer 2024 (@fig-oni_pdo_npgo_M and @fig-oni_S).
-+ Short duration La Niña conditions are expected by Jan 2024 (59% chance), with a quick transition to ENSO neutral by March-May 2024 (61% chance), see <https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/>.
-+ PDO and NPGO both have the 5-year mean below 1 standard deviation (@fig-oni_pdo_npgo_M), with the PDO having a negative 5-year trend.
+{{< include test1.qmd >}}
 
 **References**
