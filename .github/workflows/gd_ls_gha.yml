@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List files in Google Drive folder
-        uses: id-sch/upload-to-drive@master
+        uses: id-sch/upload-to-drive@main
         id: list
         with:
           credentials: ${{ secrets.GSA_CREDENTIALS }}
