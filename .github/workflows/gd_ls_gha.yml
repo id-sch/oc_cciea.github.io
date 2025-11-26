@@ -2,7 +2,7 @@ name: List files in Drive
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   list:
     runs-on: ubuntu-latest
