@@ -7,7 +7,7 @@ jobs:
   list:
     runs-on: ubuntu-latest
     steps:
-      - name: List files in Google Drive folder
+      - name: List files in my Google Drive folder
         uses: id-sch/upload-to-drive@main
         id: list
         with:
