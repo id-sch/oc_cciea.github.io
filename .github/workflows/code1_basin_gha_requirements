@@ -2,3 +2,4 @@ requests
 pandas
 numpy
 xarray[complete]
+google-cloud
