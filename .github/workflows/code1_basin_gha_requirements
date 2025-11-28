@@ -2,4 +2,6 @@ requests
 pandas
 numpy
 xarray[complete]
-google
+google-auth
+google-auth-oauthlib
+google-api-python-client
