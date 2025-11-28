@@ -1,21 +1,18 @@
-name: Python Download Basin
-
-env:
-  PYTHON_VERSION: "3.12"
-
-
+name: List files in Drive
 on:
   push:
     branches:
       - main
-
 jobs:
-  build:
+  list:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
+      - name: List files in my Google Drive folder
+        uses: id-sch/upload-to-drive@main
+        id: list
+        with:
+          credentials: ${{ secrets.GSA_CREDENTIALS }}
+          actionType: list
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -30,6 +27,6 @@ jobs:
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
-
-      - name: Run Python test_gd_auth
-        run: python test_gd_auth.py
+	  
+      - name: Print folder files
+        run: test_gd.py
