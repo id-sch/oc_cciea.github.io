@@ -20,12 +20,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
 
-      - name: install dependencies
-        run: |
-	  pip install pydrive2
+      - name: Install Pip Dependcy
+        run: pip install pydrive2
 
       - name: List Google Drive files
         env:
           GDRIVE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
-        run: |
-	  python test_gd.py
+        run: python test_gd.py
