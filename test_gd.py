@@ -2,6 +2,7 @@ import os
 import json
 from pydrive2.auth import GoogleAuth
 from pydrive2.drive import GoogleDrive
+from oauth2client.service_account import ServiceAccountCredentials
 
 def authenticate_gdrive():
     """Authenticate with Google Drive using service account credentials."""
@@ -14,22 +15,14 @@ def authenticate_gdrive():
         # Parse JSON credentials from environment variable
         creds_dict = json.loads(creds_json)
         
-        # Save credentials temporarily
-        with open('credentials.json', 'w') as f:
-            json.dump(creds_dict, f)
+        # Define the scope
+        scope = ['https://www.googleapis.com/auth/drive']
         
-        # Configure settings for service account
-        gauth.settings['client_config_backend'] = 'file'
-        gauth.settings['client_config_file'] = 'credentials.json'
-        gauth.settings['service_config'] = {
-            'client_json_file_path': 'credentials.json',
-        }
-        
-        # Authenticate with service account
-        gauth.ServiceAuth()
-        
-        # Clean up temporary file
-        os.remove('credentials.json')
+        # Create credentials directly from dictionary
+        gauth.credentials = ServiceAccountCredentials.from_json_keyfile_dict(
+            creds_dict, 
+            scope
+        )
     else:
         # Local authentication (interactive)
         gauth.LocalWebserverAuth()
@@ -86,6 +79,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
 
 
 
