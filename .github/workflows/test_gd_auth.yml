@@ -1,29 +1,78 @@
-name: Python Download Basin
-
-env:
-  PYTHON_VERSION: "3.12"
-
+name: List Google Drive Files
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:  # Manual trigger
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC (optional)
 
 jobs:
-  build:
+  list-files:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-      - name: Install Pip Dependcy
-        run: pip install pydrive2
+      - name: Install dependencies
+        run: |
+          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+
+      - name: Create credentials file
+        run: |
+          echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
 
       - name: List Google Drive files
         env:
-          GDRIVE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
-        run: python test_gd.py
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        run: |
+          python - <<'EOF'
+          import json
+          import os
+          from google.oauth2.credentials import Credentials
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+
+          # Load credentials from JSON
+          creds = service_account.Credentials.from_service_account_file(
+              'credentials.json',
+              scopes=['https://www.googleapis.com/auth/drive.readonly']
+          )
+
+          # Build the Drive API service
+          service = build('drive', 'v3', credentials=creds)
+
+          # List files
+          results = service.files().list(
+              pageSize=100,
+              fields="nextPageToken, files(id, name, mimeType, modifiedTime, size)"
+          ).execute()
+
+          items = results.get('files', [])
+
+          if not items:
+              print('No files found.')
+          else:
+              print(f'Found {len(items)} files:')
+              print('-' * 80)
+              for item in items:
+                  size = item.get('size', 'N/A')
+                  if size != 'N/A':
+                      size = f"{int(size) / 1024 / 1024:.2f} MB"
+                  print(f"Name: {item['name']}")
+                  print(f"  ID: {item['id']}")
+                  print(f"  Type: {item['mimeType']}")
+                  print(f"  Modified: {item.get('modifiedTime', 'N/A')}")
+                  print(f"  Size: {size}")
+                  print('-' * 80)
+          EOF
+
+      - name: Clean up credentials
+        if: always()
+        run: |
+          rm -f credentials.json
+
