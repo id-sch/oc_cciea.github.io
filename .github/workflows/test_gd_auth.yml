@@ -1,9 +1,9 @@
 name: List Google Drive Files
 
 on:
-  workflow_dispatch:  # Manual trigger
-  schedule:
-    - cron: '0 0 * * *'  # Daily at midnight UTC (optional)
+  push:
+    branches:
+      - main
 
 jobs:
   list-files:
