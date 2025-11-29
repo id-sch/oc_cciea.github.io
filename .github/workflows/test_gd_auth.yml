@@ -1,0 +1,26 @@
+name: Python Download Basin
+
+env:
+  PYTHON_VERSION: "3.12"
+
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+      - name: install dependencies
+        run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
+      - name: List Google Drive files
+        env: GDRIVE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
+        run: python test_gd.py
