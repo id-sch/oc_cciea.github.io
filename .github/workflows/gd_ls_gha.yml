@@ -11,7 +11,7 @@ jobs:
         id: google-access-token
         uses: playeveryware/action-google-access-token@v1
         with:
-          credentials: ${{ secrets.oc_cciea }}
+          credentials: ${{ secrets.oc_cciea }} | base64 -d 
           scope: 'https://www.googleapis.com/auth/drive.readonly'
 
       - name: Download file
