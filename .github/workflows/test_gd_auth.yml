@@ -24,7 +24,7 @@ jobs:
 
       - name: Create credentials file
         run: |
-          echo '${{ secrets.GOOGLE_CREDENTIALS }}' | base64 -d  > credentials.json
+          echo '${{ secrets.oc_cciea }}' | base64 -d  > credentials.json
 
       - uses: actions/upload-artifact@v4
         with:
