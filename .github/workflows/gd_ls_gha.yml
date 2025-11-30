@@ -1,7 +1,11 @@
-
+name: List files in Drive
+on:
+  push:
+    branches:
+      - main
 jobs:
   example_google_drive_download:
-    runs-on: ...
+    runs-on: ubuntu-latest
     steps:
       - name: Acquire Google access token
         id: google-access-token
