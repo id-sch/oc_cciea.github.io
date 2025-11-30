@@ -1,18 +1,22 @@
-name: List files in Drive
-on:
-  push:
-    branches:
-      - main
+
 jobs:
-  list:
-    runs-on: ubuntu-latest
+  example_google_drive_download:
+    runs-on: ...
     steps:
-      - name: List files in my Google Drive folder
-        uses: id-sch/upload-to-drive@main
-        id: list
+      - name: Acquire Google access token
+        id: google-access-token
+        uses: playeveryware/action-google-access-token@v1
         with:
           credentials: ${{ secrets.oc_cciea }}
-          actionType: list
-          googleFolderId: 1rOgKRRfBV9Zz7y08_6-4Fh5zd5S15JnA
-      - name: Print folder files
-        run: echo "${{ steps.list.outputs.folderFiles }}"
+          scope: 'https://www.googleapis.com/auth/drive.readonly'
+
+      - name: Download file
+        uses: playeveryware/action-google-drive-download@v1
+        with:
+          token: ${{ steps.google-access-token.outputs.token }}
+          file-url: 'https://docs.google.com/document/d/1y2km_sVyb3pjTxpDVR3V_tOwU--TCQ93DHvCHsQeV6s/edit?usp=drive_link'
+          path: hello.txt
+
+      - name: Show file information
+        run: |
+          ls hello.txt
