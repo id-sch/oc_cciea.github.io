@@ -26,3 +26,7 @@ jobs:
         run: |
           echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: credentials.json
