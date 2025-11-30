@@ -14,14 +14,12 @@ jobs:
         with:
           credentials: ${{ secrets.oc_cciea }}
           scope: 'https://www.googleapis.com/auth/drive.readonly'
-
       - name: Download file
         uses: playeveryware/action-google-drive-download@v1
         with:
           token: ${{ steps.google-access-token.outputs.token }}
           file-url: 'https://drive.google.com/file/d/1awy6ufig25dGHLyPRaz_Fkd7c1930NS-/view?usp=sharing'
           path: hello.txt
-
       - name: Show file information
         run: |
           ls hello.txt
