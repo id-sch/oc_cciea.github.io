@@ -6,12 +6,22 @@ on:
 jobs:
   list:
     runs-on: ubuntu-latest
+
     steps:
-      - name: List files in my Google Drive folder
-        uses: Fork-on-the-Table-Collective/upload-to-drive@v2.0.0
-        id: list
+      - name: Acquire Google access token
+        id: google-access-token
+        uses: playeveryware/action-google-access-token@v1
         with:
           credentials: ${{ secrets.oc_cciea }}
-          actionType: list
-      - name: Print folder files
-        run: echo "${{ steps.list.outputs.folderFiles }}"
+          scope: 'https://www.googleapis.com/auth/drive.readonly'
+
+      - name: Download file
+        uses: playeveryware/action-google-drive-download@v1
+        with:
+          token: ${{ steps.google-access-token.outputs.token }}
+          file-url: 'https://drive.google.com/file/d/1awy6ufig25dGHLyPRaz_Fkd7c1930NS-/view?usp=sharing'
+          path: hello.txt
+
+      - name: Show file information
+        run: |
+          ls hello.txt
