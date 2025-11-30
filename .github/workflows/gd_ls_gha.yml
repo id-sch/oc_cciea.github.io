@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List files in my Google Drive folder
-        uses: Fork-on-the-Table-Collective/upload-to-drive
+        uses: Fork-on-the-Table-Collective/upload-to-drive@v2
         id: list
         with:
           credentials: ${{ secrets.oc_cciea }}
