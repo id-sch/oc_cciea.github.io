@@ -1,0 +1,18 @@
+name: List files in Drive
+on:
+  push:
+    branches:
+      - main
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files in my Google Drive folder
+        uses: id-sch/upload-to-drive@main
+        id: list
+        with:
+          credentials: ${{ secrets.oc_cciea }}
+          actionType: list
+          googleFolderId: 1rOgKRRfBV9Zz7y08_6-4Fh5zd5S15JnA
+      - name: Print folder files
+        run: echo "${{ steps.list.outputs.folderFiles }}"
