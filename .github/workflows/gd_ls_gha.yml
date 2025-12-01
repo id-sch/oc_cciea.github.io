@@ -7,11 +7,12 @@ jobs:
   list:
     runs-on: ubuntu-latest
     steps:
-      - name: List files in my Google Drive folder, needs encode service key
+      - name: List files in Google Drive folder
         uses: Fork-on-the-Table-Collective/upload-to-drive@v2.0.0
         id: list
         with:
           credentials: ${{ secrets.oc_cciea }}
           actionType: list
+          googleFolderId: 1rOgKRRfBV9Zz7y08_6-4Fh5zd5S15JnA
       - name: Print folder files
         run: echo "${{ steps.list.outputs.folderFiles }}"
