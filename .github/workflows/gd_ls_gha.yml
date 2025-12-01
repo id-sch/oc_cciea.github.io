@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Acquire Google access token
+      - name: Acquire Google access token, needs service key
         id: google-access-token
         uses: playeveryware/action-google-access-token@v1
         with:
