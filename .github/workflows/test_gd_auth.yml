@@ -1,0 +1,28 @@
+name: Python Download Basin
+
+env:
+  PYTHON_VERSION: "3.12"
+
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+      - name: install dependencies
+        run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
+      - name: Create credentials file
+        run: |
+          echo '${{ secrets.oc_cciea }}' | base64 -d  > client_secrets.json
+      - name: List Google Drive files
+        run: python test_gd.py
