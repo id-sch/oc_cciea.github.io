@@ -7,15 +7,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-    - name: Download from Google Drive
-      uses: your-username/google-drive-download@v1
-      with:
-        authType: 'service' # Optional, defaults to 'service'
-        credentials: ${{ secrets.oc_cciea }}
-        folderId: 1bmX2LvnhIpWm7HJMbSJUxlLs5w6SZMer
-        filename: 'TS_monthl.nc'
-        destination: './'
+      - name: Download from Google Drive
+        uses: your-username/google-drive-download@v1
+        with:
+          authType: 'service' # Optional, defaults to 'service'
+          credentials: ${{ secrets.oc_cciea }}
+          folderId: 1bmX2LvnhIpWm7HJMbSJUxlLs5w6SZMer
+          filename: 'TS_monthl.nc'
+          destination: './'
 
       - name: update sst oi monthly 
         run: python sst_oi_daily_v21_update.py
