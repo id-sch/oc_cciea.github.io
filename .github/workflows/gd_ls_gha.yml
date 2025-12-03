@@ -23,7 +23,7 @@ jobs:
           credentials: ${{ secrets.oc_cciea }}
           actionType: download
           localPath: ./TS_monthly.nc
-          googleFileId: 1y2km_sVyb3pjTxpDVR3V_tOwU
+          googleFileId: 1y2km_sVyb3pjTxpDVR3V_tOwU--TCQ93DHvCHsQeV6s
 
       - name: List Google Drive files
         run: python sst_oi_daily_v21_update.py
