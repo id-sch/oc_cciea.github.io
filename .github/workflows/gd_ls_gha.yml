@@ -7,25 +7,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: List files in Google Drive folder
-        uses: Fork-on-the-Table-Collective/upload-to-drive@v2.0.0
-        id: list
-        with:
-          credentials: ${{ secrets.oc_cciea }}
-          actionType: list
-          googleFolderId: 1rOgKRRfBV9Zz7y08_6-4Fh5zd5S15JnA
-      - name: Print folder files
-        run: echo "${{ steps.list.outputs.folderFiles }}"
 
-      - name: Download file from Google Drive
-        uses: Fork-on-the-Table-Collective/upload-to-drive@v2.0.0
-        with:
-          credentials: ${{ secrets.oc_cciea }}
-          actionType: download
-          localPath: ./TS_monthly.nc
-          googleFileId: 1y2km_sVyb3pjTxpDVR3V_tOwU--TCQ93DHvCHsQeV6s
+    - name: Download from Google Drive
+      uses: your-username/google-drive-download@v1
+      with:
+        authType: 'service' # Optional, defaults to 'service'
+        credentials: ${{ secrets.oc_cciea }}
+        folderId: 1bmX2LvnhIpWm7HJMbSJUxlLs5w6SZMer
+        filename: 'TS_monthl.nc'
+        destination: './'
 
-      - name: List Google Drive files
+      - name: update sst oi monthly 
         run: python sst_oi_daily_v21_update.py
 
       - name: Checkout repository
