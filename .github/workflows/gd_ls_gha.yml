@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  list:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: List files in Google Drive folder
@@ -16,3 +16,24 @@ jobs:
           googleFolderId: 1rOgKRRfBV9Zz7y08_6-4Fh5zd5S15JnA
       - name: Print folder files
         run: echo "${{ steps.list.outputs.folderFiles }}"
+
+      - name: Download file from Google Drive
+        uses: Fork-on-the-Table-Collective/upload-to-drive@v2.0.0
+        with:
+          credentials: ${{ secrets.oc_cciea }}
+          actionType: download
+          localPath: ./TS_monthly.nc
+          googleFileId: 1bmX2LvnhIpWm7HJMbSJUxlLs5w6SZMer
+
+      - name: List Google Drive files
+        run: python sst_oi_daily_v21_update.py
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Upload file to Google Drive
+        uses: Fork-on-the-Table-Collective/upload-to-drive@v2.0.0
+        with:
+          credentials: ${{ secrets.oc_cciea }}
+          actionType: upload
+          localPath: ./TS_monthly.nc
+          googleFolderId: 1hERfCNn7oUjoZB6bY9VbF5-FGyGDot6m
