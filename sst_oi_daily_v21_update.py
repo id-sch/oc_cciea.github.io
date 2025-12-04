@@ -50,6 +50,11 @@ day_check = 24
 # len input variables
 
 
+dir_list = os.listdir()
+print("Files and directories in  :")
+print(dir_list)
+
+
 # Get the time available in the NRT SST OI data product
 ddd = requests.get(url_nrt_time, timeout=20)
 
