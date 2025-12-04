@@ -51,6 +51,7 @@ day_check = 24
 
 
 dir_list = os.listdir()
+print("START -------------------------------")
 print("Files and directories in  :")
 print(dir_list)
 
@@ -203,3 +204,7 @@ if os.path.isfile(file_in):
     ds1_out.to_netcdf(file_out)
 else:
     print('file not found: {}'.format(file_in))
+
+print("END -------------------------------")
+print("Files and directories in  :")
+print(dir_list)

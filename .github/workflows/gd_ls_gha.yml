@@ -39,7 +39,7 @@ jobs:
       - name: Upload file to Google Drive
         uses: Fork-on-the-Table-Collective/upload-to-drive@v2.0.0
         with:
-          credentials: ${{ secrets.oc_cciea }}
+          credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: upload
-          localPath: ./TS_monthly_update.nc
+          localPath: TS_monthly_update.nc
           googleFolderId: 1hERfCNn7oUjoZB6bY9VbF5-FGyGDot6m
