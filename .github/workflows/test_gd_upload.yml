@@ -26,6 +26,13 @@ jobs:
       - name: create directory and file
         run: python test_gd_upload.py
 
+      - name: Upload a file to Google Drive
+        uses: willo32/google-drive-upload-action@v1.1.0
+        with:
+          target: dir_test_gd/readme.txt
+          credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
+          parent_folder_id: 1hERfCNn7oUjoZB6bY9VbF5-FGyGDot6m
+
       - name: Upload file to Google Drive, need to share with gc email
         uses: Fork-on-the-Table-Collective/upload-to-drive@v2.0.0
         with:
