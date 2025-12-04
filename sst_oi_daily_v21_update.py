@@ -1,21 +1,11 @@
 import xarray as xr
 import numpy as np
-import matplotlib.pyplot as plt
-import seawater as sw
-import fun_Csw
-from C_sw import C_sw
-from matplotlib import gridspec
-from matplotlib import rcParams
-from fun_mkdir import fun_mkdir
-from matplotlib import interactive
 import os
 from datetime import date
 import urllib.request  # py36
 import requests  # Aug 9, 2024 -- changed to request as urlib gave 404 error
 from shutil import copyfile
 import calendar as clndr
-interactive(True)
-# pylint: disable=C0103
 
 
 
