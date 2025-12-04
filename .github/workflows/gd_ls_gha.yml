@@ -7,15 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Download from Google Drive -- changed secret
-        uses: logickoder/google-drive-download@0.0.1
+      - name: Download file X from Google Drive to ./out/ directory
+        uses: k0staa/download-gdrive-file-action@v1
         with:
-          authType: 'service' # Optional, defaults to 'service'
-          credentials: ${{ secrets.oc_cciea }}
-          folderId: 1bmX2LvnhIpWm7HJMbSJUxlLs5w6SZMer
-          filename: 'TS_monthl.nc'
-          destination: './'
-
+          service-account-auth-json: ${{ secrets.oc_cciea }}
+          download-file-name: TS_monthly.nc
+          download-to: ./
       - name: update sst oi monthly 
         run: python sst_oi_daily_v21_update.py
 
