@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Download file X from Google Drive to ./out/ directory
+      - name: Download file from Google Drive to ./out/ directory
         uses: k0staa/download-gdrive-file-action@v1
         with:
           service-account-auth-json: ${{ secrets.oc_cciea }}
