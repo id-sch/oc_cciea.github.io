@@ -28,7 +28,7 @@ jobs:
         with:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: download
-          localPath: ./TS_monthly_update.nc
+          localPath: ./TS_monthly.nc
           googleFileId: 10plKBKgm87p5FFXqiOEI2cpXP3nkTZWM
 
       - name: update sst oi monthly 
@@ -41,5 +41,5 @@ jobs:
         with:
           credentials: ${{ secrets.oc_cciea }}
           actionType: upload
-          localPath: ./TS_monthly.nc
+          localPath: ./TS_monthly_update.nc
           googleFolderId: 1hERfCNn7oUjoZB6bY9VbF5-FGyGDot6m
