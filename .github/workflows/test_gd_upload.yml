@@ -24,7 +24,7 @@ jobs:
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
       - name: create directory and file
-        run: test_gd_upload.py
+        run: python test_gd_upload.py
 
       - name: Upload to Google Drive
         uses: Wtzd8645/upload-to-google-drive-action@v2.0.0
