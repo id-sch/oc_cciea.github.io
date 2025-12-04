@@ -41,5 +41,5 @@ jobs:
         with:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: upload
-          localPath: ./cover.png
+          localPath: ./hello_world.org
           googleFolderId: 1hERfCNn7oUjoZB6bY9VbF5-FGyGDot6m
