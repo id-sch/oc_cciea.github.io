@@ -205,6 +205,7 @@ if os.path.isfile(file_in):
 else:
     print('file not found: {}'.format(file_in))
 
+dir_list_end = os.listdir()
 print("END -------------------------------")
 print("Files and directories in  :")
-print(dir_list)
+print(dir_list_end)
