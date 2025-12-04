@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Download from Google Drive
+      - name: Download from Google Drive -- changed secret
         uses: logickoder/google-drive-download@0.0.1
         with:
           authType: 'service' # Optional, defaults to 'service'
