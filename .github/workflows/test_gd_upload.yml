@@ -26,12 +26,6 @@ jobs:
       - name: create directory and file
         run: python test_gd_upload.py
 
-      - name: Upload to Google Drive
-        uses: Wtzd8645/upload-to-google-drive-action@v2.0.0
-        with:
-          credentials: ${{ secrets.SERVICE_ACTION_KEY_JSON }}
-          src_path: ${{ github.workspace }}/dir_test_gd
-
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Upload file to Google Drive, need to share with gc email

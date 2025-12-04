@@ -13,3 +13,8 @@ except OSError:
 
 with open('{}/readme.txt'.format(dir_out), 'w') as f:
     f.write('Create a new text file!')
+
+dir_list_end = os.listdir()
+print("END -------------------------------")
+print("Files and directories in  :")
+print(dir_list_end)
