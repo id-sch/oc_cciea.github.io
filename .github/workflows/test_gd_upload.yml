@@ -23,16 +23,14 @@ jobs:
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
-      - name: Download file from Google Drive, encoded service secret
-        uses: Fork-on-the-Table-Collective/upload-to-download-from-gdrive@v2.0.0
-        with:
-          credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
-          actionType: download
-          localPath: ./TS_monthly.nc
-          googleFileId: 10plKBKgm87p5FFXqiOEI2cpXP3nkTZWM
+      - name: create directory and file
+        run: test_gd_upload.py
 
-      - name: update sst oi monthly 
-        run: python sst_oi_daily_v21_update.py
+      - name: Upload to Google Drive
+        uses: Wtzd8645/upload-to-google-drive-action@v2.0.0
+        with:
+          credentials: ${{ secrets.SERVICE_ACTION_KEY_JSON }}
+          src_path: ${{ github.workspace }}/dir_test_gd
 
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -41,5 +39,5 @@ jobs:
         with:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: upload
-          localPath: ./hello_world.org
+          localPath: dir_test_gd/readme.txt
           googleFolderId: 1hERfCNn7oUjoZB6bY9VbF5-FGyGDot6m
