@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download from Google Drive
-        uses: logickoder/google-drive-download@v1
+        uses: logickoder/google-drive-download@v0.0.1
         with:
           authType: 'service' # Optional, defaults to 'service'
           credentials: ${{ secrets.oc_cciea }}
