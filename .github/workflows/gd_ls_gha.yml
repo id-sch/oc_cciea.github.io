@@ -41,5 +41,5 @@ jobs:
         with:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: upload
-          localPath: TS_monthly_update.nc
+          localPath: ./cover.png
           googleFolderId: 1hERfCNn7oUjoZB6bY9VbF5-FGyGDot6m
