@@ -193,4 +193,5 @@ ds1_out['day_missing'] = da2_out
 
 # overwrite the existing file_in with this new updated dataset
 ds1.close()
-ds1_out.to_netcdf(file_in)
+file_out = 'TS_monthly_update.nc'
+ds1_out.to_netcdf(file_out)
