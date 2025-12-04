@@ -97,6 +97,7 @@ if os.path.isfile(file_in):
 
     # loop over the dates and save the daily data for each month
     ntM = len(dates_wnt)
+    date_final = dates_wnt[0]
     for i in range(ntM):
         yri = dates_wnt[i].astype(object).year
         moni = dates_wnt[i].astype(object).month
@@ -151,47 +152,49 @@ if os.path.isfile(file_in):
             fn_out_final = '{}{}_daily_final.{}'.format(dir_out, var_wnt, file_type)
             dsf.to_netcdf(fn_out_final)
 
-# create monthly means and append to existing dataset
-nt, ny, nx = ds1[var_wnt].shape
-time1M = ds1.time.data.astype('datetime64[M]')
-timefM = np.arange(time1M[0], date_final + 1)
-ntf = len(timefM)
-data_final = np.zeros([ntf, ny, nx])*np.nan
-day_missing_final = np.zeros(ntf)*np.nan
+    # create monthly means and append to existing dataset
+    nt, ny, nx = ds1[var_wnt].shape
+    time1M = ds1.time.data.astype('datetime64[M]')
+    timefM = np.arange(time1M[0], date_final + 1)
+    ntf = len(timefM)
+    data_final = np.zeros([ntf, ny, nx])*np.nan
+    day_missing_final = np.zeros(ntf)*np.nan
 
-ia = np.isin(timefM, time1M)
-ib = np.isin(time1M, timefM)
+    ia = np.isin(timefM, time1M)
+    ib = np.isin(time1M, timefM)
 
-data_final[ia, :, :] = ds1[var_wnt].data[ib, :, :]
-day_missing_final[ia] = ds1['day_missing'].data
+    data_final[ia, :, :] = ds1[var_wnt].data[ib, :, :]
+    day_missing_final[ia] = ds1['day_missing'].data
 
-dates_calcM = np.setdiff1d(timefM,time1M)
-for i in range(len(dates_calcM)):
-    yr1 = dates_calcM[i].astype(object).year
-    mon1 = dates_calcM[i].astype(object).month
-    dir1 = '{}/{:02d}/'.format(yr1, mon1)
-    fn1 = '{}{}_daily_final.{}'.format(dir1, var_wnt, file_type)
-    ds1D = xr.open_dataset(fn1)
+    dates_calcM = np.setdiff1d(timefM,time1M)
+    for i in range(len(dates_calcM)):
+        yr1 = dates_calcM[i].astype(object).year
+        mon1 = dates_calcM[i].astype(object).month
+        dir1 = '{}/{:02d}/'.format(yr1, mon1)
+        fn1 = '{}{}_daily_final.{}'.format(dir1, var_wnt, file_type)
+        ds1D = xr.open_dataset(fn1)
 
-    in1 = np.where(timefM == dates_calcM[i])[0]
-    data_final[in1, :, :] = ds1D[var_wnt].mean('time')
+        in1 = np.where(timefM == dates_calcM[i])[0]
+        data_final[in1, :, :] = ds1D[var_wnt].mean('time')
 
-    num_day_data = len(ds1D.time.data)
-    num_day_clndr = clndr.monthrange(yr1, mon1)[1]
-    num_day_diff = num_day_clndr - num_day_data
+        num_day_data = len(ds1D.time.data)
+        num_day_clndr = clndr.monthrange(yr1, mon1)[1]
+        num_day_diff = num_day_clndr - num_day_data
 
-    day_missing_final[in1] = num_day_diff
+        day_missing_final[in1] = num_day_diff
 
-da1_out = xr.DataArray(
-    data_final, coords=[timefM.astype('datetime64[ns]'), lat1, lon1],
-    dims=['time', 'lat_vec', 'lon_vec'])
-da2_out = xr.DataArray(
-    day_missing_final, [timefM.astype('datetime64[ns]')], dims=['time']) 
+    da1_out = xr.DataArray(
+        data_final, coords=[timefM.astype('datetime64[ns]'), lat1, lon1],
+        dims=['time', 'lat_vec', 'lon_vec'])
+    da2_out = xr.DataArray(
+        day_missing_final, [timefM.astype('datetime64[ns]')], dims=['time']) 
 
-ds1_out = da1_out.to_dataset(name=var_wnt)
-ds1_out['day_missing'] = da2_out
+    ds1_out = da1_out.to_dataset(name=var_wnt)
+    ds1_out['day_missing'] = da2_out
 
-# overwrite the existing file_in with this new updated dataset
-ds1.close()
-file_out = 'TS_monthly_update.nc'
-ds1_out.to_netcdf(file_out)
+    # overwrite the existing file_in with this new updated dataset
+    ds1.close()
+    file_out = 'TS_monthly_update.nc'
+    ds1_out.to_netcdf(file_out)
+else:
+    print('file not found: {}'.format(file_in))
