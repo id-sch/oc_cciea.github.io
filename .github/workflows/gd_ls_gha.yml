@@ -10,8 +10,8 @@ jobs:
       - name: Download file from Google Drive to ./out/ directory
         uses: k0staa/download-gdrive-file-action@v1
         with:
-          service-account-auth-json: ${{ secrets.oc_cciea }}
-          download-file-name: TS_monthly.nc
+          service-account-auth-json: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
+          download-file-name: data_x13/sst_oi_daily_v21/TS_monthly.nc
           download-to: ./
       - name: update sst oi monthly 
         run: python sst_oi_daily_v21_update.py
