@@ -46,7 +46,7 @@ yr_bgn = 1900
 yr_end = today.year
 
 file_type = 'nc'
-dir_out = './data_gha/BasinScaleIndicators/'
+
 
 # -- End: Input variables, change these
 # -------------------------------------------------------

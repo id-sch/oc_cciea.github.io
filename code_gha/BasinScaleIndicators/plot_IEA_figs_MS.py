@@ -47,7 +47,7 @@ nr = 4
 nc = 1
 
 # --plot directory
-dir_plot_out = './figures_gha/BasinScaleIndicators/'
+
 
 # dir_plots = '/home/isaac/data_files/Work/IEA/2018/fig_samples_for_SoCC/'
 fig_type = '.png'
