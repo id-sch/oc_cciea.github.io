@@ -909,3 +909,4 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,8,2025-08,-2.7,nan,nan,nan,PDO,Monthly Pacific Decadal Oscillation Index,nan,nan,nan,1.0
 2025,9,2025-09,-2.01,nan,nan,nan,PDO,Monthly Pacific Decadal Oscillation Index,nan,nan,nan,1.0
 2025,10,2025-10,-2.1,nan,nan,nan,PDO,Monthly Pacific Decadal Oscillation Index,nan,nan,nan,1.0
+2025,11,2025-11,nan,nan,nan,nan,PDO,Monthly Pacific Decadal Oscillation Index,nan,nan,nan,1.0
