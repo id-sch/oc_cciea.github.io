@@ -30,7 +30,7 @@ jobs:
           googleFileId: 10plKBKgm87p5FFXqiOEI2cpXP3nkTZWM
 
       - name: update sst oi monthly 
-        run: python sst_oi_daily_v21_update.py
+        run: python code_gha/SSTspatial/sst_oi_daily_v21_update.py
 
       - name: sst daily and monthly update upload artifacts
         uses: actions/upload-artifact@v4
