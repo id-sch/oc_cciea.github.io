@@ -35,6 +35,7 @@ data_wnt = ['anom_end', 'mn5_sd', 'trnd5_sd']
 mrkr_wnt = ['map_marker_anom', 'map_marker_mn5', 'map_marker_trnd5']
 
 dir_out = './data_gha/SSTspatial/'
+
 # ----------------------------------------------------------------------
 # --END: Change These
 # ----------------------------------------------------------------------
@@ -47,6 +48,10 @@ ds1 = xr.open_dataset(fn_in)
 lat = ds1[ds1_dim[0]].data
 lon = ds1[ds1_dim[1]].data
 time = ds1[ds1_dim[2]].data
+
+# print the time dates
+print(ds1.time.data)
+
 
 # years
 yrs = np.unique(ds1['time'].dt.year.data)
@@ -75,7 +80,6 @@ for i in range(ny):
 
     lat_cntr = np.nanmean(lat[in_lat])
     for j in range(nx):
-        print('i{} j{}'.format(i, j))
         lon_bttm = lon_wnt[j]-dx/2.0
         lon_top = lon_wnt[j]+dx/2.0
         in_lon = np.logical_and(lon > lon_bttm, lon < lon_top)

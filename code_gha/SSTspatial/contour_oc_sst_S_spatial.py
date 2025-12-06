@@ -8,12 +8,13 @@ from fun_xr_ds2IEA_contour3 import fun_xr_ds2IEA_contour3
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2025
+# iea_yr = 2025
 
 iea_yr = 2025
 
 # dir of spatial IEA stats, this is the output directory used in the create_oc_sst_S_spatial
-dir_out = './data_gha/SSTspatial/'
+# dir_out = './data_gha/SSTspatial/'
+dir_out = 'test'
 dir_in = dir_out
 
 
@@ -58,7 +59,8 @@ clmn_lbl = ['min', 'max']
 row_lbl = ['anom', 'mean5', 'trend5']
 
 # --plot directory
-dir_plot_out = './figures_gha/SSTspatial/'
+# dir_plot_out = './figures_gha/SSTspatial/'
+dir_plot_out = 'test'
 
 # ----------------------------------------------------------------------
 # --END: Change These
