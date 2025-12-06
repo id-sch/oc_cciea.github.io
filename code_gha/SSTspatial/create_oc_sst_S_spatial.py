@@ -161,3 +161,8 @@ for i in range(num_season):
 
     # --Save Dataset to a netcdf file
     ds1.to_netcdf(fn_out_clim)
+
+dir_list_end = os.listdir()
+print("END -------------------------------")
+print("Files and directories in  :")
+print(dir_list_end)

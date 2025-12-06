@@ -106,6 +106,8 @@ def fun_xr_ds2IEA_contour3(ds1, nlvl1, nlvl2, ttl, intrp_type, xtck, ytck,
         # if intrp_type is a tuple then bilinear interp
         if isinstance(intrp_type, tuple):
             ind = np.isfinite(data1)
+            print('hello: ')
+            print(ind)
             data1g = griddata((lon[ind], lat[ind]),
                               data1[ind], (xv, yv), method='linear')
 
