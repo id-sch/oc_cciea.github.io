@@ -3,3 +3,5 @@ pandas
 numpy
 xarray[complete]
 PyDrive2
+cartopy
+scipy
