@@ -10,9 +10,12 @@ from fun_xr_ds2IEA_contour3 import fun_xr_ds2IEA_contour3
 # iea year
 iea_yr = 2025
 
+iea_yr = 2025
+
 # dir of spatial IEA stats, this is the output directory used in the create_oc_sst_S_spatial
 dir_out = './data_gha/SSTspatial/'
 dir_in = dir_out
+
 
 # variables for fun_xr_ds2IEA_contour3
 # nlvl for old contour figures
@@ -56,12 +59,13 @@ row_lbl = ['anom', 'mean5', 'trend5']
 
 # --plot directory
 dir_plot_out = './figures_gha/SSTspatial/'
+
 # ----------------------------------------------------------------------
 # --END: Change These
 # ----------------------------------------------------------------------
 
 # create plot output directory
-dir_plots = '{}{}/'.format(dir_plot_out, iea_yr)
+dir_plots = '{}/{}/'.format(dir_plot_out, iea_yr)
 
 # check if directory exist, if it doesn't then create
 try:
@@ -77,7 +81,7 @@ num_ds_var = len(ds_var)
 # open the data and contour
 fn_list = []
 for i in range(num_season):
-    fn_in_ssn = '{}anom_mn5_trnd5_{}_clim_{}_{}.nc'.format(
+    fn_in_ssn = '{}/anom_mn5_trnd5_{}_clim_{}_{}.nc'.format(
         dir_in, season_lbl[i], yr_clim_bgn, yr_clim_end)
     ds1 = xr.open_dataset(fn_in_ssn)
 

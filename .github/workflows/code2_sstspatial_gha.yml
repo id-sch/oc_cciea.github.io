@@ -34,3 +34,6 @@ jobs:
 
       - name: contour sst spatial iea status/trends
         run: python code_gha/SSTspatial/contour_oc_sst_S_spatial.py
+
+      - name: git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v7

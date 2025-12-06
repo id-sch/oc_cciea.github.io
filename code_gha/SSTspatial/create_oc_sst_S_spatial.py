@@ -9,7 +9,6 @@ from C_iea import C_iea
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 iea_yr = 2025
-
 fn_in = 'TS_monthly.nc'
 
 ds1_dim = ['lat_vec', 'lon_vec', 'time']
@@ -157,7 +156,7 @@ for i in range(num_season):
     ds1['mrkr_mtrx'] = da3
     ds1['ts_mtrx'] = da4
 
-    fn_out_clim = '{}anom_mn5_trnd5_{}_clim_{}_{}.nc'.format(
+    fn_out_clim = '{}/anom_mn5_trnd5_{}_clim_{}_{}.nc'.format(
         dir_out, season_lbl[i], yr_clim_bgn, yr_clim_end)
 
     # --Save Dataset to a netcdf file
