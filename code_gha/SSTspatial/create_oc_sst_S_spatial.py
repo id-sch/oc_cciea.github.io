@@ -9,7 +9,6 @@ from C_iea import C_iea
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 iea_yr = 2025
-fn_in = 'TS_monthly.nc'
 
 ds1_dim = ['lat_vec', 'lon_vec', 'time']
 ds1_var = ['sst']
@@ -51,7 +50,6 @@ time = ds1[ds1_dim[2]].data
 
 # print the time dates
 print(ds1.time.data)
-
 
 # years
 yrs = np.unique(ds1['time'].dt.year.data)

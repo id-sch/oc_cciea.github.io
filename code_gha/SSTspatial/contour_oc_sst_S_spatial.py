@@ -8,15 +8,11 @@ from fun_xr_ds2IEA_contour3 import fun_xr_ds2IEA_contour3
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-# iea_yr = 2025
-
 iea_yr = 2025
 
 # dir of spatial IEA stats, this is the output directory used in the create_oc_sst_S_spatial
-# dir_out = './data_gha/SSTspatial/'
-dir_out = 'test'
+dir_out = './data_gha/SSTspatial/'
 dir_in = dir_out
-
 
 # variables for fun_xr_ds2IEA_contour3
 # nlvl for old contour figures
@@ -59,9 +55,7 @@ clmn_lbl = ['min', 'max']
 row_lbl = ['anom', 'mean5', 'trend5']
 
 # --plot directory
-# dir_plot_out = './figures_gha/SSTspatial/'
-dir_plot_out = 'test'
-
+dir_plot_out = './figures_gha/SSTspatial/'
 # ----------------------------------------------------------------------
 # --END: Change These
 # ----------------------------------------------------------------------
@@ -104,8 +98,8 @@ for i in range(num_season):
     fn_list.append(fn1)
 
     # remove fn_in_ssn (don't need it anymore and don't want to commit to the repo)
-    ds1.close()
-    os.remove(fn_in_ssn)
+    # ds1.close()
+    # os.remove(fn_in_ssn)
 
 # remove some large files that can not be commit to github
 os.remove("TS_monthly.nc")

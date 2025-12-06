@@ -110,10 +110,14 @@ class C_iea(object):
         # data last year
         in_ly = np.where(ps1.index.year.values == yr_clim_end)[0]
         data_ly = ps1.values[in_ly]
-        data_ly_mn = np.nanmean(data_ly)
-
         anom_ly = data_ly - self.mn_wts
-        anom_ly_mn = np.nanmean(anom_ly)
+
+        if len(data_ly) > 0:
+            data_ly_mn = np.nanmean(data_ly)
+            anom_ly_mn = np.nanmean(anom_ly)
+        else:
+            data_ly_mn = np.nan
+            anom_ly_mn = np.nan
 
         # index of data in the window
         # in_wndw = ((self.ps2.index.year >= self.yy_bgn) &
