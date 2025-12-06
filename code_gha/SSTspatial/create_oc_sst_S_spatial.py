@@ -10,6 +10,8 @@ from C_iea import C_iea
 # ----------------------------------------------------------------------
 iea_yr = 2025
 
+fn_in = 'TS_monthly.nc'
+
 ds1_dim = ['lat_vec', 'lon_vec', 'time']
 ds1_var = ['sst']
 
