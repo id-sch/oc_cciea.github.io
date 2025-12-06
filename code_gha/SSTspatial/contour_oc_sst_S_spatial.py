@@ -1,10 +1,8 @@
+import os
 import numpy as np
 import xarray as xr
 from fun_xr_ds2IEA_contour3 import fun_xr_ds2IEA_contour3
 from fun_create_data_files import fun_create_data_files
-interactive(True)
-# interactive(False)
-# pylint: disable=C0103
 
 
 # ----------------------------------------------------------------------

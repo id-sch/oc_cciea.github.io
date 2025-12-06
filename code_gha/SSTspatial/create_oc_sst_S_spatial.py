@@ -1,9 +1,8 @@
+import os
 import numpy as np
 import xarray as xr
 import pandas as pd
 from C_iea import C_iea
-
-
 
 
 # ----------------------------------------------------------------------
