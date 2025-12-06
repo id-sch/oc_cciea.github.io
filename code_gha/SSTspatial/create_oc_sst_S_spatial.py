@@ -44,8 +44,12 @@ dir_out = './data_gha/SSTspatial/'
 # length of input variables
 num_season = len(season)
 
+# year range
+yrs_wnt = np.arange(yr_clim_bgn, yr_clim_end+1)
+
 # open the data
-ds1 = xr.open_dataset(fn_in)
+ds1_all = xr.open_dataset(fn_in)
+ds1 = ds1_all.sel(time=ds1_all.time.dt.year.isin(yrs_wnt))
 lat = ds1[ds1_dim[0]].data
 lon = ds1[ds1_dim[1]].data
 time = ds1[ds1_dim[2]].data
