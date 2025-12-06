@@ -97,8 +97,8 @@ for i in range(ny):
             in_ssn = np.where(ps1S.index.month == season[k])
             yrs_ssn = ps1S.index.year.values[in_ssn]
             data_ssn = ps1S.values[in_ssn]
-            ia = np.in1d(yrs, yrs_ssn)
-            ib = np.in1d(yrs_ssn, yrs)
+            ia = np.isin(yrs, yrs_ssn)
+            ib = np.isin(yrs_ssn, yrs)
             dataS_mtrx[i, j, ia, k] = data_ssn[ib]
 
 # make the output directory to save monthly and daily datasets
