@@ -10,8 +10,9 @@ from fun_xr_ds2IEA_contour3 import fun_xr_ds2IEA_contour3
 # iea year
 iea_yr = 2025
 
-# dir of spatial IEA stats
-dir_in = '/home/isaac/data_files/Work/IEA/{}/spatial/oi_sst/'.format(iea_yr)
+# dir of spatial IEA stats, this is the output directory used in the create_oc_sst_S_spatial
+dir_out = './data_gha/SSTspatial/'
+dir_in = dir_out
 
 # variables for fun_xr_ds2IEA_contour3
 # nlvl for old contour figures
