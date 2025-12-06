@@ -7,16 +7,11 @@ interactive(True)
 # pylint: disable=C0103
 
 
-
-# NOTE:
-# 1) pyvenv-workon: py_cart
-# 2) spatial IEA stats creted in file create_oc_sst_S_spatial.py
-
 # ----------------------------------------------------------------------
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = <<iea_yr>>
+iea_yr = 2025
 
 # dir of spatial IEA stats
 dir_in = '/home/isaac/data_files/Work/IEA/{}/spatial/oi_sst/'.format(iea_yr)
@@ -62,7 +57,7 @@ clmn_lbl = ['min', 'max']
 row_lbl = ['anom', 'mean5', 'trend5']
 
 # --plot directory
-<<dir_plot_out_basin>>
+dir_plot_out = './figures_gha/SSTspatial/'
 # ----------------------------------------------------------------------
 # --END: Change These
 # ----------------------------------------------------------------------

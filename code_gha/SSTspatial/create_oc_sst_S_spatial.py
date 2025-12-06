@@ -9,7 +9,7 @@ from C_iea import C_iea
 # ----------------------------------------------------------------------
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
-iea_yr = <<iea_yr>>
+iea_yr = 2025
 
 fn_in = 'TS_monthly.nc'
 
@@ -36,7 +36,7 @@ att_coord = ['lon', 'lat']
 data_wnt = ['anom_end', 'mn5_sd', 'trnd5_sd']
 mrkr_wnt = ['map_marker_anom', 'map_marker_mn5', 'map_marker_trnd5']
 
-<<dir_out_sstspatial>>
+dir_out = './data_gha/SSTspatial/'
 # ----------------------------------------------------------------------
 # --END: Change These
 # ----------------------------------------------------------------------
