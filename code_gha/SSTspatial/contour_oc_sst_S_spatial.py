@@ -100,3 +100,10 @@ for i in range(num_season):
         ds1, nlvl1_old, nlvl2_old, ttl_clrbar, intrp_type, xtck, ytck,
         dir_plots, fn_out_ssn_old)
     fn_list.append(fn1)
+
+    # remove fn_in_ssn (don't need it anymore and don't want to commit to the repo)
+    ds1.close()
+    os.remove(fn_in_ssn)
+
+# remove some large files that can not be commit to github
+os.remove("TS_monthly.nc")
