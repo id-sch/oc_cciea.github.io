@@ -23,7 +23,7 @@ nlvl2_old = [np.arange(-3, 3.5, 0.5),
              np.arange(-3, 3.5, 0.5),
              np.arange(-3, 3.5, 0.5)]
 
-ttl = ['SST anom ($\degree$C)', '5-yr Mean / SD', '5-yr Trend /SD']
+ttl = ['SST anom (°C)', '5-yr Mean / SD', '5-yr Trend / SD']
 intrp_type = (1, 1)
 ytck = np.arange(35, 65, 10)
 xtck = np.arange(-160, -100, 20)

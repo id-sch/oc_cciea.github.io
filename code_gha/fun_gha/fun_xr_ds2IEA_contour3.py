@@ -6,9 +6,7 @@ import cartopy.feature as cfeature
 from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 from scipy.interpolate import griddata
 import matplotlib.gridspec as gridspec
-from matplotlib import interactive
-from matplotlib import ticker
-interactive(True)
+
 
 
 # turn of toolbar on fig, set font
