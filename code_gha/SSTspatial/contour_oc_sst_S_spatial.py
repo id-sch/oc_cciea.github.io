@@ -8,7 +8,7 @@ from fun_xr_ds2IEA_contour3 import fun_xr_ds2IEA_contour3
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2025
+iea_yr = 2024
 
 # dir of spatial IEA stats, this is the output directory used in the create_oc_sst_S_spatial
 dir_out = './data_gha/SSTspatial/'
