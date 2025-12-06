@@ -27,8 +27,7 @@ jobs:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: download
           localPath: ./TS_monthly.nc
-          googleFileId: 10plKBKgm87p5FFXqiOEI2cpXP3nkTZWM
-
+          googleFileId: 1_Zfxn0dcIQ8M4A_50Sj3bB8pGWvBD678
       - name: create sst spatial iea stautus/trends
         run: python code_gha/SSTspatial/create_oc_sst_S_spatial.py
 
