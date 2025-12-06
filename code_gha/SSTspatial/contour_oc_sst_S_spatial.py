@@ -76,7 +76,7 @@ except OSError:
 
 # length of input variables
 num_season = len(season_lbl)
-num_season = 3
+num_season = 4
 num_ds_var = len(ds_var)
 
 # open the data and contour
