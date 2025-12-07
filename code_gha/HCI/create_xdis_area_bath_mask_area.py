@@ -1,3 +1,4 @@
+import os
 import xarray as xr
 import numpy as np
 import seawater as sw
@@ -36,6 +37,13 @@ dir_out = './data_gha/HCI/'
 # ----------------------------------------------------------------------
 # --END: Change These
 # ----------------------------------------------------------------------
+
+dir_list = os.listdir()
+print("START -------------------------------")
+print("Files and directories in  :")
+print(dir_list)
+
+
 
 # open Bath netcdf file as an xarray
 ds1_bath = xr.open_dataset(fn_bath)
@@ -209,3 +217,9 @@ ds1_out['area_mtrx'] = da4_out
 dis_str = '_'.join(list(map(str,  dis_wnt)))
 fn_out = '{}sst_oi_distance_to_shore_dis_{}km.nc'.format(dir_out, dis_str)
 ds1_out.to_netcdf(fn_out)
+
+
+dir_list_end = os.listdir()
+print("END -------------------------------")
+print("Files and directories in  :")
+print(dir_list_end)
