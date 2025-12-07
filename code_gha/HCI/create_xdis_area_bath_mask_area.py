@@ -43,7 +43,13 @@ print("START -------------------------------")
 print("Files and directories in  :")
 print(dir_list)
 
-
+# directory to save netcdf output
+# check if directory exist, if it doesn't then create
+try:
+    os.makedirs(dir_out)
+except OSError:
+    if not os.path.isdir(dir_out):
+        raise
 
 # open Bath netcdf file as an xarray
 ds1_bath = xr.open_dataset(fn_bath)
