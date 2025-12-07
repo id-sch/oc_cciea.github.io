@@ -1,15 +1,6 @@
 import xarray as xr
 import numpy as np
-import matplotlib.pyplot as plt
 import seawater as sw
-import cartopy.crs as ccrs
-import cartopy.io.shapereader as shpreader
-import cartopy.feature as cfeature
-from C_sw import C_sw
-from matplotlib import gridspec
-from matplotlib import rcParams
-from fun_mkdir import fun_mkdir
-# pylint: disable=C0103
 
 
 
@@ -40,7 +31,7 @@ fn_bath = 'usgsCeSS111_55.25_29.75_-145_-115.nc'
 dis_wnt = [75, 150]
 
 # dir_out
-
+<<dir_out_hci>>
 
 # ----------------------------------------------------------------------
 # --END: Change These
