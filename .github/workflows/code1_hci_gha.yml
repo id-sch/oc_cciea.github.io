@@ -37,7 +37,7 @@ jobs:
           googleFileId: 1dV1Jv0JHXw5YtW0cEYEF7la4HKpiN5Fh
 
       - name: calculate 75 and 150 distance from shore mask
-        run: python create_xdis_area_bath_mask_area
+        run: python code_gha/HCI/create_xdis_area_bath_mask_area
 
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
