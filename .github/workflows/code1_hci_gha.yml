@@ -26,14 +26,14 @@ jobs:
         with:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: download
-          localPath: ./TS_monthly.nc
+          localPath: ./bath.nc
           googleFileId: 1wyguirbmcMo7ypbroZTUEs2LJL3FEhl1
       - name: Download sample SST OI data
         uses: Fork-on-the-Table-Collective/upload-to-download-from-gdrive@v2.0.0
         with:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: download
-          localPath: ./TS_monthly.nc
+          localPath: ./sst_daily_final.nc
           googleFileId: 1dV1Jv0JHXw5YtW0cEYEF7la4HKpiN5Fh
 
       - name: calculate 75 and 150 distance from shore mask

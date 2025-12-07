@@ -26,7 +26,7 @@ ylm2 = 48
 var_sst = ['longitude', 'latitude', 'sst']
 
 # bath file name
-fn_bath = 'usgsCeSS111_55.25_29.75_-145_-115.nc'
+fn_bath = 'bath.nc'
 
 # distance
 dis_wnt = [75, 150]
