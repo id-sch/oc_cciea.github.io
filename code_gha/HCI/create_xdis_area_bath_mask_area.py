@@ -31,7 +31,7 @@ fn_bath = 'usgsCeSS111_55.25_29.75_-145_-115.nc'
 dis_wnt = [75, 150]
 
 # dir_out
-<<dir_out_hci>>
+dir_out = './data_gha/HCI/'
 
 # ----------------------------------------------------------------------
 # --END: Change These
