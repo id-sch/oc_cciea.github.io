@@ -3,8 +3,6 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from fun_pd_df2IEA_fig_blue import fun_pd_df2IEA_fig_blue
-from fun_mkdir import fun_mkdir
-# pylint: disable=C0103
 
 
 # turn of toolbar on fig, set font
