@@ -15,7 +15,7 @@ mpl.rcParams.update({'font.size': 12})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # end year
-2024
+iea_yr = 2024
 
 # regions
 rgn = np.arange(1, 5)
@@ -24,8 +24,8 @@ rgn = np.arange(1, 5)
 dir_iea = 'HCI_coastwide'
 
 # --input directory
-dir_M = '/home/isaac/data_files/Work/IEA/{}/csv_for_erddap/'.format(iea_yr)
-dir_S = '/home/isaac/data_files/Work/IEA/{}/{}/'.format(iea_yr, dir_iea)
+dir_M = './csv_for_erddap/'
+dir_S = './csv_for_erddap/'
 
 # --IEA file names
 file_pre = 'oc_hci'
