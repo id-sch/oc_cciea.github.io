@@ -113,5 +113,5 @@ for i in range(num_data):
 df_flat = list(itertools.chain(*df_all_list))
 ts_lbl_flat = list(itertools.chain(*ts_lbl_list))
 
-fn_out = '{}_S.csv'.format(file_pre, i+1)
-fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_list, lat[0], lon[0], depth, metric_lbl, ts_lbl_rgn, dir_out, fn_out, yr_csv_bgn, yr_csv_end)
+fn_out = '{}_S.csv'.format(file_pre)
+fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_flat, lat[0], lon[0], depth, metric_lbl, ts_lbl_flat, dir_out, fn_out, yr_csv_bgn, yr_csv_end)
