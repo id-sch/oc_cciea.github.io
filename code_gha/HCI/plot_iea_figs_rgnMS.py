@@ -54,11 +54,14 @@ fig_type = '.png'
 # len of input variables
 num_data = len(rgn)
 
+# create plot output directory
+dir_plots = '{}{}/'.format(dir_plot_out, iea_yr)
+
 # check if directory exist, if it doesn't then create
 try:
-    os.makedirs(dir_plot_out)
+    os.makedirs(dir_plots)
 except OSError:
-    if not os.path.isdir(dir_plot_out):
+    if not os.path.isdir(dir_plots):
         raise
 
 # Monthly
@@ -69,7 +72,7 @@ for i in range(num_data):
     plt.clf()
     fun_pd_df2IEA_fig_blue(
         dfM, nr, nc, [i+1], yr_clim_bgn, yr_clim_end, wndw, yy_wnt, marker_flag=0)
-    fn_fig_M = '{}{}_rgn{}_Month{}'.format(dir_plot_out, file_pre, rgn[i], fig_type)
+    fn_fig_M = '{}{}_rgn{}_Month{}'.format(dir_plots, file_pre, rgn[i], fig_type)
     plt.savefig(fn_fig_M, dpi=300, bbox_inches='tight')
 
 
@@ -81,7 +84,7 @@ for i in range(len(ordr_list)):
     plt.clf()
     fun_pd_df2IEA_fig_blue(
         dfS, nr, nc, ordr_list[i], yr_clim_bgn, yr_clim_end, wndw, yy_wnt)
-    fn_fig_S = '{}{}_rgn{}_Season{}'.format(dir_plot_out, file_pre, rgn[i], fig_type)
+    fn_fig_S = '{}{}_rgn{}_Season{}'.format(dir_plots, file_pre, rgn[i], fig_type)
     plt.savefig(fn_fig_S, dpi=300, bbox_inches='tight')
 
 
@@ -92,6 +95,6 @@ fun_pd_df2IEA_fig_blue(dfM, nr, nc, [1, 2, 3, 4], yr_clim_bgn,
 
 rgn_all = '_'.join(rgn.astype('str'))
 fn_fig_M_all = '{}{}_rgns_{}_Monthly{}'.format(
-    dir_plot_out, file_pre, rgn_all, fig_type)
+    dir_plots, file_pre, rgn_all, fig_type)
 
 plt.savefig(fn_fig_M_all, dpi=300, bbox_inches='tight')
