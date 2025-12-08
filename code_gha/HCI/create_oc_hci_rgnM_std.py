@@ -12,7 +12,7 @@ xdis = 150
 # lat_rgn = [[43.5, 47.9], [40, 43.5], [35.5, 40], [30, 35.5]]
 lat_rgn = [[43.5, 48], [40, 43.5], [35.5, 40], [30, 35.5]]
 lat_rgn_lbl = [[43.5, 48], [40, 43.5], [35.5, 40], [30, 35.5]]
-clim_bgn = 1980
+clim_bgn = 1982
 clim_end = 2010
 
 # dir out (need this to set input directory, will be changed later)
