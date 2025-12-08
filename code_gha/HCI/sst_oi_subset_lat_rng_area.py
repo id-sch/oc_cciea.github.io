@@ -11,7 +11,7 @@ import numpy as np
 dis_wnt = [75, 150]
 
 # 2) OI SST monthly means
-fn_sst = '~TS_monthly.nc'
+fn_sst = 'TS_monthly.nc'
 
 # 3)
 # x distance and lat range list
@@ -26,13 +26,20 @@ else:
 var_wnt = 'sst_oi'
 
 # 4) ouput directory
-
+dir_out = './data_gha/HCI/'
 
 # 5) dir input
 dir_in = dir_out
 # ----------------------------------------------------------------------
 # --END: Change These
 # ----------------------------------------------------------------------
+
+dir_list = os.listdir()
+print("START -------------------------------")
+print("Files and directories in  :")
+print(dir_list)
+
+
 # input variable size
 num_xdis_km = len(xdis_km)
 num_lat_rgn = len(lat_rgn)
@@ -106,6 +113,13 @@ for i in range(num_lat_rgn):
         # save to netcdf
         fn_out = '{}{}_lat_{}_{}_xdis_{}km.nc'.format(dir_out, var_wnt, lat_rgn1[0], lat_rgn1[1], xdis1)
         ds1_out.to_netcdf(fn_out)
+
+
+dir_list = os.listdir()
+print("END -------------------------------")
+print("Files and directories in  :")
+print(dir_list)
+
 
 # remove some large files that can not be commit to github
 os.remove("TS_monthly.nc")
