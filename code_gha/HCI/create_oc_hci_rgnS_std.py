@@ -1,3 +1,4 @@
+import itertools
 import pandas as pd
 import numpy as np
 from fun_pd_df2csvR_time import fun_pd_df2csvR_time
@@ -45,6 +46,8 @@ dir_out = './csv_for_erddap/'
 # ----------------------------------------------------------------------
 num_data = len(lat_rgn)
 
+df_all_list = []
+ts_lbl_list = []
 for i in range(num_data):
     # lat region
     lat_rgn1 = lat_rgn[i]
@@ -96,7 +99,7 @@ for i in range(num_data):
     df_list = [dfQ1, dfQ2, dfQ3, dfQ4]
     num_order = len(df_list)
 
-    fn_out = '{}_rgn{}S.csv'.format(file_pre, i+1)
+
 
     depth = 0
     metric_lbl = y_lbl
@@ -104,6 +107,11 @@ for i in range(num_data):
     clmns_iea = ['year', 'time', 'index', 'error', 'SElo', 'SEup',
                  'metric', 'timeseries', 'lat', 'lon', 'depth', 'order']
 
-    fn_out_csv = fun_pd_df2csvR_time(
-        clmns_iea, df_list, lat[0], lon[0], depth, metric_lbl, ts_lbl_rgn,
-        dir_out, fn_out, yr_csv_bgn, yr_csv_end)
+    df_all_list.append(df_list)
+    ts_lbl_list.append(ts_lbl_rgn)
+
+df_flat = list(itertools.chain(*df_all_list))
+ts_lbl_flat = list(itertools.chain(*ts_lbl_list))
+
+fn_out = '{}_S.csv'.format(file_pre, i+1)
+fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_list, lat[0], lon[0], depth, metric_lbl, ts_lbl_rgn, dir_out, fn_out, yr_csv_bgn, yr_csv_end)
