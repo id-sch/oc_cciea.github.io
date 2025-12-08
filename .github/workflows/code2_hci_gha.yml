@@ -42,6 +42,8 @@ jobs:
       - name: create season IEA R CSV
         run: python code_gha/HCI/create_oc_hci_rgnS_std.py
 
+      - name: plot month and season IEA R CSV
+        run: python code_gha/HCI/plot_iea_figs_rgnMS.py
 
       - name: git auto commit -- save distance to shore mask netcdf
         uses: stefanzweifel/git-auto-commit-action@v7
