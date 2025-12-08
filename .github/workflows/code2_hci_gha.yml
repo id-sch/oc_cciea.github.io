@@ -33,5 +33,7 @@ jobs:
       - name: calculate 75 and 150 distance from shore mask
         run: python code_gha/HCI/sst_oi_subset_lat_rng_area.py
 
+      - name: calculate HCI using sst OI
+        run: python calc_hci_coastwide_area.py
       - name: git auto commit -- save distance to shore mask netcdf
         uses: stefanzweifel/git-auto-commit-action@v7
