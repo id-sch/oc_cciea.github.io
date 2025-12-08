@@ -67,11 +67,9 @@ dfM = pd.read_csv(file_M)
 
 for i in range(num_data):
     plt.clf()
-    # --open Monthly
-    fun_pd_df2IEA_fig_blue(dfM, nr, nc, [i+1], yr_clim_bgn, yr_clim_end, wndw, yy_wnt, marker_flag=0)
-
-    fn_fig_M = '{}{}_rgn{}_Month{}'.format(dir_plots, file_pre, rgn[i], fig_type)
-
+    fun_pd_df2IEA_fig_blue(
+        dfM, nr, nc, [i+1], yr_clim_bgn, yr_clim_end, wndw, yy_wnt, marker_flag=0)
+    fn_fig_M = '{}{}_rgn{}_Month{}'.format(dir_plot_out, file_pre, rgn[i], fig_type)
     plt.savefig(fn_fig_M, dpi=300, bbox_inches='tight')
 
 
@@ -80,9 +78,10 @@ file_S = '{}{}_S.csv'.format(dir_S, file_pre)
 dfS = pd.read_csv(file_S)
 ordr_list = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 for i in range(len(ordr_list)):
+    plt.clf()
     fun_pd_df2IEA_fig_blue(
-        df1, nr, nc, ordr_list[i], yr_clim_bgn, yr_clim_end, wndw, yy_wnt)
-    fn_fig_S = '{}{}_rgn{}_Season{}'.format(dir_plots, file_pre, rgn[i], fig_type)
+        dfS, nr, nc, ordr_list[i], yr_clim_bgn, yr_clim_end, wndw, yy_wnt)
+    fn_fig_S = '{}{}_rgn{}_Season{}'.format(dir_plot_out, file_pre, rgn[i], fig_type)
     plt.savefig(fn_fig_S, dpi=300, bbox_inches='tight')
 
 
@@ -93,6 +92,6 @@ fun_pd_df2IEA_fig_blue(dfM, nr, nc, [1, 2, 3, 4], yr_clim_bgn,
 
 rgn_all = '_'.join(rgn.astype('str'))
 fn_fig_M_all = '{}{}_rgns_{}_Monthly{}'.format(
-    dir_plots, file_pre, rgn_all, fig_type)
+    dir_plot_out, file_pre, rgn_all, fig_type)
 
 plt.savefig(fn_fig_M_all, dpi=300, bbox_inches='tight')
