@@ -38,6 +38,8 @@ jobs:
 
       - name: calculate 75 and 150 distance from shore mask
         run: python code_gha/HCI/create_xdis_area_bath_mask_area.py
+      - name: calculate thresholds based on 75km and 1982-2010 clim
+        run: python code_gha/HCI/calc_thresholds_sst_oi_area.py
 
       - name: git auto commit -- save distance to shore mask netcdf
         uses: stefanzweifel/git-auto-commit-action@v7
