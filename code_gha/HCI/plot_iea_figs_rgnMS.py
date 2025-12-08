@@ -56,9 +56,9 @@ num_data = len(rgn)
 
 # check if directory exist, if it doesn't then create
 try:
-    os.makedirs(dir_plots)
+    os.makedirs(dir_plot_out)
 except OSError:
-    if not os.path.isdir(dir_plots):
+    if not os.path.isdir(dir_plot_out):
         raise
 
 # Monthly
