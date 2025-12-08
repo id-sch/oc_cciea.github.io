@@ -123,3 +123,9 @@ print(dir_list)
 
 # remove some large files that can not be commit to github
 os.remove("TS_monthly.nc")
+
+
+dir_list = os.listdir()
+print("END: removed large file  -------------------------------")
+print("Files and directories in  :")
+print(dir_list)
