@@ -55,6 +55,7 @@ clmns_iea = ['year', 'month', 'time', 'index', 'error', 'SElo', 'SEup',
 
 df_list = []
 ts_lbl_rgn = []
+metric_list = []
 for i in range(num_data):
     # lat region
     lat_rgn1 = lat_rgn[i]
