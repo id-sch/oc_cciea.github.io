@@ -1,4 +1,5 @@
 import os
+import itertools
 import xarray as xr
 import pandas as pd
 import numpy as np
@@ -26,7 +27,7 @@ var_wnt = basin_wnt
 att_wnt = ['title']
 
 # --IEA file names
-file_pre = 'oc'
+file_pre = 'oc_basin'
 
 # --IEA file columns
 y_lbl = basin_wnt
@@ -56,6 +57,9 @@ for i in range(num_basin):
         if basin_wnt[i] in files[j]:
             indx.append(j)
 
+df_all_list = []
+ts_lbl_list = []
+metric_list = []
 for i in range(0, num_basin):
     # --create input filename
     file_basin = files[indx[i]]
@@ -105,16 +109,22 @@ for i in range(0, num_basin):
     # --the case of monthly means this list only consists of dfQ, but a
     # --CSV for seasonal means will need a list of 4 pd.df for each season.
     df_list = [dfQ1, dfQ2, dfQ3, dfQ4]
-    num_order = len(df_list)
 
-    # fn_out = file_pre + '_' + re.sub(r'[^\w]', '', basin_wnt[i]) + '.csv'
-    fn_out = '{}_{}_S.csv'.format(file_pre, basin_wnt[i])
+
 
     metric_lbl = y_lbl[i]
     ts_lbl = [ts_lbl1, ts_lbl2, ts_lbl3, ts_lbl4]
     clmns_iea = ['year', 'time', 'index', 'error', 'SElo', 'SEup',
                  'metric', 'timeseries', 'lat', 'lon', 'depth', 'order']
 
-    fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_list, lat, lon, depth,
-                                     metric_lbl, ts_lbl, dir_out, fn_out,
-                                     yr_csv_bgn, yr_csv_end)
+    df_all_list.append(df_list)
+    ts_lbl_list.append(ts_lbl)
+    metric_list.append([metric_lbl, metric_lbl, metric_lbl, metric_lbl])
+
+
+fn_out = '{}_S.csv'.format(file_pre)
+df_flat = list(itertools.chain(*df_all_list))
+ts_lbl_flat = list(itertools.chain(*ts_lbl_list))
+metric_flat = list(itertools.chain(*metric_list))
+
+fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_flat, lat[0], lon[0], depth, metric_flat, ts_lbl_flat, dir_out, fn_out, yr_csv_bgn, yr_csv_end)

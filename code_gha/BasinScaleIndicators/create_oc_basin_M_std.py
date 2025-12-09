@@ -1,3 +1,4 @@
+import itertools
 import os
 import xarray as xr
 import pandas as pd
@@ -57,6 +58,9 @@ for i in range(num_basin):
         if basin_wnt[i] in files[j]:
             indx.append(j)
 
+df_all_list = []
+ts_lbl_list = []
+metric_list = []
 for i in range(0, num_basin):
     # --create input filename
     file_basin = files[indx[i]]
@@ -105,3 +109,14 @@ for i in range(0, num_basin):
     fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_list, lat, lon, depth,
                                      metric_lbl, ts_lbl, dir_out, fn_out,
                                      yr_csv_bgn, yr_csv_end)
+
+metric_list.append([metric_lbl])
+df_all_list.append(df_list)
+ts_lbl_list.append(ts_lbl)
+
+df_flat = list(itertools.chain(*df_all_list))
+ts_lbl_flat = list(itertools.chain(*ts_lbl_list))
+metric_flat = list(itertools.chain(*metric_list))
+
+fn_out = '{}_M_all.csv'.format(file_pre)
+fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_flat, lat, lon, depth, metric_flat, ts_lbl_flat, dir_out, fn_out, yr_csv_bgn, yr_csv_end)
