@@ -92,18 +92,7 @@ for i in range(len(ordr_list)):
     plt.savefig(fn_fig_S, dpi=300, bbox_inches='tight')
 
 # Plot monthly on one figure
-for i in range(0, num_basin):
-    file_M = '{}{}_{}_M.csv'.format(dir_M, file_pre, basin_wnt[i])
-    dfMi = pd.read_csv(file_M)
-    nt = dfMi.shape[0]
-    dfMi['order'].values[0:nt] = i+1
-
-    if i == 0:
-        dfM_all = dfMi
-    else:
-        dfM_all = pd.concat([dfM_all, dfMi], sort=False)
-
-fun_pd_df2IEA_fig_blue(dfM_all, nr, nc, [1, 2, 3], yr_clim_bgn,
+fun_pd_df2IEA_fig_blue(dfM, nr, nc, [1, 2, 3], yr_clim_bgn,
                        yr_clim_end, wndw, yy_wnt, marker_flag=0)
 
 basin_all = '_'.join(basin_wnt)
