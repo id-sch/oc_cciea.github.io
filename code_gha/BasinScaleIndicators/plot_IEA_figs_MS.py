@@ -30,7 +30,8 @@ dir_M = './csv_for_erddap/'
 dir_S = './csv_for_erddap/'
 
 # --IEA file names
-file_pre = 'oc'
+file_pre = 'oc_basin'
+file_pre_pre = 'oc'
 num_pre = len(file_pre)
 
 # --IEA year clim
@@ -67,36 +68,30 @@ except OSError:
     if not os.path.isdir(dir_plots):
         raise
 
-for i in range(0, num_basin):
 
-    # A) Monthly
-    # --open Monthly
-    file_M = '{}{}_{}_M.csv'.format(dir_M, file_pre, basin_wnt[i])
-    dfM = pd.read_csv(file_M)
+# Monthly
+file_M = '{}{}_M.csv'.format(dir_M, file_pre)
+dfM = pd.read_csv(file_M)
+ordr_list = [[1], [2], [3]]
+for i in range(len(ordr_list)):
+    plt.clf()
     fun_pd_df2IEA_fig_blue(
-        dfM, nr, nc, [1], yr_clim_bgn, yr_clim_end, wndw, yy_wnt)
-
-    fn_fig_M = '{}{}_{}_Monthly{}'.format(
-        dir_plots, file_pre, basin_wnt[i], fig_type)
+        dfM, nr, nc, [i], yr_clim_bgn, yr_clim_end, wndw, yy_wnt, marker_flag=0)
+    fn_fig_M = '{}{}_{}_Monthly{}'.format(dir_plots, file_pre_pre, basin_wnt[i], fig_type)
     plt.savefig(fn_fig_M, dpi=300, bbox_inches='tight')
 
-    # B) seasons
-    # --open Seasons
-    file_S = '{}{}_{}_S.csv'.format(dir_S, file_pre, basin_wnt[i])
-
-    dfS = pd.read_csv(file_S)
+# Seasons
+file_S = '{}{}_S.csv'.format(dir_S, file_pre)
+dfS = pd.read_csv(file_S)
+ordr_list = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
+for i in range(len(ordr_list)):
+    plt.clf()
     fun_pd_df2IEA_fig_blue(
-        dfS, nr, nc, [1, 2, 3, 4], yr_clim_bgn, yr_clim_end, wndw, yy_wnt)
-
-    fn_fig_S = '{}{}_{}_Season{}'.format(
-        dir_plots, file_pre, basin_wnt[i], fig_type)
-
+        dfS, nr, nc, ordr_list[i], yr_clim_bgn, yr_clim_end, wndw, yy_wnt)
+    fn_fig_S = '{}{}_{}_Season{}'.format(dir_plots, file_pre_pre, basin_wnt[i], fig_type)
     plt.savefig(fn_fig_S, dpi=300, bbox_inches='tight')
 
-
-# C) all on one fig
-
-# plot monthly on one figure
+# Plot monthly on one figure
 for i in range(0, num_basin):
     file_M = '{}{}_{}_M.csv'.format(dir_M, file_pre, basin_wnt[i])
     dfMi = pd.read_csv(file_M)

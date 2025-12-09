@@ -27,7 +27,7 @@ var_wnt = basin_wnt
 att_wnt = ['title']
 
 # --IEA file names
-file_pre = 'oc_'
+file_pre = 'oc_basin'
 
 # --IEA file columns
 y_lbl = basin_wnt
