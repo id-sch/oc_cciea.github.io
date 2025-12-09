@@ -76,7 +76,7 @@ ordr_list = [[1], [2], [3]]
 for i in range(len(ordr_list)):
     plt.clf()
     fun_pd_df2IEA_fig_blue(
-        dfM, nr, nc, [i], yr_clim_bgn, yr_clim_end, wndw, yy_wnt, marker_flag=0)
+        dfM, nr, nc, ordr_list[i], yr_clim_bgn, yr_clim_end, wndw, yy_wnt, marker_flag=0)
     fn_fig_M = '{}{}_{}_Monthly{}'.format(dir_plots, file_pre_pre, basin_wnt[i], fig_type)
     plt.savefig(fn_fig_M, dpi=300, bbox_inches='tight')
 
