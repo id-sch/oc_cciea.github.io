@@ -1,0 +1,911 @@
+year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
+1950,1950,-1.3433332,0.18502252,-1.5283557,-1.1583108,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1951,1951,-0.51,0.3260368,-0.8360368,-0.18396318,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1952,1952,0.41333333,0.10214367,0.31118965,0.515477,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1953,1953,0.54333335,0.12503333,0.41830003,0.6683667,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1954,1954,0.39333332,0.4104063,-0.017072976,0.8037396,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1955,1955,-0.66333336,0.037859388,-0.70119274,-0.625474,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1956,1956,-0.8333333,0.24826063,-1.081594,-0.5850727,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1957,1957,0.07333333,0.33020195,-0.25686863,0.40353528,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1958,1958,1.5799999,0.27874717,1.3012527,1.8587471,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1959,1959,0.5833333,0.05507572,0.5282576,0.638409,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1960,1960,-0.09,0.017320508,-0.10732051,-0.0726795,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1961,1961,0.036666665,0.0057735024,0.030893162,0.04244017,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1962,1962,-0.21999998,0.019999996,-0.23999998,-0.19999999,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1963,1963,-0.13333334,0.27537853,-0.40871185,0.14204518,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1964,1964,0.60333335,0.47521928,0.12811407,1.0785526,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1965,1965,-0.31333333,0.26159763,-0.57493097,-0.0517357,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1966,1966,1.1733333,0.19502136,0.9783119,1.3683547,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1967,1967,-0.47333333,0.060277127,-0.53361046,-0.4130562,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1968,1968,-0.6666667,0.064291015,-0.7309577,-0.6023757,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1969,1969,1.0566667,0.09451632,0.9621504,1.151183,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1970,1970,0.38,0.11532562,0.26467437,0.49532562,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1971,1971,-1.2866668,0.14468355,-1.4313504,-1.1419832,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1972,1972,-0.33333334,0.38527045,-0.7186038,0.051937103,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1973,1973,1.21,0.6509224,0.5590776,1.8609225,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1974,1974,-1.54,0.30512294,-1.8451229,-1.234877,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1975,1975,-0.58666664,0.056862388,-0.64352906,-0.5298042,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1976,1976,-1.1533333,0.4152509,-1.5685842,-0.7380824,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1977,1977,0.56333333,0.19655363,0.36677969,0.759887,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1978,1978,0.39,0.3160696,0.07393038,0.7060696,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1979,1979,0.1,0.08888195,0.011118054,0.18888195,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1980,1980,0.46333334,0.12503332,0.33830002,0.5883666,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1981,1981,-0.41,0.13076697,-0.54076695,-0.27923304,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1982,1982,0.07,0.12,-0.049999997,0.19,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1983,1983,1.88,0.32186958,1.5581304,2.2018695,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1984,1984,-0.45333335,0.13316658,-0.5864999,-0.32016677,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1985,1985,-0.8866666,0.13868427,-1.0253508,-0.7479823,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1986,1986,-0.42333332,0.09865766,-0.52199095,-0.32467565,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1987,1987,1.16,0.08888199,1.071118,1.2488819,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1988,1988,0.49666667,0.33709544,0.15957123,0.8337621,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1989,1989,-1.4,0.30610457,-1.7061045,-1.0938954,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1990,1990,0.21,0.07,0.13999999,0.28,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1991,1991,0.29666665,0.10016653,0.19650012,0.39683318,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1992,1992,1.6066667,0.11676187,1.4899048,1.7234286,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1993,1993,0.29666665,0.20502032,0.09164633,0.501687,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1994,1994,0.1,0.060827628,0.039172374,0.16082764,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1995,1995,0.7366667,0.21548395,0.5211827,0.95215064,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1996,1996,-0.74666667,0.15502688,-0.9016936,-0.59163976,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1997,1997,-0.32000002,0.20297784,-0.5229778,-0.11702219,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1998,1998,1.87,0.40336084,1.4666392,2.2733607,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1999,1999,-1.3066667,0.24006939,-1.5467361,-1.0665973,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2000,2000,-1.38,0.2961418,-1.6761417,-1.0838583,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2001,2001,-0.5466667,0.122202024,-0.6688687,-0.42446464,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2002,2002,-0.010000001,0.12489996,-0.13489996,0.11489996,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2003,2003,0.6433334,0.2702468,0.37308657,0.9135802,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2004,2004,0.30333334,0.07023769,0.23309565,0.37357104,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2005,2005,0.5566667,0.097125344,0.45954132,0.653792,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2006,2006,-0.73,0.14422207,-0.8742221,-0.58577794,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2007,2007,0.25333336,0.39106694,-0.13773358,0.6444003,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2008,2008,-1.4833332,0.17785764,-1.6611909,-1.3054756,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2009,2009,-0.75,0.12489997,-0.8749,-0.6251,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2010,2010,1.1866666,0.33126023,0.8554064,1.5179268,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2011,2011,-1.18,0.245153,-1.4251529,-0.93484694,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2012,2012,-0.72333336,0.13503088,-0.8583642,-0.5883025,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2013,2013,-0.4,0.051961526,-0.45196152,-0.3480385,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2014,2014,-0.38333333,0.10016652,-0.48349985,-0.2831668,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2015,2015,0.51666665,0.04163332,0.47503334,0.55829996,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2016,2016,2.0666668,0.45445937,1.6122074,2.5211263,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2017,2017,-0.14999999,0.19519222,-0.3451922,0.045192227,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2018,2018,-0.8233333,0.11239812,-0.9357314,-0.71093524,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2019,2019,0.7266667,0.020816663,0.70585,0.7474834,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2020,2020,0.46,0.05291502,0.407085,0.512915,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2021,2021,-0.94,0.10535652,-1.0453565,-0.8346435,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2022,2022,-0.96333337,0.030550508,-0.99388385,-0.9327829,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2023,2023,-0.42,0.2651415,-0.68514144,-0.1548585,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2024,2024,1.4666667,0.32020825,1.1464584,1.786875,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2025,2025,-0.38333333,0.20502031,-0.58835363,-0.17831302,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+1950,1950,-1.0333333,0.16802774,-1.2013611,-0.86530554,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1951,1951,0.37333333,0.20033304,0.17300029,0.5736664,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1952,1952,0.16333334,0.1484363,0.0148970485,0.31176963,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1953,1953,0.7266667,0.05859463,0.66807204,0.78526133,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1954,1954,-0.48333335,0.06658329,-0.5499166,-0.41675007,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1955,1955,-0.77,0.04358898,-0.813589,-0.726411,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1956,1956,-0.5233333,0.015275271,-0.5386086,-0.508058,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1957,1957,0.9166667,0.19502136,0.72164536,1.111688,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1958,1958,0.77,0.14730921,0.6226908,0.91730917,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1959,1959,0.15333334,0.20404248,-0.050709143,0.3573758,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1960,1960,0.026666665,0.0057735024,0.020893164,0.032440167,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1961,1961,0.19666667,0.094516315,0.10215036,0.291183,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1962,1962,-0.24666667,0.04163332,-0.28829998,-0.20503335,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1963,1963,0.36666667,0.13428824,0.23237844,0.5009549,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1964,1964,-0.49666667,0.14433755,-0.6410042,-0.35232913,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1965,1965,0.49,0.32603678,0.16396323,0.8160368,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1966,1966,0.41666666,0.21779197,0.19887468,0.63445866,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1967,1967,-0.23,0.2251666,-0.4551666,-0.0048334002,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1968,1968,-0.06666666,0.36073998,-0.42740664,0.2940733,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1969,1969,0.6033333,0.17009799,0.4332353,0.7734313,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1970,1970,-0.02333334,0.25106442,-0.27439776,0.22773108,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1971,1971,-0.7733334,0.06658328,-0.83991665,-0.7067501,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1972,1972,0.6666667,0.25501636,0.41165033,0.9216831,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1973,1973,-0.50333333,0.3863073,-0.8896406,-0.11702603,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1974,1974,-0.90333337,0.13012815,-1.0334616,-0.7732052,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1975,1975,-0.84666663,0.12583058,-0.9724972,-0.72083604,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1976,1976,-0.26666668,0.21031722,-0.4769839,-0.056349456,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1977,1977,0.26,0.07,0.19,0.32999998,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1978,1978,-0.26,0.06999999,-0.32999998,-0.19,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1979,1979,0.18666667,0.12096832,0.06569835,0.30763498,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1980,1980,0.43999997,0.052915026,0.38708493,0.492915,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1981,1981,-0.30666664,0.056862414,-0.36352906,-0.24980423,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1982,1982,0.61666673,0.13051184,0.4861549,0.74717855,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1983,1983,1.0233333,0.28676352,0.73656976,1.3100969,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1984,1984,-0.46333334,0.041633315,-0.5049667,-0.42170003,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1985,1985,-0.73,0.086602524,-0.8166025,-0.6433975,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1986,1986,-0.120000005,0.080000006,-0.20000002,-0.04,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1987,1987,1.0466667,0.1504438,0.89622295,1.1971105,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1988,1988,-0.83,0.4968903,-1.3268902,-0.33310968,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1989,1989,-0.6033333,0.21594751,-0.8192808,-0.3873858,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1990,1990,0.29666665,0.011547011,0.28511965,0.30821365,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1991,1991,0.44999996,0.19,0.25999996,0.64,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1992,1992,1.0266666,0.28148413,0.7451825,1.3081508,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1993,1993,0.6466667,0.068068594,0.57859814,0.71473527,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1994,1994,0.38,0.06082762,0.31917238,0.4408276,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1995,1995,0.13666667,0.16502525,-0.028358579,0.30169192,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1996,1996,-0.33333334,0.049328815,-0.38266215,-0.28400454,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1997,1997,0.75,0.47000003,0.27999997,1.22,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1998,1998,0.43666664,0.56011903,-0.123452395,0.99678564,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1999,1999,-1.0133333,0.030550476,-1.0438838,-0.98278284,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2000,2000,-0.71999997,0.08544005,-0.80544,-0.6345599,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2001,2001,-0.23666666,0.110604405,-0.34727108,-0.12606226,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2002,2002,0.42666665,0.2250185,0.20164815,0.6516851,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2003,2003,-0.15333332,0.11015141,-0.26348472,-0.04318191,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2004,2004,0.20666666,0.06350853,0.14315814,0.2701752,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2005,2005,0.27666667,0.16041613,0.116250545,0.4370828,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2006,2006,-0.18,0.17349352,-0.3534935,-0.0065064877,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2007,2007,-0.39,0.07549835,-0.46549833,-0.31450164,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2008,2008,-0.82,0.2007486,-1.0207486,-0.6192514,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2009,2009,-0.01333334,0.30566868,-0.31900203,0.29233533,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2010,2010,-0.16000001,0.50507426,-0.6650743,0.34507424,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2011,2011,-0.5733333,0.14640129,-0.7197346,-0.42693204,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2012,2012,-0.24666667,0.23028967,-0.47695634,-0.016377002,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2013,2013,-0.35666668,0.055075698,-0.4117424,-0.30159098,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2014,2014,0.13666666,0.08736895,0.049297705,0.2240356,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2015,2015,0.93666667,0.24006942,0.6965972,1.1767361,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2016,2016,0.42,0.50566787,-0.08566788,0.9256679,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2017,2017,0.27,0.060827628,0.20917238,0.33082765,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2018,2018,-0.24333334,0.24583192,-0.48916525,0.002498582,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2019,2019,0.55,0.10535656,0.44464344,0.6553566,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2020,2020,-0.06333334,0.2454248,-0.30875814,0.18209147,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2021,2021,-0.50666666,0.141892,-0.6485587,-0.36477464,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2022,2022,-0.9666667,0.10692673,-1.0735934,-0.85973996,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2023,2023,0.47,0.3051229,0.16487709,0.7751229,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2024,2024,0.41666666,0.28095075,0.1357159,0.6976174,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+2025,2025,-0.10333333,0.011547003,-0.11488034,-0.091786325,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
+1950,1950,-0.45000002,0.07937256,-0.5293726,-0.37062746,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1951,1951,0.85999995,0.14730921,0.7126907,1.0073092,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1952,1952,0.023333335,0.11676187,-0.09342854,0.1400952,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1953,1953,0.75333333,0.02516609,0.72816724,0.7784994,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1954,1954,-0.7933333,0.13613717,-0.9294705,-0.6571961,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1955,1955,-0.84,0.21931714,-1.0593171,-0.62068284,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1956,1956,-0.5266667,0.058594648,-0.58526134,-0.46807206,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1957,1957,1.3000001,0.043589015,1.2564111,1.3435891,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1958,1958,0.46333334,0.094516315,0.36881703,0.55784965,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1959,1959,-0.18333334,0.095043845,-0.27837718,-0.08828949,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1960,1960,0.21333332,0.07371116,0.13962217,0.28704447,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1961,1961,-0.09666667,0.22188586,-0.31855252,0.1252192,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1962,1962,-0.07333333,0.035118844,-0.10845217,-0.038214486,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1963,1963,1.0733334,0.18903263,0.88430077,1.262366,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1964,1964,-0.67333335,0.08082902,-0.7541624,-0.5925043,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1965,1965,1.5366668,0.31501323,1.2216535,1.85168,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1966,1966,0.10333333,0.14571662,-0.04238329,0.24904996,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1967,1967,-0.13666667,0.17616281,-0.3128295,0.03949614,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1968,1968,0.52,0.065574385,0.4544256,0.5855744,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1969,1969,0.55333334,0.21825063,0.3350827,0.771584,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1970,1970,-0.71999997,0.07810249,-0.79810244,-0.6418975,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1971,1971,-0.7966666,0.025166122,-0.8218327,-0.7715005,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1972,1972,1.36,0.22516663,1.1348333,1.5851667,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1973,1973,-1.2800001,0.17000002,-1.45,-1.1100001,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1974,1974,-0.43666664,0.08326662,-0.5199333,-0.35340002,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1975,1975,-1.2333333,0.12342339,-1.3567567,-1.10991,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1976,1976,0.38333333,0.22188586,0.16144747,0.6052192,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1977,1977,0.44666663,0.1123981,0.3342685,0.55906475,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1978,1978,-0.4,0.034641,-0.434641,-0.365359,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1979,1979,0.17999999,0.1452584,0.034741595,0.32525837,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1980,1980,0.07,0.16370706,-0.09370706,0.23370707,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1981,1981,-0.23666668,0.07094599,-0.30761266,-0.16572069,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1982,1982,1.1466666,0.4005413,0.74612534,1.547208,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1983,1983,-0.07666667,0.38501084,-0.4616775,0.3083442,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1984,1984,-0.23333333,0.070237696,-0.30357105,-0.16309564,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1985,1985,-0.45000002,0.045825757,-0.49582577,-0.40417427,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1986,1986,0.45666668,0.24542479,0.21124189,0.70209146,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1987,1987,1.62,0.0984886,1.5215114,1.7184886,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1988,1988,-1.1999999,0.09539389,-1.2953938,-1.104606,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1989,1989,-0.27333334,0.035118848,-0.3084522,-0.2382145,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1990,1990,0.36666667,0.03214549,0.33452117,0.39881217,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1991,1991,0.66333336,0.058594666,0.6047387,0.721928,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1992,1992,0.11000001,0.2505993,-0.14059928,0.3605993,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1993,1993,0.24000001,0.08544003,0.15455997,0.32544005,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1994,1994,0.47333336,0.06658328,0.40675008,0.53991663,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1995,1995,-0.53000003,0.28513154,-0.81513155,-0.24486849,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1996,1996,-0.31333333,0.04041451,-0.35374784,-0.27291882,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1997,1997,1.8800001,0.27055502,1.6094451,2.1505551,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1998,1998,-1.07,0.26851442,-1.3385144,-0.80148566,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1999,1999,-1.1233333,0.03214547,-1.1554788,-1.0911878,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2000,2000,-0.5366667,0.023094023,-0.5597607,-0.5135727,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2001,2001,-0.13333333,0.055075705,-0.18840903,-0.07825762,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2002,2002,0.8866667,0.11239809,0.7742686,0.9990648,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2003,2003,0.18333332,0.09291573,0.09041759,0.27624905,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2004,2004,0.6033333,0.119303524,0.48402977,0.7226368,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2005,2005,-0.10333333,0.04041452,-0.14374785,-0.06291881,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2006,2006,0.31333336,0.22030284,0.09303053,0.5336362,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2007,2007,-0.81333333,0.25501636,-1.0683497,-0.55831695,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2008,2008,-0.28,0.0781025,-0.3581025,-0.2018975,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2009,2009,0.58,0.13,0.45,0.71,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2010,2010,-1.32,0.25632012,-1.5763202,-1.0636799,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2011,2011,-0.6433334,0.1761628,-0.81949615,-0.4671706,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2012,2012,0.33,0.06928203,0.260718,0.39928204,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2013,2013,-0.32666668,0.070237696,-0.39690438,-0.256429,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2014,2014,0.11666667,0.09865766,0.018009007,0.21532433,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2015,2015,1.8466667,0.3202083,1.5264584,2.166875,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2016,2016,-0.51,0.13747726,-0.64747727,-0.3725227,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2017,2017,-0.11666667,0.2600641,-0.37673077,0.14339742,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2018,2018,0.27,0.20297784,0.067022175,0.47297785,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2019,2019,0.20333333,0.07094599,0.13238734,0.27427933,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2020,2020,-0.6233333,0.24440403,-0.8677373,-0.37892926,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2021,2021,-0.52000004,0.13747728,-0.6574773,-0.38252276,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2022,2022,-0.91,0.099999994,-1.01,-0.81000006,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2023,2023,1.3166667,0.24501695,1.0716498,1.5616837,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2024,2024,-0.093333334,0.12583058,-0.21916391,0.032497242,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2025,2025,-0.32,0.13,-0.45,-0.19,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+1950,1950,-0.61333334,0.18037,-0.7937033,-0.43296334,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1951,1951,1.0,0.1734935,0.8265065,1.1734935,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1952,1952,0.09666667,0.05507571,0.041590963,0.15174238,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1953,1953,0.83,0.017320491,0.81267947,0.8473205,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1954,1954,-0.72,0.055677623,-0.7756777,-0.6643224,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1955,1955,-1.52,0.13228755,-1.6522875,-1.3877125,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1956,1956,-0.42666665,0.0057735145,-0.43244016,-0.42089313,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1957,1957,1.5533333,0.17616282,1.3771704,1.7294961,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1958,1958,0.51666665,0.08621679,0.43044984,0.60288346,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1959,1959,-0.006666666,0.04932883,-0.055995494,0.042662166,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1960,1960,0.123333335,0.07505554,0.048277795,0.19838887,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1961,1961,-0.20333333,0.05131601,-0.25464934,-0.15201733,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1962,1962,-0.32000002,0.105356544,-0.42535657,-0.21464348,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1963,1963,1.3233333,0.04163335,1.2816999,1.3649666,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1964,1964,-0.8,0.02000001,-0.82000005,-0.78,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1965,1965,1.89,0.1473092,1.7426908,2.0373092,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1966,1966,-0.19333334,0.10066447,-0.29399782,-0.092668876,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1967,1967,-0.38666666,0.050332226,-0.43699887,-0.33633444,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1968,1968,0.75333333,0.21594752,0.5373858,0.96928084,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1969,1969,0.76666665,0.12096833,0.6456983,0.887635,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1970,1970,-0.9166667,0.21079214,-1.1274588,-0.70587456,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1971,1971,-0.90333337,0.055075683,-0.9584091,-0.84825766,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1972,1972,2.0166667,0.15373129,1.8629353,2.170398,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1973,1973,-1.8966666,0.16653326,-2.0632,-1.7301334,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1974,1974,-0.6666667,0.07371114,-0.74037784,-0.5929555,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1975,1975,-1.5433334,0.110151425,-1.6534848,-1.433182,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1976,1976,0.84,0.026457522,0.8135424,0.8664575,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1977,1977,0.77666664,0.041633315,0.73503333,0.81829995,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1978,1978,-0.123333335,0.1497776,-0.27311093,0.026444271,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1979,1979,0.53666663,0.096090235,0.4405764,0.6327569,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1980,1980,0.04,0.06244998,-0.022449981,0.10244998,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1981,1981,-0.120000005,0.036055516,-0.15605552,-0.083944485,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1982,1982,2.1266668,0.13796136,1.9887054,2.2646282,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1983,1983,-0.9066667,0.095043845,-1.0017105,-0.81162286,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1984,1984,-0.8733333,0.29280254,-1.1661358,-0.58053076,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1985,1985,-0.32666668,0.049328826,-0.37599552,-0.27733785,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1986,1986,1.1,0.14422207,0.95577794,1.244222,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1987,1987,1.2800001,0.18681543,1.0931847,1.4668155,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1988,1988,-1.71,0.2007486,-1.9107486,-1.5092515,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1989,1989,-0.14333333,0.08621678,-0.22955011,-0.057116553,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1990,1990,0.38666666,0.032145508,0.35452116,0.41881216,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1991,1991,1.1766666,0.3711244,0.80554223,1.547791,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1992,1992,-0.21999998,0.07937254,-0.29937252,-0.14062744,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1993,1993,0.06666667,0.030550506,0.036116164,0.09721717,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1994,1994,0.9466667,0.18339394,0.76327276,1.1300607,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1995,1995,-0.98333335,0.015275238,-0.9986086,-0.9680581,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1996,1996,-0.4466667,0.045092497,-0.49175918,-0.4015742,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1997,1997,2.3733332,0.03785949,2.3354738,2.4111927,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1998,1998,-1.4666667,0.11060441,-1.5772711,-1.3560623,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1999,1999,-1.4566666,0.19502136,-1.651688,-1.2616452,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2000,2000,-0.70666665,0.06658328,-0.7732499,-0.6400834,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2001,2001,-0.31666666,0.030550504,-0.34721717,-0.28611615,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2002,2002,1.2199999,0.08544001,1.1345599,1.30544,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2003,2003,0.33,0.034641016,0.295359,0.36464104,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2004,2004,0.67333335,0.015275238,0.6580581,0.6886086,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2005,2005,-0.56666666,0.27501515,-0.84168184,-0.29165152,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2006,2006,0.8833334,0.09814955,0.78518385,0.9814829,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2007,2007,-1.48,0.13114877,-1.6111488,-1.3488512,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2008,2008,-0.54333335,0.1900877,-0.7334211,-0.35324565,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2009,2009,1.31,0.2783882,1.0316117,1.5883882,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2010,2010,-1.6233333,0.028867485,-1.6522008,-1.5944659,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2011,2011,-1.0466666,0.040414546,-1.0870812,-1.006252,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2012,2012,0.036666673,0.24027762,-0.20361094,0.27694428,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2013,2013,-0.20666666,0.05507571,-0.26174238,-0.15159096,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2014,2014,0.59666663,0.092915736,0.5037509,0.68958235,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2015,2015,2.5433333,0.112398095,2.4309351,2.6557314,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2016,2016,-0.64000005,0.07,-0.71000004,-0.57000005,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2017,2017,-0.82,0.16093479,-0.9809348,-0.6590652,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2018,2018,0.8233333,0.07094598,0.75238734,0.8942793,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2019,2019,0.47000003,0.10583006,0.36416996,0.5758301,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2020,2020,-1.21,0.05291502,-1.262915,-1.1570851,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2021,2021,-0.92333335,0.09814955,-1.021483,-0.8251838,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2022,2022,-0.91333336,0.08020808,-0.9935414,-0.8331253,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2023,2023,1.8833333,0.090737745,1.7925956,1.974071,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2024,2024,-0.38666666,0.1357694,-0.522436,-0.25089726,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+1950,1950,-1.91,0.25159496,-2.1615949,-1.6584051,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1951,1951,-1.3666667,0.2227854,-1.589452,-1.1438813,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1952,1952,-1.6033334,0.5325724,-2.1359057,-1.070761,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1953,1953,-0.4,0.42790186,-0.82790184,0.027901858,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1954,1954,-0.8566666,0.15307948,-1.0097461,-0.7035872,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1955,1955,-0.73,0.4782259,-1.208226,-0.25177413,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1956,1956,-2.2833333,0.30892298,-2.5922563,-1.9744103,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1957,1957,-1.2199999,0.43588987,-1.6558897,-0.78411007,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1958,1958,0.8966667,0.17214338,0.7245233,1.0688101,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1959,1959,0.5833333,0.4908496,0.0924837,1.074183,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1960,1960,0.51666665,0.20008333,0.31658334,0.71674997,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1961,1961,1.06,0.07810249,0.9818975,1.1381024,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1962,1962,-0.99,0.11357816,-1.1035782,-0.87642187,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1963,1963,-0.12666667,0.13868429,-0.26535094,0.012017623,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1964,1964,-0.0033333302,0.4588391,-0.46217242,0.45550576,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1965,1965,-0.59000003,0.46130252,-1.0513026,-0.12869751,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1966,1966,-0.48,0.2364318,-0.7164318,-0.24356818,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1967,1967,-0.37,0.2381176,-0.6081176,-0.1318824,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1968,1968,-0.39000002,0.42930177,-0.8193018,0.039301753,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1969,1969,-0.5,0.15524173,-0.6552417,-0.34475827,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1970,1970,1.3566666,0.107857965,1.2488086,1.4645245,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1971,1971,-1.3166666,0.06027714,-1.3769437,-1.2563895,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1972,1972,-1.5666666,0.3256276,-1.8922942,-1.241039,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1973,1973,-0.06999999,0.25,-0.32,0.18,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1974,1974,-1.0799999,0.22068073,-1.3006806,-0.8593192,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1975,1975,-0.65333337,0.10263202,-0.7559654,-0.5507013,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1976,1976,-1.0133333,0.10016652,-1.1134999,-0.9131668,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1977,1977,1.3833333,0.3564174,1.0269159,1.7397507,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1978,1978,1.1133333,0.37287176,0.7404616,1.4862051,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1979,1979,-0.42333332,0.3962743,-0.8196076,-0.027059019,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1980,1980,0.89000005,0.38431755,0.50568247,1.2743176,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1981,1981,1.4466667,0.16563013,1.2810366,1.6122968,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1982,1982,0.14,0.15132746,-0.01132746,0.29132748,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1983,1983,1.4900001,0.7450503,0.7449498,2.2350504,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1984,1984,1.5133333,0.21571586,1.2976174,1.7290492,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1985,1985,0.51,0.41904655,0.09095344,0.9290465,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1986,1986,1.5333333,0.42712218,1.1062112,1.9604554,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1987,1987,1.8266667,0.13650398,1.6901628,1.9631706,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1988,1988,1.07,0.18734995,0.88265014,1.25735,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1989,1989,-0.96000004,0.16999999,-1.13,-0.7900001,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1990,1990,-0.5233333,0.19553345,-0.71886677,-0.32779986,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1991,1991,-0.9866667,0.509346,-1.4960127,-0.47732067,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1992,1992,0.41,0.09539392,0.31460607,0.5053939,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1993,1993,0.37333333,0.3365016,0.036831737,0.70983493,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1994,1994,0.69,0.24576414,0.44423586,0.93576413,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1995,1995,0.38333333,0.67950964,-0.2961763,1.062843,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1996,1996,1.0333333,0.12662281,0.9067105,1.1599561,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1997,1997,0.7166667,0.12503333,0.5916334,0.8417,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1998,1998,1.9433333,0.29955524,1.6437781,2.2428885,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1999,1999,-0.40666667,0.08144528,-0.48811194,-0.3252214,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2000,2000,-0.81,0.8404166,-1.6504166,0.030416608,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2001,2001,0.58,0.2455606,0.3344394,0.82556057,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2002,2002,-0.19333333,0.42335957,-0.6166929,0.23002625,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2003,2003,1.79,0.1345363,1.6554637,1.9245362,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2004,2004,0.25666666,0.27970222,-0.023035556,0.53636885,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2005,2005,0.54,0.5284884,0.011511624,1.0684884,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2006,2006,0.57,0.5288667,0.041133285,1.0988667,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2007,2007,-0.16000001,0.16093478,-0.32093477,0.00093476474,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2008,2008,-0.92333335,0.2468468,-1.1701801,-0.67648655,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2009,2009,-1.41,0.09539395,-1.5053939,-1.3146061,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2010,2010,0.7733333,0.16653328,0.6068,0.9398666,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2011,2011,-1.0266666,0.34645826,-1.3731248,-0.6802084,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2012,2012,-1.1533333,0.36501145,-1.5183448,-0.78832185,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2013,2013,-0.7266666,0.075718775,-0.8023854,-0.65094787,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2014,2014,-0.050000012,0.6726812,-0.7226812,0.6226812,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2015,2015,1.6766666,0.04725818,1.6294085,1.7239248,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2016,2016,1.8499999,0.5411099,1.30889,2.39111,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2017,2017,0.6433334,0.18448126,0.4588521,0.82781464,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2018,2018,0.10333333,0.33501244,-0.23167911,0.43834576,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2019,2019,0.089999996,0.21656407,-0.12656409,0.30656406,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2020,2020,-0.9066667,0.08386496,-0.9905317,-0.8228017,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2021,2021,-0.7133333,0.3350124,-1.0483457,-0.3783209,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2022,2022,-1.4866667,0.38214308,-1.8688097,-1.1045237,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2023,2023,-1.2133334,0.37072,-1.5840534,-0.84261334,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2024,2024,-0.61333334,0.21501939,-0.82835275,-0.39831394,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2025,2025,-0.65333337,0.22143471,-0.8747681,-0.43189865,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+1950,1950,-2.1899998,0.5716642,-2.761664,-1.6183356,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1951,1951,-1.1133333,0.24131583,-1.3546492,-0.8720175,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1952,1952,-1.5833334,0.09451636,-1.6778498,-1.488817,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1953,1953,-0.25333333,0.2318045,-0.48513782,-0.021528825,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1954,1954,-0.37333333,0.7735847,-1.146918,0.4002514,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1955,1955,-1.8433332,0.26274198,-2.1060753,-1.5805912,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1956,1956,-2.0233333,0.4292241,-2.4525573,-1.5941092,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1957,1957,0.27666667,0.9127066,-0.63604,1.1893733,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1958,1958,1.2766666,0.3784618,0.8982048,1.6551285,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1959,1959,0.13,0.08888195,0.041118048,0.21888193,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1960,1960,0.77,0.2505993,0.5194007,1.0205992,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1961,1961,-0.053333323,0.6132971,-0.66663045,0.55996376,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1962,1962,-1.2733334,0.5244362,-1.7977695,-0.74889725,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1963,1963,-0.67666674,0.43466464,-1.1113313,-0.2420021,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1964,1964,-1.3266667,0.6585843,-1.985251,-0.6680824,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1965,1965,-0.39999998,0.35679126,-0.75679123,-0.04320872,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1966,1966,-0.23666666,0.2706166,-0.5072833,0.033949926,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1967,1967,-1.3333334,0.3407834,-1.6741167,-0.99255,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1968,1968,-0.46,0.3407345,-0.8007345,-0.1192655,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1969,1969,0.080000006,0.82286084,-0.74286085,0.9028608,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1970,1970,-0.02333332,0.59281814,-0.61615145,0.56948483,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1971,1971,-1.4200001,0.13228758,-1.5522877,-1.2877125,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1972,1972,-1.5933332,0.24337894,-1.8367121,-1.3499544,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1973,1973,-0.8866667,0.12858202,-1.0152488,-0.7580847,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1974,1974,-0.48,0.052915026,-0.532915,-0.42708495,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1975,1975,-1.48,0.16093475,-1.6409347,-1.3190653,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1976,1976,-0.90000004,0.14933182,-1.0493319,-0.7506682,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1977,1977,0.21333332,0.13316657,0.08016676,0.3464999,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1978,1978,0.96,0.38301432,0.57698566,1.3430142,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1979,1979,0.5,0.33151168,0.16848832,0.8315117,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1980,1980,0.84,0.9613012,-0.121301234,1.8013012,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1981,1981,1.64,0.21633305,1.423667,1.856333,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1982,1982,-0.4666667,0.23965254,-0.7063192,-0.22701415,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1983,1983,1.9200001,0.31,1.6100001,2.23,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1984,1984,0.8333333,0.7332349,0.10009843,1.5665681,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1985,1985,0.04333334,0.3251666,-0.28183326,0.36849996,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1986,1986,1.1133333,0.2640707,0.84926265,1.377404,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1987,1987,1.4966666,0.59802455,0.898642,2.094691,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1988,1988,0.93666667,0.12741008,0.80925655,1.0640768,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1989,1989,0.10666666,0.070237696,0.036428966,0.17690435,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1990,1990,0.16666667,0.17785762,-0.011190951,0.3445243,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1991,1991,-1.3166666,0.47920075,-1.7958673,-0.8374659,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1992,1992,1.2966667,0.3426855,0.9539813,1.6393522,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1993,1993,1.9100002,0.5121523,1.3978479,2.4221525,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1994,1994,0.62666667,0.38734135,0.23932531,1.014008,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1995,1995,1.29,0.23259409,1.0574058,1.5225941,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1996,1996,1.5966667,0.5192624,1.0774043,2.1159291,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1997,1997,1.8366667,0.76500535,1.0716614,2.6016722,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1998,1998,0.37666667,0.5036202,-0.12695354,0.8802869,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1999,1999,-1.4566666,0.36610565,-1.8227723,-1.0905609,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2000,2000,-0.23,0.16703293,-0.39703292,-0.06296708,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2001,2001,-0.50333333,0.13650396,-0.63983727,-0.36682937,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2002,2002,-0.65333337,0.19425069,-0.84758407,-0.45908266,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2003,2003,0.46666667,0.5161718,-0.049505144,0.9828385,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2004,2004,0.35333332,0.5493026,-0.19596925,0.90263593,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2005,2005,1.0133333,0.41645327,0.5968801,1.4297866,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2006,2006,0.34,0.18520258,0.15479742,0.5252026,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2007,2007,0.28333333,0.056862414,0.22647092,0.34019575,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2008,2008,-1.1899999,0.26851445,-1.4585145,-0.9214855,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2009,2009,-0.90000004,0.55054516,-1.4505452,-0.34945488,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2010,2010,0.42,0.51176167,-0.09176168,0.9317616,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2011,2011,-0.66,0.28930953,-0.9493096,-0.3706905,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2012,2012,-0.85666674,0.4669404,-1.3236072,-0.38972634,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2013,2013,-0.42666665,0.55075705,-0.97742367,0.1240904,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2014,2014,0.64666665,0.85043126,-0.20376462,1.497098,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2015,2015,0.98,0.2487971,0.7312029,1.2287971,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2016,2016,1.84,0.7302055,1.1097946,2.5702055,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2017,2017,0.89000005,0.2882707,0.60172933,1.1782708,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2018,2018,-0.25333333,0.2657693,-0.51910263,0.012435973,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2019,2019,0.4333333,0.2977135,0.13561982,0.7310468,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2020,2020,-0.50333333,0.31942657,-0.82275987,-0.18390676,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2021,2021,-1.3966666,0.17616275,-1.5728294,-1.2205039,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2022,2022,-1.54,0.27055496,-1.810555,-1.269445,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2023,2023,-1.9200001,0.24637371,-2.1663737,-1.6736264,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2024,2024,-1.8733333,0.71626353,-2.5895967,-1.1570698,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2025,2025,-1.3466667,0.8980163,-2.244683,-0.44865042,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+1950,1950,-2.4766667,0.59969443,-3.0763612,-1.8769722,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1951,1951,-0.6766667,0.7350057,-1.4116724,0.058339,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1952,1952,-1.1766667,0.38135722,-1.5580239,-0.79530954,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1953,1953,-0.44999996,0.59101605,-1.041016,0.1410161,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1954,1954,-0.40333334,0.5050083,-0.90834165,0.101674944,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1955,1955,-2.3999999,0.13747726,-2.537477,-2.2625227,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1956,1956,-0.93333334,0.65002567,-1.583359,-0.28330767,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1957,1957,0.89333326,0.79575956,0.0975737,1.6890929,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1958,1958,0.9066666,0.33471382,0.57195276,1.2413805,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1959,1959,-0.27,0.09848858,-0.36848858,-0.17151144,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1960,1960,-0.31333333,0.35557467,-0.668908,0.042241335,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1961,1961,-0.8533333,0.21548393,-1.0688173,-0.63784933,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1962,1962,-1.35,0.60398674,-1.9539868,-0.7460133,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1963,1963,-0.38333336,1.2298509,-1.6131842,0.84651756,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1964,1964,-1.1633333,0.23797756,-1.4013109,-0.92535573,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1965,1965,0.31,0.8448076,-0.5348076,1.1548076,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1966,1966,0.0,0.08888195,-0.08888195,0.08888195,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1967,1967,-1.2433333,0.50619495,-1.7495283,-0.7371384,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1968,1968,0.31666666,0.1703917,0.14627497,0.48705834,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1969,1969,-0.48333335,0.2514624,-0.73479575,-0.23187095,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1970,1970,-1.1466666,0.42146567,-1.5681323,-0.725201,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1971,1971,-0.6933333,1.2221429,-1.9154763,0.5288096,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1972,1972,-0.24666668,0.8346456,-1.0813123,0.58797896,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1973,1973,-0.6133333,0.2214347,-0.834768,-0.39189857,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1974,1974,0.28333333,0.3271595,-0.043826163,0.6104928,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1975,1975,-0.8966667,0.29365513,-1.1903218,-0.6030116,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1976,1976,1.0033332,0.42015868,0.5831745,1.423492,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1977,1977,0.123333335,0.38397047,-0.26063713,0.50730383,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1978,1978,-0.71000004,0.43312818,-1.1431282,-0.27687186,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1979,1979,0.66,0.3724245,0.2875755,1.0324246,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1980,1980,0.21666665,0.065064065,0.1516026,0.2817307,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1981,1981,0.74666667,0.39004272,0.35662395,1.1367095,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1982,1982,0.7833333,0.24090105,0.54243225,1.0242343,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1983,1983,1.85,0.9924213,0.8575787,2.8424213,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1984,1984,0.43666664,0.26576933,0.1708973,0.702436,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1985,1985,0.75,0.17000002,0.58,0.92,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1986,1986,0.75666666,0.6530952,0.103571475,1.4097619,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1987,1987,2.4366667,0.16862197,2.2680447,2.6052887,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1988,1988,0.07999999,0.39127994,-0.31127995,0.47127992,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1989,1989,0.13666667,0.59534305,-0.4586764,0.7320097,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1990,1990,0.11666667,0.02081666,0.095850006,0.13748333,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1991,1991,-0.20666666,0.9816992,-1.1883659,0.7750326,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1992,1992,1.2633333,0.4454586,0.8178747,1.708792,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1993,1993,1.85,0.36864614,1.4813539,2.218646,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1994,1994,-0.77666664,0.30435723,-1.0810239,-0.4723094,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1995,1995,1.2633333,0.566598,0.6967353,1.8299313,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1996,1996,0.27,0.48538646,-0.21538645,0.7553865,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1997,1997,2.0933332,0.42770702,1.6656263,2.5210402,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1998,1998,-0.33,0.3934463,-0.7234463,0.06344628,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1999,1999,-1.1566666,0.115902215,-1.2725688,-1.0407645,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2000,2000,-1.0,0.11789826,-1.1178982,-0.8821017,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2001,2001,-1.1833334,0.36896253,-1.5522959,-0.8143709,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2002,2002,0.19333333,0.34847286,-0.15513954,0.5418062,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2003,2003,0.6833334,0.41064993,0.27268347,1.0939833,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2004,2004,0.21333332,0.2254625,-0.012129173,0.4387958,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2005,2005,-0.13000001,0.4121893,-0.5421893,0.2821893,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2006,2006,-0.076666676,0.886698,-0.96336466,0.81003135,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2007,2007,0.33333334,0.74191195,-0.4085786,1.0752453,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2008,2008,-1.1533333,0.14189196,-1.2952253,-1.0114413,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2009,2009,0.33333334,0.61158264,-0.2782493,0.944916,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2010,2010,-1.4899999,0.23302363,-1.7230235,-1.2569762,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2011,2011,-1.8366667,0.02081664,-1.8574834,-1.81585,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2012,2012,-1.7800001,0.21656407,-1.9965641,-1.563436,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2013,2013,-0.96000004,0.30643106,-1.2664311,-0.653569,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2014,2014,0.5833333,0.14294522,0.44038808,0.72627854,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2015,2015,1.4233333,0.13576943,1.2875638,1.5591028,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2016,2016,0.07,0.59573483,-0.52573484,0.6657348,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2017,2017,0.046666667,0.2307235,-0.18405683,0.27739018,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2018,2018,0.0066666678,0.07767453,-0.07100786,0.0843412,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2019,2019,0.47666666,0.2514624,0.22520426,0.728129,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2020,2020,-0.8533333,0.10016652,-0.9534998,-0.7531668,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2021,2021,-1.18,0.617333,-1.797333,-0.56266695,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2022,2022,-2.02,0.23579648,-2.2557964,-1.7842035,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2023,2023,-1.89,0.23259415,-2.122594,-1.6574059,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2024,2024,-2.1633334,0.415251,-2.5785844,-1.7480824,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2025,2025,-2.7466667,0.76107377,-3.5077405,-1.9855928,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+1950,1950,-1.4,0.2905168,-1.6905167,-1.1094832,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1951,1951,-0.6933333,0.7523518,-1.4456851,0.059018493,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1952,1952,-0.5233334,0.21733233,-0.7406657,-0.30600104,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1953,1953,-0.48666665,0.50856,-0.9952266,0.021893352,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1954,1954,0.32333335,0.33975482,-0.016421467,0.6630882,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1955,1955,-2.5900002,0.49507576,-3.0850759,-2.0949244,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1956,1956,-1.7233334,0.4441096,-2.167443,-1.2792238,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1957,1957,0.95666665,0.63121575,0.3254509,1.5878824,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1958,1958,0.68,0.43301266,0.24698734,1.1130127,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1959,1959,0.98,0.13892443,0.8410756,1.1189245,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1960,1960,-0.00666667,0.16502525,-0.17169192,0.15835857,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1961,1961,-1.5733334,0.28041637,-1.8537498,-1.292917,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1962,1962,-0.72333336,0.6985938,-1.4219272,-0.024739563,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1963,1963,0.13,0.3764306,-0.2464306,0.5064306,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1964,1964,-0.69,0.11532564,-0.8053256,-0.57467437,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1965,1965,0.39333332,0.16072752,0.2326058,0.5540608,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1966,1966,-0.40666667,0.1942507,-0.60091734,-0.21241596,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1967,1967,-0.31,0.51643,-0.82643,0.20643002,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1968,1968,0.13,0.12288206,0.0071179345,0.25288206,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1969,1969,1.13,0.24248709,0.8875129,1.3724871,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1970,1970,-0.9766667,0.12342342,-1.1000901,-0.8532433,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1971,1971,-1.0,0.8982205,-1.8982205,-0.10177952,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1972,1972,0.13333334,0.19399312,-0.06065978,0.32732648,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1973,1973,-0.94666666,0.16802776,-1.1146944,-0.7786389,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1974,1974,0.29999998,0.23430748,0.0656925,0.5343075,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1975,1975,-1.4533334,0.1001665,-1.5534999,-1.3531668,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1976,1976,1.4499999,0.11789821,1.3321017,1.5678982,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1977,1977,-0.086666666,0.34428668,-0.43095335,0.25762,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1978,1978,-0.06666666,0.36143234,-0.428099,0.29476568,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1979,1979,0.88000005,0.5345091,0.34549093,1.4145092,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1980,1980,1.0233334,0.42003968,0.6032938,1.4433731,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1981,1981,0.51,0.43965897,0.07034102,0.949659,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1982,1982,0.27666667,0.4140451,-0.13737842,0.69071174,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1983,1983,1.3433334,0.37004504,0.9732883,1.7133784,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1984,1984,0.59666663,0.080829054,0.51583755,0.6774957,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1985,1985,0.030000001,0.5758472,-0.5458472,0.60584724,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1986,1986,1.4733334,0.28867513,1.1846583,1.7620084,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1987,1987,1.4166666,0.03511887,1.3815478,1.4517854,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1988,1988,0.02,0.072111025,-0.052111026,0.09211102,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1989,1989,-0.4033333,0.33531082,-0.7386441,-0.06802249,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1990,1990,-1.3933334,0.6434542,-2.0367875,-0.74987924,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1991,1991,0.23,0.3235738,-0.093573794,0.5535738,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1992,1992,1.07,0.48867166,0.5813284,1.5586717,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1993,1993,1.0966667,0.35529333,0.74137336,1.4519601,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1994,1994,-1.3666667,0.6158192,-1.9824859,-0.75084746,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1995,1995,0.55333334,0.35725808,0.19607526,0.9105914,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1996,1996,0.41333333,0.26839027,0.14494306,0.6817236,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1997,1997,1.7566667,0.33501235,1.4216543,2.091679,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1998,1998,-0.82,0.60008335,-1.4200833,-0.21991664,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1999,1999,-1.7033334,0.23115647,-1.9344898,-1.4721769,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2000,2000,-0.53000003,0.67446274,-1.2044628,0.1444627,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2001,2001,-0.68333334,0.29263172,-0.975965,-0.39070162,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2002,2002,1.15,0.8190238,0.3309762,1.9690237,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2003,2003,0.28333333,0.6700249,-0.38669154,0.9533582,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2004,2004,-0.57666665,0.31469563,-0.8913623,-0.26197103,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2005,2005,-1.0166668,0.96707463,-1.9837414,-0.049592137,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2006,2006,-0.18,0.22605309,-0.4060531,0.04605308,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2007,2007,-1.2366667,0.5887558,-1.8254225,-0.6479109,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2008,2008,-1.1866666,0.15044382,-1.3371104,-1.0362228,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2009,2009,0.020000005,0.44305757,-0.42305756,0.46305758,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2010,2010,-1.2066666,0.3785939,-1.5852605,-0.82807267,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2011,2011,-2.05,0.5632051,-2.613205,-1.4867948,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2012,2012,-0.58666664,0.37634206,-0.9630087,-0.21032459,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2013,2013,-1.0833334,0.140119,-1.2234523,-0.94321436,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2014,2014,1.57,0.2773085,1.2926916,1.8473085,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2015,2015,0.69000006,0.3637307,0.32626936,1.0537307,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2016,2016,0.67333335,0.67950964,-0.006176293,1.352843,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2017,2017,-0.23666666,0.18147545,-0.4181421,-0.05519122,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2018,2018,-0.35999998,0.2487971,-0.6087971,-0.11120288,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2019,2019,-0.37,0.38,-0.75,0.00999999,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2020,2020,-1.1333333,0.6074811,-1.7408144,-0.5258522,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2021,2021,-2.3166666,0.1903506,-2.5070171,-2.126316,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2022,2022,-1.8699999,0.31953087,-2.1895308,-1.550469,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2023,2023,-1.3866667,0.19655366,-1.5832204,-1.190113,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2024,2024,-2.3133333,0.6603282,-2.9736614,-1.6530051,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2025,2025,-2.1,nan,nan,nan,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+1950,1950,-1.5330874,0.6163296,-2.149417,-0.91675776,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1951,1951,-0.48729885,0.078226455,-0.5655253,-0.4090724,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1952,1952,-1.0318562,0.33668792,-1.3685441,-0.69516826,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1953,1953,0.96975213,0.23574166,0.73401046,1.2054938,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1954,1954,0.7766149,0.6046384,0.1719765,1.3812532,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1955,1955,-0.046348885,0.3230724,-0.3694213,0.2767235,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1956,1956,0.0017620791,0.13041426,-0.12865219,0.13217634,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1957,1957,-1.5232301,0.37867063,-1.9019008,-1.1445594,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1958,1958,-0.2961555,0.74107516,-1.0372307,0.44491965,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1959,1959,-0.2866417,0.3682159,-0.6548576,0.0815742,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1960,1960,0.89940906,0.10373551,0.79567355,1.0031445,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1961,1961,1.4039993,0.32539254,1.0786068,1.7293918,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1962,1962,-0.19423051,0.3931089,-0.5873394,0.1988784,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1963,1963,-0.72978765,0.4145822,-1.1443698,-0.31520545,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1964,1964,0.5723484,0.43449527,0.13785315,1.0068437,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1965,1965,-0.796464,0.17040661,-0.96687067,-0.6260574,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1966,1966,-0.67886466,0.40168583,-1.0805504,-0.27717882,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1967,1967,-0.8217694,0.26517043,-1.0869398,-0.556599,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1968,1968,-0.67467445,0.07924582,-0.75392026,-0.59542865,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1969,1969,-1.3432678,1.0531578,-2.3964257,-0.29011,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1970,1970,-0.30853724,0.11105287,-0.41959012,-0.19748437,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1971,1971,0.10396776,0.3300223,-0.22605455,0.43399006,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1972,1972,-0.54435503,0.14333667,-0.6876917,-0.40101838,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1973,1973,-0.20803551,0.25607046,-0.46410596,0.04803495,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1974,1974,-0.47200668,0.49417982,-0.9661865,0.022173136,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1975,1975,0.77983546,0.18173346,0.598102,0.96156895,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1976,1976,1.3137162,0.32142496,0.9922912,1.6351411,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1977,1977,1.6517701,0.30898458,1.3427856,1.9607546,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1978,1978,1.0252669,0.35458007,0.67068684,1.3798469,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1979,1979,-0.4589715,0.20359397,-0.66256547,-0.25537753,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1980,1980,-1.5920871,0.39245743,-1.9845445,-1.1996298,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1981,1981,-0.6708967,0.39703277,-1.0679295,-0.27386394,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1982,1982,-0.5646991,0.34022248,-0.9049216,-0.22447664,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1983,1983,0.5029785,0.09071779,0.4122607,0.5936963,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1984,1984,0.30158308,0.4749199,-0.1733368,0.77650297,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1985,1985,0.16356674,0.20298956,-0.039422825,0.3665563,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1986,1986,-0.89467174,0.5034555,-1.3981273,-0.39121622,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1987,1987,0.5798568,0.25818822,0.3216686,0.838045,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1988,1988,0.9567278,0.1544846,0.80224323,1.1112124,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1989,1989,0.9678874,0.32712656,0.64076084,1.2950139,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1990,1990,0.21377109,0.46887144,-0.25510037,0.6826425,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1991,1991,-0.6185782,0.2737773,-0.8923555,-0.3448009,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1992,1992,-0.2614186,0.6783225,-0.93974113,0.41690388,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1993,1993,-2.2332375,0.5434623,-2.7766998,-1.6897752,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1994,1994,-1.896156,0.07146057,-1.9676166,-1.8246953,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1995,1995,-1.3715186,0.79490685,-2.1664255,-0.57661176,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1996,1996,-0.94688183,0.27092662,-1.2178085,-0.6759552,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1997,1997,-1.1237828,0.5111821,-1.634965,-0.6126006,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1998,1998,1.107097,0.7106133,0.39648372,1.8177104,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1999,1999,1.7870941,0.63182104,1.1552731,2.4189153,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2000,2000,1.8924457,0.42273605,1.4697096,2.3151817,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2001,2001,2.735585,0.3040101,2.4315748,3.0395951,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2002,2002,1.97993,0.17182541,1.8081046,2.1517553,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2003,2003,1.4841534,0.48834184,0.9958116,1.9724952,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2004,2004,0.43839228,0.20676321,0.23162907,0.6451555,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2005,2005,-1.6537172,0.25825706,-1.9119742,-1.3954601,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2006,2006,-0.8010473,0.14048082,-0.94152814,-0.6605665,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2007,2007,-0.31563357,0.30787364,-0.6235072,-0.0077599287,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2008,2008,1.1262932,0.29524153,0.83105165,1.4215348,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2009,2009,0.5381058,0.41719368,0.120912105,0.9552995,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2010,2010,1.8371453,0.18607613,1.6510692,2.0232215,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2011,2011,0.54700536,0.5190161,0.027989268,1.0660214,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2012,2012,0.8062091,0.1986565,0.6075526,1.0048656,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2013,2013,0.98359305,0.25291917,0.7306739,1.2365122,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2014,2014,-0.39803028,0.17374258,-0.5717729,-0.2242877,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2015,2015,-1.1258788,0.30326742,-1.4291463,-0.8226114,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2016,2016,0.6113371,0.3437481,0.26758903,0.9550852,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2017,2017,-0.54555136,0.3366278,-0.88217914,-0.20892355,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2018,2018,-1.9368187,0.41006854,-2.3468874,-1.5267502,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2019,2019,-1.8249855,0.86898667,-2.693972,-0.95599884,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2020,2020,-1.9562029,0.40416706,-2.36037,-1.5520358,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2021,2021,-0.8732825,0.24586362,-1.1191461,-0.6274189,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2022,2022,-1.5375262,0.5059414,-2.0434675,-1.0315849,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2023,2023,-1.9970903,0.6351648,-2.632255,-1.3619256,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2024,2024,-1.7361526,0.18670404,-1.9228567,-1.5494486,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+2025,2025,-2.1925788,0.64505166,-2.8376305,-1.5475271,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
+1950,1950,-0.69128484,0.14747146,-0.8387563,-0.54381335,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1951,1951,-1.0225977,0.4390891,-1.4616867,-0.5835086,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1952,1952,-0.67762804,0.27308095,-0.950709,-0.4045471,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1953,1953,1.1925453,0.11806722,1.074478,1.3106126,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1954,1954,-0.11939754,0.27815682,-0.39755437,0.15875927,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1955,1955,0.09540983,0.14652047,-0.051110633,0.2419303,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1956,1956,0.19159655,0.25825417,-0.06665762,0.44985074,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1957,1957,-1.1539115,0.109272465,-1.263184,-1.044639,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1958,1958,-0.76458764,0.07484879,-0.8394364,-0.68973887,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1959,1959,-0.42078498,0.041753557,-0.46253854,-0.37903142,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1960,1960,0.6751824,0.31974563,0.35543677,0.994928,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1961,1961,1.1864032,0.22192955,0.9644736,1.4083327,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1962,1962,-0.50494766,0.21923262,-0.7241803,-0.28571504,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1963,1963,-0.6516779,0.19917889,-0.8508568,-0.45249903,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1964,1964,0.46871647,0.35989296,0.10882351,0.82860947,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1965,1965,-0.95631,0.17741273,-1.1337227,-0.7788972,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1966,1966,-1.4372362,0.21568386,-1.65292,-1.2215524,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1967,1967,-1.0463214,0.18592185,-1.2322433,-0.86039954,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1968,1968,-1.1519685,0.11076398,-1.2627325,-1.0412045,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1969,1969,-0.3498814,0.37149295,-0.7213744,0.021611542,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1970,1970,0.21108437,0.37912205,-0.16803768,0.5902064,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1971,1971,0.5871153,0.23456958,0.3525457,0.82168484,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1972,1972,-0.72983927,0.04272827,-0.7725675,-0.687111,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1973,1973,0.23950005,0.2828135,-0.043313444,0.52231354,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1974,1974,0.022550732,0.19288097,-0.17033024,0.2154317,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1975,1975,0.60762405,0.13397212,0.47365195,0.74159616,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1976,1976,2.228069,0.18908538,2.0389836,2.4171546,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1977,1977,1.1307381,0.2417378,0.88900036,1.372476,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1978,1978,0.47470775,0.103027426,0.37168032,0.5777352,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1979,1979,-0.8796294,0.13555412,-1.0151834,-0.74407524,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1980,1980,-0.31977478,0.32259244,-0.64236724,0.0028176606,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1981,1981,-0.13940972,0.43266225,-0.57207197,0.29325253,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1982,1982,-0.9706028,0.11343432,-1.0840372,-0.8571685,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1983,1983,-0.5137895,0.37855002,-0.89233947,-0.13523945,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1984,1984,0.9596961,0.21209039,0.74760574,1.1717865,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1985,1985,0.14362608,0.18232143,-0.03869535,0.32594752,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1986,1986,-0.71034724,0.23733126,-0.9476785,-0.47301596,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1987,1987,0.37983775,0.09902159,0.28081617,0.47885934,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1988,1988,1.6982006,0.109463245,1.5887374,1.8076638,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1989,1989,0.6297927,0.13682972,0.49296296,0.7666224,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1990,1990,0.026692115,0.18671466,-0.16002256,0.21340677,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1991,1991,-0.21791215,0.16442078,-0.38233292,-0.05349137,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1992,1992,-1.5266274,0.23661636,-1.7632438,-1.290011,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1993,1993,-1.1767892,0.4677925,-1.6445817,-0.70899665,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1994,1994,-0.7866788,0.5925827,-1.3792615,-0.19409609,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1995,1995,-1.459064,0.39045012,-1.8495141,-1.0686139,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1996,1996,-0.9236388,0.43564427,-1.3592831,-0.48799455,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1997,1997,-0.7739086,0.2339061,-1.0078148,-0.5400025,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1998,1998,0.30603907,0.20274873,0.103290334,0.5087878,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1999,1999,1.7187849,0.1628962,1.5558888,1.8816811,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2000,2000,2.2292097,0.13182858,2.097381,2.3610382,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2001,2001,2.1690466,0.2000001,1.9690466,2.3690467,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2002,2002,1.2017955,0.36426488,0.8375306,1.5660603,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2003,2003,0.93289065,0.1624446,0.77044606,1.0953352,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2004,2004,0.36969256,0.35466784,0.015024722,0.7243604,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2005,2005,-1.2987436,0.47514555,-1.7738892,-0.823598,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2006,2006,-0.29460737,0.30022284,-0.5948302,0.005615473,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2007,2007,0.66445196,0.5459889,0.11846304,1.2104409,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2008,2008,1.5492665,0.18705876,1.3622077,1.7363253,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2009,2009,0.37975547,0.14059703,0.23915844,0.5203525,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2010,2010,1.4744943,0.44854257,1.0259517,1.9230369,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2011,2011,1.188932,0.47598535,0.7129466,1.6649172,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2012,2012,1.9283351,0.14364183,1.7846932,2.071977,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2013,2013,0.76447755,0.22039561,0.5440819,0.9848732,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2014,2014,-0.12354174,0.3854869,-0.5090287,0.26194516,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2015,2015,-1.0711939,0.28495508,-1.356149,-0.78623885,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2016,2016,-0.6592567,0.38733378,-1.0465904,-0.27192292,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2017,2017,-0.28299817,0.1866088,-0.469607,-0.09638937,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2018,2018,-1.9998757,0.05211443,-2.05199,-1.9477612,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2019,2019,-2.0858915,0.2937286,-2.37962,-1.7921629,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2020,2020,-1.8175173,0.256334,-2.0738513,-1.5611832,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2021,2021,-1.0861727,0.67679703,-1.7629697,-0.40937567,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2022,2022,-0.57312995,0.14373456,-0.7168645,-0.42939538,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2023,2023,-1.6390463,0.25515762,-1.8942039,-1.3838887,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2024,2024,-2.128707,0.4549879,-2.583695,-1.673719,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+2025,2025,-1.3278913,0.36321408,-1.6911054,-0.9646773,NPGO,Spring North Pacific Gyre Oscillation Index,nan,nan,nan,10.0
+1950,1950,-0.6310145,0.09968734,-0.73070186,-0.5313272,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1951,1951,-1.2327651,0.16557321,-1.3983383,-1.0671918,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1952,1952,-0.9385643,0.37819576,-1.3167601,-0.56036854,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1953,1953,0.65012884,0.37598544,0.2741434,1.0261142,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1954,1954,-0.14318138,0.11424584,-0.25742722,-0.028935544,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1955,1955,0.025425708,0.21601327,-0.19058757,0.24143897,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1956,1956,0.43477324,0.122191094,0.31258214,0.55696434,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1957,1957,-0.86118454,0.09158422,-0.95276874,-0.76960033,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1958,1958,-0.5676324,0.3368004,-0.9044328,-0.23083198,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1959,1959,-0.27606675,0.30678388,-0.58285064,0.030717134,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1960,1960,0.5570243,0.13859123,0.41843307,0.69561553,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1961,1961,0.9701045,0.17083082,0.7992737,1.1409353,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1962,1962,-0.032847572,0.35333624,-0.38618383,0.32048866,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1963,1963,-0.12717015,0.24332583,-0.37049598,0.116155684,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1964,1964,1.0994741,0.4417687,0.65770537,1.5412428,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1965,1965,-0.6644226,0.20797503,-0.8723976,-0.45644754,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1966,1966,-0.94835013,0.18212438,-1.1304746,-0.76622576,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1967,1967,-0.6595429,0.56664705,-1.22619,-0.092895865,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1968,1968,-0.9651783,0.053648897,-1.0188272,-0.9115294,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1969,1969,-0.3160018,0.38002357,-0.6960254,0.064021766,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1970,1970,0.36143485,0.07745556,0.2839793,0.4388904,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1971,1971,0.6751339,0.13395317,0.54118073,0.80908704,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1972,1972,-0.5583858,0.32214487,-0.88053066,-0.23624092,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1973,1973,0.2826846,0.10143996,0.18124464,0.38412455,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1974,1974,0.15685798,0.28695294,-0.13009496,0.44381094,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1975,1975,0.70340973,0.28109714,0.4223126,0.98450685,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1976,1976,2.378513,0.096566424,2.2819467,2.4750795,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1977,1977,1.0293322,0.25923234,0.7700998,1.2885644,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1978,1978,0.8587735,0.43033138,0.42844215,1.2891049,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1979,1979,-1.0613503,0.2449349,-1.3062853,-0.8164154,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1980,1980,-0.92349213,0.20162836,-1.1251205,-0.72186375,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1981,1981,-0.4069364,0.3652254,-0.77216184,-0.041711003,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1982,1982,-0.50904065,0.0879461,-0.5969868,-0.42109454,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1983,1983,-0.15612711,0.22047919,-0.3766063,0.06435208,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1984,1984,0.5356861,0.24998562,0.28570044,0.7856717,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1985,1985,-0.33017603,0.5636702,-0.8938463,0.23349419,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1986,1986,-0.9092935,0.12808967,-1.0373831,-0.7812038,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1987,1987,0.311976,0.13018659,0.1817894,0.44216257,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1988,1988,1.4779884,0.21721329,1.2607751,1.6952016,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1989,1989,0.8617491,0.3484259,0.5133232,1.210175,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1990,1990,-0.24932028,0.08592723,-0.33524752,-0.16339305,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1991,1991,-0.66737366,0.24807522,-0.9154489,-0.41929844,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1992,1992,-1.2188451,0.25909042,-1.4779356,-0.9597547,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1993,1993,-1.746771,0.27302402,-2.019795,-1.473747,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1994,1994,-0.8915871,0.19890824,-1.0904953,-0.6926788,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1995,1995,-1.1331255,0.3221511,-1.4552766,-0.8109745,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1996,1996,-0.85543805,0.09610812,-0.9515462,-0.7593299,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1997,1997,-0.6798883,0.1719618,-0.8518501,-0.5079265,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1998,1998,0.23676634,0.17708972,0.059676617,0.41385606,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1999,1999,1.3731841,0.06461652,1.3085675,1.4378006,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2000,2000,1.4625306,0.16797099,1.2945596,1.6305016,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2001,2001,1.7695023,0.23323408,1.5362682,2.0027363,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2002,2002,1.0061837,0.3257838,0.68039995,1.3319676,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2003,2003,0.951318,0.22178036,0.72953767,1.1730983,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2004,2004,0.49111786,0.16915508,0.32196277,0.66027296,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2005,2005,-1.510313,0.35019118,-1.8605042,-1.1601219,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2006,2006,-0.3386724,0.124817885,-0.46349028,-0.21385452,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2007,2007,1.0983709,0.33533645,0.76303446,1.4337074,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2008,2008,1.9846854,0.3109395,1.6737459,2.295625,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2009,2009,0.57673687,0.3899408,0.18679607,0.96667767,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2010,2010,0.8877878,0.10441394,0.7833739,0.99220175,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2011,2011,0.9621544,0.3940496,0.56810474,1.356204,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2012,2012,1.621945,0.15897317,1.4629718,1.7809182,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2013,2013,0.4845496,0.23588236,0.24866726,0.720432,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2014,2014,-0.5009567,0.38199127,-0.882948,-0.11896545,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2015,2015,-1.8210244,0.5056715,-2.326696,-1.3153529,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2016,2016,-0.6966965,0.18538342,-0.88207996,-0.5113131,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2017,2017,-0.5460709,0.058887444,-0.6049583,-0.48718342,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2018,2018,-2.152446,0.28443623,-2.4368823,-1.8680098,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2019,2019,-2.3193903,0.20360218,-2.5229924,-2.1157882,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2020,2020,-1.6218338,0.44474304,-2.066577,-1.1770908,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2021,2021,-0.843483,0.19241422,-1.0358973,-0.65106875,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2022,2022,-0.750552,0.33202893,-1.0825809,-0.41852307,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2023,2023,-1.7059408,0.034344535,-1.7402854,-1.6715963,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2024,2024,-1.9467214,0.21036631,-2.1570878,-1.7363551,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2025,2025,-1.0351552,0.1050717,-1.1402268,-0.93008345,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+1950,1950,-0.21033554,0.30906242,-0.519398,0.09872688,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1951,1951,-1.1020591,0.110051125,-1.2121103,-0.992008,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1952,1952,0.0903517,0.6542662,-0.5639145,0.7446179,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1953,1953,1.5166975,0.49139708,1.0253005,2.0080945,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1954,1954,0.314226,0.11560928,0.19861671,0.4298353,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1955,1955,-0.3740789,0.2546736,-0.62875247,-0.1194053,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1956,1956,-0.34832394,0.37314066,-0.72146463,0.024816722,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1957,1957,-1.0509018,0.34593508,-1.3968369,-0.70496666,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1958,1958,-0.56285256,0.1904832,-0.7533358,-0.37236935,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1959,1959,0.16964936,0.23737817,-0.0677288,0.40702754,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1960,1960,0.8593442,0.33387813,0.5254661,1.1932223,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1961,1961,0.32223102,0.09132487,0.23090616,0.4135559,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1962,1962,0.35832927,0.16836983,0.18995944,0.52669907,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1963,1963,0.56974965,0.08088486,0.48886478,0.6506345,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1964,1964,0.03587075,0.6968565,-0.66098577,0.7327272,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1965,1965,-0.9316542,0.25548586,-1.1871401,-0.6761683,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1966,1966,-0.76097375,0.1995145,-0.96048826,-0.56145924,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1967,1967,-0.27126554,0.2991193,-0.57038486,0.027853757,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1968,1968,-0.6105858,0.34005857,-0.9506444,-0.27052724,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1969,1969,0.45863688,0.60224485,-0.14360797,1.0608817,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1970,1970,-0.01980932,0.22476757,-0.24457689,0.20495825,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1971,1971,0.16172014,0.18020217,-0.01848203,0.3419223,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1972,1972,-0.80463487,0.2721131,-1.076748,-0.5325217,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1973,1973,0.1921931,0.26435575,-0.07216264,0.45654887,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1974,1974,0.25535706,0.3992019,-0.14384484,0.65455896,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1975,1975,1.1031328,0.16004583,0.943087,1.2631787,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1976,1976,1.532547,0.18550536,1.3470416,1.7180524,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1977,1977,1.185241,0.30307665,0.88216436,1.4883176,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1978,1978,-0.34088168,0.7369037,-1.0777854,0.39602205,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1979,1979,-0.5488031,0.06075143,-0.6095545,-0.48805165,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1980,1980,-0.16107504,0.11075349,-0.27182853,-0.05032155,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1981,1981,0.32988063,0.5476753,-0.21779469,0.87755597,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1982,1982,-0.7024229,0.41132516,-1.1137481,-0.29109776,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1983,1983,-0.20132066,0.6670446,-0.8683652,0.46572393,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1984,1984,0.68603486,0.37780353,0.30823132,1.0638384,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1985,1985,-1.552621,0.32485166,-1.8774726,-1.2277694,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1986,1986,-0.41707662,0.10911282,-0.52618945,-0.3079638,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1987,1987,0.44502833,0.29312167,0.15190667,0.73815,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1988,1988,1.1616303,0.37247342,0.78915685,1.5341036,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1989,1989,-0.01046672,0.39686063,-0.40732735,0.3863939,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1990,1990,-0.79732734,0.7081009,-1.5054283,-0.089226425,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1991,1991,-0.49179482,0.51853764,-1.0103325,0.026742816,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1992,1992,-1.3727843,0.45686778,-1.8296521,-0.91591644,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1993,1993,-2.4511728,0.50606114,-2.957234,-1.9451118,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1994,1994,-1.2719733,0.36371765,-1.6356909,-0.9082556,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1995,1995,-0.19312607,0.37393388,-0.56705993,0.18080781,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1996,1996,-1.1653876,0.16677609,-1.3321637,-0.99861157,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1997,1997,-0.053182792,0.47058448,-0.5237673,0.4174017,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1998,1998,0.52831084,0.37289903,0.15541181,0.90120983,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+1999,1999,1.1840589,0.13394934,1.0501096,1.3180082,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2000,2000,1.9592594,0.2382723,1.7209871,2.1975317,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2001,2001,1.6486398,0.44037402,1.2082658,2.0890138,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2002,2002,1.7064666,0.9073782,0.79908836,2.6138449,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2003,2003,0.46566668,0.73117524,-0.26550856,1.196842,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2004,2004,-0.46136168,0.5143378,-0.9756994,0.0529761,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2005,2005,-1.4136289,0.35572624,-1.7693552,-1.0579027,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2006,2006,-0.76542145,0.4865499,-1.2519714,-0.27887154,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2007,2007,0.8706692,0.46100292,0.40966627,1.3316721,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2008,2008,1.3111774,0.7535027,0.55767465,2.06468,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2009,2009,1.0677313,0.111941434,0.9557898,1.1796727,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2010,2010,0.9589799,0.40973225,0.5492476,1.3687122,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2011,2011,0.46048865,0.5146619,-0.05417326,0.9751506,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2012,2012,1.3344945,0.27947003,1.0550244,1.6139646,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2013,2013,-0.7796671,0.57841074,-1.3580778,-0.20125633,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2014,2014,0.23686324,0.39987096,-0.16300772,0.6367342,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2015,2015,-1.5048178,0.55493814,-2.059756,-0.9498797,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2016,2016,0.10333999,1.5539271,-1.450587,1.6572671,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2017,2017,-2.0619118,0.68991715,-2.751829,-1.3719947,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2018,2018,-1.7680329,0.61891085,-2.3869438,-1.149122,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2019,2019,-2.886011,0.46567827,-3.351689,-2.4203327,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2020,2020,-1.9760808,0.62927115,-2.605352,-1.3468096,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2021,2021,-0.8475382,1.0836459,-1.931184,0.23610777,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2022,2022,-2.1873531,0.34610164,-2.533455,-1.8412515,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2023,2023,-1.3813444,0.42558166,-1.8069261,-0.95576274,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2024,2024,-2.08994,0.13073155,-2.2206717,-1.9592085,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
