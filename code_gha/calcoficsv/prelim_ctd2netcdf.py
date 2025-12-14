@@ -390,5 +390,5 @@ ds1_out['var2_mtrx_d'] = da2_out
 ds1_out['yr_d'] = da3_out
 ds1_out['jd_d'] = da4_out
 
-fn_out = 'prelim_ctd.nc'
+fn_out = './prelim_ctd.nc'
 ds1_out.to_netcdf(fn_out)
