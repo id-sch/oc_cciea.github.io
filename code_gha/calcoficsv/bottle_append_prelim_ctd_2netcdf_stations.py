@@ -1,20 +1,9 @@
+import os
+import re
 import xarray as xr
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seawater as sw
-import fun_Csw
-import matplotlib.pyplot as plt
-import os
-import re
-import numpy.ma as ma
-from C_sw import C_sw
-from matplotlib import gridspec
-from matplotlib import rcParams
-from fun_mkdir import fun_mkdir
-from matplotlib import interactive
-interactive(True)
-# pylint: disable=C0103
+from numpy import ma
 
 # --Create Netcdf files for the 113 "core" stations of CalCOFI. The data is
 # --from the CalCOFI CSV and prelimary CTD data. These files can are
@@ -38,7 +27,8 @@ interactive(True)
 #           CSV files
 #   6) I now allow for you to set the output directory name
 
-dir_out = fun_mkdir()
+# output directory
+dir_out = './data_gha/CalCofiCSV/'
 
 # --max depth of data matrix (time x depth) for each station
 max_dpth = 500
@@ -84,7 +74,6 @@ mon_c = 'Month'
 var1_c_wnt = [line_c, sttn_c, lat_c, lon_c, qrtr_c, mon_c]
 
 # ---------------------STATION
-# line_s = 'Line '
 line_s = 'Line'
 sttn_s = 'Station'
 
@@ -167,9 +156,8 @@ for i in range(num_sttn):
     sttn_var2_b = np.zeros([num_var2_b, num_int, nt_c])*np.nan
 
     for j in range(nt_c):
-        print([i, num_sttn, j, nt_c])
+        # station indices
         in_nt = (df_cc_b[cc_b] == sttn_cc_c[j])
-        # indx_nt = in_nt.nonzero()[0]
         indx_nt = in_nt.values.nonzero()[0]
 
         # --create pd df of bottle data for this cc number
@@ -262,12 +250,15 @@ for i in range(num_sttn):
     fn_out = re.sub(r'[^\w]', '', sttn_wnt[i]) + '.' + file_type
     dir_fn = dir_out + '/' + fn_out
 
-    # # --check if directory exist, if it doesn't then create
-    # try:
-    #     os.makedirs(dir_out)
-    # except OSError:
-    #     if not os.path.isdir(dir_out):
-    #         raise
+    # --check if directory exist, if it doesn't then create
+    try:
+        os.makedirs(dir_out)
+    except OSError:
+        if not os.path.isdir(dir_out):
+            raise
 
     # --Save Dataset to a netcdf file
     ds1.to_netcdf(dir_fn)
+
+# remove some large files that can not be commit to github
+os.remove(fn_d)

@@ -32,8 +32,12 @@ jobs:
         run: unzip ./csv_database_gha.zip
       - name: create prelim CTD netcdf
         run: python code_gha/calcoficsv/prelim_ctd2netcdf.py
+      - name: Loop over all CalCOFI stations and create station netcd files
+        run: python code_gha/calcoficsv/bottle_append_prelim_ctd_2netcdf_stations.py
       - name: Print dir tree and check disk space
         shell: bash {0}
         run: |
           tree
           df -h
+      - name: git auto commit -- save calcofi station netcdf
+        uses: stefanzweifel/git-auto-commit-action@v7

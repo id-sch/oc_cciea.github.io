@@ -392,3 +392,6 @@ ds1_out['jd_d'] = da4_out
 
 fn_out = './prelim_ctd.nc'
 ds1_out.to_netcdf(fn_out)
+
+# remove some large files that can not be commit to github
+os.remove("./csv_database_gha.zip")
