@@ -28,10 +28,10 @@ jobs:
           actionType: download
           localPath: ./csv_database_gha.zip
           googleFileId: 1oNXL1rFc1vsLKPIlji5OiZdCVKqeMeSg
-    - name: Unzip file
-      run: unzip ./csv_database_gha.zip
-    - name: Print dir tree and check disk space
-      shell: bash {0}
-      run: |
-        tree
-        df -h
+      - name: Unzip file
+        run: unzip ./csv_database_gha.zip
+      - name: Print dir tree and check disk space
+        shell: bash {0}
+        run: |
+          tree
+          df -h
