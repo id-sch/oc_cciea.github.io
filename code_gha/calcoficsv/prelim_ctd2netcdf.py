@@ -1,10 +1,9 @@
 import xarray as xr
 import pandas as pd
 import numpy as np
-import numpy.ma as ma
-from matplotlib import interactive
-interactive(True)
-# pylint: disable=C0103
+import seawater as sw
+from numpy import ma
+
 
 # --Create Netcdf files for the 113 "core" stations of CalCOFI. The data is
 # --from the CalCOFI CSV and prelimary CTD data. These files can are
@@ -282,6 +281,8 @@ for ii in range(0, num_qrtr_d):
                 t1 = np.squeeze(unq_mtrx_d[0, :, kk])
                 s1 = np.squeeze(unq_mtrx_d[1, :, kk])
                 datad = sw.ptmp(s1, t1, dpth_int, 0)
+                unq_mtrx_d[0, :, kk] = datad
+
 
             # --2D variables, take mean of all casts to get a single profile
             # --for a given station
