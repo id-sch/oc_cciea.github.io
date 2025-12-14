@@ -27,9 +27,11 @@ jobs:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: download
           localPath: ./csv_database_gha.zip
-          googleFileId: 1oNXL1rFc1vsLKPIlji5OiZdCVKqeMeSg
+          googleFileId: 1sA3FaILktBH8csSjdelnl239K2gg_KvA
       - name: Unzip file
         run: unzip ./csv_database_gha.zip
+      - name: create prelim CTD netcdf
+        run: python code_gha/calcoficsv/prelim_ctd2netcdf.py
       - name: Print dir tree and check disk space
         shell: bash {0}
         run: |
