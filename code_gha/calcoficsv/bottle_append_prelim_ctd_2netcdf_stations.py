@@ -130,7 +130,6 @@ time_c = pd.to_datetime(df_c[yr_c].astype(
 in_cc_b = (df_hdr_b.columns == cc_b).nonzero()[0]
 df_cc_b = pd.read_csv(file_b, usecols=in_cc_b)
 
-num_sttn = 1
 for i in range(num_sttn):
     print('{}: {}'.format(i, num_sttn))
 
