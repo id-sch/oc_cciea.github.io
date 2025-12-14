@@ -109,7 +109,7 @@ var2_d_wnt6 = ['TempAve', 'Salt2_Corr', 'SigThetaTS1', 'DynHt',
 var2_d_list = [var2_d_wnt1, var2_d_wnt2, var2_d_wnt3, var2_d_wnt4, var2_d_wnt5, var2_d_wnt6]
 
 # ----------------------Nutrient CSV
-file_n = '/home/isaac/data_files/Work/TS/data/calcofi_csv/csv_database_gha/nutrient_prelim/compiled_finalized_nutrients_2111_2504_ALE.csv'
+file_n = './csv_database_gha/nutrient_prelim/compiled_finalized_nutrients_2111_2504_ALE.csv'
 
 # ------------------Nutrient
 line_n = 'Line'
