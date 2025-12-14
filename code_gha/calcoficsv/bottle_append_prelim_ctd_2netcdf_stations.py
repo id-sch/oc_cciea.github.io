@@ -1,5 +1,6 @@
 import os
 import re
+import shutil
 import xarray as xr
 import pandas as pd
 import numpy as np
@@ -37,10 +38,9 @@ max_dpth = 500
 file_type = 'nc'
 
 # input files
-file_s = '/home/isaac/Work/TS/data/calcofi_csv/CalCOFIStaPosNDepth113.csv'
-file_s = '/home/isaac/Work/TS/data/calcofi_csv/calcofi_stations66.csv'
-file_b = '/home/isaac/data_files/Work/TS/data/calcofi_csv/csv_database_gha/194903-202105_Bottle.csv'
-file_c = '/home/isaac/data_files/Work/TS/data/calcofi_csv/csv_database_gha/194903-202105_Cast.csv'
+file_s = './csv_database_gha/calcofi_stations66.csv'
+file_b = './csv_database_gha/194903-202105_Bottle.csv'
+file_c = './csv_database_gha/194903-202105_Cast.csv'
 
 # --Column header names for the 4 files
 # ---------------------BOTTLE
@@ -262,3 +262,7 @@ for i in range(num_sttn):
 
 # remove some large files that can not be commit to github
 os.remove(fn_d)
+
+# remove the directory and files that has the downloaded
+# CalCOFI bottle and ctd csv files
+shutil.rmtree('./csv_database_gha/')
