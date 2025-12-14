@@ -34,7 +34,7 @@ max_dpth = 500
 
 # --output file type extension
 file_type = 'nc'
-file_s = 'calcofi_stations66.csv'
+file_s = '../csv_database_gha/calcofi_stations66.csv'
 
 dir_ctd_d = './csv_database_gha/ctd_prelim/'
 fn_d = ['20-2107SR_CTDBTL_001-071D.csv', '20-2111SR_CTDBTL_001-075D.csv',
