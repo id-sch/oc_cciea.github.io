@@ -1,4 +1,4 @@
-name: Code1: calcoficsv
+name: Code1 calcoficsv
 on:
   workflow_dispatch
 
