@@ -7,7 +7,6 @@ import matplotlib.dates as mdates
 from matplotlib.ticker import AutoMinorLocator
 from matplotlib import gridspec
 from matplotlib import rcParams
-from fun_mkdir import fun_mkdir
 
 
 def sttn_create_lbl(ds, sttn_pre, sttn_lst1):
