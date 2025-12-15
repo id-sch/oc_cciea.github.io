@@ -366,7 +366,6 @@ for iii in range(0, num_order_list):
         cbaxes = plt.gcf().add_axes([x_cb, y_cb, 0.006, y_hght])
         plt.colorbar(m, cax=cbaxes, extend='both', label=clrbr_lbl[0])
 
-
 # create plot output directory
 dir_plots = '{}/{}/'.format(dir_plot_out, iea_yr)
 
@@ -379,7 +378,7 @@ except OSError:
 
 # --Save the figure
 fn_fig = '{}oc_z_{}_{}_{}_contour_fill_NRT.png'.format(
-    dir_out, var_name[0], sttn_wnt[0], sttn_wnt[1])
+    dir_plots, var_name[0], sttn_wnt[0], sttn_wnt[1])
 plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
 
 # remove NH25 netcdf, keep this private
