@@ -16,7 +16,7 @@ iea_yr = 2025
 dir_in = './data_x13/DissolvedOxygen/'
 
 # station file of 66 CalCOFI stations
-dir_sttn_in = './oc_cciea.github.io/data_gha/CalCofiCSV/'
+dir_sttn_in = './data_gha/CalCofiCSV/'
 fn_sttn = '{}calcofi_stations66.csv'.format(dir_sttn_in)
 var_fn_sttn = ['Line', 'Station', 'Lat', 'Lon', 'Distance']
 
