@@ -5,7 +5,6 @@ import xarray as xr
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-from fun_create_data_files import fun_create_data_files
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
 from matplotlib import rcParams
@@ -76,8 +75,6 @@ intrp_type = (0.05, 0.05)
 intrp_type = (0.015, 0.015)
 ytck = np.arange(30.5, 36, 2)
 xtck = np.arange(-124, -116, 2)
-
-dir_plots = fun_create_data_files('plots')
 
 # seasons to contour
 season_name = ['Winter', 'Spring', 'Summer']
