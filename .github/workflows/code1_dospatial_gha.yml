@@ -31,7 +31,7 @@ jobs:
       - name: Combine all DO data at all statoins at selected depths, also min/max values.
         run: python code_gha/DissolvedOxygen/calcofi_do_at_depths_min_values_between_z1_z2.py
       - name: Get the IEA stats from the DO station/depth data.
-        run: python code_gha/DissolvedOxygen/DissolvedOxygen/calcofi_do_get_IEA_data_symbols.py
+        run: python code_gha/DissolvedOxygen/calcofi_do_get_IEA_data_symbols.py
       - name: Figues of spatial DO CalCOFI
         run: python code_gha/DissolvedOxygen/contour_oc_do_S_spatial.py
       - name: Print dir tree and check disk space
