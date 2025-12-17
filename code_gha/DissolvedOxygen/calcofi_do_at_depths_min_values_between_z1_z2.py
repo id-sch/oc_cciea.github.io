@@ -9,7 +9,7 @@ from fun_hampel_outlier import hampel
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # --input directory
-dir_in = './oc_cciea.github.io/data_gha/CalCofiCSV/'
+dir_in = './data_gha/CalCofiCSV/'
 
 # station file of 66 CalCOFI stations
 fn_sttn = '{}calcofi_stations66.csv'.format(dir_in)
