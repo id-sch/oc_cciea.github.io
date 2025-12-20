@@ -73,7 +73,7 @@ dir_out = './data_x13/DissolvedOxygen/'
 # stations
 df_sttn = pd.read_csv(fn_sttn)
 num_sttn = len(df_sttn)
-sttn_wnt = list()
+sttn_wnt = []
 for i in range(num_sttn):
     line1 = df_sttn[var_fn_sttn[0]].values[i]*10
     sttn1 = df_sttn[var_fn_sttn[1]].values[i]*10
@@ -84,7 +84,7 @@ for i in range(num_sttn):
 bottom_depth = df_sttn[var_fn_sttn[5]].values
 
 # loop over all stations
-for i in range(0, num_sttn):
+for i in range(num_sttn):
     # bottom_depth at station
     bottom_depth_station = bottom_depth[i]
 

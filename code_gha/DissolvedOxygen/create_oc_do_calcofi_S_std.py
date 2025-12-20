@@ -20,7 +20,7 @@ dir_in = 'data_x13/DissolvedOxygen/'
 
 # --input file type extension
 file_type_in = '.nc'
-file_pre_in = 'do_'
+file_pre_in = 'do_ts_'
 file_end_in = '_min_between_0_500m'
 
 # --variable name
