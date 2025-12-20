@@ -8,7 +8,7 @@ from fun_pd_df2csvR_time import fun_pd_df2csvR_time
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = <<iea_yr>>
+iea_yr = 2025
 
 # --station wanted, two stations newport hydrographic at 5 and 25 km
 sttn_wnt = ['933_300', '900_900', '800_800']

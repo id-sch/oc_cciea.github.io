@@ -47,7 +47,7 @@ nc = 1
 threshold = 1.4
 
 # --plot directory
-<<dir_plot_out_dotscalcofi>>
+dir_plot_out = './figures_gha/DissolvedOxygen/'
 fig_type = '.png'
 
 # ----------------------------------------------------------------------
