@@ -13,7 +13,7 @@ sttn_wnt = ['NH05', 'NH25']
 num_sttn = len(sttn_wnt)
 
 # --input directory
-dir_in = './data_x13/DepthTimeTemp/'
+dir_in = './'
 
 # --input files were created from excel files, two of them
 #   so specifiy which one
@@ -151,3 +151,7 @@ for i in range(0, num_sttn):
 
     # --Save Dataset to a netcdf file
     ds1.to_netcdf(dir_fn)
+
+# remove NH25 netcdf, keep this private
+os.remove("./NH05_CTD.nc")
+os.remove("./NH25_CTD.nc")
