@@ -16,7 +16,7 @@ sttn_wnt = ['933_300', '900_900', '800_800']
 num_sttn = len(sttn_wnt)
 
 # --input directory
-dir_in = 'data_x13/DissolvedOxygen/'
+dir_in = './data_x13/DissolvedOxygen/'
 
 # --input file type extension
 file_type_in = '.nc'

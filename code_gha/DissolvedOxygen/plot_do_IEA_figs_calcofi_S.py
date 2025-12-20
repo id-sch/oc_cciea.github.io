@@ -85,4 +85,4 @@ for i in range(0, num_sttn):
     plt.savefig(fn_fig_S, dpi=300, bbox_inches='tight')
 
 # remove the directory and files that has the downloaded
-shutil.rmtree(dir_in)
+shutil.rmtree('./data_x13/')
