@@ -12,7 +12,7 @@ import numpy as np
 # ouput dataset name, file type, and directory
 name_wnt = 'pmsl_monthly_update'
 file_type = 'nc'
-dir_in ='./oc_cciea.github.io/data_gha/NPH/'
+dir_in ='./data_gha/NPH/'
 
 # erddap url for all dates of the SST OI
 url_nph_time = 'https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr.nc?time'
