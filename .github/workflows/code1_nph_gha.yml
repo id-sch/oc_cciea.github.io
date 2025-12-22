@@ -32,7 +32,10 @@ jobs:
         uses: repos4u/octave-action@v1
 
       - name: Install octave packages
-         run: sudo apt install octave-signal octave-netcdf
+         run: sudo apt install octave-signal
+
+      - name: Install octave packages
+         run: sudo apt install octave-netcdft
 
       - name: Run Python download data from Erddap
         run: python code_gha/NPH/pmsl_monthly_update.py
