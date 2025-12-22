@@ -30,5 +30,3 @@ jobs:
 
       - name: Set up octave
         uses: repos4u/octave-action@v1
-        with:
-          command: pkg install -forge netcdf image;
