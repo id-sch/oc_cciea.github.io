@@ -27,6 +27,3 @@ jobs:
       - name: set pythonpath
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
-
-      - name: Set up octave
-        uses: repos4u/octave-action@v1
