@@ -29,4 +29,5 @@ jobs:
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
       - name: install Octave
-         run: sudo apt install octave
+         run: |
+	  sudo apt install octave
