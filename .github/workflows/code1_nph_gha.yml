@@ -31,16 +31,12 @@ jobs:
       - name: install Octave
         run: |
           sudo apt-get -y install octave octave-netcdf octave-image
-
       - name: Run Python download data from Erddap
         run: python code_gha/NPH/pmsl_monthly_update.py
-	
       - name: Run Octave calc NPH and save to CSV
         run: octave code_gha/NPH/calc_nph.m
-
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
-
       - name: sst daily and monthly update upload artifacts
         uses: actions/upload-artifact@v4
         with:
