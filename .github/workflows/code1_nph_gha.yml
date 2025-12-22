@@ -30,4 +30,4 @@ jobs:
 
       - name: install Octave
         run: |
-          sudo apt-get -y install octave
+          sudo apt-get -y install octave octave-netcdf octave-image
