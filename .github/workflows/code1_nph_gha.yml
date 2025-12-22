@@ -28,9 +28,17 @@ jobs:
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
+      - name: Set up octave
+        uses: repos4u/octave-action@v1
+
+      - name: Install octave packages
+         run: sudo apt install octave-signal octave-netcdf
 
       - name: Run Python download data from Erddap
         run: python code_gha/NPH/pmsl_monthly_update.py
+	
+      - name: Run Octave calc NPH and save to CSV
+        run: octave code_gha/NPH/calc_nph.m
 
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
