@@ -335,4 +335,4 @@ end
 
 % save area in csv
 output1 = [yy_slp,mm_slp,area_nph,max_nph,x_nph,y_nph, lonf, latf];
-csvwrite('year_mon_area_max_x_y_lon_lat.csv',output1)
+csvwrite('./data_gha/NPH/year_mon_area_max_x_y_lon_lat.csv',output1)
