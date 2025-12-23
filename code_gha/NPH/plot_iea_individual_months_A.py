@@ -21,7 +21,7 @@ iea_yr = 2025
 dir_iea = 'nph'
 
 # --input directory
-dir_M = ['/home/isaac/data_files/Work/IEA/{}/csv_for_erddap/'.format(iea_yr)]
+dir_M = ['./csv_for_erddap/']
 
 # --IEA file names
 file_pre = 'oc_nph'
