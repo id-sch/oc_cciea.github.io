@@ -18,8 +18,7 @@ mon_wnt = [1, 2]
 # NPH has very large values, multiply by scale factor to make them smaller
 sf = 1.0/np.power(10, 6)
 
-
-dir_out = './data_x13/NPH/'
+dir_out = './data_gha/NPH/'
 dir_in = dir_out
 # ----------------------------------------------------------------------
 # --END: Change These
