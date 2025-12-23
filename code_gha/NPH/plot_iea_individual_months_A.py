@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import calendar as clndr
-from fun_pd_df2IEA_fig import fun_pd_df2IEA_fig
+from fun_pd_df2IEA_fig_blue import fun_pd_df2IEA_fig_blue
 
 
 mpl.rcParams['mathtext.fontset'] = 'stix'
@@ -80,7 +80,7 @@ for i in range(num_mon):
     dfM_mon['timeseries'].replace({dfM_mon.timeseries.values[0]: new_ttl}, inplace=True)
 
 
-    fun_pd_df2IEA_fig(dfM_mon, nr, nc, [1],
+    fun_pd_df2IEA_fig_blue(dfM_mon, nr, nc, [1],
                       yr_clim_bgn, yr_clim_end, wndw, yy_wnt)
     fn_fig_mon = '{}{}_Mon{}{}'.format(dir_plots, file_pre, mon[i], fig_type)
     plt.savefig(fn_fig_mon, dpi=300, bbox_inches='tight')
