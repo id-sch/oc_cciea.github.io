@@ -48,7 +48,7 @@ for i in range(0, num_data):
     ds1 = xr.open_dataset(fn_in[i])
 
     # year
-    yr_csv_end = ds1.year.data[0]
+    yr_csv_end = ds1.year.data[-1]
     
     # make the xr.dataset into a pd.dataframe
     df1 = ds1.to_dataframe()
