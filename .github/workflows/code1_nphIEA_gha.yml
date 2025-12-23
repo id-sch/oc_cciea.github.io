@@ -43,8 +43,8 @@ jobs:
       - name: code8_nphIEA_gha, plot jan-feb 
         run: python code_gha/NPH/plot_iea_figs_A.py
       - name: code9_nphIEA_gha, plot all months
-        run: python code_gha/NPH/plot_iea_indiviual_months_A.py
-
+        run: python code_gha/NPH/plot_iea_individual_months_A.py
+t
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
       - name: sst daily and monthly update upload artifacts
