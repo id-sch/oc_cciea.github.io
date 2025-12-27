@@ -22,8 +22,23 @@ jobs:
           cache: 'pip'
           cache-dependency-path: '**/code1_mhw_gha_requirements'
 
-      - run: python -m pip install -r .github/workflows/code1_mhw_gha_requirements
+      - run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
 
       - name: set pythonpath
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
+
+      - name: code3_mhw_gha, Run Python download data from Erddap
+        run: python code_gha/MHW/download_mhw_gha.py
+
+      - name: code4_mhw_gha, Run Python save data to R style CSV Monthly
+        run: python code_gha/MHW/create_oc_mhw_M_std.py
+
+      - name: code5_mhw_gha, Run Python save data to R style CSV Seasonal
+        run: python code_gha/MHW/create_oc_mhw_S_std.py
+
+      - name: code6_mhw_gha, Run Python plot R style CSV both Monthly and Seasonal
+        run: python code_gha/MHW/plot_IEA_figs_MS.py
+
+      - name: git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v7
