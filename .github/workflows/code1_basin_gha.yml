@@ -29,16 +29,16 @@ jobs:
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
 
-      - name: Run Python download data from Erddap
+      - name: code3_basin_gha, Run Python download data from Erddap
         run: python code_gha/BasinScaleIndicators/download_basin_gha.py
 
-      - name: Run Python save data to R style CSV Monthly
+      - name: code4_basin_gha, Run Python save data to R style CSV Monthly
         run: python code_gha/BasinScaleIndicators/create_oc_basin_M_std.py
 
-      - name: Run Python save data to R style CSV Seasonal
+      - name: code5_basin_gha, Run Python save data to R style CSV Seasonal
         run: python code_gha/BasinScaleIndicators/create_oc_basin_S_std.py
 
-      - name: Run Python plot R style CSV both Monthly and Seasonal
+      - name: code6_basin_gha, Run Python plot R style CSV both Monthly and Seasonal
         run: python code_gha/BasinScaleIndicators/plot_IEA_figs_MS.py
 
       - name: git auto commit
