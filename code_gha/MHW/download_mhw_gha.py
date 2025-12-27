@@ -44,7 +44,7 @@ yr_bgn = 1983
 yr_end = today.year
 
 file_type = 'nc'
-
+dir_out = './data_gha/MHW/'
 
 # -- End: Input variables, change these
 # -------------------------------------------------------
