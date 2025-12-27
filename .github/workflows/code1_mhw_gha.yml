@@ -1,4 +1,4 @@
-name: Python Download Mhw
+name: Python Download MHW
 
 env:
   PYTHON_VERSION: "3.12"
