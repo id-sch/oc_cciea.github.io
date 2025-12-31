@@ -32,7 +32,7 @@ jobs:
         run: python code_gha/bakunUI/download_bakunUI_gha.py
 
       - name: code4_bakunUI_gha, Run Python create daily, monthly from 6 hr
-        run: python code_gha/bakunUI/download_bakunUI_gha.py
+        run: python code_gha/bakunUI/create_daily_monthly_timeseries.py
 
       - name: Print dir tree and check disk space
         shell: bash {0}
