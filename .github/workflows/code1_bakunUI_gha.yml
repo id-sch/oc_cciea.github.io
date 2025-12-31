@@ -34,6 +34,12 @@ jobs:
       - name: code4_bakunUI_gha, Run Python create daily, monthly from 6 hr
         run: python code_gha/bakunUI/download_bakunUI_gha.py
 
+      - name: Print dir tree and check disk space
+        shell: bash {0}
+        run: |
+          tree
+          df -h
+
       - name: code5_bakunUI_gha, Run Python save data to R style CSV Monthly
         run: python code_gha/bakunUI/create_oc_bakunUI_M_std.py
 
