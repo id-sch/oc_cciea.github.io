@@ -1,4 +1,4 @@
-name: Python Download MHW
+name: Python Download Bakun UI
 
 env:
   PYTHON_VERSION: "3.12"
