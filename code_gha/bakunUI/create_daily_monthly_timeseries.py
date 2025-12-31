@@ -168,6 +168,10 @@ except OSError:
         raise
 
 # --Save Dataset to a netcdf file
+print(fn1_nc)
+print(fn2_nc)
+print(fn3_nc)
+
 fn1_nc = '{}/UI_daily.nc'.format(dir_out)
 ds1.to_netcdf(fn1_nc)
 
