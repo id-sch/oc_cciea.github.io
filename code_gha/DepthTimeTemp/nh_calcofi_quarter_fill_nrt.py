@@ -47,6 +47,7 @@ rcParams.update(params)
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
+# iea_yr = 2025
 iea_yr = 2025
 
 # --station wanted, two stations newport hydrographic at 5 and 25 km
@@ -92,7 +93,8 @@ mark_missing_NH = 1
 mark_missing_CC = 1
 
 # directory out
-dir_plot_out = './figures_gha/DepthTimeTemp/'
+# dir_plot_out = './figures_gha/DepthTimeTemp/'
+dir_plot_out = './figures_x13/DepthTimeTemp/'
 
 # ----------------------------------------------------------------------
 # --END: Change These

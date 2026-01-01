@@ -27,7 +27,7 @@ jobs:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: download
           localPath: ./NH25_CTD.nc
-          googleFileId: 1kBiQIXC7nj9ffuZOFGCulcru_56lheD-
+          googleFileId: 1zzHYGhq6BxE2iXhgbgZHN9P-5cxWaU-c
       - name: Make depth time temperature anom plots at NH25 and 93.30
         run: python code_gha/DepthTimeTemp/nh_calcofi_quarter_fill_nrt.py
       - name: Print dir tree and check disk space
