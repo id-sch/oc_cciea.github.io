@@ -12,7 +12,7 @@ from fun_pd_df2csvR_time import fun_pd_df2csvR_time
 # --directory of the 6hr UI
 dir_out = './data_gha/bakunUI/'
 dir_in = dir_out
-fn_in = '{}UI_daily.nc'
+fn_in = '{}UI_daily.nc'.format(dir_in)
 
 # -- Input variables, change these
 lat_wnt = [33, 39, 45]
