@@ -12,9 +12,6 @@ interactive(True)
 # ----------------------------------------------------------------------
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
-# iea year
-iea_yr = 2025
-
 # --station wanted, two stations newport hydrographic at 5 and 25 km
 sttn_wnt = ['NH05', 'NH25']
 num_sttn = len(sttn_wnt)
@@ -52,17 +49,16 @@ var_time = 'time'
 # --output CSV file
 dir_out = './csv_for_erddap/'
 yr_csv_bgn = 1998
-yr_csv_end = iea_yr
 
 # ----------------------------------------------------------------------
 # --END: Change These
 # ----------------------------------------------------------------------
 
-df_list = list()
-ts_lbl = list()
-depth_list = list()
-lon_list = list()
-lat_list = list()
+df_list = []
+ts_lbl = []
+depth_list = []
+lon_list = []
+lat_list = []
 for i in range(0, num_sttn):
     # --depth
     depth = depth_wnt[i]
@@ -76,6 +72,9 @@ for i in range(0, num_sttn):
 
     # --open the netcdf files as an xarray
     dall = xr.open_dataset(fn_in)
+
+    # --get the last year of the dataset
+    yr_csv_end = dall.time.dt.year.data[-1]
 
     # --get the attributes
     station = dall.attrs[att_wnt[0]]
@@ -95,16 +94,14 @@ for i in range(0, num_sttn):
     dfi = dall[var_wnt].to_dataframe()
 
     # --resample by taking 'M' means, i.e. monthly means
-    dfMmn = dfi.resample('M').mean()
-    #dfMsd = dfi.resample('M').std()
+    dfMmn = dfi.resample('ME').mean()
 
     # --get std from xr.da not pd.df, think I'm doing something wrong with std and nan and pandas
-    # daMsd = dai.resample('M', 'time', how='std', skipna=1)
-    daMsd = dai.resample(time='M').std(skipna=1)
+    daMsd = dai.resample(time='ME').std(skipna=1)
 
     # --combine mean and sd into one pd.df
     dfM = dfMmn.rename(index=str, columns={var_wnt: "data"})
-    dfM['Datetime'] = pd.to_datetime(dfM.index, infer_datetime_format=True)
+    dfM['Datetime'] = pd.to_datetime(dfM.index)
     dfM = dfM.set_index('Datetime')
 
     # dfM['sd'] = dfMsd.values

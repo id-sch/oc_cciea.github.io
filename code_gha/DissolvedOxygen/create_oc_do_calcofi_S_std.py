@@ -7,9 +7,6 @@ from fun_pd_df2csvR_time import fun_pd_df2csvR_time
 # ----------------------------------------------------------------------
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
-# iea year
-iea_yr = 2025
-
 # --station wanted, two stations newport hydrographic at 5 and 25 km
 sttn_wnt = ['933_300', '900_900', '800_800']
 # sttn_wnt = ['867_450', '800_900']
@@ -54,7 +51,6 @@ var_qrtr = 'Quarter'
 # --output CSV file
 dir_out = './data_x13/csv_files/'
 yr_csv_bgn = 1950
-yr_csv_end = iea_yr
 
 # ----------------------------------------------------------------------
 # --END: Change These
@@ -70,6 +66,9 @@ for i in range(0, num_sttn):
 
     # --open the netcdf files as an xarray
     dall = xr.open_dataset(fn_in)
+
+    # --get the last year of the dataset
+    yr_csv_end = dall.time.dt.year.data[-1]
 
     # --get the quarter variables
     da_qrtr = dall[var_qrtr].data
