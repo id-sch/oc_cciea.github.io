@@ -4,7 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from fun_pd_df2IEA_fig_threshold_blue import fun_pd_df2IEA_fig_threshold_blue
-from fun_mkdir import fun_mkdir
 
 
 mpl.rcParams['mathtext.fontset'] = 'stix'
@@ -46,7 +45,7 @@ nc = 1
 threshold = 1
 
 # --plot directory
-dir_plot_out = './figures_gha/aragoniteNH/'
+dir_plot_out = './figures_gha/OceanAcidification/'
 fig_type = '.png'
 
 # figure size
