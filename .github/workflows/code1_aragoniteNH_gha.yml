@@ -27,14 +27,14 @@ jobs:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: download
           localPath: ./NH05_AragSat.nc
-          googleFileId: 
+          googleFileId: 1HqpwC9fW2RpBIEITT_eTaj7sYsH0ShHp
       - name: Download NH25 aragonite netcdf file
         uses: Fork-on-the-Table-Collective/upload-to-download-from-gdrive@v2.0.0
         with:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: download
           localPath: ./NH25_AragSat.nc
-          googleFileId: 
+          googleFileId: 1G9N1L4BLovDgD3GBxklgoB19oFAwcA8C
 
       - name: Create IEA R style CSV files Monthly
         run: python code_gha/OceanAcidification/create_oc_arag_nh_M_std.py
