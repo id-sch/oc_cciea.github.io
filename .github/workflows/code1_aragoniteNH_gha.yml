@@ -65,6 +65,8 @@ jobs:
           localPath: ./NH25_CTD.nc
           googleFileId: 1zzHYGhq6BxE2iXhgbgZHN9P-5cxWaU-c
 
+      - name: Plot aragonite time x depth figures at NH05 and NH25
+        run: python code_gha/OceanAcidification/arag_time_depth.nh
 
       - name: Print dir tree and check disk space
         shell: bash {0}
