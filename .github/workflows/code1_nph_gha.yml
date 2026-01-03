@@ -35,8 +35,7 @@ jobs:
         run: python code_gha/NPH/pmsl_monthly_update.py
       - name: Run Octave calc NPH and save to CSV
         run: octave code_gha/NPH/calc_nph.m
-      - name: git auto commit
-        uses: stefanzweifel/git-auto-commit-action@v7
+
       - name: sst daily and monthly update upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -48,3 +47,6 @@ jobs:
           rm -r data_x13
           tree
           df -h
+
+      - name: git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v7
