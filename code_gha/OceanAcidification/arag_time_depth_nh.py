@@ -6,9 +6,7 @@ import matplotlib.dates as mdates
 from matplotlib.ticker import AutoMinorLocator
 from matplotlib import gridspec
 from matplotlib import rcParams
-from fun_mkdir import fun_mkdir
 from scipy.interpolate import griddata
-
 
 
 # plot paramaters
@@ -39,7 +37,6 @@ params = {
     'savefig.bbox': 'tight'
 }
 rcParams.update(params)
-
 
 
 # ----------------------------------------------------------------------
