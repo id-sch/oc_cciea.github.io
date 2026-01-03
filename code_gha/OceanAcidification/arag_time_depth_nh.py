@@ -60,10 +60,6 @@ alpha0 = 0.9242
 alpha1 = 0.004492
 alpha2 = 0.00094
 
-# open new figure
-plt.close()
-fig = plt.figure(figsize=(fig_wdth, fig_hght))
-
 # create plot output directory
 dir_plots = '{}{}/'.format(dir_plot_out, iea_yr)
 
@@ -73,7 +69,6 @@ try:
 except OSError:
     if not os.path.isdir(dir_plots):
         raise
-
 
 # subplots using gridspec
 num_row = 4
@@ -86,7 +81,7 @@ gs1.update(left=0.1, right=0.9, bottom=0.1,
 for i in range(num_sttn):
     # create new figure and close old one
     plt.close()
-    fig = plt.figure()
+    fig = plt.figure(figsize=(fig_wdth, fig_hght))
 
     # open data
     fn_in = dir_in[0] + '/' + sttn_wnt[i] + '.nc'
