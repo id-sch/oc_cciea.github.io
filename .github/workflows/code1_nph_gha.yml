@@ -45,6 +45,6 @@ jobs:
       - name: Remove download diretory an list 
         shell: bash {0}
         run: |
-	  rm -r data_x13
+          rm -r data_x13
           tree
           df -h
