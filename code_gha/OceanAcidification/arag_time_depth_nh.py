@@ -3,40 +3,15 @@ import xarray as xr
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+import matplotlib as mpl
 from matplotlib.ticker import AutoMinorLocator
 from matplotlib import gridspec
-from matplotlib import rcParams
 from scipy.interpolate import griddata
 
 
-# plot paramaters
-params = {
-    'text.latex.preamble': '\\usepackage{gensymb}',
-    'image.origin': 'lower',
-    'image.interpolation': 'nearest',
-    'image.cmap': 'RdYlBu_r',
-    'axes.grid': False,
-    'savefig.dpi': 600,  # to adjust notebook inline plot size
-    'xtick.top':        False,  # shold the top and bottom have tick marks
-    'xtick.bottom':     True,
-    'xtick.major.size': 2.5,
-    'ytick.major.size': 2.5,
-    'ytick.direction': 'out',
-    'xtick.direction': 'out',
-    'axes.labelsize': 10,  # fontsize for x and y labels 
-    'axes.titlesize': 10,
-    'font.size': 10,  # was 10
-    'legend.fontsize': 10,  # was 10
-    'xtick.labelsize': 10,
-    'ytick.labelsize': 10,
-    'text.usetex': True,
-    'figure.figsize': [8.5, 11],
-    'font.family': 'STIXGeneral',
-    'mathtext.fontset': 'stix',
-    'toolbar': 'None',
-    'savefig.bbox': 'tight'
-}
-rcParams.update(params)
+mpl.rcParams['mathtext.fontset'] = 'stix'
+mpl.rcParams['font.family'] = 'STIXGeneral'
+mpl.rcParams.update({'font.size': 12})
 
 
 # ----------------------------------------------------------------------
