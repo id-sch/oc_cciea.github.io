@@ -49,6 +49,23 @@ jobs:
       - name: Plot IEA style seasonal figures
         run: python code_gha/OceanAcidification/plot_IEA_figs_nh_MS_threshold.py
 
+      - name: Download NH05 CTD netcdf file
+        uses: Fork-on-the-Table-Collective/upload-to-download-from-gdrive@v2.0.0
+        with:
+          credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
+          actionType: download
+          localPath: ./NH05_CTD.nc
+          googleFileId: 1Bxp72seX9AgqMAFkQMCv9Jmt1FoQ8Edw
+
+      - name: Download NH25 CTD netcdf file
+        uses: Fork-on-the-Table-Collective/upload-to-download-from-gdrive@v2.0.0
+        with:
+          credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
+          actionType: download
+          localPath: ./NH25_CTD.nc
+          googleFileId: 1zzHYGhq6BxE2iXhgbgZHN9P-5cxWaU-c
+
+
       - name: Print dir tree and check disk space
         shell: bash {0}
         run: |
