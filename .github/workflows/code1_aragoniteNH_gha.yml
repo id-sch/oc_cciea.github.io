@@ -1,4 +1,4 @@
-name: Code1  DO NH IEA Time Series
+name: Code1  Aragonite NH IEA Time Series
 on:
   workflow_dispatch
 
