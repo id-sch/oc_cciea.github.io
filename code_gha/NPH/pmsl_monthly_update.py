@@ -185,6 +185,9 @@ if os.path.isfile(file_in):
 else:
     print('file not found: {}'.format(file_in))
 
+# remove the time_nph.nc file
+os.remove(fn1_time)
+    
 # list files
 dir_list_end = os.listdir()
 print("END -------------------------------")
