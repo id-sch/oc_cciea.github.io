@@ -18,13 +18,11 @@ dir_in ='./data_gha/NPH/'
 url_nph_time = 'https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr.nc?time'
 fn1_time = 'time_nph.nc'
 
-
 # lat, lon box
 lat1 = 0.5
 lat2 = 65.5
 lon1 = 150.5
 lon2 = 250.5
-
 
 # erddap variables
 url = 'https://upwell.pfeg.noaa.gov/erddap/griddap/'
@@ -187,6 +185,10 @@ if os.path.isfile(file_in):
 else:
     print('file not found: {}'.format(file_in))
 
+# remove the directory and files that has the downloaded
+shutil.rmtree('./data_x13/')
+
+# list files
 dir_list_end = os.listdir()
 print("END -------------------------------")
 print("Files and directories in  :")
