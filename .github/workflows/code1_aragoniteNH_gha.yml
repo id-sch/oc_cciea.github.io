@@ -47,7 +47,7 @@ jobs:
       - name: Create IEA R style CSV files Seasonal
         run: python code_gha/OceanAcidification/create_oc_arag_nh_S_std.py
       - name: Plot IEA style seasonal figures
-        run: python code_gha/OceanAcidification/plot_do_IEA_figs_nh_MS_threshold.py
+        run: python code_gha/OceanAcidification/plot_IEA_figs_nh_MS_threshold.py
 
       - name: Print dir tree and check disk space
         shell: bash {0}
