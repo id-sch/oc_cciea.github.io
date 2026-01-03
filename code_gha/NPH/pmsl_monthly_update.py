@@ -16,7 +16,10 @@ dir_in ='./data_gha/NPH/'
 
 # erddap url for all dates of the SST OI
 url_nph_time = 'https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr.nc?time'
+
+# save the downloaded data to these files, will remove them at the very end
 fn1_time = 'time_nph.nc'
+fn1_pmsl = 'pmsl.nc'
 
 # lat, lon box
 lat1 = 0.5
@@ -135,7 +138,6 @@ if os.path.isfile(file_in):
                     raise
 
             # download the data
-            fn1_pmsl='pmsl.nc'
             ddd = requests.get(urlf, timeout=800)
             with open(fn1_pmsl, 'wb') as file_pmsl:
                 file_pmsl.write(ddd.content)
@@ -185,9 +187,10 @@ if os.path.isfile(file_in):
 else:
     print('file not found: {}'.format(file_in))
 
-# remove the time_nph.nc file
+# remove the time_nph.nc and pmsl.nc file
 os.remove(fn1_time)
-    
+os.remove(fn1_pmsl)
+
 # list files
 dir_list_end = os.listdir()
 print("END -------------------------------")
