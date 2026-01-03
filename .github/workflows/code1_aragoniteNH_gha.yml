@@ -36,6 +36,12 @@ jobs:
           localPath: ./NH25_AragSat.nc
           googleFileId: 1G9N1L4BLovDgD3GBxklgoB19oFAwcA8C
 
+      - name: Print dir tree and check disk space
+        shell: bash {0}
+        run: |
+          tree
+          df -h
+
       - name: Create IEA R style CSV files Monthly
         run: python code_gha/OceanAcidification/create_oc_arag_nh_M_std.py
       - name: Create IEA R style CSV files Seasonal

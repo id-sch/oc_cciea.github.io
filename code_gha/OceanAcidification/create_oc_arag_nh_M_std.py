@@ -11,7 +11,7 @@ sttn_wnt = ['NH05', 'NH25']
 num_sttn = len(sttn_wnt)
 
 # --input directory
-dir_in = './data_x13/aragoniteNH/'
+dir_in = './'
 
 # --input file was derived from this excel file
 fn_excel_in = '_AragSat'
@@ -127,7 +127,7 @@ sttn_wnt = ['NH05', 'NH25']
 num_sttn = len(sttn_wnt)
 
 # --input directory
-dir_in = './data_x13/aragoniteNH/'
+dir_in = './'
 
 # --input file was derived from this excel file
 fn_excel_in = '_AragSat'

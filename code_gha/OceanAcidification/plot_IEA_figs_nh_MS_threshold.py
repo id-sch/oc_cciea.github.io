@@ -97,4 +97,5 @@ for i in range(0, num_sttn):
     plt.savefig(fn_fig_S, dpi=100, bbox_inches='tight')
 
 # remove the directory and files that has the downloaded
-shutil.rmtree('./data_x13/')
+os.remove("./NH05_AragSat.nc")
+os.remove("./NH25_AragSat.nc")
