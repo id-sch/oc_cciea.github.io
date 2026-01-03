@@ -1,4 +1,4 @@
-name: Code1 NPH, create and plot IEA CSV files
+name: Code2 NPH, create and plot IEA CSV files
 
 env:
   PYTHON_VERSION: "3.12"

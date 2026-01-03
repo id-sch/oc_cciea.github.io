@@ -1,6 +1,5 @@
 import calendar as clndr
 import os
-import shutil
 import urllib.request
 import requests  
 import xarray as xr
@@ -185,9 +184,6 @@ if os.path.isfile(file_in):
 
 else:
     print('file not found: {}'.format(file_in))
-
-# remove the directory and files that has the downloaded
-shutil.rmtree('./data_x13/')
 
 # list files
 dir_list_end = os.listdir()

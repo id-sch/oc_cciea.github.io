@@ -40,4 +40,10 @@ jobs:
       - name: sst daily and monthly update upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          path: data_x13
+          path: ./data_x13
+      - name: Print dir tree and check disk space
+        shell: bash {0}
+        run: |
+	  rm -r ./data_x13
+          tree
+          df -h
