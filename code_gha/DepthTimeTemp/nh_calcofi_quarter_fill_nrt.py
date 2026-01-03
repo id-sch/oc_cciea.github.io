@@ -93,8 +93,7 @@ mark_missing_NH = 1
 mark_missing_CC = 1
 
 # directory out
-# dir_plot_out = './figures_gha/DepthTimeTemp/'
-dir_plot_out = './figures_x13/DepthTimeTemp/'
+dir_plot_out = './figures_gha/DepthTimeTemp/'
 
 # ----------------------------------------------------------------------
 # --END: Change These
