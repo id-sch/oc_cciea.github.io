@@ -1,7 +1,7 @@
 requests
 pandas
 numpy
-xarray[complete]
+xarray
 PyDrive2
 cartopy
 scipy
