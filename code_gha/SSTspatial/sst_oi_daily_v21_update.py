@@ -46,7 +46,7 @@ dir_list = os.listdir()
 print("START -------------------------------")
 print("Files and directories in  :")
 print(dir_list)
-
+print("END -------------------------------")
 
 # Get the time available in the NRT SST OI data product
 ddd = requests.get(url_nrt_time, timeout=20)
@@ -209,6 +209,7 @@ else:
     print('file not found: {}'.format(file_in))
 
 dir_list_end = os.listdir()
-print("END -------------------------------")
+print("Start1 -------------------------------")
 print("Files and directories in  :")
 print(dir_list_end)
+print("END1 -------------------------------")
