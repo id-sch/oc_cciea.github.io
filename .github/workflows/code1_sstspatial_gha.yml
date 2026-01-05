@@ -16,6 +16,10 @@ jobs:
           auto-update-conda: true
           channels: conda-forge,defaults
           python-version: 3.12
+          # These properties enable the use of mamba, which is much faster and far less error
+          # prone than conda while being completely compatible with the conda CLI
+          use-mamba: true
+          mamba-version: "*"	  
 
       - name: Install some packages
         # The `-l` is needed so conda environment activation works correctly
