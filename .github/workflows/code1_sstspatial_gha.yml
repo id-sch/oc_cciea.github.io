@@ -44,9 +44,7 @@ jobs:
         run: |
           tree
           df -h
-	  which python
-
-
+          which python
 
       - name: update sst oi monthly 
         run: python code_gha/SSTspatial/sst_oi_daily_v21_update.py
