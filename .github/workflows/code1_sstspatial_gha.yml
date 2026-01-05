@@ -16,10 +16,13 @@ jobs:
           auto-update-conda: true
           channels: conda-forge,defaults
           python-version: 3.12
-    
-      - name: Install Python packages
-        run: pip install -r .github/workflows/code1_basin_gha_requirements
 
+      - name: Install some packages
+        # The `-l` is needed so conda environment activation works correctly
+        shell: bash -l {0}
+        run: |
+          mamba install -c conda-forge numpy scipy matplotlib xarray dask netCDF4 bottleneck       
+    
       - name: set pythonpath
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
