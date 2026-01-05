@@ -118,6 +118,9 @@ if os.path.isfile(file_in):
         day2 = time_nrt1[-1].astype(object).day
 
         num_days_available = day2 - day1
+
+        print('yr1={}, mon1={}, day1={}, yr2={}, mon2={}, day2={}'.format(yr1, mon1, day1, yr2, mon2, day2))
+        print('num_days_available={}, day_check={}'.format(num_days_available, day_check)
         if num_days_available > day_check:
             date_final = dates_wnt[i]
 
@@ -155,6 +158,7 @@ if os.path.isfile(file_in):
 
             # save to final netcdf file
             fn_out_final = '{}{}_daily_final.{}'.format(dir1, var_wnt, file_type)
+            print(fn_out_final)
             dsf.to_netcdf(fn_out_final)
 
     # create monthly means and append to existing dataset
