@@ -64,4 +64,4 @@ jobs:
       - name: sst daily and monthly update upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          path: data_sstspatial_gha
+          path: data_gha/SSTspatial/
