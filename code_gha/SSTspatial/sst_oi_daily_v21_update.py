@@ -34,7 +34,7 @@ var_wnt = 'sst'
 day_check = 24
 
 # dir out, will use artifacts to download this data
-<<dir_out_sstspatial>>
+dir_out = './data_gha/SSTspatial/'
 
 # -----------------------------------------------------------------------------
 # END: Input variables, change these
