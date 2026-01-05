@@ -1,7 +1,7 @@
 requests
 pandas
 numpy
-netCDF4==1.7.4
+netCDF4==1.7.2
 dask
 bottleneck
 xarray
