@@ -120,7 +120,7 @@ if os.path.isfile(file_in):
         num_days_available = day2 - day1
 
         print('yr1={}, mon1={}, day1={}, yr2={}, mon2={}, day2={}'.format(yr1, mon1, day1, yr2, mon2, day2))
-        print('num_days_available={}, day_check={}'.format(num_days_available, day_check)
+        print('num_days_available={}, day_check={}'.format(num_days_available, day_check))
         if num_days_available > day_check:
             date_final = dates_wnt[i]
 
