@@ -46,6 +46,11 @@ jobs:
           df -h
           which python
 
+      - name: Test conda installation
+        shell: bash -l {0}
+        run: conda info
+
+
       - name: update sst oi monthly 
         run: python code_gha/SSTspatial/sst_oi_daily_v21_update.py
 
