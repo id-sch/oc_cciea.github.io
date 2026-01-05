@@ -9,16 +9,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          cache-dependency-path: '**/code1_basin_gha_requirements'
 
-      - run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
+      - name: Install Conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          channels: conda-forge,defaults
+          python-version: 3.12
+    
+      - name: Install Python packages
+        run: pip install -r .github/workflows/code1_basin_gha_requirements
 
       - name: set pythonpath
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
+
       - name: Download file from Google Drive, encoded service secret
         uses: Fork-on-the-Table-Collective/upload-to-download-from-gdrive@v2.0.0
         with:
@@ -27,8 +32,25 @@ jobs:
           localPath: ./TS_monthly.nc
           googleFileId: 1_Zfxn0dcIQ8M4A_50Sj3bB8pGWvBD678
 
+      - name: Install Conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          channels: conda-forge,defaults
+          python-version: 3.12
+    
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+    
+
       - name: update sst oi monthly 
         run: python code_gha/SSTspatial/sst_oi_daily_v21_update.py
+
+      - name: Print dir tree and check disk space
+        shell: bash {0}
+        run: |
+          tree
+          df -h
 
       - name: sst daily and monthly update upload artifacts
         uses: actions/upload-artifact@v4
