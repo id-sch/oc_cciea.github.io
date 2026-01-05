@@ -1,7 +1,10 @@
 requests
 pandas
 numpy
-xarray[complete]
+netCDF4==1.7.4
+dask
+bottleneck
+xarray
 PyDrive2
 cartopy
 scipy
