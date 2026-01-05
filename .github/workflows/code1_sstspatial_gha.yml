@@ -39,17 +39,6 @@ jobs:
           localPath: ./TS_monthly.nc
           googleFileId: 1_Zfxn0dcIQ8M4A_50Sj3bB8pGWvBD678
 
-      - name: Install Conda
-        uses: conda-incubator/setup-miniconda@v3
-        with:
-          auto-update-conda: true
-          channels: conda-forge,defaults
-          python-version: 3.12
-    
-      - name: Install Python packages
-        run: pip install -r requirements.txt
-    
-
       - name: update sst oi monthly 
         run: python code_gha/SSTspatial/sst_oi_daily_v21_update.py
 
