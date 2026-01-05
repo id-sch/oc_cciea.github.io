@@ -1,4 +1,4 @@
-name: Update Distance From Shore and Monthly Thresholds for HCI
+name: Code1, HCI -- Update Distance From Shore and Monthly Thresholds for HCI
 on:
   workflow_dispatch
 

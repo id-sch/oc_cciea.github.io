@@ -1,4 +1,4 @@
-name: SST OI subset 4 regions for the HCI
+name: Code 2, HCI -- SST OI subset 4 regions for the HCI -- IEA CSV and figs
 on:
   workflow_dispatch
 
@@ -9,14 +9,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Install Conda
+        uses: conda-incubator/setup-miniconda@v3
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
-          cache-dependency-path: '**/code1_basin_gha_requirements'
+          auto-update-conda: true
+          channels: conda-forge,defaults
+          python-version: 3.12
+          # These properties enable the use of mamba, which is much faster and far less error
+          # prone than conda while being completely compatible with the conda CLI
+          use-mamba: true
+          mamba-version: "*"	  
 
-      - run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
+      - name: Install some packages
+        # The `-l` is needed so conda environment activation works correctly
+        shell: bash -l {0}
+        run: |
+          mamba install -c conda-forge numpy pandas scipy matplotlib xarray dask netCDF4 bottleneck requests cartopy seawater
 
       - name: set pythonpath
         run: |
@@ -28,22 +36,33 @@ jobs:
           credentials: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
           actionType: download
           localPath: ./TS_monthly.nc
-          googleFileId: 1_Zfxn0dcIQ8M4A_50Sj3bB8pGWvBD678
+          googleFileId: 1n7uOfzEfrv9Cg6YVxl20Sp3vqvLjrVGb
 
-      - name: calculate 75 and 150 distance from shore mask
+      - name: subset SST over the 4 regions
+        shell: bash -l {0}
         run: python code_gha/HCI/sst_oi_subset_lat_rng_area.py
 
       - name: calculate HCI using sst OI
+        shell: bash -l {0}
         run: python code_gha/HCI/calc_hci_coastwide_area.py
 
       - name: create monthly IEA R CSV
+        shell: bash -l {0}
         run: python code_gha/HCI/create_oc_hci_rgnM_std.py
 
       - name: create season IEA R CSV
+        shell: bash -l {0}
         run: python code_gha/HCI/create_oc_hci_rgnS_std.py
 
       - name: plot month and season IEA R CSV
+        shell: bash -l {0}
         run: python code_gha/HCI/plot_iea_figs_rgnMS.py
+
+      - name: Print dir tree and check disk space
+        shell: bash {0}
+        run: |
+          tree
+          df -h
 
       - name: git auto commit -- save distance to shore mask netcdf
         uses: stefanzweifel/git-auto-commit-action@v7
