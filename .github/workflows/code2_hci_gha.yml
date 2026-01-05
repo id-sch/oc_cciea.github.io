@@ -54,10 +54,6 @@ jobs:
         shell: bash -l {0}
         run: python code_gha/HCI/create_oc_hci_rgnS_std.py
 
-      - name: plot month and season IEA R CSV
-        shell: bash -l {0}
-        run: python code_gha/HCI/plot_iea_figs_rgnMS.py
-
       - name: Print dir tree and check disk space
         shell: bash {0}
         run: |
