@@ -198,15 +198,15 @@ def fun_pd_df2IEA_fig_blue(df, nr, nc, order_list, yr_clim_bgn, yr_clim_end,
         xp_sym = plt.xlim()[1] + np.diff(plt.xlim())*0.01
         dtrnd = trnd5[-1] - trnd5[0]
 
-        if dtrnd > sd_wts:
-            ax.text(xp_sym, ypt, r'$\nearrow$', fontweight='bold',
-                    fontsize='large', verticalalignment='center')
-        if dtrnd < -1 * sd_wts:
-            ax.text(xp_sym, ypt, r'$\searrow$', fontweight='bold',
-                    fontsize='large', verticalalignment='center')
-        if dtrnd >= -1 * sd_wts and dtrnd <= sd_wts:
-            ax.text(xp_sym, ypt, r'$\leftrightarrow$', fontweight='bold',
-                    fontsize='large', verticalalignment='center')
+        # if dtrnd > sd_wts:
+        #     ax.text(xp_sym, ypt, r'$\nearrow$', fontweight='bold',
+        #             fontsize='large', verticalalignment='center')
+        # if dtrnd < -1 * sd_wts:
+        #     ax.text(xp_sym, ypt, r'$\searrow$', fontweight='bold',
+        #             fontsize='large', verticalalignment='center')
+        # if dtrnd >= -1 * sd_wts and dtrnd <= sd_wts:
+        #     ax.text(xp_sym, ypt, r'$\leftrightarrow$', fontweight='bold',
+        #             fontsize='large', verticalalignment='center')
 
         # --IEA symbols, last 5 years
         mn5 = ts5.mean() * np.ones(len(tt5))
