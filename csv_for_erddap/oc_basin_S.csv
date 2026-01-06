@@ -226,7 +226,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,-0.91,0.099999994,-1.01,-0.81000006,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
 2023,2023,1.3166667,0.24501695,1.0716498,1.5616837,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
 2024,2024,-0.093333334,0.12583058,-0.21916391,0.032497242,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
-2025,2025,-0.32,0.13,-0.45,-0.19,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
+2025,2025,-0.31666666,0.12503333,-0.44169998,-0.19163333,ONI,Summer Oceanic Nino Index,nan,nan,nan,3.0
 1950,1950,-0.61333334,0.18037,-0.7937033,-0.43296334,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 1951,1951,1.0,0.1734935,0.8265065,1.1734935,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 1952,1952,0.09666667,0.05507571,0.041590963,0.15174238,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
@@ -302,6 +302,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,-0.91333336,0.08020808,-0.9935414,-0.8331253,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 2023,2023,1.8833333,0.090737745,1.7925956,1.974071,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 2024,2024,-0.38666666,0.1357694,-0.522436,-0.25089726,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2025,2025,-0.55,nan,nan,nan,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 1950,1950,-1.91,0.25159496,-2.1615949,-1.6584051,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
 1951,1951,-1.3666667,0.2227854,-1.589452,-1.1438813,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
 1952,1952,-1.6033334,0.5325724,-2.1359057,-1.070761,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
@@ -529,7 +530,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,-2.02,0.23579648,-2.2557964,-1.7842035,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
 2023,2023,-1.89,0.23259415,-2.122594,-1.6574059,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
 2024,2024,-2.1633334,0.415251,-2.5785844,-1.7480824,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
-2025,2025,-2.7466667,0.76107377,-3.5077405,-1.9855928,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
+2025,2025,-2.7466667,0.7710599,-3.5177264,-1.9756068,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
 1950,1950,-1.4,0.2905168,-1.6905167,-1.1094832,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
 1951,1951,-0.6933333,0.7523518,-1.4456851,0.059018493,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
 1952,1952,-0.5233334,0.21733233,-0.7406657,-0.30600104,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
@@ -605,7 +606,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,-1.8699999,0.31953087,-2.1895308,-1.550469,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
 2023,2023,-1.3866667,0.19655366,-1.5832204,-1.190113,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
 2024,2024,-2.3133333,0.6603282,-2.9736614,-1.6530051,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
-2025,2025,-2.1,nan,nan,nan,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
+2025,2025,-1.7049999,0.48790362,-2.1929035,-1.2170963,PDO,Fall Pacific Decadal Oscillation Index,nan,nan,nan,8.0
 1950,1950,-1.5330874,0.6163296,-2.149417,-0.91675776,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
 1951,1951,-0.48729885,0.078226455,-0.5655253,-0.4090724,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
 1952,1952,-1.0318562,0.33668792,-1.3685441,-0.69516826,NPGO,Winter North Pacific Gyre Oscillation Index,nan,nan,nan,9.0
@@ -833,7 +834,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,-0.750552,0.33202893,-1.0825809,-0.41852307,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
 2023,2023,-1.7059408,0.034344535,-1.7402854,-1.6715963,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
 2024,2024,-1.9467214,0.21036631,-2.1570878,-1.7363551,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
-2025,2025,-1.0351552,0.1050717,-1.1402268,-0.93008345,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
+2025,2025,-1.206251,0.36080658,-1.5670576,-0.84544444,NPGO,Summer North Pacific Gyre Oscillation Index,nan,nan,nan,11.0
 1950,1950,-0.21033554,0.30906242,-0.519398,0.09872688,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
 1951,1951,-1.1020591,0.110051125,-1.2121103,-0.992008,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
 1952,1952,0.0903517,0.6542662,-0.5639145,0.7446179,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
@@ -908,4 +909,5 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2021,2021,-0.8475382,1.0836459,-1.931184,0.23610777,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
 2022,2022,-2.1873531,0.34610164,-2.533455,-1.8412515,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
 2023,2023,-1.3813444,0.42558166,-1.8069261,-0.95576274,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
-2024,2024,-2.08994,0.13073155,-2.2206717,-1.9592085,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2024,2024,-1.9331502,0.3040975,-2.2372477,-1.6290526,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
+2025,2025,-2.217143,0.6427553,-2.8598983,-1.5743878,NPGO,Fall North Pacific Gyre Oscillation Index,nan,nan,nan,12.0
