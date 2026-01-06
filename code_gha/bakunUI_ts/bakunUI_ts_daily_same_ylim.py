@@ -73,8 +73,6 @@ except OSError:
     if not os.path.isdir(dir_plots):
         raise
 
-
-
 # size of input variables
 num_data = len(dir_ui)
 num_lat_wnt = len(lat_list[0])
@@ -241,12 +239,7 @@ for i in range(0, num_data):
                         bbox={'facecolor': 'none', 'edgecolor': 'none'})
 
 # create output name and save xarray dataset to netcdf file
-dir_out = fun_mkdir('plots')
+fn_out = '{}bakunUI_daily_{}roll_same_ylim.png'.format(
+    dir_plots, roll)
 
-# fn_out = '{}beuti_cuti_daily{}_{}roll_same_ylim.png'.format(
-#     dir_out, yr_clim_end, roll)
-fn_out = '{}beuti_cuti_daily_{}roll_same_ylim.png'.format(
-    dir_out, roll)
-
-
-#plt.savefig(fn_out, dpi=300, bbox_inches='tight')
+plt.savefig(fn_out, dpi=300, bbox_inches='tight')
