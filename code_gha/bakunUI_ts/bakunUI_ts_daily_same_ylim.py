@@ -74,7 +74,7 @@ except OSError:
         raise
 
 # size of input variables
-num_data = len(dir_ui)
+num_data = len(fn_ui)
 num_lat_wnt = len(lat_list[0])
 
 # get yearday of vline dates
