@@ -134,10 +134,6 @@ def fun_pd_df2IEA_fig_threshold_blue(df, nr, nc, order_list, yr_clim_bgn, yr_cli
         plt.fill_between(x5yr, y5yr1, y5yr2, facecolor='dodgerblue', alpha=0.2)
 
         in_wndw = ((dfo.index.year >= yy_bgn) & (dfo.index.year <= yy_end))
-        # nt_wndw = in_wndw.nonzero()[0].size
-        # y_sd1 = np.ones(nt_wndw)*mn_wts - sd_wts
-        # y_sd2 = np.ones(nt_wndw)*mn_wts + sd_wts
-        # plt.fill_between(dfo.index[in_wndw], y_sd1, y_sd2, facecolor='palegreen', alpha=0.4)
 
         # --fill gray std window
         if ~std_flag:
@@ -164,30 +160,31 @@ def fun_pd_df2IEA_fig_threshold_blue(df, nr, nc, order_list, yr_clim_bgn, yr_cli
         plt.plot(tt5, trnd5, '-r', linewidth=1)
 
         xp_sym = plt.xlim()[1] + np.diff(plt.xlim())*0.01
+        xpt = xp_sym[0]
         dtrnd = trnd5[-1] - trnd5[0]
+
         if dtrnd > sd_wts:
-            ax.text(xp_sym, ypt, r'$\nearrow$', fontweight='bold',
+            ax.text(xpt, ypt, '↗', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if dtrnd < -1 * sd_wts:
-            ax.text(xp_sym, ypt, r'$\searrow$', fontweight='bold',
+            ax.text(xpt, ypt, '↘', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if dtrnd >= -1 * sd_wts and dtrnd <= sd_wts:
-            ax.text(xp_sym, ypt, r'$\leftrightarrow$', fontweight='bold',
+            ax.text(xpt, ypt, '↔', fontweight='bold',
                     fontsize='large', verticalalignment='center')
 
         # --IEA symbols, last 5 years
-        # bbox_props = dict(boxstyle="circle,pad=0", fc="cyan", ec="cyan", lw=2)
-        mn5 = dfo.data[in_wndw][ind].mean() * np.ones(ind.nonzero()[0].size)
+        mn5 = ts5.mean() * np.ones(len(tt5))
         plt.plot(tt5, mn5, '-m', linewidth=1)
 
         if mn5[0] > mn_wts + sd_wts:
-            ax.text(xp_sym, ypb, r'$\plus$', fontweight='bold',
+            ax.text(xpt, ypb, '+', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if mn5[0] < mn_wts - sd_wts:
-            ax.text(xp_sym, ypb, r'$\minus$', fontweight='bold',
+            ax.text(xpt, ypb, '-', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if mn5[0] >= mn_wts - sd_wts and mn5[0] <= mn_wts + sd_wts:
-            ax.text(xp_sym, ypb, r'$\bullet$', fontweight='bold',
+            ax.text(xpt, ypb, '•', fontweight='bold',
                     fontsize='large', verticalalignment='center')
 
         # --remove top and right axes lines
