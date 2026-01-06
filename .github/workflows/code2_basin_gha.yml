@@ -1,4 +1,4 @@
-name: Code1 Basin -- Python Download Basin and create IEA CSV
+name: Code2 Basin -- plot IEA time series for a given year
 
 env:
   PYTHON_VERSION: "3.12"
@@ -36,17 +36,9 @@ jobs:
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
-      - name: code3_basin_gha, Run Python download data from Erddap
+      - name: code6_basin_gha, Run Python plot R style CSV both Monthly and Seasonal
         shell: bash -l {0}      
-        run: python code_gha/BasinScaleIndicators/download_basin_gha.py
-
-      - name: code4_basin_gha, Run Python save data to R style CSV Monthly
-        shell: bash -l {0}      
-        run: python code_gha/BasinScaleIndicators/create_oc_basin_M_std.py
-
-      - name: code5_basin_gha, Run Python save data to R style CSV Seasonal
-        shell: bash -l {0}     
-        run: python code_gha/BasinScaleIndicators/create_oc_basin_S_std.py
+        run: python code_gha/BasinScaleIndicators/plot_IEA_figs_MS.py
 
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
