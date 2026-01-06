@@ -1,4 +1,4 @@
-name: Code 1 UI -- Python Download Bakun UI and create IEA CSV
+name: Code 2 UI -- plot IEA time series for a given year
 
 env:
   PYTHON_VERSION: "3.12"
@@ -36,27 +36,9 @@ jobs:
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
-      - name: code3_bakunUI_gha, Run Python download data from Erddap
+      - name: code7_bakunUI_gha, Run Python plot R style CSV both Monthly and Seasonal
         shell: bash -l {0}      
-        run: python code_gha/bakunUI/download_bakunUI_gha.py
-
-      - name: code4_bakunUI_gha, Run Python create daily, monthly from 6 hr
-        shell: bash -l {0}      
-        run: python code_gha/bakunUI/create_daily_monthly_timeseries.py
-
-      - name: Print dir tree and check disk space
-        shell: bash {0}
-        run: |
-          tree
-          df -h
-
-      - name: code5_bakunUI_gha, Run Python save data to R style CSV Monthly
-        shell: bash -l {0}      
-        run: python code_gha/bakunUI/create_oc_bakunUI_M_std.py
-
-      - name: code6_bakunUI_gha, Run Python save data to R style CSV Seasonal
-        shell: bash -l {0}      
-        run: python code_gha/bakunUI/create_oc_bakunUI_S_std.py
+        run: python code_gha/bakunUI/plot_IEA_figs_MS.py
 
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
