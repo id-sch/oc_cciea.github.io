@@ -9,14 +9,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Install Conda
+        uses: conda-incubator/setup-miniconda@v3
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
-          cache-dependency-path: '**/code1_basin_gha_requirements'
+          auto-update-conda: true
+          channels: conda-forge,defaults
+          python-version: 3.12
+          # These properties enable the use of mamba, which is much faster and far less error
+          # prone than conda while being completely compatible with the conda CLI
+          use-mamba: true
+          mamba-version: "*"	  
 
-      - run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
+      - name: Install some packages
+        # The `-l` is needed so conda environment activation works correctly
+        shell: bash -l {0}
+        run: |
+          mamba install -c conda-forge numpy pandas scipy matplotlib xarray dask netCDF4 bottleneck requests cartopy seawater
 
       - name: set pythonpath
         run: |
@@ -37,12 +45,16 @@ jobs:
           googleFileId: 1Y7dEbbIClChXu3UR0OUANmQRNqrcodt3
 
       - name: At select station get DO at certain depths
+        shell: bash -l {0}      
         run: python code_gha/DissolvedOxygen/nh_do_ts_at_depths.py
       - name: Create IEA R style CSV files Monthly
+        shell: bash -l {0}      
         run: python code_gha/DissolvedOxygen/create_oc_do_nh_M_std.py
       - name: Create IEA R style CSV files Seasonal
+        shell: bash -l {0}      
         run: python code_gha/DissolvedOxygen/create_oc_do_nh_S_std.py
       - name: Plot IEA style seasonal figures
+        shell: bash -l {0}      
         run: python code_gha/DissolvedOxygen/plot_do_IEA_figs_nh_MS.py
 
       - name: Print dir tree and check disk space
