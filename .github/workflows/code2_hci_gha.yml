@@ -1,4 +1,4 @@
-name: Code 2, HCI -- SST OI subset 4 regions for the HCI -- IEA CSV and figs
+name: Code 2, HCI -- SST OI subset 4 regions for the HCI -- IEA CSV
 on:
   workflow_dispatch
 

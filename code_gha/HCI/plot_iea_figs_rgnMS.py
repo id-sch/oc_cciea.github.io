@@ -73,7 +73,7 @@ for i in range(num_data):
     fun_pd_df2IEA_fig_blue(
         dfM, nr, nc, [i+1], yr_clim_bgn, yr_clim_end, wndw, yy_wnt, marker_flag=0)
     fn_fig_M = '{}{}_rgn{}_Month{}'.format(dir_plots, file_pre, rgn[i], fig_type)
-    plt.savefig(fn_fig_M, dpi=300, bbox_inches='tight')
+    plt.savefig(fn_fig_M)
 
 
 # Seasons
@@ -97,4 +97,4 @@ rgn_all = '_'.join(rgn.astype('str'))
 fn_fig_M_all = '{}{}_rgns_{}_Monthly{}'.format(
     dir_plots, file_pre, rgn_all, fig_type)
 
-plt.savefig(fn_fig_M_all, dpi=300, bbox_inches='tight')
+plt.savefig(fn_fig_M_all)
