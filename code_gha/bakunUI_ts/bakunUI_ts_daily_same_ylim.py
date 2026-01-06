@@ -15,6 +15,9 @@ mpl.rcParams.update({'font.size': 11})
 # ----------------------------------------------------------------------
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
+
+iea_yr = 2024
+
 # Bakun UI
 dir_out = './data_gha/bakunUI/'
 dir_in = dir_out
@@ -31,7 +34,7 @@ lat_list = [[48, 42, 36], [45, 39, 33]]
 
 # IEA stuff
 wndw = 5
-yy_end = 2025
+yy_end = iea_yr
 yr_clim_bgn = 1988
 yr_clim_end = yy_end
 
@@ -92,6 +95,8 @@ in_yr_wnt = np.where(yrs_clim == yy_end)
 dataD_mtrx = np.zeros([num_data, num_lat_wnt, num_yrs_clim, 366])*np.nan
 dataD_run = np.zeros([num_data, num_lat_wnt, num_yrs_clim, 366])*np.nan
 for i in range(0, num_data):
+    print('i={}, fn={}'.format(i, fn_ui[i]))
+
     lat_wnt = lat_list[i]
     ds1 = xr.open_dataset(fn_ui[i])
     da1 = ds1[ds_var[0]]
