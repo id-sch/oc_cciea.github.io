@@ -164,53 +164,53 @@ def fun_pd_df2IEA_fig_blue(df, nr, nc, order_list, yr_clim_bgn, yr_clim_end,
         y5yr2 = np.ones(2)*[mn_wts+sd_wts]
         plt.fill_between(x5yr, y5yr1, y5yr2, facecolor='dodgerblue', alpha=0.2)
 
-        # # --fill gray std window
-        # if ~std_flag:
-        #     dataf_sd1 = dfo[data_clmn_lbl].values.squeeze() - \
-        #         dfo['error'].values
-        #     dataf_sd2 = dfo[data_clmn_lbl].values.squeeze() + \
-        #         dfo['error'].values
-        #     plt.fill_between(dfo.index.values, dataf_sd1, dataf_sd2,
-        #                      facecolor=np.ones(3)*0.8, alpha=0.6)
+        # --fill gray std window
+        if ~std_flag:
+            dataf_sd1 = dfo[data_clmn_lbl].values.squeeze() - \
+                dfo['error'].values
+            dataf_sd2 = dfo[data_clmn_lbl].values.squeeze() + \
+                dfo['error'].values
+            plt.fill_between(dfo.index.values, dataf_sd1, dataf_sd2,
+                             facecolor=np.ones(3)*0.8, alpha=0.6)
 
-        # # --data over the 5-year window, remove missing
-        # in_wndw = ((dfo.year.values >= yy_bgn) & (dfo.year.values <= yy_end))
-        # tt5_wndw = dfo.index[in_wndw]
-        # ts5_wndw = dfo[data_clmn_lbl][in_wndw]
+        # --data over the 5-year window, remove missing
+        in_wndw = ((dfo.year.values >= yy_bgn) & (dfo.year.values <= yy_end))
+        tt5_wndw = dfo.index[in_wndw]
+        ts5_wndw = dfo[data_clmn_lbl][in_wndw]
 
-        # ind = np.isfinite(ts5_wndw).values.nonzero()[0]
-        # tt5 = tt5_wndw[ind]
-        # ts5 = ts5_wndw.values[ind]
+        ind = np.isfinite(ts5_wndw).values.nonzero()[0]
+        tt5 = tt5_wndw[ind]
+        ts5 = ts5_wndw.values[ind]
 
-        # # --get y-limits to position the IEA symbols
-        # ylm1 = ax.get_ylim()
-        # dy1 = (ylm1[1] - ylm1[0]) / 20
-        # ypt = mn_wts + dy1
-        # ypb = mn_wts - dy1
+        # --get y-limits to position the IEA symbols
+        ylm1 = ax.get_ylim()
+        dy1 = (ylm1[1] - ylm1[0]) / 20
+        ypt = mn_wts + dy1
+        ypb = mn_wts - dy1
 
-        # # --IEA symbols, trend over last 5 years
-        # A1 = np.array([tt5.to_julian_date().values,
-        #                np.ones(len(tt5))])
-        # w1, w2 = np.linalg.lstsq(A1.T, ts5, rcond=None)[0]
-        # trnd5 = w1 * tt5.to_julian_date().values + w2
-        # plt.plot(tt5, trnd5, '-r', linewidth=1)
+        # --IEA symbols, trend over last 5 years
+        A1 = np.array([tt5.to_julian_date().values,
+                       np.ones(len(tt5))])
+        w1, w2 = np.linalg.lstsq(A1.T, ts5, rcond=None)[0]
+        trnd5 = w1 * tt5.to_julian_date().values + w2
+        plt.plot(tt5, trnd5, '-r', linewidth=1)
 
-        # xp_sym = plt.xlim()[1] + np.diff(plt.xlim())*0.01
-        # dtrnd = trnd5[-1] - trnd5[0]
+        xp_sym = plt.xlim()[1] + np.diff(plt.xlim())*0.01
+        dtrnd = trnd5[-1] - trnd5[0]
 
-        # if dtrnd > sd_wts:
-        #     ax.text(xp_sym, ypt, r'$\nearrow$', fontweight='bold',
-        #             fontsize='large', verticalalignment='center')
-        # if dtrnd < -1 * sd_wts:
-        #     ax.text(xp_sym, ypt, r'$\searrow$', fontweight='bold',
-        #             fontsize='large', verticalalignment='center')
-        # if dtrnd >= -1 * sd_wts and dtrnd <= sd_wts:
-        #     ax.text(xp_sym, ypt, r'$\leftrightarrow$', fontweight='bold',
-        #             fontsize='large', verticalalignment='center')
+        if dtrnd > sd_wts:
+            ax.text(xp_sym, ypt, r'$\nearrow$', fontweight='bold',
+                    fontsize='large', verticalalignment='center')
+        if dtrnd < -1 * sd_wts:
+            ax.text(xp_sym, ypt, r'$\searrow$', fontweight='bold',
+                    fontsize='large', verticalalignment='center')
+        if dtrnd >= -1 * sd_wts and dtrnd <= sd_wts:
+            ax.text(xp_sym, ypt, r'$\leftrightarrow$', fontweight='bold',
+                    fontsize='large', verticalalignment='center')
 
-        # # --IEA symbols, last 5 years
-        # mn5 = ts5.mean() * np.ones(len(tt5))
-        # plt.plot(tt5, mn5, '-m', linewidth=1)
+        # --IEA symbols, last 5 years
+        mn5 = ts5.mean() * np.ones(len(tt5))
+        plt.plot(tt5, mn5, '-m', linewidth=1)
 
         # if mn5[0] > mn_wts + sd_wts:
         #     ax.text(xp_sym, ypb, r'$\plus$', fontweight='bold',
