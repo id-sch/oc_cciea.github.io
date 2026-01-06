@@ -29,7 +29,7 @@ jobs:
       - name: set pythonpath
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
-	  
+
       - name: Download NH05 CTD netcdf file
         uses: Fork-on-the-Table-Collective/upload-to-download-from-gdrive@v2.0.0
         with:
@@ -37,7 +37,7 @@ jobs:
           actionType: download
           localPath: ./NH05_CTD.nc
           googleFileId: 1Bxp72seX9AgqMAFkQMCv9Jmt1FoQ8Edw
-	  
+
       - name: Download NH25 CTD netcdf file
         uses: Fork-on-the-Table-Collective/upload-to-download-from-gdrive@v2.0.0
         with:
