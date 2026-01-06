@@ -1,0 +1,44 @@
+name: Code 1 Daily UI -- plot daily time series for the current year
+
+env:
+  PYTHON_VERSION: "3.12"
+
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install Conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          channels: conda-forge,defaults
+          python-version: 3.12
+          # These properties enable the use of mamba, which is much faster and far less error
+          # prone than conda while being completely compatible with the conda CLI
+          use-mamba: true
+          mamba-version: "*"	  
+
+      - name: Install some packages
+        # The `-l` is needed so conda environment activation works correctly
+        shell: bash -l {0}
+        run: |
+          mamba install -c conda-forge numpy pandas scipy matplotlib xarray dask netCDF4 bottleneck requests cartopy seawater
+
+      - name: set pythonpath
+        run: |
+          echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
+
+      - name: code3_bakunUI_ts_gha, Plot daily UI time series
+        shell: bash -l {0}      
+        run: python code_gha/bakunUI_ts/bakunUI_ts_daily_same_ylim.py
+
+      - name: git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v7
