@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from fun_pd_df2IEA_fig_blue import fun_pd_df2IEA_fig_blue
+# -*- coding: utf-8 -*-
 
 
 # turn of toolbar on fig, set font
