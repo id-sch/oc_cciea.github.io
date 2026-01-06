@@ -225,7 +225,9 @@ for i in range(0, num_data):
         for jjj in range(0, len(dates_vline)):
             pddt = pd.to_datetime(dates_vline[jjj])
             txt = '{}/{}'.format(pddt.month, pddt.day)
-            plt.text(yearday_vline[jjj], ylm[1]+dy, txt,
+            xp1 = yearday_vline[jjj]*1.0
+            yp1 = ylm[1][0]+dy[0]
+            plt.text(xp1, yp1, txt,
                      horizontalalignment='center',
                      verticalalignment='top',
                      color='black', fontsize=8)
@@ -233,7 +235,9 @@ for i in range(0, num_data):
         # Latitude Text
         xtxt = plt.xlim()[1]+0.5*dx
         ytxt = plt.ylim()[1]-1.5*dy
-        tbox = plt.text(xtxt, ytxt, '{} °N'.format(lat_wnt[j]),
+        xp2 = xtxt[0]
+        yp2 = ytxt[0]
+        tbox = plt.text(xp2, yp2, '{} °N'.format(lat_wnt[j]),
                         fontsize=15, horizontalalignment='right',
                         fontweight='bold',
                         bbox={'facecolor': 'none', 'edgecolor': 'none'})
