@@ -39,6 +39,9 @@ jobs:
       - name: Create IEA R style CSV files Seasonal
         shell: bash -l {0}      
         run: python code_gha/DissolvedOxygen/create_oc_do_calcofi_S_std.py
+      - name: Plot IEA time series
+        shell: bash -l {0}      
+        run: python code_gha/DissolvedOxygen/plot_do_IEA_figs_calcofi_S.py
 
       - name: Print dir tree and check disk space
         shell: bash {0}
