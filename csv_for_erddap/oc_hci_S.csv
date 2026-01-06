@@ -174,7 +174,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,0.534586298353792,0.294238819286916,0.24034747906687604,0.828825117640708,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 43.5-48N,nan,nan,0.0,4.0
 2023,2023,0.0024283143274404,0.0034341550555711145,-0.0010058407281307146,0.005862469383011514,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 43.5-48N,nan,nan,0.0,4.0
 2024,2024,0.15002719958316968,0.04280184040838334,0.10722535917478634,0.19282903999155301,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 43.5-48N,nan,nan,0.0,4.0
-2025,2025,0.02906269717594925,0.02906269717594925,0.0,0.0581253943518985,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 43.5-48N,nan,nan,0.0,4.0
+2025,2025,0.019375131450632833,0.027400573670246453,-0.00802544221961362,0.046775705120879287,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 43.5-48N,nan,nan,0.0,4.0
 1982,1982,0.6812119112247664,0.16437468199628152,0.5168372292284849,0.845586593221048,Habitat Area (fraction below monthly threshold),Winter Habitat Compression Index over 40-43.5N,nan,nan,0.0,5.0
 1983,1983,0.015977559319433433,0.0225956810831634,-0.006618121763729966,0.03857324040259683,Habitat Area (fraction below monthly threshold),Winter Habitat Compression Index over 40-43.5N,nan,nan,0.0,5.0
 1984,1984,0.15064885840569306,0.07091889470905845,0.07972996369663461,0.22156775311475152,Habitat Area (fraction below monthly threshold),Winter Habitat Compression Index over 40-43.5N,nan,nan,0.0,5.0
@@ -350,7 +350,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,0.45805048696367484,0.17725782319984723,0.2807926637638276,0.6353083101635221,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 40-43.5N,nan,nan,0.0,8.0
 2023,2023,0.03880334712332627,0.05487621976727903,-0.01607287264395276,0.0936795668906053,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 40-43.5N,nan,nan,0.0,8.0
 2024,2024,0.3570544195770629,0.1612548100089059,0.195799609568157,0.5183092295859688,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 40-43.5N,nan,nan,0.0,8.0
-2025,2025,0.05780029321496,0.05780029321496,0.0,0.11560058642992,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 40-43.5N,nan,nan,0.0,8.0
+2025,2025,0.03853352880997333,0.054494639049158675,-0.015961110239185346,0.09302816785913201,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 40-43.5N,nan,nan,0.0,8.0
 1982,1982,0.48899475867402414,0.05919884639747808,0.42979591227654607,0.5481936050715022,Habitat Area (fraction below monthly threshold),Winter Habitat Compression Index over 35.5-40N,nan,nan,0.0,9.0
 1983,1983,0.0,0.0,0.0,0.0,Habitat Area (fraction below monthly threshold),Winter Habitat Compression Index over 35.5-40N,nan,nan,0.0,9.0
 1984,1984,0.13634622573196079,0.09164446306108553,0.04470176267087525,0.22799068879304632,Habitat Area (fraction below monthly threshold),Winter Habitat Compression Index over 35.5-40N,nan,nan,0.0,9.0
@@ -526,7 +526,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,0.46777505399510716,0.1808823131702172,0.28689274082488997,0.6486573671653244,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 35.5-40N,nan,nan,0.0,12.0
 2023,2023,0.031750787258820835,0.03498329081260043,-0.0032325035537795963,0.06673407807142126,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 35.5-40N,nan,nan,0.0,12.0
 2024,2024,0.26809417592928514,0.1714236506423748,0.09667052528691034,0.43951782657165994,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 35.5-40N,nan,nan,0.0,12.0
-2025,2025,0.04386266178451505,0.029380784889974754,0.014481876894540294,0.0732434466744898,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 35.5-40N,nan,nan,0.0,12.0
+2025,2025,0.029241774523010036,0.031670612600031255,-0.0024288380770212184,0.06091238712304129,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 35.5-40N,nan,nan,0.0,12.0
 1982,1982,0.5006618332548961,0.022595233313758064,0.47806659994113804,0.5232570665686541,Habitat Area (fraction below monthly threshold),Winter Habitat Compression Index over 30-35.5N,nan,nan,0.0,13.0
 1983,1983,0.029356211598835735,0.021693527088341744,0.00766268451049399,0.05104973868717748,Habitat Area (fraction below monthly threshold),Winter Habitat Compression Index over 30-35.5N,nan,nan,0.0,13.0
 1984,1984,0.27153638210171743,0.014830003276183256,0.25670637882553415,0.2863663853779007,Habitat Area (fraction below monthly threshold),Winter Habitat Compression Index over 30-35.5N,nan,nan,0.0,13.0
@@ -702,4 +702,4 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,0.4105481354256802,0.07424114882755578,0.3363069865981244,0.484789284253236,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 30-35.5N,nan,nan,0.0,16.0
 2023,2023,0.2808273848539579,0.08903861011193782,0.1917887747420201,0.36986599496589573,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 30-35.5N,nan,nan,0.0,16.0
 2024,2024,0.6141807874655454,0.08444647933277925,0.5297343081327661,0.6986272667983247,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 30-35.5N,nan,nan,0.0,16.0
-2025,2025,0.3015903696826322,0.033987638025266,0.2676027316573662,0.3355780077078982,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 30-35.5N,nan,nan,0.0,16.0
+2025,2025,0.23919992850163685,0.09249454395013158,0.14670538455150528,0.3316944724517684,Habitat Area (fraction below monthly threshold),Fall Habitat Compression Index over 30-35.5N,nan,nan,0.0,16.0

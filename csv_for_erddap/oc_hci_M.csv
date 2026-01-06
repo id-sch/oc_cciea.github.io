@@ -526,6 +526,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,9,2025-09,0.2027366158811648,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 43.5-48N,nan,nan,0.0,1.0
 2025,10,2025-10,0.0581253943518985,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 43.5-48N,nan,nan,0.0,1.0
 2025,11,2025-11,0.0,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 43.5-48N,nan,nan,0.0,1.0
+2025,12,2025-12,0.0,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 43.5-48N,nan,nan,0.0,1.0
 1982,1,1982-01,0.8995953463462659,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 40-43.5N,nan,nan,0.0,2.0
 1982,2,1982-02,0.6410133858678017,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 40-43.5N,nan,nan,0.0,2.0
 1982,3,1982-03,0.5030270014602318,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 40-43.5N,nan,nan,0.0,2.0
@@ -1053,6 +1054,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,9,2025-09,0.1061622581565031,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 40-43.5N,nan,nan,0.0,2.0
 2025,10,2025-10,0.11560058642992,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 40-43.5N,nan,nan,0.0,2.0
 2025,11,2025-11,0.0,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 40-43.5N,nan,nan,0.0,2.0
+2025,12,2025-12,0.0,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 40-43.5N,nan,nan,0.0,2.0
 1982,1,1982-01,0.5708608575160826,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 35.5-40N,nan,nan,0.0,3.0
 1982,2,1982-02,0.4632344320631908,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 35.5-40N,nan,nan,0.0,3.0
 1982,3,1982-03,0.432888986442799,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 35.5-40N,nan,nan,0.0,3.0
@@ -1580,6 +1582,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,9,2025-09,0.0588645057277321,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 35.5-40N,nan,nan,0.0,3.0
 2025,10,2025-10,0.0144818768945403,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 35.5-40N,nan,nan,0.0,3.0
 2025,11,2025-11,0.0732434466744898,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 35.5-40N,nan,nan,0.0,3.0
+2025,12,2025-12,0.0,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 35.5-40N,nan,nan,0.0,3.0
 1982,1,1982-01,0.4774139310919249,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 30-35.5N,nan,nan,0.0,4.0
 1982,2,1982-02,0.5312717827699757,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 30-35.5N,nan,nan,0.0,4.0
 1982,3,1982-03,0.4932997859027877,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 30-35.5N,nan,nan,0.0,4.0
@@ -2107,3 +2110,4 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,9,2025-09,0.3725175340720049,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 30-35.5N,nan,nan,0.0,4.0
 2025,10,2025-10,0.2676027316573662,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 30-35.5N,nan,nan,0.0,4.0
 2025,11,2025-11,0.3355780077078982,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 30-35.5N,nan,nan,0.0,4.0
+2025,12,2025-12,0.1144190461396461,nan,nan,nan,Habitat Area (fraction below monthly threshold),Monthly Habitat Compression Index over 30-35.5N,nan,nan,0.0,4.0
