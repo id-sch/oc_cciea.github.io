@@ -200,13 +200,13 @@ def fun_pd_df2IEA_fig_blue(df, nr, nc, order_list, yr_clim_bgn, yr_clim_end,
         dtrnd = trnd5[-1] - trnd5[0]
 
         if dtrnd > sd_wts:
-            ax.text(xp_sym, ypt, r'$\nearrow$', fontweight='bold',
+            ax.text(xp_sym, ypt, '↗', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if dtrnd < -1 * sd_wts:
-            ax.text(xp_sym, ypt, r'$\searrow$', fontweight='bold',
+            ax.text(xp_sym, ypt, '↘', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if dtrnd >= -1 * sd_wts and dtrnd <= sd_wts:
-            ax.text(xp_sym, ypt, r'$\leftrightarrow$', fontweight='bold',
+            ax.text(xp_sym, ypt, '↔', fontweight='bold',
                     fontsize='large', verticalalignment='center')
 
         # --IEA symbols, last 5 years
@@ -214,13 +214,13 @@ def fun_pd_df2IEA_fig_blue(df, nr, nc, order_list, yr_clim_bgn, yr_clim_end,
         plt.plot(tt5, mn5, '-m', linewidth=1)
 
         if mn5[0] > mn_wts + sd_wts:
-            ax.text(xp_sym, ypb, r'$\plus$', fontweight='bold',
+            ax.text(xp_sym, ypb, '+', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if mn5[0] < mn_wts - sd_wts:
-            ax.text(xp_sym, ypb, r'$\minus$', fontweight='bold',
+            ax.text(xp_sym, ypb, '-', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if mn5[0] >= mn_wts - sd_wts and mn5[0] <= mn_wts + sd_wts:
-            ax.text(xp_sym, ypb, r'$\bullet$', fontweight='bold',
+            ax.text(xp_sym, ypb, '●', fontweight='bold',
                     fontsize='large', verticalalignment='center')
 
         # --remove top and right axes lines
