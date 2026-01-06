@@ -201,26 +201,14 @@ def fun_pd_df2IEA_fig_blue(df, nr, nc, order_list, yr_clim_bgn, yr_clim_end,
         dtrnd = trnd5[-1] - trnd5[0]
 
         if dtrnd > sd_wts:
-            ax.text(xpt, ypt, 'A', fontweight='bold',
+            ax.text(xpt, ypt, '↗', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if dtrnd < -1 * sd_wts:
-            ax.text(xpt, ypt, 'B', fontweight='bold',
+            ax.text(xpt, ypt, '↘', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if dtrnd >= -1 * sd_wts and dtrnd <= sd_wts:
-            ax.text(xpt, ypt, 'C', fontweight='bold',
+            ax.text(xpt, ypt, '↔', fontweight='bold',
                     fontsize='large', verticalalignment='center')
-
-
-        
-        # if dtrnd > sd_wts:
-        #     ax.text(xp_sym, ypt, '↗', fontweight='bold',
-        #             fontsize='large', verticalalignment='center')
-        # if dtrnd < -1 * sd_wts:
-        #     ax.text(xp_sym, ypt, '↘', fontweight='bold',
-        #             fontsize='large', verticalalignment='center')
-        # if dtrnd >= -1 * sd_wts and dtrnd <= sd_wts:
-        #     ax.text(xp_sym, ypt, '↔', fontweight='bold',
-        #             fontsize='large', verticalalignment='center')
 
         # --IEA symbols, last 5 years
         mn5 = ts5.mean() * np.ones(len(tt5))
@@ -233,8 +221,8 @@ def fun_pd_df2IEA_fig_blue(df, nr, nc, order_list, yr_clim_bgn, yr_clim_end,
             ax.text(xpt, ypb, '-', fontweight='bold',
                     fontsize='large', verticalalignment='center')
         if mn5[0] >= mn_wts - sd_wts and mn5[0] <= mn_wts + sd_wts:
-            ax.text(xpt, ypb, 'o', fontweight='bold',
-                fontsize='large', verticalalignment='center')
+            ax.text(xpt, ypb, '•', fontweight='bold',
+                    fontsize='large', verticalalignment='center')
 
         # --remove top and right axes lines
         ax.spines['top'].set_visible(False)
