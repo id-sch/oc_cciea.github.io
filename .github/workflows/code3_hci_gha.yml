@@ -14,7 +14,7 @@ jobs:
         with:
           auto-update-conda: true
           channels: conda-forge,defaults
-          python-version: 3.12
+          python-version: 3.14
           # These properties enable the use of mamba, which is much faster and far less error
           # prone than conda while being completely compatible with the conda CLI
           use-mamba: true
