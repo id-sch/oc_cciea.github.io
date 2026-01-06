@@ -17,7 +17,7 @@ mpl.rcParams.update({'font.size': 11})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 
-iea_yr = 2024
+iea_yr = 2025
 
 # Bakun UI
 dir_out = './data_gha/bakunUI/'
