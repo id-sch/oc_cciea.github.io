@@ -1,4 +1,4 @@
-name: Code1 DO -- CalCOFI IEA CSV files
+name: Code2 DO -- CalCOFI IEA time series plots
 on:
   workflow_dispatch
 
@@ -30,15 +30,9 @@ jobs:
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
-      - name: At select station get DO at certain depths
+      - name: Plot IEA time series
         shell: bash -l {0}      
-        run: python code_gha/DissolvedOxygen/calcofi_do_ts_at_depths_select_stations.py
-      - name: Create IEA R style CSV files Monthly
-        shell: bash -l {0}      
-        run: python code_gha/DissolvedOxygen/create_oc_do_calcofi_M_std.py
-      - name: Create IEA R style CSV files Seasonal
-        shell: bash -l {0}      
-        run: python code_gha/DissolvedOxygen/create_oc_do_calcofi_S_std.py
+        run: python code_gha/DissolvedOxygen/plot_do_IEA_figs_calcofi_S.py
 
       - name: Print dir tree and check disk space
         shell: bash {0}
