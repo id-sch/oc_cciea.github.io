@@ -130,7 +130,7 @@ for i in range(num_sttn):
     plt.title('{} Aragonite Saturation'.format(ttl_lbl[i]))
 
     fn_fig = '{}{}_time_depth_{}.png'.format(dir_plots, file_pre, ttl_lbl[i])
-    plt.savefig(fn_fig)
+    plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
 
 # remove the directory and files that has the downloaded
 os.remove("./NH05_CTD.nc")
