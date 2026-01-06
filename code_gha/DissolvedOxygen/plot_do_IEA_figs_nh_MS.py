@@ -15,7 +15,7 @@ mpl.rcParams.update({'font.size': 12})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2025
+iea_yr = 2024
 
 # --station wanted, two stations newport hydrographic at 5 and 25 km
 sttn_wnt = ['NH05', 'NH25']
