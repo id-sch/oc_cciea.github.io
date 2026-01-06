@@ -125,44 +125,44 @@ def fun_pd_df2IEA_fig_blue(df, nr, nc, order_list, yr_clim_bgn, yr_clim_end,
 
         # --plot the data
         plt.plot(dfo.index, dfo[data_clmn_lbl], '-k', linewidth=1)
-        # if marker_flag == 1:
-        #     plt.plot(dfo.index, dfo[data_clmn_lbl],
-        #              '.', markersize=3, color='orange')
+        if marker_flag == 1:
+            plt.plot(dfo.index, dfo[data_clmn_lbl],
+                     '.', markersize=3, color='orange')
 
-        # # set xticks, xticklabels at start and end of the window
-        # yr_all = yr_clim_end - yr_clim_bgn
-        # if yr_all < 38:
-        #     dt_intrvl = -1*(wndw-1)
-        #     num_minor = 4
-        # else:
-        #     dt_intrvl = -1*(2*wndw)
-        #     num_minor = 10
-        # xt1 = np.flip(
-        #     np.arange(yr_clim_end, yr_clim_bgn+dt_intrvl, dt_intrvl), 0)
-        # xt1_dt = [np.datetime64(xt1[j].astype('str')+'-01')
-        #           for j in range(0, np.size(xt1))]
-        # xt1_dt = [np.datetime64(xt1[j].astype('str'))
-        #           for j in range(0, np.size(xt1))]
+        # set xticks, xticklabels at start and end of the window
+        yr_all = yr_clim_end - yr_clim_bgn
+        if yr_all < 38:
+            dt_intrvl = -1*(wndw-1)
+            num_minor = 4
+        else:
+            dt_intrvl = -1*(2*wndw)
+            num_minor = 10
+        xt1 = np.flip(
+            np.arange(yr_clim_end, yr_clim_bgn+dt_intrvl, dt_intrvl), 0)
+        xt1_dt = [np.datetime64(xt1[j].astype('str')+'-01')
+                  for j in range(0, np.size(xt1))]
+        xt1_dt = [np.datetime64(xt1[j].astype('str'))
+                  for j in range(0, np.size(xt1))]
 
-        # if iii == num_order_list-1:
-        #     plt.xticks(xt1_dt)
-        #     plt.xlabel('Year')
-        #     myFmt = DateFormatter("%Y")
-        #     ax.xaxis.set_major_formatter(myFmt)
-        # else:
-        #     plt.xticks(xt1_dt, '')
-        # minor_locator = AutoMinorLocator(num_minor)
-        # ax.xaxis.set_minor_locator(minor_locator)
+        if iii == num_order_list-1:
+            plt.xticks(xt1_dt)
+            plt.xlabel('Year')
+            myFmt = DateFormatter("%Y")
+            ax.xaxis.set_major_formatter(myFmt)
+        else:
+            plt.xticks(xt1_dt, '')
+        minor_locator = AutoMinorLocator(num_minor)
+        ax.xaxis.set_minor_locator(minor_locator)
 
-        # # x-limits set to clim interval
-        # plt.xlim([xlm1, xlm2])
+        # x-limits set to clim interval
+        plt.xlim([xlm1, xlm2])
 
-        # # --fill in the 5-year window in green
-        # x5yr = [np.datetime64(str(yy_bgn)+'-01'),
-        #         np.datetime64(str(yy_end)+'-12')]
-        # y5yr1 = np.ones(2)*[mn_wts-sd_wts]
-        # y5yr2 = np.ones(2)*[mn_wts+sd_wts]
-        # plt.fill_between(x5yr, y5yr1, y5yr2, facecolor='dodgerblue', alpha=0.2)
+        # --fill in the 5-year window in green
+        x5yr = [np.datetime64(str(yy_bgn)+'-01'),
+                np.datetime64(str(yy_end)+'-12')]
+        y5yr1 = np.ones(2)*[mn_wts-sd_wts]
+        y5yr2 = np.ones(2)*[mn_wts+sd_wts]
+        plt.fill_between(x5yr, y5yr1, y5yr2, facecolor='dodgerblue', alpha=0.2)
 
         # # --fill gray std window
         # if ~std_flag:
