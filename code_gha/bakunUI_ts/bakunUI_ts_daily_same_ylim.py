@@ -182,7 +182,7 @@ for i in range(0, num_data):
         plt.plot(xf, climf, '--', color='dodgerblue', linewidth=1.0, label='Clim')
 
         # std envelope
-        plt.plot(x_std, y_std, '-', color='dodgerblue', linewidth=0.75, label='$\pm$ 1 s.d.', alpha=0.3)
+        plt.plot(x_std, y_std, '-', color='dodgerblue', linewidth=0.75, label='±1 s.d.', alpha=0.3)
 
         plt.fill_between(x1, clim1-std1, clim1+std1,
                          facecolor=np.ones(3)*0.8, alpha=0.1)
@@ -233,7 +233,7 @@ for i in range(0, num_data):
         # Latitude Text
         xtxt = plt.xlim()[1]+0.5*dx
         ytxt = plt.ylim()[1]-1.5*dy
-        tbox = plt.text(xtxt, ytxt, '{}$\degree$N'.format(lat_wnt[j]),
+        tbox = plt.text(xtxt, ytxt, '{} °N'.format(lat_wnt[j]),
                         fontsize=15, horizontalalignment='right',
                         fontweight='bold',
                         bbox={'facecolor': 'none', 'edgecolor': 'none'})
