@@ -73,6 +73,7 @@ for i in range(num_data):
     fun_pd_df2IEA_fig_blue(
         dfM, nr, nc, [i+1], yr_clim_bgn, yr_clim_end, wndw, yy_wnt, marker_flag=0)
     fn_fig_M = '{}{}_rgn{}_Month{}'.format(dir_plots, file_pre, rgn[i], fig_type)
+    print('i={}, filename={}'.format(i, fn_fig_M))
     plt.savefig(fn_fig_M)
 
 
