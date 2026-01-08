@@ -15,7 +15,7 @@ from C_iea import C_iea
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2025
+iea_yr = 2024
 
 # dir of spatial IEA stats
 dir_out = './data_gha/SSTspatial/'
