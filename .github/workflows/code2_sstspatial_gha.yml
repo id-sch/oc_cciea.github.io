@@ -1,4 +1,4 @@
-name: Contour SST spatial status/trends 
+name: Code 2 -- contour SST spatial status/trends 
 on:
   workflow_dispatch
 
@@ -44,6 +44,10 @@ jobs:
       - name: contour sst spatial iea status/trends
         shell: bash -l {0}
         run: python code_gha/SSTspatial/contour_oc_sst_S_spatial.py
+
+      - name: sample time series and contour sst spatial iea status/trends
+        shell: bash -l {0}
+        run: python code_gha/SSTspatial/sample_ts_and_map.py
 
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
