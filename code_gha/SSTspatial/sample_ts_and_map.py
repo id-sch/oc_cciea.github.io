@@ -216,7 +216,7 @@ for i in range(num_season):
             lon_min_max = lon_keep[in_min_max]
 
             plt.plot(lon_min_max, lat_min_max, '*', color='green', zorder=500)
-            plt.text(lon_min_max+0.2, lat_min_max-0.2, lbl_ts2[iii], fontsize=18, zorder=1000, color='green', va='center')
+            # plt.text(lon_min_max+0.2, lat_min_max-0.2, lbl_ts2[iii], fontsize=18, zorder=1000, color='green', va='center')
 
         # 3 time series along the coast -- grid location and text
         for iii in range(len(lat_ts)):
@@ -230,7 +230,7 @@ for i in range(num_season):
             yrs = ds1['time'].dt.year.data
 
             plt.plot(lon_edge, lat_edge, '*', color='green', zorder=500)
-            plt.text(lon_edge+0.2, lat_edge-0.2, str(iii+1), fontsize=18, zorder=1000, color='green', va='center')
+          #  plt.text(lon_edge+0.2, lat_edge-0.2, str(iii+1), fontsize=18, zorder=1000, color='green', va='center')
 
         plt.xlim(xlm)
         plt.ylim(ylm)
