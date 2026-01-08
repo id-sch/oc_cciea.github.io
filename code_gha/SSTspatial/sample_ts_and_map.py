@@ -260,7 +260,7 @@ for i in range(num_season):
             z1 = C_iea(ps1, yr_clim_bgn=yr_clim_bgn, yr_clim_end=yr_clim_end,
                        wndw=wndw, yy_end=yy_end, lon=coords1.data[0],
                        lat=coords1.data[1], fs_mrkr=14, fs_tcks=12)
-            z1.plot()
+        #    z1.plot()
             plt.title('')
             dy_ts = (np.max(z1.data) - np.min(z1.data))/10
             plt.ylim([np.min(z1.data) - dy_ts, np.max(z1.data) + dy_ts])
@@ -284,7 +284,7 @@ for i in range(num_season):
             z1 = C_iea(ps1, yr_clim_bgn=yr_clim_bgn, yr_clim_end=yr_clim_end,
                        wndw=wndw, yy_end=yy_end, lon=coords1.data[0],
                        lat=coords1.data[1], fs_mrkr=14, fs_tcks=12)
-            z1.plot()
+        #    z1.plot()
             plt.title('')
             dy_ts = (np.max(z1.data) - np.min(z1.data))/8
             plt.ylim([np.min(z1.data) - dy_ts, np.max(z1.data) + dy_ts])
