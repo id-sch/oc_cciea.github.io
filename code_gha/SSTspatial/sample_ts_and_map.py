@@ -23,7 +23,7 @@ dir_in = dir_out
 
 # variables for fun_xr_ds2IEA_contour3
 nlvl1 = [np.arange(-3.0, 3.5, 0.5), np.arange(-3.0, 3.5, 0.5), np.arange(-3, 3.5, 0.5)]
-ttl = ['SST anom ($\degree$C)', '5-yr Mean / SD', '5-yr Trend /SD']
+ttl = ['SST anom (°C)', '5-yr Mean / SD', '5-yr Trend / SD']
 
 # interpolate every 1 degree intervals
 intrp_type = (1, 1)
