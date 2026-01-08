@@ -281,6 +281,7 @@ class C_iea(object):
 
         # get x position of the IEA symbols
         xp_sym = plt.xlim()[1] + np.diff(plt.xlim())*0.04
+        xpt = xp_sym[0]
 
         # get y positions of the IEA symbols
         ylm1 = plt.gca().get_ylim()
@@ -293,20 +294,20 @@ class C_iea(object):
         plt.plot(self.tt5, mn5, '-m', linewidth=1)
 
         if self.fs_mrkr > 0:
-            plt.gca().text(xp_sym, ypb, self.ts_marker_mn5, fontweight='bold',
+            plt.gca().text(xpt, ypb, self.ts_marker_mn5, fontweight='bold',
                            fontsize=self.fs_mrkr, verticalalignment='center')
         else:
-            plt.gca().text(xp_sym, ypb, self.ts_marker_mn5, fontweight='bold',
+            plt.gca().text(xpt, ypb, self.ts_marker_mn5, fontweight='bold',
                            fontsize='smaller', verticalalignment='center')
 
         # trend line and symbol
         plt.plot(self.tt5, self.fit5, '-g', linewidth=1)
 
         if self.fs_mrkr > 0:
-            plt.gca().text(xp_sym, ypt, self.ts_marker_trnd5, fontweight='bold',
+            plt.gca().text(xpt, ypt, self.ts_marker_trnd5, fontweight='bold',
                            fontsize=self.fs_mrkr, verticalalignment='center')
         else:
-            plt.gca().text(xp_sym, ypt, self.ts_marker_trnd5, fontweight='bold',
+            plt.gca().text(xpt, ypt, self.ts_marker_trnd5, fontweight='bold',
                            fontsize='smaller', verticalalignment='center')
 
         # --remove top and right axes lines
