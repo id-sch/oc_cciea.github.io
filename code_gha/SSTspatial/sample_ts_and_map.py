@@ -16,9 +16,12 @@ from C_iea import C_iea
 # ----------------------------------------------------------------------
 # iea year
 iea_yr = 2025
+# iea_yr = 2025
+
 
 # dir of spatial IEA stats
 dir_out = './data_gha/SSTspatial/'
+# dir_out = './oc_cciea.github.io/data_gha/SSTspatial/'
 dir_in = dir_out
 
 # variables for fun_xr_ds2IEA_contour3
@@ -63,7 +66,7 @@ sup_ttl_lbl = ['Anom', '5-year mean', '5-year trend']
 lat_ts = [45.125, 39.125, 33.125]
 
 x_ts3 = [0.72, 0.72, 0.72]
-y_ts3 = [0.73, 0.53, 0.33]
+y_ts3 = [0.77, 0.55, 0.33]
 
 lenx_ts3 = [0.2, 0.2, 0.2]
 leny_ts3 = [0.15, 0.15, 0.15]
@@ -78,6 +81,7 @@ lbl_ts2 = ['Min', 'Max']
 
 # --plot directory
 dir_plot_out = './figures_gha/SSTspatial/'
+# dir_plot_out = './figures_x13/SSTspatial/'
 fig_type = '.png'
 
 # figure size
@@ -261,9 +265,7 @@ for i in range(num_season):
             dy_ts = (np.max(z1.data) - np.min(z1.data))/10
             plt.ylim([np.min(z1.data) - dy_ts, np.max(z1.data) + dy_ts])
             num_yrs = len(z1.data.values)
-            plt.text(z1.data.index.values[int(num_yrs/2)], np.max(z1.data.values)+dy_ts,
-                     'Grid Location {}'.format(lbl_ts2[iii]), ha='center', va='center',
-                     fontsize=14)
+            plt.title('Grid Location {}'.format(lbl_ts2[iii]), pad=0)
 
         # 3 time series along the coast -- IEA time series
         for iii in range(len(lat_ts)):
@@ -287,9 +289,7 @@ for i in range(num_season):
             dy_ts = (np.max(z1.data) - np.min(z1.data))/8
             plt.ylim([np.min(z1.data) - dy_ts, np.max(z1.data) + dy_ts])
             num_yrs = len(z1.data.values)
-            plt.text(z1.data.index.values[int(num_yrs/2)], np.max(z1.data.values)+0.4*dy_ts,
-                     'Grid Location {}'.format(iii+1), ha='center', va='center',
-                     fontsize=14)
+            plt.title('Grid Location {}'.format(iii+1), pad=0)
 
         # colorbar
         ax_pos = ax1.get_position()
