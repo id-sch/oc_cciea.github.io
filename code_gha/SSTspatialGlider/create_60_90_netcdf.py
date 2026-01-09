@@ -154,7 +154,7 @@ for i in range(num_line_wnt):
 
 line_str = '_'.join(list(map(str,line_wnt)))
 fn_plot = '{}oc_z_{}_gldr_lines_{}_distance_{}_{}km.png'.format(dir_plots, var_wnt, line_str, dis_wnt[0], dis_wnt[-1])
-plt.savefig(fn_plot)
+plt.savefig(fn_plot, dpi=300, bbox_inches='tight')
 
 # remove the directory and files that has the downloaded
 shutil.rmtree(dir_tmp)
