@@ -19,7 +19,7 @@ mpl.rcParams.update({'savefig.bbox': 'tight'})
 # Input variables, change these
 # -----------------------------------------------------------------------------
 # iea year
-iea_yr = 2025
+iea_yr = 2024
 
 # years to plot
 yr_bgn = 2007
