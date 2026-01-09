@@ -18,7 +18,7 @@ rcParams.update({'font.size': 12})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2025
+iea_yr = 2024
 
 # --MHW index wanted
 mhw_wnt = ['heatwave_cover', 'sum_area', 'intensity']
