@@ -50,6 +50,15 @@ fig_hght = 8.5
 # len input variables
 num_line_wnt = len(line_wnt)
 
+# create tmp directory, will save the download data here
+dir_tmp = 'tmp'
+# check if directory exist, if it doesn't then create
+try:
+    os.makedirs(dir_tmp)
+except OSError:
+    if not os.path.isdir(dir_plots):
+        raise
+
 # create plot output directory
 dir_plots = '{}{}/'.format(dir_plot_out, iea_yr)
 
@@ -148,4 +157,4 @@ fn_plot = '{}oc_z_{}_gldr_lines_{}_distance_{}_{}km.png'.format(dir_plots, var_w
 plt.savefig(fn_plot)
 
 # remove the directory and files that has the downloaded
-shutil.rmtree('./tmp/')
+shutil.rmtree(dir_tmp)
