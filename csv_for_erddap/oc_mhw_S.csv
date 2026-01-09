@@ -168,9 +168,9 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2020,2020,0.3035955,0.3021213412284851,0.0014741718769073486,0.6057168245315552,heatwave_cover,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,4.0
 2021,2021,0.013576147,0.014404457993805408,-0.0008283108472824097,0.027980605140328407,heatwave_cover,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,4.0
 2022,2022,0.19973424,0.22385866940021515,-0.024124428629875183,0.4235929250717163,heatwave_cover,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,4.0
-2023,2023,0.27527586,0.14393830299377441,0.13133755326271057,0.4192141592502594,heatwave_cover,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,4.0
-2024,2024,0.12692401,0.08649370819330215,0.04043029993772507,0.21341770887374878,heatwave_cover,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,4.0
-2025,2025,0.3321657,0.15828926861286163,0.17387641966342926,0.4904549717903137,heatwave_cover,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,4.0
+2023,2023,0.2733821,0.14290417730808258,0.1304779201745987,0.41628628969192505,heatwave_cover,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,4.0
+2024,2024,0.12657811,0.08665478229522705,0.039923325181007385,0.2132328897714615,heatwave_cover,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,4.0
+2025,2025,0.3505668,0.17103005945682526,0.17953674495220184,0.5215968489646912,heatwave_cover,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,4.0
 1983,1983,396287.9,201317.90678916604,194969.99946083396,597605.813039166,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
 1984,1984,852089.75,434831.548461267,417258.201538733,1286921.298461267,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
 1985,1985,200522.0,115872.94211441597,84649.05788558403,316394.942114416,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
@@ -212,8 +212,8 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2021,2021,1.7327166e+06,889923.4543595535,842793.1706404465,2622640.0793595538,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
 2022,2022,2.5400218e+06,1304763.537373368,1235258.212626632,3844785.2873733677,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
 2023,2023,1.998364e+06,575833.8437334357,1422530.1562665643,2574197.8437334355,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
-2024,2024,591756.9,298888.5488734478,292868.3261265522,890645.4238734478,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
-2025,2025,2.0559174e+06,487204.5722095976,1568712.8027904024,2543121.9472095976,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
+2024,2024,591718.6,298848.46720652055,292870.15779347945,890567.0922065205,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
+2025,2025,2.0558586e+06,487161.40870759607,1568697.2162924039,2543020.033707596,sum_area,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,5.0
 1983,1983,267592.88,123106.88590699047,144485.98909300953,390699.7609069905,sum_area,"Spring California Current Marine Heatwave, Daily",nan,nan,nan,6.0
 1984,1984,858608.7,616216.6482085603,242392.0392914397,1474825.3357085604,sum_area,"Spring California Current Marine Heatwave, Daily",nan,nan,nan,6.0
 1985,1985,65063.81,106062.87317262642,-40999.06457887642,171126.68176637642,sum_area,"Spring California Current Marine Heatwave, Daily",nan,nan,nan,6.0
@@ -340,9 +340,9 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2020,2020,5.980592e+06,1500325.0027423336,4480266.997257667,7480917.002742333,sum_area,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,8.0
 2021,2021,1.02850375e+06,682009.9760811029,346493.77391889715,1710513.7260811029,sum_area,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,8.0
 2022,2022,3.6662875e+06,1638666.9498301165,2027620.5501698835,5304954.449830117,sum_area,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,8.0
-2023,2023,3.1098242e+06,1416239.7869405844,1693584.4630594156,4526064.036940584,sum_area,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,8.0
-2024,2024,3.564744e+06,1030032.3948608828,2534711.605139117,4594776.394860882,sum_area,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,8.0
-2025,2025,4.0886922e+06,1364592.2608817378,2724099.989118262,5453284.510881738,sum_area,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,8.0
+2023,2023,3.0953412e+06,1432359.8709079577,1662981.3790920423,4527701.120907958,sum_area,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,8.0
+2024,2024,3.5523785e+06,1036669.3506896163,2515709.149310384,4589047.850689616,sum_area,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,8.0
+2025,2025,4.1246548e+06,1242690.8661425388,2881963.883857461,5367345.616142539,sum_area,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,8.0
 1983,1983,1.7803613,0.12882758677005768,1.6515337228775024,1.9091888666152954,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
 1984,1984,1.7835763,0.16544659435749054,1.6181296110153198,1.949022889137268,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
 1985,1985,1.6590858,0.20082621276378632,1.4582595825195312,1.8599119186401367,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
@@ -384,8 +384,8 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2021,2021,1.650747,0.0932564064860344,1.557490587234497,1.7440032958984375,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
 2022,2022,1.7741233,0.1523803472518921,1.6217429637908936,1.9265036582946777,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
 2023,2023,1.74923,0.12412868440151215,1.6251013278961182,1.8733587265014648,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
-2024,2024,1.6104488,0.08014758676290512,1.5303012132644653,1.6905964612960815,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
-2025,2025,1.8892316,0.1355838179588318,1.753647804260254,2.024815320968628,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
+2024,2024,1.6104616,0.08016917109489441,1.5302923917770386,1.6906307935714722,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
+2025,2025,1.8892407,0.13560019433498383,1.7536405324935913,2.024840831756592,intensity,"Winter California Current Marine Heatwave, Daily",nan,nan,nan,9.0
 1983,1983,1.7263913,0.156139075756073,1.5702521800994873,1.8825304508209229,intensity,"Spring California Current Marine Heatwave, Daily",nan,nan,nan,10.0
 1984,1984,1.8078766,0.20304375886917114,1.6048328876495361,2.010920286178589,intensity,"Spring California Current Marine Heatwave, Daily",nan,nan,nan,10.0
 1985,1985,1.7138225,0.2366233617067337,1.4771990776062012,1.9504458904266357,intensity,"Spring California Current Marine Heatwave, Daily",nan,nan,nan,10.0
@@ -512,6 +512,6 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2020,2020,1.8394198,0.1781773567199707,1.6612424850463867,2.017597198486328,intensity,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,12.0
 2021,2021,1.6312388,0.1434120386838913,1.4878268241882324,1.7746508121490479,intensity,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,12.0
 2022,2022,1.7538892,0.14965908229351044,1.6042301654815674,1.903548240661621,intensity,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,12.0
-2023,2023,1.8222263,0.19158074259757996,1.630645513534546,2.0138070583343506,intensity,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,12.0
-2024,2024,1.9151472,0.1893322467803955,1.725814938545227,2.1044793128967285,intensity,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,12.0
-2025,2025,1.8113664,0.12067325413227081,1.6906931400299072,1.932039737701416,intensity,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,12.0
+2023,2023,1.8186134,0.1941123753786087,1.6245009899139404,2.012725830078125,intensity,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,12.0
+2024,2024,1.9114953,0.18764306604862213,1.723852276802063,2.0991384983062744,intensity,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,12.0
+2025,2025,1.8072506,0.11234644055366516,1.6949042081832886,1.9195970296859741,intensity,"Fall California Current Marine Heatwave, Daily",nan,nan,nan,12.0
