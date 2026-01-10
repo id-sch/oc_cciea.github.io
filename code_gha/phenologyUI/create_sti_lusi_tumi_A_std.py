@@ -11,6 +11,7 @@ from fun_pd_df2csvR_time import fun_pd_df2csvR_time
 # -----------------------------------------------------------------------------
 # --directory of the 6hr UI
 dir_out = './data_gha/bakunUI/'
+# dir_out = './data_x13/bakunUI/'
 dir_in = dir_out
 fn_in = '{}UI_daily.nc'.format(dir_in)
 
@@ -95,9 +96,13 @@ for i in range(0, num_wnt):
         # --less (depending on mon_wnt1,mon_wnt2)
         num_in = len(dt_yr)
         in_end = 365
+ 
         if num_in < in_end:
             in_end = num_in-1
+            
 
+        print(('{}: {}, {}: {}, num_in={}, in_end={}'.format(i, num_wnt, j, num_yrs, num_in, in_end)
+        
         ui_365 = np.zeros(365)*np.nan
         ui_365[0:in_end] = ui_yr[0:in_end]
         cui = np.nancumsum(ui_365)
