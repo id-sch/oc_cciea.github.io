@@ -101,7 +101,7 @@ for i in range(0, num_wnt):
             in_end = num_in-1
             
 
-        print(('{}: {}, {}: {}, num_in={}, in_end={}'.format(i, num_wnt, j, num_yrs, num_in, in_end)
+        print('{}: {}, {}: {}, num_in={}, in_end={}'.format(i, num_wnt, j, num_yrs, num_in, in_end))t
         
         ui_365 = np.zeros(365)*np.nan
         ui_365[0:in_end] = ui_yr[0:in_end]
