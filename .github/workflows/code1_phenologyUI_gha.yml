@@ -15,24 +15,38 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Install Conda
+        uses: conda-incubator/setup-miniconda@v3
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
-          cache-dependency-path: '**/code1_basin_gha_requirements'
+          auto-update-conda: true
+          channels: conda-forge,defaults
+          python-version: 3.12
+          # These properties enable the use of mamba, which is much faster and far less error
+          # prone than conda while being completely compatible with the conda CLI
+          use-mamba: true
+          mamba-version: "*"	  
 
-      - run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
+      - name: Install some packages
+        # The `-l` is needed so conda environment activation works correctly
+        shell: bash -l {0}
+        run: |
+          mamba install -c conda-forge numpy pandas scipy matplotlib xarray dask netCDF4 bottleneck requests cartopy seawater
 
       - name: set pythonpath
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
       - name: code3_phenologyUI_gha, create STI, TUMI, LUSI
+        shell: bash -l {0}
         run: python code_gha/phenologyUI/create_sti_lusi_tumi_A_std.py
 
       - name: code4_bakunUI_gha, plot IEA style phenology figures
+        shell: bash -l {0}
         run: python code_gha/phenologyUI/plot_IEA_figs_A.py
+
+      - name: code5_bakunUI_gha, plot CUI curves
+        shell: bash -l {0}
+        run: python code_gha/phenologyUI/plot_cui_for_esr.py
 
       - name: Print dir tree and check disk space
         shell: bash {0}
