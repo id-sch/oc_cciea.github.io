@@ -220,7 +220,7 @@ for i in range(0, num_lat_pos):
         pddt = pd.to_datetime(dates_vline[j])
         txt = '{}/{}'.format(pddt.month, pddt.day)
         xtxt1 = yearday_vline[j]
-        ytxt1 = ylm[1][0] - dy
+        ytxt1 = ylm[1][0] - dy[0]
         plt.text(xtxt1, ytxt1, txt, horizontalalignment='center', color='red', fontsize=5, verticalalignment='bottom')
 
     # Latitude Text
