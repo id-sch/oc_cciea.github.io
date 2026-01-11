@@ -11,7 +11,6 @@ from fun_pd_df2csvR_time import fun_pd_df2csvR_time
 # -----------------------------------------------------------------------------
 # --directory of the 6hr UI
 dir_out = './data_gha/bakunUI/'
-# dir_out = './data_x13/bakunUI/'
 dir_in = dir_out
 fn_in = '{}UI_daily.nc'.format(dir_in)
 
@@ -41,8 +40,20 @@ dtD = np.arange(ds1.time.data[0].astype('datetime64[D]'),
                 ds1.time.data[-1].astype('datetime64[D]')+1,
                 dtype='datetime64[D]')
 
+# first year and month
+yr_bgn = ds1.time.dt.year.data[0]
+mon_bgn = ds1.time.dt.month.data[0]
+
+# last year and month
+yr_end = ds1.time.dt.year.data[-1]
+mon_end = ds1.time.dt.month.data[-1]
+
+# check last month, it should be at least June
+if mon_end < 6:
+    yr_end = yr_end - 1
+
 # years
-yrs = np.unique(ds1.time.dt.year.data)
+yrs = np.arange(yr_bgn, yr_end + 1)
 num_yrs = len(yrs)
 
 # --loop over all lats wanted, open file and create sti,lusi,tumi
@@ -101,7 +112,7 @@ for i in range(0, num_wnt):
             in_end = num_in-1
             
 
-        print('{}: {}, {}: {}, num_in={}, in_end={}'.format(i, num_wnt, j, num_yrs, num_in, in_end))
+        print('{}: {}, {}: {}, {}: {}, num_in={}, in_end={}'.format(i, num_wnt, yrs[j], yr_end, j, num_yrs, num_in, in_end))
         
         ui_365 = np.zeros(365)*np.nan
         ui_365[0:in_end] = ui_yr[0:in_end]
