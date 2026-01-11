@@ -64,6 +64,7 @@ xtck = np.arange(0, 365, 30)
 
 # get rid of big numbers in ylabels, set scale factor
 sf = 10000
+sf = 1
 
 # color for the xyrs
 color_xyrs = ['limegreen', 'orange', 'dodgerblue', 'red', 'black']
@@ -72,7 +73,7 @@ color_xyrs = ['limegreen', 'orange', 'dodgerblue', 'red', 'black']
 xlbl = 'Yearday'
 
 # ylabels
-ylbl = 'CUI x10⁻⁴\n(m³/s/100 m coastline)'
+ylbl = 'CUI\n(m³/s/100 m coastline)'
 
 # figure size
 fig_wdth = 8.5
@@ -134,6 +135,7 @@ lat_row = lat_pos.reshape([num_row, num_clmn])
 # change spacing
 plt.close()
 gs1.update(left=0.01, right=0.99, bottom=0.12, top=0.9, wspace=0.15, hspace=0.2)
+# gs1.update(left=0.1, right=0.9, bottom=0.12, top=0.9, wspace=0.15, hspace=0.2)
 
 # loop over all lat positions
 
@@ -187,6 +189,9 @@ for i in range(0, num_lat_pos):
         # plt.xticks(xtck, ' ')
         ax.set_xticklabels('')
 
+    # yticks in scientific
+    plt.ticklabel_format(axis='y', style='scientific', scilimits=(0,0))
+        
     # remove ytick labels
     if (in_row[1][0] == num_clmn-1):
         plt.yticks(plt.yticks()[0], '')
@@ -208,19 +213,22 @@ for i in range(0, num_lat_pos):
 
     # vlines for set dates
     ax.set_axisbelow(False)
-    plt.vlines(yearday_vline, ylm[0], ylm[1],
+    dy = np.diff(plt.ylim())/50
+    plt.vlines(yearday_vline, ylm[0], ylm[1] - dy,
                colors='red', linestyles=':', linewidth=0.5, zorder=30)
     for j in range(0, len(dates_vline)):
         pddt = pd.to_datetime(dates_vline[j])
         txt = '{}/{}'.format(pddt.month, pddt.day)
-        plt.text(yearday_vline[j], ylm[1], txt,
-                 horizontalalignment='center', color='red', fontsize=5, verticalalignment='bottom')
+        plt.text(yearday_vline[j], ylm[1][0] - dy, txt, horizontalalignment='center', color='red', fontsize=5, verticalalignment='bottom')
 
     # Latitude Text
-    xtxt = plt.xlim()[0]
+    if np.mod(i, 2) == 0:
+        xtxt = plt.xlim()[0] - 30
+    else:
+        xtxt = plt.xlim()[0]
     ytxt = plt.ylim()[1]
-    tbox = plt.text(xtxt, ytxt, '{}$\degree$N'.format(lat_pos[i]),
-                    fontsize=9, horizontalalignment='center',
+    tbox = plt.text(xtxt, ytxt, '{} °N'.format(lat_pos[i]),
+                    fontsize=12, horizontalalignment='center',
                     bbox={'facecolor': 'white', 'edgecolor': 'white'})
 
 # add legend on top
