@@ -72,7 +72,7 @@ color_xyrs = ['limegreen', 'orange', 'dodgerblue', 'red', 'black']
 xlbl = 'Yearday'
 
 # ylabels
-ylbl = 'CUI x$\mathregular{10^{-4}}$\n($\mathregular{m^3}$/s/100 m coastline)'
+ylbl = 'CUI x10⁻⁴\n(m³/s/100 m coastline)'
 
 # figure size
 fig_wdth = 8.5
