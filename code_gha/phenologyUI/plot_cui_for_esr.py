@@ -227,7 +227,7 @@ for i in range(0, num_lat_pos):
     else:
         xtxt = plt.xlim()[0]
     ytxt = plt.ylim()[1]
-#    tbox = plt.text(xtxt, ytxt, '{} °N'.format(lat_pos[i]), fontsize=12, horizontalalignment='center', bbox={'facecolor': 'white', 'edgecolor': 'white'})
+    tbox = plt.text(xtxt, ytxt, '{} °N'.format(lat_pos[i]), fontsize=12, horizontalalignment='center', bbox={'facecolor': 'white', 'edgecolor': 'white'})
 
 # add legend on top
 plt.legend(bbox_to_anchor=(-0.8, 3.52, 1.5, .102), loc=3,
