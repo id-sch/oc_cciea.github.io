@@ -18,8 +18,7 @@ mpl.rcParams.update({'font.size': 12})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2024
-# iea_yr = 2025
+iea_yr = 2025
 
 # --basin index wanted
 # set lat range
@@ -33,7 +32,6 @@ num_basin = len(pheno_wnt)
 
 # --input directory
 dir_out = './data_gha/bakunUI/'
-# dir_out = './data_x13/bakunUI/'
 dir_in = dir_out
 
 # variable name in the xr.ds
@@ -81,7 +79,6 @@ fig_hght = 11
 
 # --plot directory
 dir_plot_out = './figures_gha/phenologyUI/'
-# dir_plot_out = './figures_x13/bakunUI/'
 fig_type = '.png'
 
 
