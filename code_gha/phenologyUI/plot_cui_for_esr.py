@@ -219,15 +219,17 @@ for i in range(0, num_lat_pos):
     for j in range(0, len(dates_vline)):
         pddt = pd.to_datetime(dates_vline[j])
         txt = '{}/{}'.format(pddt.month, pddt.day)
-#        plt.text(yearday_vline[j], ylm[1][0] - dy, txt, horizontalalignment='center', color='red', fontsize=5, verticalalignment='bottom')
+        xtxt1 = yearday_vline[j]
+        ytxt1 = ylm[1][0] - dy
+        plt.text(xtxt1, ytxt1, txt, horizontalalignment='center', color='red', fontsize=5, verticalalignment='bottom')
 
     # Latitude Text
     if np.mod(i, 2) == 0:
-        xtxt = plt.xlim()[0] - 30
+        xtxt2 = plt.xlim()[0] - 30
     else:
-        xtxt = plt.xlim()[0]
-    ytxt = plt.ylim()[1]
-    tbox = plt.text(xtxt, ytxt, '{} °N'.format(lat_pos[i]), fontsize=12, horizontalalignment='center', bbox={'facecolor': 'white', 'edgecolor': 'white'})
+        xtxt2 = plt.xlim()[0]
+    ytxt2 = plt.ylim()[1]
+    tbox = plt.text(xtxt2, ytxt2, '{} °N'.format(lat_pos[i]), fontsize=12, horizontalalignment='center', bbox={'facecolor': 'white', 'edgecolor': 'white'})
 
 # add legend on top
 plt.legend(bbox_to_anchor=(-0.8, 3.52, 1.5, .102), loc=3,
