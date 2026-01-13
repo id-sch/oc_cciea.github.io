@@ -10,7 +10,7 @@ from C_iea_calcofi import C_iea
 # ----------------------------------------------------------------------
 
 # IEA year
-iea_yr = 2025
+iea_yr = 2024
 
 # --input directory
 dir_in = './data_x13/DissolvedOxygen/'
