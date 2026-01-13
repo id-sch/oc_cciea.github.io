@@ -378,7 +378,7 @@ except OSError:
         raise
 
 # --Save the figure
-fn_fig = '{}oc_z_{}_{}_{}_contour_fill_NRT.png'.format(
+fn_fig = '{}oc_z_{}_{}_{}_contour.png'.format(
     dir_plots, var_name[0], sttn_wnt[0], sttn_wnt[1])
 plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
 
