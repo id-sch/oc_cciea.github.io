@@ -29,7 +29,7 @@ jobs:
           localPath: ./NH25_CTD.nc
           googleFileId: 1zzHYGhq6BxE2iXhgbgZHN9P-5cxWaU-c
       - name: Make depth time temperature anom plots at NH25 and 93.30
-        run: python code_gha/DepthTimeTemp/nh_calcofi_quarter_fill_nrt.py
+        run: python code_gha/DepthTimeTemp/contour_time_depth_temp_anom_nh_calcofi.py
       - name: Print dir tree and check disk space
         shell: bash {0}
         run: |
