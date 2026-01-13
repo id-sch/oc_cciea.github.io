@@ -32,7 +32,7 @@ jobs:
 
       - name: code3_sstspatialglider, plot time x depth temp anoms for the 3 lines
         shell: bash -l {0}
-        run: python code_gha/SSTspatialGlider/create_60_90_netcdf.py
+        run: python code_gha/DepthTimeTempGlider/create_60_90_netcdf.py
 
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
