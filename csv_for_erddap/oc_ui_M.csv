@@ -695,7 +695,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2024,10,2024-10,66.18909454345703,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
 2024,11,2024-11,38.423152923583984,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
 2024,12,2024-12,29.418949127197266,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
-2025,1,2025-01,7.406930446624756,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
+2025,1,2025-01,6.041256904602051,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
 2025,2,2025-02,60.55768585205078,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
 2025,3,2025-03,103.67634582519531,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
 2025,4,2025-04,125.46707153320312,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
@@ -706,7 +706,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,9,2025-09,74.96532440185547,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
 2025,10,2025-10,57.01535415649414,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
 2025,11,2025-11,12.056527137756348,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
-2025,12,2025-12,nan,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
+2025,12,2025-12,-7.30340051651001,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
 2026,1,2026-01,nan,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (33 °N),33.0,-119.0,nan,1.0
 1967,1,1967-01,-68.8399887084961,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 1967,2,1967-02,44.28435516357422,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
@@ -1404,7 +1404,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2024,10,2024-10,59.538734436035156,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 2024,11,2024-11,-60.93140411376953,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 2024,12,2024-12,-71.44527435302734,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
-2025,1,2025-01,65.11100769042969,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
+2025,1,2025-01,64.82205963134766,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 2025,2,2025-02,-2.139233350753784,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 2025,3,2025-03,-30.575420379638672,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 2025,4,2025-04,161.31185913085938,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
@@ -1415,7 +1415,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,9,2025-09,96.59735870361328,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 2025,10,2025-10,63.361083984375,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 2025,11,2025-11,-46.755558013916016,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
-2025,12,2025-12,nan,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
+2025,12,2025-12,-18.328746795654297,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 2026,1,2026-01,nan,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (39 °N),39.0,-125.0,nan,2.0
 1967,1,1967-01,-146.8245086669922,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
 1967,2,1967-02,-34.008243560791016,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
@@ -2113,7 +2113,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2024,10,2024-10,-46.651145935058594,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
 2024,11,2024-11,-187.4926300048828,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
 2024,12,2024-12,-205.4365692138672,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
-2025,1,2025-01,-7.7026448249816895,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
+2025,1,2025-01,-6.063814163208008,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
 2025,2,2025-02,-147.12509155273438,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
 2025,3,2025-03,-105.6435317993164,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
 2025,4,2025-04,21.138526916503906,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
@@ -2124,5 +2124,5 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,9,2025-09,5.528300762176514,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
 2025,10,2025-10,-47.94422912597656,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
 2025,11,2025-11,-86.44434356689453,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
-2025,12,2025-12,nan,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
+2025,12,2025-12,-79.43997955322266,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
 2026,1,2026-01,nan,nan,nan,nan,UI (m^3/s/100 m coastline),Monthly Upwelling Index (45 °N),45.0,-125.0,nan,3.0
