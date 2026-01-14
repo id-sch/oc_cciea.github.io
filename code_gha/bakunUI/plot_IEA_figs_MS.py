@@ -21,8 +21,11 @@ rcParams.update({'font.size': 12})
 iea_yr = 2025
 
 # --lat
-lat_wnt = [33, 39, 45]
-lat_str = ['33', '39', '45']
+# lat_wnt = [33, 39, 45]
+# lat_str = ['33', '39', '45']
+lat_wnt = [45, 39, 33]
+lat_str = ['45', '39', '33']
+
 
 # --input directory
 dir_M = './csv_for_erddap/'
