@@ -33,7 +33,6 @@ dir_S = './csv_for_erddap/'
 
 # --IEA file names
 file_pre = 'oc_ui'
-file_pre_pre = 'oc'
 num_pre = len(file_pre)
 
 # --IEA year clim
@@ -77,7 +76,7 @@ for i in range(len(ordr_list)):
     plt.clf()
     fun_pd_df2IEA_fig_blue(
         dfM, nr, nc, ordr_list[i], yr_clim_bgn, yr_clim_end, wndw, yy_wnt, marker_flag=0)
-    fn_fig_M = '{}{}_{}_Monthly{}'.format(dir_plots, file_pre_pre, lat_wnt[i], fig_type)
+    fn_fig_M = '{}{}_{}_Monthly{}'.format(dir_plots, file_pre, lat_wnt[i], fig_type)
     plt.savefig(fn_fig_M, dpi=300, bbox_inches='tight')
 
 # Seasons
@@ -88,7 +87,7 @@ for i in range(len(ordr_list)):
     plt.clf()
     fun_pd_df2IEA_fig_blue(
         dfS, nr, nc, ordr_list[i], yr_clim_bgn, yr_clim_end, wndw, yy_wnt)
-    fn_fig_S = '{}{}_{}_Season{}'.format(dir_plots, file_pre_pre, lat_wnt[i], fig_type)
+    fn_fig_S = '{}{}_{}_Season{}'.format(dir_plots, file_pre, lat_wnt[i], fig_type)
     plt.savefig(fn_fig_S, dpi=300, bbox_inches='tight')
 
 # Plot monthly on one figure
