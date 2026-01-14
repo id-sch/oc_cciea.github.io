@@ -18,7 +18,7 @@ rcParams.update({'font.size': 12})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2025
+iea_yr = 2024
 
 # --lat
 # lat_wnt = [33, 39, 45]
