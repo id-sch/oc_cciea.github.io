@@ -13,7 +13,8 @@ from fun_pd_df2csvR_time import fun_pd_df2csvR_time
 # ----------------------------------------------------------------------
 
 # --UI lat wanted
-lat_wnt = [33, 39, 45]
+# lat_wnt = [33, 39, 45]
+lat_wnt = [45, 39, 33]
 
 # --input directory
 dir_out = './data_gha/bakunUI/'
