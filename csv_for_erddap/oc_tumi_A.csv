@@ -57,6 +57,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,33354.408557236195,0.0,33354.408557236195,33354.408557236195,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 33N,33.0,0.0,0.0,1.0
 2023,2023,33098.768146038055,0.0,33098.768146038055,33098.768146038055,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 33N,33.0,0.0,0.0,1.0
 2024,2024,39536.449586212635,0.0,39536.449586212635,39536.449586212635,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 33N,33.0,0.0,0.0,1.0
+2025,2025,36499.61378091574,0.0,36499.61378091574,36499.61378091574,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 33N,33.0,0.0,0.0,1.0
 1967,1967,19814.733353614807,0.0,19814.733353614807,19814.733353614807,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 39N,39.0,0.0,0.0,2.0
 1968,1968,22967.404185652733,0.0,22967.404185652733,22967.404185652733,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 39N,39.0,0.0,0.0,2.0
 1969,1969,27850.96143400669,0.0,27850.96143400669,27850.96143400669,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 39N,39.0,0.0,0.0,2.0
@@ -115,6 +116,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,42677.86411124468,0.0,42677.86411124468,42677.86411124468,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 39N,39.0,0.0,0.0,2.0
 2023,2023,37558.42460078001,0.0,37558.42460078001,37558.42460078001,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 39N,39.0,0.0,0.0,2.0
 2024,2024,40585.61816561222,0.0,40585.61816561222,40585.61816561222,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 39N,39.0,0.0,0.0,2.0
+2025,2025,37080.70025372505,0.0,37080.70025372505,37080.70025372505,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 39N,39.0,0.0,0.0,2.0
 1967,1967,10259.731573820114,0.0,10259.731573820114,10259.731573820114,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 45N,45.0,0.0,0.0,3.0
 1968,1968,9133.83015370369,0.0,9133.83015370369,9133.83015370369,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 45N,45.0,0.0,0.0,3.0
 1969,1969,6567.234087944031,0.0,6567.234087944031,6567.234087944031,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 45N,45.0,0.0,0.0,3.0
@@ -173,3 +175,4 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2022,2022,3525.3933974802494,0.0,3525.3933974802494,3525.3933974802494,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 45N,45.0,0.0,0.0,3.0
 2023,2023,5005.967479705811,0.0,5005.967479705811,5005.967479705811,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 45N,45.0,0.0,0.0,3.0
 2024,2024,4195.50387275219,0.0,4195.50387275219,4195.50387275219,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 45N,45.0,0.0,0.0,3.0
+2025,2025,5464.815164625645,0.0,5464.815164625645,5464.815164625645,TUMI (m$^3$/s/100m coastline),Total Upwelling Magnitude Index @ 45N,45.0,0.0,0.0,3.0
