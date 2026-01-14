@@ -17,7 +17,7 @@ mpl.rcParams.update({'font.size': 11})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 
-iea_yr = 2025
+iea_yr = 2024
 
 # Bakun UI
 dir_out = './data_gha/bakunUI/'
@@ -40,7 +40,7 @@ yr_clim_bgn = 1988
 yr_clim_end = yy_end
 
 # rolling mean size
-roll = 30
+roll = 10
 
 # vertical lines at these dates, use 1981 as it is non-leapyear
 dates_vline = ['1981-01-30', '1981-04-30', '1981-07-31', '1981-10-31']
