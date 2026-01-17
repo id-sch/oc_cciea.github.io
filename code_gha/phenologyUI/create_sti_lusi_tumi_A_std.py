@@ -304,3 +304,45 @@ fn_out = '{}_A.csv'.format(file_pre)
 fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_list, lat_list, lon_list, depth_list,
                             metric_lbl, ts_lbl, dir_out, fn_out,
                             yrs_csv_bgn, yrs_csv_end)
+
+# --FTI
+file_pre = 'oc_fti'
+metric_lbl = 'FTI (yearday)'
+ts_lbl = []
+df_list = list()
+lat_list = list()
+lon_list = list()
+depth_list = list()
+for i in range(num_wnt):
+    # time series label
+    dd1 = 'Fall Transition Index @ {}N'.format(lat_wnt[i])
+    ts_lbl.append(dd1)
+
+    # last year can be NaN, remove if it is
+    if np.isnan(ftiA[-1, i]):
+        y1 = yrsA[0:-1, i]
+        d1 = ftiA[0:-1, i]
+        sd1 = stdA[0:-1, i]
+    else:
+        y1 = yrsA[:, i]
+        d1 = ftiA[:, i]
+        sd1 = stdA[:, i]
+    # dataframe
+    date1 = pd.to_datetime({'year': y1, 'month': np.ones(len(y1)), 'day': np.ones(len(y1))})
+    df1 = pd.DataFrame({'Datetime': date1, 'data': d1, 'sd': sd1})
+    df1 = df1.set_index('Datetime')
+    df_list.append(df1)
+
+    # yrs clim
+    yrs_csv_bgn = int(df1.index.year[0])
+    yrs_csv_end = int(df1.index.year[-1])
+
+    # lat, lon, depth lists
+    lat_list.append(lat_wnt[i])
+    lon_list.append(lon[i])
+    depth_list.append(depth[i])
+
+fn_out = '{}_A.csv'.format(file_pre)
+fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_list, lat_list, lon_list, depth_list,
+                            metric_lbl, ts_lbl, dir_out, fn_out,
+                            yrs_csv_bgn, yrs_csv_end)

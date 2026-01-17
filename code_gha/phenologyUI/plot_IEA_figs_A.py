@@ -19,7 +19,7 @@ mpl.rcParams.update({'font.size': 12})
 iea_yr = 2025
 
 # --basin index wanted
-pheno_wnt = ['sti', 'lusi', 'tumi']
+pheno_wnt = ['sti', 'lusi', 'tumi', 'fti']
 num_basin = len(pheno_wnt)
 
 # --input directory
