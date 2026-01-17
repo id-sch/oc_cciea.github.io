@@ -7,25 +7,32 @@ from matplotlib.ticker import AutoMinorLocator
 
 
 def fun_pd_df2IEA_fig_threshold_blue(df, nr, nc, order_list, yr_clim_bgn, yr_clim_end, wndw, yy_end, threshold, marker_flag=1):
+
     '''
     Function to plot a pandas dataframe (pd.df) that has
     been created by reading an "IEA CSV" file.    # input
+
+    This creates figures with the new blue color theme.
+
+    Will draw a blue horizontal line, and shade in blue area that fall below the threshold line
+
     Inputs:
-       nr = num rows of the figure
-       nc = num columns of the figure
-       order_list = which "IEA order" to plot
-       yr_clim_bgn = start year, will be set to be xlim[0]
-       yr_clim_end = end year
-       wndw = the "IEA window" size in years
-       yy_end = the "IEA" year, ie the current year
-       threshold = the y-value where a horizontal line will be drawn
+        nr = num rows of the figure
+        nc = num columns of the figure
+        order_list = which "IEA order" to plot
+        yr_clim_bgn = start year, will be set to be xlim[0]
+        yr_clim_end = end year
+        wndw = the "IEA window" size in years
+        yy_end = the "IEA" year, ie the current year
+        threshold = horizontal line that will mark a threshold level
     Example:
-       fun_pd_df2IEA_fig(4,1,[1,2],1984, 2017, 5, 2017, 1)
-      plots 2 time series in a figure of 1 row, 4 columns
-      and the xlim will be from 1984 to 2017, status and
-      trends will be calculated over a 5 year window, draws
-      horizontal threshold line at 1.
+        fun_pd_df2IEA_fig(4,1,[1,2],1984, 2017, 5, 2017)
+
+        plots 2 time series in a figure of 1 row, 4 columns
+        and the xlim will be from 1984 to 2017, status and
+        trends will be calculated over a 5 year window.
     '''
+
     # figure size
     fig_wdth = 8.5
     fig_hght = 11
@@ -43,6 +50,11 @@ def fun_pd_df2IEA_fig_threshold_blue(df, nr, nc, order_list, yr_clim_bgn, yr_cli
     in_ann = np.where(clmns == 'year')[0]
     in_month = np.where(clmns == 'month')[0]
     in_day = np.where(clmns == 'day')[0]
+
+    in_data_or_index = np.logical_or(clmns == 'index', clmns == 'data').nonzero()[0]
+
+    data_clmn_lbl = clmns[in_data_or_index]
+
     if len(in_ann):
         time_flag = 1
     if len(in_month):
@@ -95,22 +107,25 @@ def fun_pd_df2IEA_fig_threshold_blue(df, nr, nc, order_list, yr_clim_bgn, yr_cli
         # --some IEA time series have sd, plot if they do
         std_flag = np.isnan(dfo.error.mean())
 
+        sd_wts = dfo[data_clmn_lbl].std(skipna=True).values[0]
+        mn_wts = dfo[data_clmn_lbl].mean(skipna=True).values[0]
         # dataf_sd1 = dfo.data.values - dfo.error.values
         # dataf_sd2 = dfo.data.values + dfo.error.values
-        sd_wts = dfo.data.std(skipna=True)
-        mn_wts = dfo.data.mean(skipna=True)
+        # sd_wts = dfo.data.std(skipna=True)
+        # mn_wts = dfo.data.mean(skipna=True)
 
         # horizontal threshold line
         plt.axhline(threshold, color='blue')
 
         # --plot the data
-        plt.plot(dfo.index, dfo.data, '-k', linewidth=1)
+        plt.plot(dfo.index, dfo[data_clmn_lbl], '-k', linewidth=1)
+
         if marker_flag == 1:
-            plt.plot(dfo.index, dfo.data, '.', markersize=3, color='orange')
+            plt.plot(dfo.index, dfo[data_clmn_lbl], '.', markersize=3, color='orange')
 
         # fill values less than threshold
-        tt1 = dfo.index
-        ts1 = dfo.data
+        tt1 = dfo.index.values
+        ts1 = dfo[data_clmn_lbl].values.squeeze()
         ind = np.isfinite(ts1)
         tt1d = tt1[ind]
         ts1d = ts1[ind]
@@ -134,18 +149,34 @@ def fun_pd_df2IEA_fig_threshold_blue(df, nr, nc, order_list, yr_clim_bgn, yr_cli
         plt.fill_between(x5yr, y5yr1, y5yr2, facecolor='dodgerblue', alpha=0.2)
 
         in_wndw = ((dfo.index.year >= yy_bgn) & (dfo.index.year <= yy_end))
+        # nt_wndw = in_wndw.nonzero()[0].size
+        # y_sd1 = np.ones(nt_wndw)*mn_wts - sd_wts
+        # y_sd2 = np.ones(nt_wndw)*mn_wts + sd_wts
+        # plt.fill_between(dfo.index[in_wndw], y_sd1, y_sd2, facecolor='palegreen', alpha=0.4)
 
         # --fill gray std window
         if ~std_flag:
-            dataf_sd1 = dfo.data.values - dfo.error.values
-            dataf_sd2 = dfo.data.values + dfo.error.values
+            dataf_sd1 = dfo[data_clmn_lbl].values.squeeze() - \
+                dfo['error'].values
+            dataf_sd2 = dfo[data_clmn_lbl].values.squeeze() + \
+                dfo['error'].values
+
             plt.fill_between(dfo.index, dataf_sd1, dataf_sd2,
                              facecolor=np.ones(3)*0.8, alpha=0.4)
 
         # --data over the 5-year window, remove missing
-        ind = np.isfinite(dfo.data[in_wndw].values)
-        tt5 = dfo.index[in_wndw][ind]
-        ts5 = dfo.data[in_wndw][ind]
+        in_wndw = ((dfo.year.values >= yy_bgn) & (dfo.year.values <= yy_end))
+        tt5_wndw = dfo.index[in_wndw]
+        ts5_wndw = dfo[data_clmn_lbl].values.squeeze()[in_wndw]
+
+        ind = np.isfinite(ts5_wndw)
+        tt5 = tt5_wndw[ind]
+        ts5 = ts5_wndw[ind]
+
+        # ind = np.isfinite(dfo[data_clmn_lbl][in_wndw].values.squeeze())
+        # tt5 = dfo.index[in_wndw][ind]
+        # ts5 = ts5_wndw.values[ind]
+
 
         # --get y-limits to position the IEA symbols
         ylm1 = ax.get_ylim()
@@ -174,7 +205,8 @@ def fun_pd_df2IEA_fig_threshold_blue(df, nr, nc, order_list, yr_clim_bgn, yr_cli
                     fontsize='large', verticalalignment='center')
 
         # --IEA symbols, last 5 years
-        mn5 = ts5.mean() * np.ones(len(tt5))
+        # bbox_props = dict(boxstyle="circle,pad=0", fc="cyan", ec="cyan", lw=2)
+        mn5 = dfo[data_clmn_lbl].values.squeeze()[in_wndw][ind].mean() * np.ones(ind.nonzero()[0].size)
         plt.plot(tt5, mn5, '-m', linewidth=1)
 
         if mn5[0] > mn_wts + sd_wts:
@@ -205,7 +237,7 @@ def fun_pd_df2IEA_fig_threshold_blue(df, nr, nc, order_list, yr_clim_bgn, yr_cli
         xt1_dt = [np.datetime64(xt1[j].astype('str')+'-01')
                   for j in range(0, np.size(xt1))]
 
-        if (iii == num_order_list-1):
+        if iii == num_order_list-1:
             plt.xticks(xt1_dt)
             plt.xlabel('Year')
         else:

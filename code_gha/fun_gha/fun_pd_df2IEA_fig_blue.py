@@ -3,11 +3,8 @@ import pandas as pd
 import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 from matplotlib.dates import DateFormatter
-from matplotlib import interactive
 from matplotlib.ticker import AutoMinorLocator
-interactive(False)
-# pylint: disable=C0103
-# -*- coding: utf-8 -*-
+
 
 
 def fun_pd_df2IEA_fig_blue(df, nr, nc, order_list, yr_clim_bgn, yr_clim_end,
