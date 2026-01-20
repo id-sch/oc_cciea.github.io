@@ -35,8 +35,11 @@ max_dpth = 500
 # --output file type extension
 file_type = 'nc'
 file_s = './csv_database_gha/calcofi_stations66.csv'
-
 dir_ctd_d = './csv_database_gha/ctd_prelim/'
+
+# file_s = './data_gha/CalCofiCSV/calcofi_stations66.csv'
+# dir_ctd_d = '~/data_files/Work/TS/data/calcofi_csv/csv_database_gha/ctd_prelim'
+
 fn_d = ['20-2107SR_CTDBTL_001-071D.csv', '20-2111SR_CTDBTL_001-075D.csv',
         '20-2204SH_CTDBTL_001-101D.csv', '20-2208BH_CTDBTL_001-067D.csv', '20-2211SR_CTDBTL_001-073D.csv',
         '20-2301RL_CTDBTL_001-072D.csv', '20-2304SH_CTDBTL_001-114D.csv', '20-2307SR_CTDBTL_001-056D_057-069D_combined_IDS.csv', '20-2311SR_CTDBTL_001-050D_051-075D_combined_IDS.csv',
@@ -109,8 +112,15 @@ var2_d_wnt6 = ['TempAve', 'Salt2_Corr', 'SigThetaTS1', 'DynHt',
 
 var2_d_list = [var2_d_wnt1, var2_d_wnt2, var2_d_wnt3, var2_d_wnt4, var2_d_wnt5, var2_d_wnt6]
 
+
+# create an oxygen (O)  data array, this with the oxygen columns
+varO_d_wnt = ['Ox1', 'Ox1Q', 'Ox1_CruiseCorr', 'Ox1_StaCorr', 'Ox1', 'Ox1Q', 'Ox1_CruiseCorr', 'Ox1_StaCorr', 'OxAve_StaCorr']
+
 # ----------------------Nutrient CSV
 file_n = './csv_database_gha/nutrient_prelim/compiled_finalized_nutrients_2111_2504_ALE.csv'
+
+# file_n = '~/data_files/Work/TS/data/calcofi_csv/csv_database_gha/nutrient_prelim/compiled_finalized_nutrients_2111_2504_ALE.csv'
+
 
 # ------------------Nutrient
 line_n = 'Line'
@@ -137,6 +147,7 @@ var1_d_lbl = ['line', 'sttn', 'lat', 'lon', 'quarter', 'month']
 # --get the size of input variables
 num_var1_d = len(var1_d_wnt)
 num_var2_d = len(var2_d_list[0])
+num_varO_d = len(varO_d_wnt)
 num_qrtr_d = len(qrtr_d)
 num_var2_n = len(var2_n_wnt)
 
@@ -175,6 +186,9 @@ var1_mtrx_d = np.zeros([num_sttn, len(var1_d_lbl), num_qrtr_d])*np.nan
 
 # --create ctd data matrix (sttns X variables_2d X depth X quarters)
 var2_mtrx_d = np.zeros([num_sttn, num_var2_d, num_int, num_qrtr_d])*np.nan
+
+# --create ctd data matrix (sttns X variables_3d X depth X quarters)
+varO_mtrx_d = np.zeros([num_sttn, num_varO_d, num_int, num_qrtr_d])*np.nan
 
 # -- create Year and Julian date vectors to create a date, do this to
 #    match year and jd columns in the pd df of the Cast file
@@ -215,6 +229,7 @@ for ii in range(0, num_qrtr_d):
         if num_d_unq > 0:
             # --create data matrix (variables X interp depths X unique dates)
             unq_mtrx_d = np.zeros([num_var2_d, num_int, num_d_unq])*np.nan
+            unq_mtrxO_d = np.zeros([num_varO_d, num_int, num_d_unq])*np.nan
             yr_unq = np.zeros([num_d_unq])
             mon_unq = np.zeros([num_d_unq])
             jd_unq = np.zeros([num_d_unq])
@@ -276,6 +291,23 @@ for ii in range(0, num_qrtr_d):
 
                     unq_mtrx_d[ll, :, kk] = data_int
 
+                # Oxygen variables
+                for ll in range(0, num_varO_d):
+                    lbl_var_wnt = varO_d_wnt[ll]
+
+                    # interpolate
+                    var_ll = df_d[lbl_var_wnt].iloc[indx_d_wnt[indx_dq]].values
+                    # --masked array for missing values
+                    vard = ma.array(var_ll, mask=np.isnan(var_ll))
+                    dpthd = ma.array(dpth_dq, mask=np.isnan(var_ll))
+                    if dpthd.compressed().size > 0:
+                        data_int = np.interp(dpth_int, dpthd.compressed(
+                        ), vard.compressed(), left=np.nan, right=np.nan)
+                    else:
+                        data_int = np.zeros(num_int)*np.nan
+
+                    unq_mtrxO_d[ll, :, kk] = data_int
+
                 # recalculate potential temperature and replace the one that
                 # was in the CSV file, want to do this because sometimes the
                 # CSV file doesn't have data in the PoT1 column
@@ -288,6 +320,7 @@ for ii in range(0, num_qrtr_d):
             # --2D variables, take mean of all casts to get a single profile
             # --for a given station
             var2_mtrx_d[jj, :, :, ii] = np.nanmean(unq_mtrx_d, axis=2)
+            varO_mtrx_d[jj, :, :, ii] = np.nanmean(unq_mtrxO_d, axis=2)
 
             # --1D variables, take mean of yr and jd to get single date
             yr_vec_d[jj, ii] = np.mean(yr_unq)
@@ -385,11 +418,14 @@ da1_out = xr.DataArray(var1_mtrx_d, coords=[sttn_wnt, var1_d_lbl, indx_time_d], 
 da2_out = xr.DataArray(var2_mtrx_d, coords=[sttn_wnt, var2_b_lbl, dpth_int, indx_time_d], dims=['station', 'var2', 'depth', 'index_time'])
 da3_out = xr.DataArray(yr_vec_d, coords=[sttn_wnt, indx_time_d], dims=['station', 'index_time'])
 da4_out = xr.DataArray(jd_vec_d, coords=[sttn_wnt, indx_time_d], dims=['station', 'index_time'])
+da5_out = xr.DataArray(varO_mtrx_d, coords=[sttn_wnt, varO_d_wnt, dpth_int, indx_time_d], dims=['station', 'varO', 'depth', 'index_time'])
+
 
 ds1_out = da1_out.to_dataset(name='var1_mtrx_d')
 ds1_out['var2_mtrx_d'] = da2_out
 ds1_out['yr_d'] = da3_out
 ds1_out['jd_d'] = da4_out
+ds1_out['varO_mtrx_d'] = da5_out
 
 fn_out = './prelim_ctd.nc'
 ds1_out.to_netcdf(fn_out)
