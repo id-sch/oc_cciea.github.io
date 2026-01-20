@@ -116,8 +116,8 @@ df_hdr_c = pd.read_csv(file_c, nrows=1)
 hdr_b = var2_b_wnt + [cc_b, dpth_b]
 hdr_c = var1_c_wnt + [cc_c, yr_c, jd_c]
 hdr_c.append(cc_b)
-in_clmns_b = np.in1d(df_hdr_b.columns.values, np.array(hdr_b)).nonzero()[0]
-in_clmns_c = np.in1d(df_hdr_c.columns.values, np.array(hdr_c)).nonzero()[0]
+in_clmns_b = np.isin(df_hdr_b.columns.values, np.array(hdr_b)).nonzero()[0]
+in_clmns_c = np.isin(df_hdr_c.columns.values, np.array(hdr_c)).nonzero()[0]
 
 # --read cast CSV data, get pd Dataframe of hdr_c columns
 df_c = pd.read_csv(file_c, usecols=in_clmns_c)
