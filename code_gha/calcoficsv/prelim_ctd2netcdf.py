@@ -68,6 +68,13 @@ in_var2_d_list = [5, 0,
                   1, 0, 0, 0,
                   0, 4, 3, 3]
 
+in_var2_d_list = [5, 0,
+                  4, 0, 0,
+                  5, 4, 0, 2,
+                  1, 0, 0, 0,
+                  0, 6, 3, 3]
+
+
 # ---------------------STATION
 # line_s = 'Line '
 line_s = 'Line'
@@ -86,35 +93,40 @@ var1_d_wnt = [line_d, sttn_d, lat_d, lon_d]
 # can have different columns based on the CTD CSV and the available columns,
 # another one can be created if these don't account for columns with data
 # NOTE: Rasmus cautioned using the O2 station avg data, suggested using Ox1 or Ox1_StaCorr
-var2_d_wnt1 = ['TempAve', 'Salt2_Corr', 'SigThetaTS1', 'DynHt',
+
+var2_d_wnt0 = ['TempAve', 'Salt2_Corr', 'SigThetaTS1', 'DynHt',
                'Ox1_StaCorr', 'OxSat1', 'SIL', 'PO4', 'NO3', 'NO2',
                'Chl-a', 'Phaeo']
 
-var2_d_wnt2 = ['Temp1', 'Salt1_Corr', 'SigThetaTS1', 'DynHt',
+var2_d_wnt1 = ['Temp1', 'Salt1_Corr', 'SigThetaTS1', 'DynHt',
                'Ox1_StaCorr', 'OxSat1', 'SIL', 'PO4', 'NO3', 'NO2',
                'Chl-a', 'Phaeo']
-var2_d_wnt3 = ['Temp2', 'Salt2_Corr', 'SigThetaTS2', 'DynHt',
+var2_d_wnt2 = ['Temp2', 'Salt2_Corr', 'SigThetaTS2', 'DynHt',
                'Ox1_StaCorr', 'OxSat1', 'SIL', 'PO4', 'NO3', 'NO2',
                'Chl-a', 'Phaeo']
 
-var2_d_wnt4 = ['TempAve', 'Salt2', 'SigThetaTS1', 'DynHt',
+var2_d_wnt3 = ['TempAve', 'Salt2', 'SigThetaTS1', 'DynHt',
                'Ox1', 'OxSat1', 'SIL', 'PO4', 'NO3', 'NO2',
+               'Chl-a', 'Phaeo']
+
+var2_d_wnt4 = ['TempAve', 'Salt2_Corr', 'SigThetaTS1', 'DynHt',
+               'Ox1_StaCorr', 'OxSat1', 'SIL', 'PO4', 'NO3', 'NO2',
                'Chl-a', 'Phaeo']
 
 var2_d_wnt5 = ['TempAve', 'Salt2_Corr', 'SigThetaTS1', 'DynHt',
-               'Ox1', 'OxSat1', 'SIL', 'PO4', 'NO3', 'NO2',
+               'Ox1_StaCorr', 'OxSat1', 'SIL', 'PO4', 'NO3', 'NO2',
                'Chl-a', 'Phaeo']
 
 var2_d_wnt6 = ['TempAve', 'Salt2_Corr', 'SigThetaTS1', 'DynHt',
-               'Ox1', 'OxSat1', 'SIL', 'PO4', 'NO3', 'NO2',
+               'Ox1_CruiseCorr', 'OxSat1', 'SIL', 'PO4', 'NO3', 'NO2',
                'Chl-a', 'Phaeo']
 
 
-var2_d_list = [var2_d_wnt1, var2_d_wnt2, var2_d_wnt3, var2_d_wnt4, var2_d_wnt5, var2_d_wnt6]
+var2_d_list = [var2_d_wnt0, var2_d_wnt1, var2_d_wnt2, var2_d_wnt3, var2_d_wnt4, var2_d_wnt5, var2_d_wnt6]
 
 
 # create an oxygen (O)  data array, this with the oxygen columns
-varO_d_wnt = ['Ox1', 'Ox1Q', 'Ox1_CruiseCorr', 'Ox1_StaCorr', 'Ox1', 'Ox1Q', 'Ox1_CruiseCorr', 'Ox1_StaCorr', 'OxAve_StaCorr']
+varO_d_wnt = ['Ox1', 'Ox1Q', 'Ox1_CruiseCorr', 'Ox1_StaCorr', 'Ox2', 'Ox2Q', 'Ox2_CruiseCorr', 'Ox2_StaCorr', 'OxAve_StaCorr']
 
 # ----------------------Nutrient CSV
 file_n = './csv_database_gha/nutrient_prelim/compiled_finalized_nutrients_2111_2504_ALE.csv'
@@ -201,7 +213,7 @@ for ii in range(0, num_qrtr_d):
 
     # --create ctd filename and open as pd Dataframe
     d_file = '{}/{}/q{}/db-csvs/{}'.format(dir_ctd_d, yr_d[ii], qrtr_d[ii], fn_d[ii])
-    df_d = pd.read_csv(d_file, low_memory=False)
+    df_d = pd.read_csv(d_file, low_memory=False, na_values=' ')
 
     # --change the "generic" Dataframe index to an datetime index
     # df_d['Datetime'] = pd.to_datetime(df_d[time_d].astype(str), infer_datetime_format=True)
@@ -296,7 +308,7 @@ for ii in range(0, num_qrtr_d):
                     lbl_var_wnt = varO_d_wnt[ll]
 
                     # interpolate
-                    var_ll = df_d[lbl_var_wnt].iloc[indx_d_wnt[indx_dq]].values
+                    var_ll = df_d[lbl_var_wnt].iloc[indx_d_wnt[indx_dq]].values  #.astype('float')
                     # --masked array for missing values
                     vard = ma.array(var_ll, mask=np.isnan(var_ll))
                     dpthd = ma.array(dpth_dq, mask=np.isnan(var_ll))
@@ -419,6 +431,82 @@ da2_out = xr.DataArray(var2_mtrx_d, coords=[sttn_wnt, var2_b_lbl, dpth_int, indx
 da3_out = xr.DataArray(yr_vec_d, coords=[sttn_wnt, indx_time_d], dims=['station', 'index_time'])
 da4_out = xr.DataArray(jd_vec_d, coords=[sttn_wnt, indx_time_d], dims=['station', 'index_time'])
 da5_out = xr.DataArray(varO_mtrx_d, coords=[sttn_wnt, varO_d_wnt, dpth_int, indx_time_d], dims=['station', 'varO', 'depth', 'index_time'])
+
+
+
+# special cases 
+# 1) index 0, station 86.7 - 60.0
+index_time_wnt = 0
+station_wnt = '86.7_60.0'
+int = np.where(da2_out['index_time'].data == index_time_wnt)[0]
+ins = np.where(da2_out['station'].data == station_wnt)[0]
+inv = np.where(da2_out['var2'] == 'R_O2')[0]
+da2_out[ins, inv, :, int] = da5_out.sel(index_time=index_time_wnt).sel(station=station_wnt).sel(varO='Ox1_CruiseCorr')
+
+# 2) index 0, station 93.3 - 100
+index_time_wnt = 0
+station_wnt = '93.3_100.0'
+int = np.where(da2_out['index_time'].data == index_time_wnt)[0]
+ins = np.where(da2_out['station'].data == station_wnt)[0]
+inv = np.where(da2_out['var2'] == 'R_O2')[0]
+da2_out[ins, inv, :, int] = da5_out.sel(index_time=index_time_wnt).sel(station=station_wnt).sel(varO='Ox1_CruiseCorr')
+
+# 3) index 2, station 93.3 - 30
+index_time_wnt = 2
+station_wnt = '93.3_30.0'
+int = np.where(da2_out['index_time'].data == index_time_wnt)[0]
+ins = np.where(da2_out['station'].data == station_wnt)[0]
+inv = np.where(da2_out['var2'] == 'R_O2')[0]
+da2_out[ins, inv, :, int] = da5_out.sel(index_time=index_time_wnt).sel(station=station_wnt).sel(varO='Ox1_CruiseCorr')
+
+# 4) index 4, station 93.3 - 50
+index_time_wnt = 4
+station_wnt = '93.3_50.0'
+int = np.where(da2_out['index_time'].data == index_time_wnt)[0]
+ins = np.where(da2_out['station'].data == station_wnt)[0]
+inv = np.where(da2_out['var2'] == 'R_O2')[0]
+da2_out[ins, inv, :, int] = da5_out.sel(index_time=index_time_wnt).sel(station=station_wnt).sel(varO='Ox1_CruiseCorr')
+
+# 5) index 4, station 93.3 - 50
+index_time_wnt = 4
+station_wnt = '93.3_50.0'
+int = np.where(da2_out['index_time'].data == index_time_wnt)[0]
+ins = np.where(da2_out['station'].data == station_wnt)[0]
+inv = np.where(da2_out['var2'] == 'R_O2')[0]
+da2_out[ins, inv, :, int] = da5_out.sel(index_time=index_time_wnt).sel(station=station_wnt).sel(varO='Ox1_CruiseCorr')
+
+
+# 6) index 5, station 86.7 -45
+index_time_wnt = 5
+station_wnt = '86.7_45.0'
+int = np.where(da2_out['index_time'].data == index_time_wnt)[0]
+ins = np.where(da2_out['station'].data == station_wnt)[0]
+inv = np.where(da2_out['var2'] == 'R_O2')[0]
+da2_out[ins, inv, :, int] = da5_out.sel(index_time=index_time_wnt).sel(station=station_wnt).sel(varO='Ox1_CruiseCorr')
+
+# 7) index 6, station 86.7 - 60
+index_time_wnt = 6
+station_wnt = '86.7_60.0'
+int = np.where(da2_out['index_time'].data == index_time_wnt)[0]
+ins = np.where(da2_out['station'].data == station_wnt)[0]
+inv = np.where(da2_out['var2'] == 'R_O2')[0]
+da2_out[ins, inv, :, int] = da5_out.sel(index_time=index_time_wnt).sel(station=station_wnt).sel(varO='Ox1_CruiseCorr')
+
+# 8) index 8, station 90 - 120
+index_time_wnt = 8
+station_wnt = '90.0_120.0'
+int = np.where(da2_out['index_time'].data == index_time_wnt)[0]
+ins = np.where(da2_out['station'].data == station_wnt)[0]
+inv = np.where(da2_out['var2'] == 'R_O2')[0]
+da2_out[ins, inv, :, int] = da5_out.sel(index_time=index_time_wnt).sel(station=station_wnt).sel(varO='Ox1_CruiseCorr')
+
+# 9) index 11, station 93.3 - 45
+index_time_wnt = 11
+station_wnt = '93.3_45.0'
+int = np.where(da2_out['index_time'].data == index_time_wnt)[0]
+ins = np.where(da2_out['station'].data == station_wnt)[0]
+inv = np.where(da2_out['var2'] == 'R_O2')[0]
+da2_out[ins, inv, :, int] = da5_out.sel(index_time=index_time_wnt).sel(station=station_wnt).sel(varO='Ox1_CruiseCorr')
 
 
 ds1_out = da1_out.to_dataset(name='var1_mtrx_d')
