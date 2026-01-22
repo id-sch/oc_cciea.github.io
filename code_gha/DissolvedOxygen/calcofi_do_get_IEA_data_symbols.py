@@ -10,7 +10,7 @@ from C_iea_calcofi import C_iea
 # ----------------------------------------------------------------------
 
 # IEA year
-iea_yr = 2025
+iea_yr = 2024
 # iea_yr = 2025
 
 # --input directory
