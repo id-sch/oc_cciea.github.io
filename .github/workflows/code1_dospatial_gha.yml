@@ -9,14 +9,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
-          cache-dependency-path: '**/code1_basin_gha_requirements'
 
-      - run: python -m pip install -r .github/workflows/code1_basin_gha_requirements
+      - name: Install Conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          channels: conda-forge,defaults
+          python-version: 3.12
+          # These properties enable the use of mamba, which is much faster and far less error
+          # prone than conda while being completely compatible with the conda CLI
+          use-mamba: true
+          mamba-version: "*"	  
+
+      - name: Install some packages
+        # The `-l` is needed so conda environment activation works correctly
+        shell: bash -l {0}
+        run: |
+          mamba install -c conda-forge numpy pandas scipy matplotlib xarray dask netCDF4 bottleneck requests cartopy seawater
 
       - name: set pythonpath
         run: |
@@ -29,10 +38,13 @@ jobs:
           localPath: ./NH25_CTD.nc
           googleFileId: 1Y7dEbbIClChXu3UR0OUANmQRNqrcodt3
       - name: Combine all DO data at all statoins at selected depths, also min/max values.
+        shell: bash -l {0}
         run: python code_gha/DissolvedOxygen/calcofi_do_at_depths_min_values_between_z1_z2.py
       - name: Get the IEA stats from the DO station/depth data.
+        shell: bash -l {0}
         run: python code_gha/DissolvedOxygen/calcofi_do_get_IEA_data_symbols.py
       - name: Figues of spatial DO CalCOFI
+        shell: bash -l {0}
         run: python code_gha/DissolvedOxygen/contour_oc_do_S_spatial.py
       - name: Print dir tree and check disk space
         shell: bash {0}

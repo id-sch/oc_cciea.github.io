@@ -10,9 +10,11 @@ from fun_hampel_outlier import hampel
 # ----------------------------------------------------------------------
 # --input directory
 dir_in = './data_gha/CalCofiCSV/'
+# dir_in = './oc_cciea.github.io/data_gha/CalCofiCSV/'
 
 # station file of 66 CalCOFI stations
 fn_sttn = '{}calcofi_stations66.csv'.format(dir_in)
+# fn_sttn = './data_x13/CalCofiCSV/calcofi_stations66.csv'
 var_fn_sttn = ['Line', 'Station', 'Lat', 'Lon', 'Distance', 'Depth']
 
 
