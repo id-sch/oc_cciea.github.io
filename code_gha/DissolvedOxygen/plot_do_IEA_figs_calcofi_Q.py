@@ -15,7 +15,7 @@ mpl.rcParams.update({'font.size': 12})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2025
+iea_yr = 2024
 
 # --station wanted
 sttn_wnt = ['933_300', '900_900', '800_800']
