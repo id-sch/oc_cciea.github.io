@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>13&nbsp; Marine Heatwaves 2025 – oc_cciea.github.io</title>
+<title>7&nbsp; CUGN glider time-depth 2024 – oc_cciea.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,8 +85,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./HCI_2025.html" rel="next">
-<link href="./SSTspatial_2025.html" rel="prev">
+<link href="./bakunUI_2024.html" rel="next">
+<link href="./DepthTimeTemp_2024.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -141,7 +141,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasinScaleIndicators_2025.html">2025</a></li><li class="breadcrumb-item"><a href="./MHW_2025.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Marine Heatwaves 2025</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasinScaleIndicators_2024.html">2024</a></li><li class="breadcrumb-item"><a href="./DepthTimeTempGlider_2024.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">CUGN glider time-depth 2024</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -221,7 +221,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./DepthTimeTempGlider_2024.html" class="sidebar-item-text sidebar-link">
+  <a href="./DepthTimeTempGlider_2024.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">CUGN glider time-depth 2024</span></span></a>
   </div>
 </li>
@@ -268,7 +268,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./MHW_2025.html" class="sidebar-item-text sidebar-link active">
+  <a href="./MHW_2025.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Marine Heatwaves 2025</span></span></a>
   </div>
 </li>
@@ -315,9 +315,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasinScaleIndicators_2025.html">2025</a></li><li class="breadcrumb-item"><a href="./MHW_2025.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Marine Heatwaves 2025</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasinScaleIndicators_2024.html">2024</a></li><li class="breadcrumb-item"><a href="./DepthTimeTempGlider_2024.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">CUGN glider time-depth 2024</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Marine Heatwaves 2025</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">CUGN glider time-depth 2024</span></h1>
 </div>
 
 
@@ -334,124 +334,55 @@ div.csl-indent {
 </header>
 
 
-<div id="e4a057d3" class="cell" data-execution_count="1">
+<div id="e7dc3cd9" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">'../../'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> script_IDS <span class="im">import</span> fun_script_IDS</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>cciea_yr <span class="op">=</span> <span class="dv">2025</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>fn_meta <span class="op">=</span> <span class="st">'./metadata.csv'</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> pd.read_csv(fn_meta)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>cell2_wnt <span class="op">=</span> [<span class="st">'Component_Section'</span>, <span class="st">'Subcomponent'</span>, <span class="st">'ERDDAP_Dataset_ID'</span>, <span class="st">'PI'</span>, <span class="st">'Contact'</span>]</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>ds_id_hc <span class="op">=</span> <span class="st">'cciea_OC_MHW'</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_MHW_HC'</span>]</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>vec2_hc, ds_id_lbl_hc, rgn_lbl_hc <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_hc, ts_id_list)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>ds_id_ma <span class="op">=</span> <span class="st">'cciea_OC_MHW'</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_MHW_MA'</span>]</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>vec2_ma, ds_id_lbl_ma, rgn_lbl_ma <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_ma, ts_id_list)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>ds_id_mi <span class="op">=</span> <span class="st">'cciea_OC_MHW'</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_MHW_MI'</span>]</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>vec2_mi, ds_id_lbl_mi, rgn_lbl_mi <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_mi, ts_id_list)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>cciea_yr <span class="op">=</span> <span class="dv">2024</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<p><strong>Description</strong> &nbsp; &nbsp; Marine heatwaves (MHW) occur when ocean temperatures are much warmer than usual for an extended period of time; they are specifically defined by the difference between the current temperature and the expected temperature for a specific location and time of year [1]. MHWs are a growing field of study worldwide because of their effects on ecosystem structure, biodiversity, and regional economies.</p>
+<p><strong>Figures</strong></p>
+<p><strong>Description</strong> &nbsp; &nbsp; Time versus depth profiles of water temperatures off of Monterey (66), Pt Conception (80), and north of San Diego (90) demonstrate the extent of recent warm and cool anomalies into the water column, as well as spatial and temporal dynamics of these anomalies.</p>
+<p><strong>Metafile name</strong> &nbsp; &nbsp; Not in CCIEA Metadatabase</p>
 <p><strong>Indicator Category</strong> &nbsp; &nbsp; Climate and Ocean Drivers</p>
 <p><strong>Data Steward</strong> &nbsp; &nbsp; Schroeder</p>
-<p><strong>Erddap Dataset ID</strong> &nbsp; &nbsp; cciea_OC_MHW, cciea_OC_MHW, cciea_OC_MHW</p>
-<p><strong>CCIEA timeseries ID</strong> &nbsp; &nbsp; cciea_OC_MHW_HC, cciea_OC_MHW_MA, cciea_OC_MHW_MI</p>
-<p><strong>Region</strong> &nbsp; &nbsp; NA, NA, NA</p>
+<p><strong>Erddap Dataset ID</strong> &nbsp; &nbsp; NA</p>
+<p><strong>CCIEA timeseries ID</strong> &nbsp; &nbsp; NA</p>
+<p><strong>Region</strong> &nbsp; &nbsp; CalCOFI Lines 66, 80, 90</p>
 <p><strong>Public availability statement</strong> &nbsp; &nbsp; Source data are publicly available.</p>
-<p><strong>Additional Information</strong> &nbsp; &nbsp; There is growing recognition that marine heatwaves can have strongly disruptive impacts on the CCE <span class="citation" data-cites="morgan2019recent">(<a href="#ref-morgan2019recent" role="doc-biblioref">Morgan et al. 2019</a>)</span>. Based on an analysis of sea surface temperature anomalies (SSTa) obtained from satellite measurements (OISST); we define marine heatwaves as 1.0 times when normalized SSTa &gt;1.29 s.d. (90th percentile) of the long-term SSTa time series at a location, and lasts for &gt;5 days; which are analogous to the thresholds suggested in <span class="citation" data-cites="hobday2016hierarchical">Hobday et al. (<a href="#ref-hobday2016hierarchical" role="doc-biblioref">2016</a>)</span>. Here, we further report on statistics concerning large heatwaves (LHW) which were tracked through space and time, with LHW defined as those heatwaves with an area &gt; 400,000 km2 (these denote the top 20% of all heatwaves by area as measured since 1982 when satellite data became available for tracking. For more information on MHW see <a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker" class="uri">https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker</a>.</p>
+<p><strong>Data sources</strong> &nbsp; &nbsp; The anomaly data are available as science quality binned data <span class="citation" data-cites="rudnick2016">(<a href="#ref-rudnick2016" role="doc-biblioref">Rudnick 2016</a>)</span>. Netcdf files of the three lines can be downloaded from <a href="https://spraydata.ucsd.edu/projects/CUGN/" class="uri">https://spraydata.ucsd.edu/projects/CUGN/</a>. The data downloaded are temperature anomalies created by CUGN.</p>
+<p><strong>Additional Information</strong> &nbsp; &nbsp; The temperature anomaly data provided in the netcdf file has data across the line at 5 m intervals over 0-500 m and distances at 5 km from the coat out to the end of the line (66=400 km, 80=365 km, 90=530 km). Distance can be averaged using Python xarray to select specific distance ranges and then averaging over the distances. The time interval of the netcdf file is 10 days and this is shown in <a href="DepthTimeTempGlider_2025.html#fig-tz_glider" class="quarto-xref">Figure&nbsp;<span>16.2</span></a>.</p>
 <p><strong>Figures</strong></p>
-<div id="fig-mhw_M" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-calcofi_map" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-mhw_M-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="figures_gha/MHW/2025/oc_mhw_heatwave_cover_sum_area_intensity_Monthly.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;13.1: Monthly average of MHW time series."><img src="figures_gha/MHW/2025/oc_mhw_heatwave_cover_sum_area_intensity_Monthly.png" class="img-fluid figure-img" style="width:70.0%"></a>
+<div aria-describedby="fig-calcofi_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figures/113StationPositions300.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;7.1: Map CalCOFI line and station sampling stations. CUGN has been sampling lines 66, 80, 90 since 2006."><img src="figures/113StationPositions300.png" class="img-fluid figure-img" style="width:30.0%"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mhw_M-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13.1: Monthly average of MHW time series.
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-calcofi_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: Map CalCOFI line and station sampling stations. CUGN has been sampling lines 66, 80, 90 since 2006.
 </figcaption>
 </figure>
 </div>
-<p><br> <br> <br></p>
-<div id="fig-mhw_S" class="quarto-layout-panel">
+<div id="fig-tz_glider" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-mhw_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-mhw_S" style="flex-basis: 32.9%;justify-content: flex-start;">
-<div id="fig-mhw_hc_S" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-mhw_hc_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="figures_gha/MHW/2025/oc_mhw_heatwave_cover_Season.png" class="lightbox" data-gallery="fig-mhw_S" title="Figure&nbsp;13.2&nbsp;(a): Heatwave Cover"><img src="figures_gha/MHW/2025/oc_mhw_heatwave_cover_Season.png" class="img-fluid figure-img" data-ref-parent="fig-mhw_S"></a>
+<div aria-describedby="fig-tz_glider-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figures_gha/DepthTimeTempGlider/2024/oc_z_temperature_gldr_lines_66_80_90_distance_0_200km.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;7.2: Time–depth temperature anomalies for line 66, 80 and 90; all plots covering April 2003 to December 2024. Temperature anomalies were area averaged from the coast out to 200 km."><img src="figures_gha/DepthTimeTempGlider/2024/oc_z_temperature_gldr_lines_66_80_90_distance_0_200km.png" class="img-fluid figure-img" style="width:100.0%"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-mhw_hc_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Heatwave Cover
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tz_glider-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: Time–depth temperature anomalies for line 66, 80 and 90; all plots covering April 2003 to December 2024. Temperature anomalies were area averaged from the coast out to 200 km.
 </figcaption>
 </figure>
 </div>
-</div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 0.7%;justify-content: flex-start;">
-<p>&nbsp;</p>
-</div>
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-mhw_S" style="flex-basis: 32.9%;justify-content: flex-start;">
-<div id="fig-mhw_ma_S" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-mhw_ma_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="figures_gha/MHW/2025/oc_mhw_sum_area_Season.png" class="lightbox" data-gallery="fig-mhw_S" title="Figure&nbsp;13.2&nbsp;(b): Sum Area"><img src="figures_gha/MHW/2025/oc_mhw_sum_area_Season.png" class="img-fluid figure-img" data-ref-parent="fig-mhw_S"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-mhw_ma_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(b) Sum Area
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 0.7%;justify-content: flex-start;">
-<p>&nbsp;</p>
-</div>
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-mhw_S" style="flex-basis: 32.9%;justify-content: flex-start;">
-<div id="fig-mhw_mi_S" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-mhw_mi_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="figures_gha/MHW/2025/oc_mhw_intensity_Season.png" class="lightbox" data-gallery="fig-mhw_S" title="Figure&nbsp;13.2&nbsp;(c): Intensity"><img src="figures_gha/MHW/2025/oc_mhw_intensity_Season.png" class="img-fluid figure-img" data-ref-parent="fig-mhw_S"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-mhw_mi_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(c) Intensity
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mhw_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13.2: Seasonal averages of the monthly MHW time series.
-</figcaption>
-</figure>
-</div>
-<p><strong>2025 Conditions</strong></p>
+<p><strong>2024 Conditions</strong></p>
 <ul>
-<li>Monthly MHW sum area <a href="#fig-mhw_M" class="quarto-xref">Figure&nbsp;<span>13.1</span></a> was above the long-term mean during summer and fall 2024.</li>
-<li>Winter, Spring and Summer MHW sum area <a href="#fig-mhw_ma_S" class="quarto-xref">Figure&nbsp;<span>13.2 (b)</span></a> had 2024 values lower than 2023.</li>
-<li>Heat wave cover during the winter 2024 <a href="#fig-mhw_hc_S" class="quarto-xref">Figure&nbsp;<span>13.2 (a)</span></a> was above 1 sd, this probably can be attributed to El Niño elevating coastal temperatures <a href="SSTspatial_2025.html#fig-sst_spatial_winter" class="quarto-xref">Figure&nbsp;<span>12.2 (a)</span></a>.</li>
+<li>Along line 90, winter 2023-24 El Niño influence at the surface (upper 100 m) is not as extreme as the 2016 event (<a href="DepthTimeTempGlider_2025.html#fig-tz_glider" class="quarto-xref">Figure&nbsp;<span>16.2</span></a>, bottom).</li>
+<li>All three lines had similar positive anomalies down to 500 m mostly occuring in the fall 2023.</li>
 </ul>
 <p><strong>References</strong></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-hobday2016hierarchical" class="csl-entry" role="listitem">
-Hobday, Alistair J, Lisa V Alexander, Sarah E Perkins, Dan A Smale, Sandra C Straub, Eric CJ Oliver, Jessica A Benthuysen, et al. 2016. <span>“A Hierarchical Approach to Defining Marine Heatwaves.”</span> <em>Progress in Oceanography</em> 141: 227–38.
-</div>
-<div id="ref-morgan2019recent" class="csl-entry" role="listitem">
-Morgan, Cheryl A, Brian R Beckman, Laurie A Weitkamp, and Kurt L Fresh. 2019. <span>“Recent Ecosystem Disturbance in the Northern California Current.”</span> <em>Fisheries</em> 44 (10): 465–74.
+<div id="ref-rudnick2016" class="csl-entry" role="listitem">
+Rudnick, Daniel. 2016. <span>“California Underwater Glider Network.”</span> Scripps Institution of Oceanography, Instrument Development Group. <a href="https://doi.org/10.21238/S8SPRAY1618">https://doi.org/10.21238/S8SPRAY1618</a>.
 </div>
 </div>
 
@@ -858,13 +789,13 @@ Morgan, Cheryl A, Brian R Beckman, Laurie A Weitkamp, and Kurt L Fresh. 2019. <s
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./SSTspatial_2025.html" class="pagination-link" aria-label="SST anoms, 5-year means and trends 2025">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">SST anoms, 5-year means and trends 2025</span></span>
+      <a href="./DepthTimeTemp_2024.html" class="pagination-link" aria-label="Newport and CalCOFI time-depth 2024">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Newport and CalCOFI time-depth 2024</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./HCI_2025.html" class="pagination-link" aria-label="Habitat Compression Index 2025">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Habitat Compression Index 2025</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./bakunUI_2024.html" class="pagination-link" aria-label="Regional Upwelling Indices 2024">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Regional Upwelling Indices 2024</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

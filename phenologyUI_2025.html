@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>13&nbsp; Marine Heatwaves 2025 – oc_cciea.github.io</title>
+<title>18&nbsp; Upwelling Phenology 2025 – oc_cciea.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,8 +85,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./HCI_2025.html" rel="next">
-<link href="./SSTspatial_2025.html" rel="prev">
+<link href="./bakunUI_2025.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -141,7 +140,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasinScaleIndicators_2025.html">2025</a></li><li class="breadcrumb-item"><a href="./MHW_2025.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Marine Heatwaves 2025</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasinScaleIndicators_2025.html">2025</a></li><li class="breadcrumb-item"><a href="./phenologyUI_2025.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Upwelling Phenology 2025</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -268,7 +267,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./MHW_2025.html" class="sidebar-item-text sidebar-link active">
+  <a href="./MHW_2025.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Marine Heatwaves 2025</span></span></a>
   </div>
 </li>
@@ -298,7 +297,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./phenologyUI_2025.html" class="sidebar-item-text sidebar-link">
+  <a href="./phenologyUI_2025.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Upwelling Phenology 2025</span></span></a>
   </div>
 </li>
@@ -315,9 +314,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasinScaleIndicators_2025.html">2025</a></li><li class="breadcrumb-item"><a href="./MHW_2025.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Marine Heatwaves 2025</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BasinScaleIndicators_2025.html">2025</a></li><li class="breadcrumb-item"><a href="./phenologyUI_2025.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Upwelling Phenology 2025</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Marine Heatwaves 2025</span></h1>
+<h1 class="title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Upwelling Phenology 2025</span></h1>
 </div>
 
 
@@ -334,7 +333,7 @@ div.csl-indent {
 </header>
 
 
-<div id="e4a057d3" class="cell" data-execution_count="1">
+<div id="2c6befd0" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
@@ -351,107 +350,115 @@ div.csl-indent {
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> pd.read_csv(fn_meta)</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>cell2_wnt <span class="op">=</span> [<span class="st">'Component_Section'</span>, <span class="st">'Subcomponent'</span>, <span class="st">'ERDDAP_Dataset_ID'</span>, <span class="st">'PI'</span>, <span class="st">'Contact'</span>]</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>ds_id_hc <span class="op">=</span> <span class="st">'cciea_OC_MHW'</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_MHW_HC'</span>]</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>vec2_hc, ds_id_lbl_hc, rgn_lbl_hc <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_hc, ts_id_list)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>ds_id_sti <span class="op">=</span> <span class="st">'cciea_OC_STI'</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_STI_33'</span>]</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>vec2_sti3, ds_id_lbl_sti3, rgn_lbl_sti3 <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_sti, ts_id_list)</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>ds_id_ma <span class="op">=</span> <span class="st">'cciea_OC_MHW'</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_MHW_MA'</span>]</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>vec2_ma, ds_id_lbl_ma, rgn_lbl_ma <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_ma, ts_id_list)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>ds_id_mi <span class="op">=</span> <span class="st">'cciea_OC_MHW'</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_MHW_MI'</span>]</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>vec2_mi, ds_id_lbl_mi, rgn_lbl_mi <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_mi, ts_id_list)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_STI_39'</span>]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>vec2_sti2, ds_id_lbl_sti2, rgn_lbl_sti2 <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_sti, ts_id_list)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_STI_33'</span>]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>vec2_sti1, ds_id_lbl_sti1, rgn_lbl_sti1 <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_sti, ts_id_list)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>ds_id_lusi <span class="op">=</span> <span class="st">'cciea_OC_LUSI'</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_LUSI_33'</span>]</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>vec2_lusi3, ds_id_lbl_lusi3, rgn_lbl_lusi3 <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_lusi, ts_id_list)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_LUSI_39'</span>]</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>vec2_lusi2, ds_id_lbl_lusi2, rgn_lbl_lusi2 <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_lusi, ts_id_list)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_LUSI_45'</span>]</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>vec2_lusi1, ds_id_lbl_lusi1, rgn_lbl_lusi1 <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_lusi, ts_id_list)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>ds_id_tumi <span class="op">=</span> <span class="st">'cciea_OC_TUMI'</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_TUMI_33'</span>]</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>vec2_tumi3, ds_id_lbl_tumi3, rgn_lbl_tumi3 <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_tumi, ts_id_list)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_TUMI_39'</span>]</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>vec2_tumi2, ds_id_lbl_tumi2, rgn_lbl_tumi2 <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_tumi, ts_id_list)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>ts_id_list <span class="op">=</span> [<span class="st">'cciea_OC_TUMI_45'</span>]</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>vec2_tumi1, ds_id_lbl_tumi1, rgn_lbl_tumi1 <span class="op">=</span> fun_script_IDS(df1, cell2_wnt, ds_id_tumi, ts_id_list)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<p><strong>Description</strong> &nbsp; &nbsp; Marine heatwaves (MHW) occur when ocean temperatures are much warmer than usual for an extended period of time; they are specifically defined by the difference between the current temperature and the expected temperature for a specific location and time of year [1]. MHWs are a growing field of study worldwide because of their effects on ecosystem structure, biodiversity, and regional economies.</p>
+<p><strong>Description</strong> &nbsp; &nbsp; Three derived products (STI, TUMI and LUSI) using the UI identify the timing and strength and duration of upwelling in the CCLME <span class="citation" data-cites="bograd09">(<a href="#ref-bograd09" role="doc-biblioref">Bograd et al. 2009</a>)</span>. The spring transition index (STI) identifies the time when upwelling starts andvaries with latitude in the CCLME. The units for STI are days and a year with a small STI value will have an earlier start to the onset of upwelling winds. The length of upwelling season index (LUSI) will provide information on the duration of upwelling during a particular year. The units for LUSI are days and a larger LUSI value indicates that the upwelling season for the given year is long. The total upwelling magnitude (TUMI) measures the ultimate amount of upwelling. There may be years of short but intense periods of upwelling, or longer but weaker upwelling seasons.</p>
 <p><strong>Indicator Category</strong> &nbsp; &nbsp; Climate and Ocean Drivers</p>
 <p><strong>Data Steward</strong> &nbsp; &nbsp; Schroeder</p>
-<p><strong>Erddap Dataset ID</strong> &nbsp; &nbsp; cciea_OC_MHW, cciea_OC_MHW, cciea_OC_MHW</p>
-<p><strong>CCIEA timeseries ID</strong> &nbsp; &nbsp; cciea_OC_MHW_HC, cciea_OC_MHW_MA, cciea_OC_MHW_MI</p>
-<p><strong>Region</strong> &nbsp; &nbsp; NA, NA, NA</p>
+<p><strong>Erddap Dataset ID</strong> &nbsp; &nbsp; cciea_OC_STI, cciea_OC_LUSI, cciea_OC_TUMI,</p>
+<p><strong>CCIEA timeseries ID</strong> &nbsp; &nbsp; cciea_OC_STI_33, cciea_OC_STI_39, cciea_OC_STI_33</p>
+<p>cciea_OC_LUSI_33, cciea_OC_LUSI_39, cciea_OC_LUSI_45</p>
+<p>cciea_OC_TUMI_33, cciea_OC_TUMI_39, cciea_OC_TUMI_45</p>
+<p><strong>Region</strong> &nbsp; &nbsp; SCC (33.0N), CCC (39.0N), NCC (45.0N)</p>
 <p><strong>Public availability statement</strong> &nbsp; &nbsp; Source data are publicly available.</p>
-<p><strong>Additional Information</strong> &nbsp; &nbsp; There is growing recognition that marine heatwaves can have strongly disruptive impacts on the CCE <span class="citation" data-cites="morgan2019recent">(<a href="#ref-morgan2019recent" role="doc-biblioref">Morgan et al. 2019</a>)</span>. Based on an analysis of sea surface temperature anomalies (SSTa) obtained from satellite measurements (OISST); we define marine heatwaves as 1.0 times when normalized SSTa &gt;1.29 s.d. (90th percentile) of the long-term SSTa time series at a location, and lasts for &gt;5 days; which are analogous to the thresholds suggested in <span class="citation" data-cites="hobday2016hierarchical">Hobday et al. (<a href="#ref-hobday2016hierarchical" role="doc-biblioref">2016</a>)</span>. Here, we further report on statistics concerning large heatwaves (LHW) which were tracked through space and time, with LHW defined as those heatwaves with an area &gt; 400,000 km2 (these denote the top 20% of all heatwaves by area as measured since 1982 when satellite data became available for tracking. For more information on MHW see <a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker" class="uri">https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker</a>.</p>
+<p><strong>Data sources</strong> &nbsp; &nbsp; Bakun UI 6-hr data are downloaded from (<a href="https://oceanview.pfeg.noaa.gov/erddap/tabledap/erdUI396hr.html" class="uri">https://oceanview.pfeg.noaa.gov/erddap/tabledap/erdUI396hr.html</a>).</p>
+<p><strong>Additional Information</strong> &nbsp; &nbsp; Bakun UI is derived from geostrophic estimates of winds derived from FNMOC sealevel pressure estimates. The 6-hr UI data are daily averaged, and cumulative UI curves are constructed for each year by taking the cumulative sum from Jan 1 to Dec 31. Details on calculating STI, LUSI, TUMI are given in <span class="citation" data-cites="bograd09">(<a href="#ref-bograd09" role="doc-biblioref">Bograd et al. 2009</a>)</span>.</p>
 <p><strong>Figures</strong></p>
-<div id="fig-mhw_M" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-ui_S" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-mhw_M-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="figures_gha/MHW/2025/oc_mhw_heatwave_cover_sum_area_intensity_Monthly.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;13.1: Monthly average of MHW time series."><img src="figures_gha/MHW/2025/oc_mhw_heatwave_cover_sum_area_intensity_Monthly.png" class="img-fluid figure-img" style="width:70.0%"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mhw_M-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13.1: Monthly average of MHW time series.
-</figcaption>
-</figure>
-</div>
-<p><br> <br> <br></p>
-<div id="fig-mhw_S" class="quarto-layout-panel">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-mhw_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-ui_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-mhw_S" style="flex-basis: 32.9%;justify-content: flex-start;">
-<div id="fig-mhw_hc_S" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-ui_S" style="flex-basis: 31.9%;justify-content: flex-start;">
+<div id="fig-ui_45_S" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-mhw_hc_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="figures_gha/MHW/2025/oc_mhw_heatwave_cover_Season.png" class="lightbox" data-gallery="fig-mhw_S" title="Figure&nbsp;13.2&nbsp;(a): Heatwave Cover"><img src="figures_gha/MHW/2025/oc_mhw_heatwave_cover_Season.png" class="img-fluid figure-img" data-ref-parent="fig-mhw_S"></a>
+<div aria-describedby="fig-ui_45_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figures_gha/phenologyUI/2025/oc_sti_Annual.png" class="lightbox" data-gallery="fig-ui_S" title="Figure&nbsp;18.1&nbsp;(a): STI"><img src="figures_gha/phenologyUI/2025/oc_sti_Annual.png" class="img-fluid figure-img" data-ref-parent="fig-ui_S"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-mhw_hc_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Heatwave Cover
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ui_45_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) STI
 </figcaption>
 </figure>
 </div>
 </div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 0.7%;justify-content: flex-start;">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 2.1%;justify-content: flex-start;">
 <p>&nbsp;</p>
 </div>
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-mhw_S" style="flex-basis: 32.9%;justify-content: flex-start;">
-<div id="fig-mhw_ma_S" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-ui_S" style="flex-basis: 31.9%;justify-content: flex-start;">
+<div id="fig-ui_39_S" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-mhw_ma_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="figures_gha/MHW/2025/oc_mhw_sum_area_Season.png" class="lightbox" data-gallery="fig-mhw_S" title="Figure&nbsp;13.2&nbsp;(b): Sum Area"><img src="figures_gha/MHW/2025/oc_mhw_sum_area_Season.png" class="img-fluid figure-img" data-ref-parent="fig-mhw_S"></a>
+<div aria-describedby="fig-ui_39_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figures_gha/phenologyUI/2025/oc_lusi_Annual.png" class="lightbox" data-gallery="fig-ui_S" title="Figure&nbsp;18.1&nbsp;(b): LUSI"><img src="figures_gha/phenologyUI/2025/oc_lusi_Annual.png" class="img-fluid figure-img" data-ref-parent="fig-ui_S"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-mhw_ma_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(b) Sum Area
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ui_39_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) LUSI
 </figcaption>
 </figure>
 </div>
 </div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 0.7%;justify-content: flex-start;">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 2.1%;justify-content: flex-start;">
 <p>&nbsp;</p>
 </div>
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-mhw_S" style="flex-basis: 32.9%;justify-content: flex-start;">
-<div id="fig-mhw_mi_S" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-ui_S" style="flex-basis: 31.9%;justify-content: flex-start;">
+<div id="fig-ui_33_S" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-mhw_mi_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="figures_gha/MHW/2025/oc_mhw_intensity_Season.png" class="lightbox" data-gallery="fig-mhw_S" title="Figure&nbsp;13.2&nbsp;(c): Intensity"><img src="figures_gha/MHW/2025/oc_mhw_intensity_Season.png" class="img-fluid figure-img" data-ref-parent="fig-mhw_S"></a>
+<div aria-describedby="fig-ui_33_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="figures_gha/phenologyUI/2025/oc_tumi_Annual.png" class="lightbox" data-gallery="fig-ui_S" title="Figure&nbsp;18.1&nbsp;(c): TUMI"><img src="figures_gha/phenologyUI/2025/oc_tumi_Annual.png" class="img-fluid figure-img" data-ref-parent="fig-ui_S"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-mhw_mi_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(c) Intensity
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ui_33_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) TUMI
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mhw_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13.2: Seasonal averages of the monthly MHW time series.
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ui_S-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;18.1: Seasonal averages of UI.
 </figcaption>
 </figure>
 </div>
 <p><strong>2025 Conditions</strong></p>
 <ul>
-<li>Monthly MHW sum area <a href="#fig-mhw_M" class="quarto-xref">Figure&nbsp;<span>13.1</span></a> was above the long-term mean during summer and fall 2024.</li>
-<li>Winter, Spring and Summer MHW sum area <a href="#fig-mhw_ma_S" class="quarto-xref">Figure&nbsp;<span>13.2 (b)</span></a> had 2024 values lower than 2023.</li>
-<li>Heat wave cover during the winter 2024 <a href="#fig-mhw_hc_S" class="quarto-xref">Figure&nbsp;<span>13.2 (a)</span></a> was above 1 sd, this probably can be attributed to El Niño elevating coastal temperatures <a href="SSTspatial_2025.html#fig-sst_spatial_winter" class="quarto-xref">Figure&nbsp;<span>12.2 (a)</span></a>.</li>
+<li>STI values for all three latitudes incidated an early spring transition, with 39°N having the lowest STI value below -1 sd.</li>
+<li>LUSI values were all above the long-term mean indicating a longer than average upwelling season for all three latitudes.</li>
+<li>TUMI values were all above the long-term mean, with the largest value near +1 sd at 33°N.</li>
 </ul>
 <p><strong>References</strong></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-hobday2016hierarchical" class="csl-entry" role="listitem">
-Hobday, Alistair J, Lisa V Alexander, Sarah E Perkins, Dan A Smale, Sandra C Straub, Eric CJ Oliver, Jessica A Benthuysen, et al. 2016. <span>“A Hierarchical Approach to Defining Marine Heatwaves.”</span> <em>Progress in Oceanography</em> 141: 227–38.
-</div>
-<div id="ref-morgan2019recent" class="csl-entry" role="listitem">
-Morgan, Cheryl A, Brian R Beckman, Laurie A Weitkamp, and Kurt L Fresh. 2019. <span>“Recent Ecosystem Disturbance in the Northern California Current.”</span> <em>Fisheries</em> 44 (10): 465–74.
+<div id="ref-bograd09" class="csl-entry" role="listitem">
+Bograd, Steven J., Isaac Schroeder, Nandita Sarkar, Xuemei Qiu, William J. Sydeman, and Franklin B. Schwing. 2009. <span>“Phenology of Coastal Upwelling in the California Current.”</span> <em>Geophysical Research Letters</em> 36 (1). <a href="https://doi.org/10.1029/2008gl035933">https://doi.org/10.1029/2008gl035933</a>.
 </div>
 </div>
 
@@ -858,14 +865,11 @@ Morgan, Cheryl A, Brian R Beckman, Laurie A Weitkamp, and Kurt L Fresh. 2019. <s
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./SSTspatial_2025.html" class="pagination-link" aria-label="SST anoms, 5-year means and trends 2025">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">SST anoms, 5-year means and trends 2025</span></span>
+      <a href="./bakunUI_2025.html" class="pagination-link" aria-label="Regional Upwelling Indices 2025">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Regional Upwelling Indices 2025</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./HCI_2025.html" class="pagination-link" aria-label="Habitat Compression Index 2025">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Habitat Compression Index 2025</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
