@@ -158,7 +158,7 @@ if os.path.isfile(file_in):
 
             # save to final netcdf file
             fn_out_final = '{}{}_daily_final.{}'.format(dir1, var_wnt, file_type)
-            print(fn_out_final)
+            print('Download and Save, i={}, {}'.format(i, fn_out_final))
             dsf.to_netcdf(fn_out_final)
 
     # create monthly means and append to existing dataset
@@ -181,6 +181,8 @@ if os.path.isfile(file_in):
         mon1 = dates_calcM[i].astype(object).month
         dir1 = '{}/{}/{:02d}/'.format(dir_out, yr1, mon1)
         fn1 = '{}{}_daily_final.{}'.format(dir1, var_wnt, file_type)
+
+        print('Open to append, i={}, {}'.format(i, fn1))
         ds1D = xr.open_dataset(fn1)
 
         in1 = np.where(timefM == dates_calcM[i])[0]
