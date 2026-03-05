@@ -203,7 +203,7 @@ if os.path.isfile(file_in):
 
     # overwrite the existing file_in with this new updated dataset
     ds1.close()
-    file_out = '{}/TS_monthly_update.nc'.format(dir_out)
+    file_out = '{}/TS_monthly.nc'.format(dir_out)
     ds1_out.to_netcdf(file_out)
 else:
     print('file not found: {}'.format(file_in))
