@@ -1,4 +1,4 @@
-name: Update SST OI data
+name: Code 1, Update SST OI data using LFS
 on:
   workflow_dispatch
 
