@@ -31,7 +31,7 @@ jobs:
         run: |
           echo "PYTHONPATH=code_gha/fun_gha/" >> $GITHUB_ENV
 
-       - name: Print dir tree and check disk space
+      - name: Print dir tree and check disk space
         shell: bash -l {0}
         run: |
           tree
@@ -42,7 +42,6 @@ jobs:
         shell: bash -l {0}
         run: conda info
 
-
       - name: update sst oi monthly
         shell: bash -l {0}
         run: python code_gha/SSTspatial/sst_oi_daily_v21_update.py
@@ -52,6 +51,5 @@ jobs:
         run: |
           tree
           df -h
-
       - name: git auto commit
         uses: stefanzweifel/git-auto-commit-action@v7
