@@ -77,9 +77,9 @@ lat_str = '[({:.1f}):1:({:.1f})]'.format(lat1, lat2)
 
 # Check if the file exists and is a file
 if os.path.isfile(file_in):
-    print("File exists")
-
+    print("1, File exists: {}".format(file_in))
     ds1 = xr.open_dataset(file_in)
+    print("2, File exists: {}".format(file_in))
 
     yr_end = ds1.time.dt.year.data[-1]
     mon_end = ds1.time.dt.month.data[-1]
