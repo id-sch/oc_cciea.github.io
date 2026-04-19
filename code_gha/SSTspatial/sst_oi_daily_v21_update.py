@@ -189,32 +189,32 @@ if os.path.isfile(file_in):
         else:
             print("File not found: {}".format(i))
 
-#         ds1D = xr.open_dataset(fn1)
+        ds1D = xr.open_dataset(fn1)
 
-#         in1 = np.where(timefM == dates_calcM[i])[0]
-#         data_final[in1, :, :] = ds1D[var_wnt].mean('time')
+        in1 = np.where(timefM == dates_calcM[i])[0]
+        data_final[in1, :, :] = ds1D[var_wnt].mean('time')
 
-#         num_day_data = len(ds1D.time.data)
-#         num_day_clndr = clndr.monthrange(yr1, mon1)[1]
-#         num_day_diff = num_day_clndr - num_day_data
+        num_day_data = len(ds1D.time.data)
+        num_day_clndr = clndr.monthrange(yr1, mon1)[1]
+        num_day_diff = num_day_clndr - num_day_data
 
-#         day_missing_final[in1] = num_day_diff
+        day_missing_final[in1] = num_day_diff
 
-#     da1_out = xr.DataArray(
-#         data_final, coords=[timefM.astype('datetime64[ns]'), lat1, lon1],
-#         dims=['time', 'lat_vec', 'lon_vec'])
-#     da2_out = xr.DataArray(
-#         day_missing_final, [timefM.astype('datetime64[ns]')], dims=['time']) 
+    da1_out = xr.DataArray(
+        data_final, coords=[timefM.astype('datetime64[ns]'), lat1, lon1],
+        dims=['time', 'lat_vec', 'lon_vec'])
+    da2_out = xr.DataArray(
+        day_missing_final, [timefM.astype('datetime64[ns]')], dims=['time']) 
 
-#     ds1_out = da1_out.to_dataset(name=var_wnt)
-#     ds1_out['day_missing'] = da2_out
+    ds1_out = da1_out.to_dataset(name=var_wnt)
+    ds1_out['day_missing'] = da2_out
 
-#     # overwrite the existing file_in with this new updated dataset
-#     ds1.close()
-#     file_out = '{}/TS_monthly.nc'.format(dir_out)
-#     ds1_out.to_netcdf(file_out)
-# else:
-#     print('file not found: {}'.format(file_in))
+    # overwrite the existing file_in with this new updated dataset
+    ds1.close()
+    file_out = '{}/TS_monthly.nc'.format(dir_out)
+    ds1_out.to_netcdf(file_out)
+else:
+    print('file not found: {}'.format(file_in))
 
 dir_list_end = os.listdir()
 print("Start1 -------------------------------")
