@@ -12,7 +12,6 @@ import numpy as np
 # ouput dataset name, file type, and directory
 name_wnt = 'TS_monthly'
 file_type = 'nc'
-dir_in ='./'
 
 # erddap url for all dates of the SST OI
 url_nrt_time = 'https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg.nc?time'
@@ -35,6 +34,7 @@ day_check = 24
 
 # dir out, will use artifacts to download this data
 dir_out = './data_gha/SSTspatial/'
+dir_in = dir_out
 
 # -----------------------------------------------------------------------------
 # END: Input variables, change these
@@ -67,7 +67,6 @@ date2 = np.datetime64('{}-{:02d}'.format(yr_end_nrt, mon_end_nrt), 'M')
 
 # Open the old monthly data SST OI data
 file_in = dir_in + '{}.{}'.format(name_wnt, file_type)
-
 
 # set string for altitude, lon, lat ranges
 alt_str = '[(0.0):1:(0.0)]'
@@ -183,12 +182,6 @@ if os.path.isfile(file_in):
         fn1 = '{}{}_daily_final.{}'.format(dir1, var_wnt, file_type)
 
         print('Open to append, i={}, {}'.format(i, fn1))
-
-        if os.path.isfile(fn1):
-            print("1, File exists: {}".format(fn1))
-        else:
-            print("File not found: {}".format(i))
-
         ds1D = xr.open_dataset(fn1)
 
         in1 = np.where(timefM == dates_calcM[i])[0]
