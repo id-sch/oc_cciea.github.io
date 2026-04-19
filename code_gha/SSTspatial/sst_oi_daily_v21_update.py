@@ -161,28 +161,34 @@ if os.path.isfile(file_in):
             print('Download and Save, i={}, {}'.format(i, fn_out_final))
             dsf.to_netcdf(fn_out_final)
 
-#     # create monthly means and append to existing dataset
-#     nt, ny, nx = ds1[var_wnt].shape
-#     time1M = ds1.time.data.astype('datetime64[M]')
-#     timefM = np.arange(time1M[0], date_final + 1)
-#     ntf = len(timefM)
-#     data_final = np.zeros([ntf, ny, nx])*np.nan
-#     day_missing_final = np.zeros(ntf)*np.nan
+    # create monthly means and append to existing dataset
+    nt, ny, nx = ds1[var_wnt].shape
+    time1M = ds1.time.data.astype('datetime64[M]')
+    timefM = np.arange(time1M[0], date_final + 1)
+    ntf = len(timefM)
+    data_final = np.zeros([ntf, ny, nx])*np.nan
+    day_missing_final = np.zeros(ntf)*np.nan
 
-#     ia = np.isin(timefM, time1M)
-#     ib = np.isin(time1M, timefM)
+    ia = np.isin(timefM, time1M)
+    ib = np.isin(time1M, timefM)
 
-#     data_final[ia, :, :] = ds1[var_wnt].data[ib, :, :]
-#     day_missing_final[ia] = ds1['day_missing'].data
+    data_final[ia, :, :] = ds1[var_wnt].data[ib, :, :]
+    day_missing_final[ia] = ds1['day_missing'].data
 
-#     dates_calcM = np.setdiff1d(timefM,time1M)
-#     for i in range(len(dates_calcM)):
-#         yr1 = dates_calcM[i].astype(object).year
-#         mon1 = dates_calcM[i].astype(object).month
-#         dir1 = '{}/{}/{:02d}/'.format(dir_out, yr1, mon1)
-#         fn1 = '{}{}_daily_final.{}'.format(dir1, var_wnt, file_type)
+    dates_calcM = np.setdiff1d(timefM,time1M)
+    for i in range(len(dates_calcM)):
+        yr1 = dates_calcM[i].astype(object).year
+        mon1 = dates_calcM[i].astype(object).month
+        dir1 = '{}/{}/{:02d}/'.format(dir_out, yr1, mon1)
+        fn1 = '{}{}_daily_final.{}'.format(dir1, var_wnt, file_type)
 
-#         print('Open to append, i={}, {}'.format(i, fn1))
+        print('Open to append, i={}, {}'.format(i, fn1))
+
+        if os.path.isfile(fn1):
+            print("1, File exists: {}".format(fn1))
+        else:
+            print("File not found: {}".format(i))
+
 #         ds1D = xr.open_dataset(fn1)
 
 #         in1 = np.where(timefM == dates_calcM[i])[0]
