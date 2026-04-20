@@ -33,8 +33,8 @@ var_wnt = 'sst'
 day_check = 24
 
 # dir out, will use artifacts to download this data
-# dir_out = './data_gha/SSTspatial/'
-dir_out = './oc_cciea.github.io/data_gha/SSTspatial/'
+dir_out = './data_gha/SSTspatial/'
+# dir_out = './oc_cciea.github.io/data_gha/SSTspatial/'
 dir_in = dir_out
 
 # -----------------------------------------------------------------------------
