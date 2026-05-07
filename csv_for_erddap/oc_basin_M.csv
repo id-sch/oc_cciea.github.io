@@ -836,7 +836,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2019,7,2019-07,0.33,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
 2019,8,2019-08,0.19,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
 2019,9,2019-09,0.23,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
-2019,10,2019-10,0.4,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
+2019,10,2019-10,0.39,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
 2019,11,2019-11,0.58,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
 2019,12,2019-12,0.66,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
 2020,1,2020-01,0.64,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
@@ -910,6 +910,7 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,9,2025-09,-0.4,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
 2025,10,2025-10,-0.51,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
 2025,11,2025-11,-0.55,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
+2025,12,2025-12,-0.54,nan,nan,nan,ONI,Monthly Oceanic Nino Index,nan,nan,nan,1.0
 1950,1,1950-01,-1.78,nan,nan,nan,PDO,Monthly Pacific Decadal Oscillation Index,nan,nan,nan,2.0
 1950,2,1950-02,-2.2,nan,nan,nan,PDO,Monthly Pacific Decadal Oscillation Index,nan,nan,nan,2.0
 1950,3,1950-03,-1.75,nan,nan,nan,PDO,Monthly Pacific Decadal Oscillation Index,nan,nan,nan,2.0

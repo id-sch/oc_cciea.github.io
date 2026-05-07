@@ -296,13 +296,13 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2016,2016,-0.56333333,0.10016654,-0.6634999,-0.4631668,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 2017,2017,-0.74333334,0.13203534,-0.8753687,-0.61129797,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 2018,2018,0.90000004,0.08185354,0.81814647,0.9818536,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
-2019,2019,0.5466667,0.13316657,0.41350013,0.67983323,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2019,2019,0.54333335,0.13868432,0.40464902,0.6820177,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 2020,2020,-1.1333333,0.061101016,-1.1944343,-1.0722324,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 2021,2021,-0.84666663,0.07767455,-0.9243412,-0.76899207,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 2022,2022,-0.8333333,0.11590227,-0.94923556,-0.71743107,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 2023,2023,1.96,0.11789821,1.8421018,2.0778983,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 2024,2024,-0.30999997,0.10535654,-0.41535652,-0.20464343,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
-2025,2025,-0.53,0.028284287,-0.5582843,-0.50171566,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
+2025,2025,-0.53333336,0.020816674,-0.55415004,-0.5125167,ONI,Fall Oceanic Nino Index,nan,nan,nan,4.0
 1950,1950,-1.91,0.25159496,-2.1615949,-1.6584051,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
 1951,1951,-1.3666667,0.2227854,-1.589452,-1.1438813,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
 1952,1952,-1.6033334,0.5325724,-2.1359057,-1.070761,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
