@@ -60,6 +60,7 @@ for i in range(num_basin):
 df_all_list = []
 ts_lbl_list = []
 metric_list = []
+yr_csv_end_list = []
 for i in range(0, num_basin):
     # --create input filename
     file_basin = files[indx[i]]
@@ -79,6 +80,7 @@ for i in range(0, num_basin):
 
     # the last year of the csv file
     yr_csv_end = dfi.index.year[-1]
+    yr_csv_end_list.append(yr_csv_end)
 
     # --resample by taking 'M' means, i.e. monthly means
     dfQmn = dfi.resample('QE-MAR').mean()
@@ -127,4 +129,4 @@ df_flat = list(itertools.chain(*df_all_list))
 ts_lbl_flat = list(itertools.chain(*ts_lbl_list))
 metric_flat = list(itertools.chain(*metric_list))
 
-fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_flat, lat, lon, depth, metric_flat, ts_lbl_flat, dir_out, fn_out, yr_csv_bgn, yr_csv_end)
+fn_out_csv = fun_pd_df2csvR_time(clmns_iea, df_flat, lat, lon, depth, metric_flat, ts_lbl_flat, dir_out, fn_out, yr_csv_bgn, np.max(yr_csv_end_list))
