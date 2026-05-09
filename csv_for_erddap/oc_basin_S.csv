@@ -75,6 +75,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2023,2023,-0.28333333,0.2600641,-0.5433974,-0.023269236,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
 2024,2024,1.6,0.33045423,1.2695458,1.9304543,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
 2025,2025,-0.25,0.1951922,-0.44519222,-0.054807797,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
+2026,2026,-0.13666667,0.24027762,-0.3769443,0.10361095,ONI,Winter Oceanic Nino Index,nan,nan,nan,1.0
 1950,1950,-1.0333333,0.16802774,-1.2013611,-0.86530554,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
 1951,1951,0.37333333,0.20033304,0.17300029,0.5736664,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
 1952,1952,0.16333334,0.1484363,0.0148970485,0.31176963,ONI,Spring Oceanic Nino Index,nan,nan,nan,2.0
@@ -379,6 +380,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2023,2023,-1.2133334,0.37072,-1.5840534,-0.84261334,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
 2024,2024,-0.61333334,0.21501939,-0.82835275,-0.39831394,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
 2025,2025,-0.65000004,0.21794495,-0.86794496,-0.4320551,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
+2026,2026,-0.66333336,0.24110855,-0.9044419,-0.42222482,PDO,Winter Pacific Decadal Oscillation Index,nan,nan,nan,5.0
 1950,1950,-2.1899998,0.5716642,-2.761664,-1.6183356,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
 1951,1951,-1.1133333,0.24131583,-1.3546492,-0.8720175,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
 1952,1952,-1.5833334,0.09451636,-1.6778498,-1.488817,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
@@ -455,6 +457,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2023,2023,-1.9200001,0.24637371,-2.1663737,-1.6736264,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
 2024,2024,-1.8733333,0.71626353,-2.5895967,-1.1570698,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
 2025,2025,-1.3499999,0.90349317,-2.253493,-0.44650674,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
+2026,2026,-0.73,nan,nan,nan,PDO,Spring Pacific Decadal Oscillation Index,nan,nan,nan,6.0
 1950,1950,-2.4766667,0.59969443,-3.0763612,-1.8769722,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
 1951,1951,-0.6766667,0.7350057,-1.4116724,0.058339,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
 1952,1952,-1.1766667,0.38135722,-1.5580239,-0.79530954,PDO,Summer Pacific Decadal Oscillation Index,nan,nan,nan,7.0
