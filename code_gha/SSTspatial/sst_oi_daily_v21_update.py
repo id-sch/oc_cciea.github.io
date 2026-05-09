@@ -50,11 +50,12 @@ print(dir_list)
 print("END -------------------------------")
 
 # Get the time available in the NRT SST OI data product
-ddd = requests.get(url_nrt_time, timeout=20)
+ddd = requests.get(url_nrt_time, timeout=50)
 
 with open(fn1_time, 'wb') as file_time:
     file_time.write(ddd.content)
 
+print('#1) file time = {}'.format(fn1_time))
 ds1nrt = xr.open_dataset(fn1_time)
 time_nrt = ds1nrt.time.data.astype('datetime64[D]')
 yy_nrt = ds1nrt.time.dt.year.data
