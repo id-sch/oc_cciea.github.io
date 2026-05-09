@@ -11,7 +11,7 @@ import numpy as np
 dis_wnt = [75, 150]
 
 # 2) OI SST monthly means
-fn_sst = 'TS_monthly.nc'
+fn_sst = 'data_gha/SSTspatial/TS_monthly.nc'
 
 # 3)
 # x distance and lat range list
@@ -123,8 +123,8 @@ print("Files and directories in  :")
 print(dir_list)
 
 
-# remove some large files that can not be commit to github
-os.remove("TS_monthly.nc")
+# # remove some large files that can not be commit to github
+# os.remove("TS_monthly.nc")
 
 
 dir_list = os.listdir()
