@@ -17,6 +17,7 @@ var_wnt = 'sst_oi'
 
 # clim time period
 date_clim = [np.datetime64('1982-01-01'), np.datetime64('2011-01-01')]
+date_clim = [np.datetime64('1990-01-01'), np.datetime64('2021-01-01')]
 
 # season order wanted
 ssn_order = ['DJF', 'MAM', 'JJA', 'SON']
@@ -30,7 +31,8 @@ tt_mon = np.arange(1, 13)
 indx_ssn = np.arange(0, 12)
 
 # ouput directory
-dir_out = './data_gha/HCI/'
+# dir_out = './data_gha/HCI/'
+dir_out = './oc_cciea.github.io/data_gha/HCI/'
 
 # directory of temperature data
 dir_in = dir_out

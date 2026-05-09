@@ -10,7 +10,7 @@ import seawater as sw
 # ----------------------------------------------------------------------
 
 # SST OI mask file
-fn_mask = 'sst_daily_final.nc'
+fn_mask = './data_gha/HCI/sst_daily_final.nc'
 
 land_mask = 0
 water_mask = 1
@@ -26,7 +26,7 @@ ylm2 = 48
 var_sst = ['longitude', 'latitude', 'sst']
 
 # bath file name
-fn_bath = 'bath.nc'
+fn_bath = './data_gha/HCI/bath.nc'
 
 # distance
 dis_wnt = [75, 150]

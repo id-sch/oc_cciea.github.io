@@ -17,11 +17,13 @@ fn_sst = 'TS_monthly.nc'
 # x distance and lat range list
 xdis_km = [75, 150]
 
-test_rgn = 0
-if test_rgn == 0:
-    lat_rgn = [[43.5, 48], [40, 43.5], [35.5, 40], [30, 35.5]]
-else:
-     lat_rgn = [[30, 48]]
+# test_rgn = 0
+# if test_rgn == 0:
+#     lat_rgn = [[43.5, 48], [40, 43.5], [35.5, 40], [30, 35.5]]
+# else:
+#      lat_rgn = [[30, 48]]
+
+lat_rgn = [[43.5, 48], [40, 43.5], [35.5, 40], [30, 35.5], [30, 48]]
 
 var_wnt = 'sst_oi'
 
