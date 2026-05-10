@@ -52,7 +52,7 @@ fn_in = '{}{}_distance_to_shore_dis_{}km.nc'.format(dir_in, var_wnt, dis_str)
 ds1 = xr.open_dataset(fn_in)
 
 # 2) Open SST OI
-if os.path.isfile(fn_out):
+if os.path.isfile(fn_sst):
     print("File exists: {}".format(fn_sst))
 else:
     print('File not found: {}'.format(fn_sst))
