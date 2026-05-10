@@ -8,6 +8,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
+        with:
+          lfs: true
+      - name: Checkout LFS objects
+        run: git lfs checkout
+
 
       - name: Install Conda
         uses: conda-incubator/setup-miniconda@v3
