@@ -11,7 +11,7 @@ import numpy as np
 dis_wnt = [75, 150]
 
 # 2) OI SST monthly means
-fn_sst = 'data_gha/SSTspatial/TS_monthly.nc'
+fn_sst = '~/data_gha/SSTspatial/TS_monthly.nc'
 
 # 3)
 # x distance and lat range list
@@ -52,6 +52,11 @@ fn_in = '{}{}_distance_to_shore_dis_{}km.nc'.format(dir_in, var_wnt, dis_str)
 ds1 = xr.open_dataset(fn_in)
 
 # 2) Open SST OI
+if os.path.isfile(fn_out):
+    print("File exists: {}".format(fn_sst))
+else:
+    print('File not found: {}'.format(fn_sst))
+
 ds1_sst = xr.open_dataset(fn_sst)
 da1 = ds1_sst['sst']
 
