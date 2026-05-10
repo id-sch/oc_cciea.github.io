@@ -11,7 +11,7 @@ import numpy as np
 dis_wnt = [75, 150]
 
 # 2) OI SST monthly means
-fn_sst = '~/data_gha/SSTspatial/TS_monthly.nc'
+fn_sst = './data_gha/SSTspatial/TS_monthly.nc'
 
 # 3)
 # x distance and lat range list
