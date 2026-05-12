@@ -24,7 +24,7 @@ yr_clim_bgn = 1991
 yr_clim_end = 2020
 
 
-roll_vec = np.arange(1, 31)
+roll_vec = np.arange(1, 32)
 
 # .2) basin indices
 dir_basin = './data_gha/BasinScaleIndicators/'

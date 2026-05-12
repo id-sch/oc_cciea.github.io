@@ -158,4 +158,4 @@ for iii in range(num_roll_wnt):
     # --Save the figure
     fn_fig = '{}blue_red_basin_5rows_roll{}.png'.format(dir_plots, roll_wnt)
     print('{}: {}'.format(iii, fn_fig))
-#     plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
+    plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
