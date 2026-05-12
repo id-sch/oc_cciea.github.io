@@ -10,9 +10,9 @@ import numpy as np
 # -----------------------------------------------------------------------------
 
 # .1) sst time series
-fn_sst = './oc_cciea.github.io/data_gha/SSTspatial/TS_monthly.nc'
-fn1_hci = './oc_cciea.github.io/data_gha/HCI/sst_oi_lat_30_48_xdis_75km.nc'
-fn2_hci = './oc_cciea.github.io/data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
+fn_sst = './data_gha/SSTspatial/TS_monthly.nc'
+fn1_hci = './data_gha/HCI/sst_oi_lat_30_48_xdis_75km.nc'
+fn2_hci = './data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
 var_list = ['sst', 'sst_oi', 'sst_oi']
 lon_list = ['lon_vec', 'longitude', 'longitude']
 lat_list = ['lat_vec', 'latitude', 'latitude']
@@ -28,7 +28,6 @@ roll_vec = np.arange(1, 31)
 
 # .2) basin indices
 dir_basin = './data_gha/BasinScaleIndicators/'
-dir_basin = './oc_cciea.github.io/data_gha/BasinScaleIndicators/'
 
 basin_wnt = ['PDO', 'ONI', 'NPGO']
 
