@@ -146,7 +146,7 @@ for iii in range(num_roll_wnt):
                  np.diff(ylm)/25, plt_lbl[i], fontsize=12)
 
     # create plot output directory
-    dir_plots = '{}/{}/'.format(dir_plot_out, iea_yr)
+    dir_plots = '{}{}/'.format(dir_plot_out, iea_yr)
 
     # check if directory exist, if it doesn't then create
     try:
@@ -158,6 +158,6 @@ for iii in range(num_roll_wnt):
 
     # --Save the figure
 #    fn_fig = '{}blue_red_basin_5rows_roll{}.png'.format(dir_plots, roll_wnt)
-    fn_fig = 'blue_red_basin_5rows_roll{}.png'.format(dir_plots, roll_wnt)
+    fn_fig = 'blue_red_basin_5rows_roll{}.png'.format(roll_wnt)
     print('{}: {}'.format(iii, fn_fig))
     plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
