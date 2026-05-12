@@ -120,11 +120,8 @@ for iii in range(num_roll_wnt):
         if i < num_var_wnt-1:
             xfmt = mdates.DateFormatter('')
         else:
-            # xfmt = mdates.DateFormatter('%Y-%m')
             xfmt = mdates.DateFormatter('%Y')
         ax.xaxis.set_major_formatter(xfmt)
-        # ax.set_xticks(dates[0::12 * 5])
-        # plt.xticks(rotation=0)
 
         # --add x-minor tick marks at intervals of 5, this will produce
         # --a tick mark at Jan of every year
@@ -133,10 +130,6 @@ for iii in range(num_roll_wnt):
 
         minorLocator = AutoMinorLocator(2)
         ax.yaxis.set_minor_locator(minorLocator)
-
-        # --x&y tick fontsizes
-        # mpl.rc('xtick', labelsize=8)
-        # mpl.rc('ytick', labelsize=8)
 
         # --vertical lines for the last x years
         plt.ylim(ylm_wnt[i])
@@ -163,6 +156,6 @@ for iii in range(num_roll_wnt):
             raise
 
     # --Save the figure
-    fn_fig = '{}blue_red_basin_5rows_roll{}.png'.format(
-        dir_plots, roll_wnt)
-    plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
+    fn_fig = '{}blue_red_basin_5rows_roll{}.png'.format(dir_plots, roll_wnt)
+    print('{}: {}'.format(iii, fn_fig))
+#     plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
