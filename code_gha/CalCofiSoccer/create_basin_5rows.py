@@ -112,3 +112,8 @@ except OSError:
 
 fn1_out = '{}basin_5rows.nc'.format(dir_out)
 ds1_out.to_netcdf(fn1_out)
+
+
+dir_list = os.listdir()
+print("Files and directories in  :")
+print(dir_list)

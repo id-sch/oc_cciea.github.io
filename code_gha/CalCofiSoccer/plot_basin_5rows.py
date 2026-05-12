@@ -25,7 +25,7 @@ iea_yr = 2026
 # input file
 dir_out = './data_gha/CalCofiSoccer/'
 dir_in = dir_out
-fn_in = '{}/CalCofiSoccer/basin_5rows.nc'.format(dir_in)
+fn_in = '{}/basin_5rows.nc'.format(dir_in)
 
 # directory out
 dir_plot_out = './figures_gha/CalCofiSoccer/'
@@ -56,6 +56,9 @@ fig_hght = 6
 num_var_wnt = len(var_wnt)
 num_roll_wnt = len(roll_vec)
 
+dir_list = os.listdir()
+print("Files and directories in  :")
+print(dir_list)
 
 for iii in range(num_roll_wnt):
     roll_wnt = roll_vec[iii]
