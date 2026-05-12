@@ -151,11 +151,13 @@ for iii in range(num_roll_wnt):
     # check if directory exist, if it doesn't then create
     try:
         os.makedirs(dir_plots)
+        print('***************** Made Directory {} ************************'.format(dir_plots))
     except OSError:
         if not os.path.isdir(dir_plots):
             raise
 
     # --Save the figure
-    fn_fig = '{}blue_red_basin_5rows_roll{}.png'.format(dir_plots, roll_wnt)
+#    fn_fig = '{}blue_red_basin_5rows_roll{}.png'.format(dir_plots, roll_wnt)
+    fn_fig = 'blue_red_basin_5rows_roll{}.png'.format(dir_plots, roll_wnt)
     print('{}: {}'.format(iii, fn_fig))
     plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
