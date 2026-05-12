@@ -21,11 +21,14 @@ def sttn_create_lbl(ds, sttn_pre, sttn_lst1):
 # ----------------------------------------------------------------------
 # end year
 iea_yr = 2026
+# iea_yr = 2026
 
 # input file
 dir_out = './data_gha/CalCofiSoccer/'
 dir_in = dir_out
 fn_in = '{}/basin_5rows.nc'.format(dir_in)
+
+# fn_in ='./data_x13/CalCofiSoccer/basin_5rows.nc'
 
 # directory out
 dir_plot_out = './figures_gha/CalCofiSoccer/'
@@ -142,8 +145,9 @@ for iii in range(num_roll_wnt):
 
         # plot labels
         xlm = ax.get_xlim()
-        plt.text(xlm[0]+np.diff(xlm)/25, ylm[1] -
-                 np.diff(ylm)/25, plt_lbl[i], fontsize=12)
+        xpt = xlm[0] + np.diff(xlm)[0]/25
+        ypt = ylm[1] - np.diff(ylm)[0]/25
+        plt.text(xpt, ypt, plt_lbl[i], fontsize=12)
 
     # create plot output directory
     dir_plots = '{}{}/'.format(dir_plot_out, iea_yr)
@@ -157,7 +161,7 @@ for iii in range(num_roll_wnt):
             raise
 
     # --Save the figure
-#    fn_fig = '{}blue_red_basin_5rows_roll{}.png'.format(dir_plots, roll_wnt)
-    fn_fig = 'blue_red_basin_5rows_roll{}.png'.format(roll_wnt)
+    fn_fig = '{}blue_red_basin_5rows_roll{}.png'.format(dir_plots, roll_wnt)
+    # fn_fig = 'blue_red_basin_5rows_roll{}.png'.format(roll_wnt)
     print('{}: {}'.format(iii, fn_fig))
     plt.savefig(fn_fig, dpi=300, bbox_inches='tight')
