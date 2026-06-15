@@ -40,7 +40,7 @@ yssn = 46
 
 # .4)
 # figure usually has 1 columns, 2 rows
-num_clmn = num_xyrs
+num_clmn = 1
 num_row = 1
 
 # figure size
