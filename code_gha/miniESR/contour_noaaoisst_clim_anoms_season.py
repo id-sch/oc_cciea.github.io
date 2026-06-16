@@ -19,6 +19,7 @@ interactive(True)
 iea_yr = 2025
 fn1 = './data_gha/SSTspatial/TS_monthly.nc'
 
+
 # .2) SST
 # x and y limits
 xlm = [-128, -116.8]
@@ -70,8 +71,6 @@ clrbr_lbl = 'SST Anom (°C)'
 # .5) plot directory
 dir_plot_out = './figures_gha/miniESR/'
 # dir_plot_out = './figures_x13/miniESR'
-fig_type = '.png'
-
 
 # -----------------------------------------------------------------------------
 # END: Input variables, change these
@@ -147,7 +146,7 @@ for iii in range(num_mon_list):
             gs1[0], projection=ccrs.PlateCarree())
 
         cs2 = plt.contour(lon, lat, anom1, levels=lvls2, transform=ccrs.PlateCarree(), colors=[0.2,0.2,0.2], linewidths=0.5)
-        plt.clabel(cs2)
+        plt.clabel(cs2, fontsize=3)
         cs = plt.contourf(lon, lat, anom1, cmap='bwr', levels=lvls,
                           extend='both', vmax=dmax, vmin=dmin,
                           transform=ccrs.PlateCarree())
