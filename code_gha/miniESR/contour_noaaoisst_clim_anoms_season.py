@@ -17,7 +17,7 @@ interactive(True)
 # -----------------------------------------------------------------------------
 # .1) sst time series
 iea_yr = 2025
-fn1 = './oc_cciea.github.io/data_gha/SSTspatial/TS_monthly.nc'
+fn1 = './data_gha/SSTspatial/TS_monthly.nc'
 
 # .2) SST
 # x and y limits
