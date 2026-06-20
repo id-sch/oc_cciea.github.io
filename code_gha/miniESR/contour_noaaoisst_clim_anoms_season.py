@@ -70,7 +70,6 @@ clrbr_lbl = 'SST Anom (°C)'
 
 # .5) plot directory
 dir_plot_out = './figures_gha/miniESR/'
-dir_plot_out = dir_plot_out + 'sst_anom/'
 # dir_plot_out = './figures_x13/miniESR'
 
 # -----------------------------------------------------------------------------
@@ -193,7 +192,7 @@ for iii in range(num_mon_list):
 
         # create plot output directory
         dir_plots = '{}/{}/'.format(dir_plot_out, iea_yr)
-
+        dir_plot_out = dir_plots + 'sst_anom/'
         # check if directory exist, if it doesn't then create
         try:
             os.makedirs(dir_plots)
