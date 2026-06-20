@@ -191,8 +191,8 @@ for iii in range(num_mon_list):
                      format='%2.1f', extend=extnd, boundaries=lvls)
 
         # create plot output directory
-        dir_plots = '{}/{}/'.format(dir_plot_out, iea_yr)
-        dir_plot_out = dir_plots + 'sst_anom/'
+        dir_year = '{}/{}/'.format(dir_plot_out, iea_yr)
+        dir_plots = dir_year + 'sst_anom/'
         # check if directory exist, if it doesn't then create
         try:
             os.makedirs(dir_plots)
