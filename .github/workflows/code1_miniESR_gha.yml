@@ -39,6 +39,11 @@ jobs:
         shell: bash -l {0}
         run: python code_gha/miniESR/contour_noaaoisst_clim_anoms_season.py
 
+      - name: sst, cuti, beuti hovmoller
+        shell: bash -l {0}
+        run: python code_gha/miniESR/contour_noaaoisst_beuti_cuti_anom_time_lat_3figs.py
+
+
       - name: Print dir tree and check disk space
         shell: bash {0}
         run: |
