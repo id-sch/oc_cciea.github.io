@@ -26,7 +26,7 @@ class nf(float):
 # Input variables, change these
 # -----------------------------------------------------------------------------
 # .1) sst time series
-iea_yr = 2025
+iea_yr = 2026
 # iea_yr = 2026
 
 # clim year period

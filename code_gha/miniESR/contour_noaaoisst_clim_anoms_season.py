@@ -16,7 +16,7 @@ interactive(True)
 # Input variables, change these
 # -----------------------------------------------------------------------------
 # .1) sst time series
-iea_yr = 2025
+iea_yr = 2026
 fn1 = './data_gha/SSTspatial/TS_monthly.nc'
 
 
