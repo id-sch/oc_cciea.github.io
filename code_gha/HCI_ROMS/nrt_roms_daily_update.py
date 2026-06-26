@@ -55,8 +55,10 @@ name_wnt = 'sal_temp_nrt'
 file_type = 'nc'
 
 # erddap url for all dates of the SST OI
-url = 'https://oceanmodeling.ucsc.edu/thredds/dodsC/ccsra_2016a_phys_agg_zlevs/fmrc/'
-fn1 = 'CCSRA_2016a_Phys_ROMS_z-level_(depth)_Aggregation_best.ncd'
+# url = 'https://oceanmodeling.ucsc.edu/thredds/dodsC/ccsra_2016a_phys_agg_zlevs/fmrc/'
+# fn1 = 'CCSRA_2016a_Phys_ROMS_z-level_(depth)_Aggregation_best.ncd'
+url_fn1 = 'https://thredds.cencoos.org/thredds/dodsC/UCSC.nc?'
+
 var_wnt = ['temp', 'salt']
 
 # label of ROMS data
@@ -68,7 +70,6 @@ fn1_in_nrt = './data_gha/HCI_ROMS/sal_temp_nrt.nc'
 # fn1_in_hist = './oc_cciea.github.io/data_gha/HCI_ROMS/sal_temp_hist.nc'
 # fn1_in_nrt = './oc_cciea.github.io/data_gha/HCI_ROMS/sal_temp_nrt.nc'
 
-
 # only download if there are these number of days available in the month
 day_check = 24
 
@@ -77,7 +78,6 @@ z_int = np.array([-250., -200., -150., -100.,  -80.,  -60.,  -40.,  -20., -10., 
 
 # subset by distance from shore
 xdis = 55
-
 
 # dir out, will use artifacts to download this data
 dir_out = './data_gha/HCI_ROMS/'
@@ -98,9 +98,12 @@ print(dir_list)
 print("END -------------------------------")
 
 # open link with NO SSL (security risk)
-url_fn1 = '{}{}'.format(url, fn1)
-store = xr.backends.PydapDataStore.open(url_fn1, verify=False)
-ds1 = xr.open_dataset(store)
+# url_fn1 = '{}{}'.format(url, fn1)
+#store = xr.backends.PydapDataStore.open(url_fn1, verify=False)
+#ds1 = xr.open_dataset(store)
+
+ds1 = xr.open_dataset(url_fn1)
+
 
 lat_rho = ds1['lat_rho'].data[:, 0]
 lon_rho = ds1['lon_rho'].data[0, :]
@@ -243,7 +246,7 @@ if os.path.isfile(fn1_in_nrt):
             # download the data
             da1yr = ds1.sel(time=ds1.time.dt.year.isin(yri)).time
             da1mon = da1yr.sel(time=da1yr.time.dt.month.isin(moni)).time
-            ds1i = ds1.sel(time=da1mon.time.data)
+            ds1i = ds1.sel(time=ds1.time.isin(da1mon.time.data))
    
             # extract the dataarray
             for j in range(num_var_wnt):

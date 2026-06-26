@@ -13,10 +13,6 @@ jobs:
       - name: Checkout LFS objects
         run: git lfs checkout
 
-      - name: disable ssl
-        run: sudo apt-get install --reinstall ca-certificates
-
-
       - name: Install Conda
         uses: conda-incubator/setup-miniconda@v3
         with:
