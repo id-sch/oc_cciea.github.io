@@ -7,15 +7,29 @@ book:
   date: "11/9/2025"
   chapters:
     - index.qmd
-    - intro.qmd
     - part: "2024"
       chapters:
-        - ./qmd_part/BasinScaleIndicators/BasinScaleIndicators_2024.qmd
+        - BasinScaleIndicators_2024.qmd
+        - NPH_2024.qmd
+        - SSTspatial_2024.qmd
+        - MHW_2024.qmd
+        - HCI_2024.qmd
+        - DepthTimeTemp_2024.qmd
+        - DepthTimeTempGlider_2024.qmd
+        - bakunUI_2024.qmd
+        - phenologyUI_2024.qmd
     - part: "2025"
       chapters:
-        - ./qmd_part/BasinScaleIndicators/BasinScaleIndicators_2025.qmd
-    - summary.qmd
-    - references.qmd
+        - BasinScaleIndicators_2025.qmd
+        - NPH_2025.qmd
+        - SSTspatial_2025.qmd
+        - MHW_2025.qmd
+        - HCI_2025.qmd
+        - DepthTimeTemp_2025.qmd
+        - DepthTimeTempGlider_2025.qmd
+        - bakunUI_2025.qmd
+        - phenologyUI_2025.qmd
+        - DissolvedOxygen_2025.qmd
 
 bibliography: references.bib
 

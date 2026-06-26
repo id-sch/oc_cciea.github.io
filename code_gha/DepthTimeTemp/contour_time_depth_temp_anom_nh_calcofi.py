@@ -47,7 +47,7 @@ rcParams.update(params)
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2024
+iea_yr = 2026
 
 # --station wanted, two stations newport hydrographic at 5 and 25 km
 sttn_wnt = ['NH25_CTD', '933_300']

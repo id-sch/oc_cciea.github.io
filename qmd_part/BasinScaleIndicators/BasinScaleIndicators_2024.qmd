@@ -9,10 +9,8 @@ format:
 
 
 ```{python}
-# importing module
 import sys
 
-# appending a path
 sys.path.append('../../')
 from script_IDS import fun_script_IDS
 
@@ -36,6 +34,9 @@ vec2_pdo, ds_id_lbl_pdo, rgn_lbl_pdo = fun_script_IDS(df1, cell2_wnt, ds_id_pdo,
 ds_id_npgo = 'cciea_OC_NPGO'
 ts_id_list = ['cciea_OC_NPGO']
 vec2_npgo, ds_id_lbl_npgo, rgn_lbl_npgo = fun_script_IDS(df1, cell2_wnt, ds_id_npgo, ts_id_list)
+
+
+cndtns = 'Had high PDO'
 
 
 
@@ -77,8 +78,8 @@ Positive NPGO values are associated with increased equatorward flow, along with 
 Negative NPGO values are associated with decreases in such values, implying less subarctic source water and generally lower productivity. 
 
 Oceanic Niño Index information and data are from the NOAA Climate Prediction Center (<https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php>). 
-Pacific Decadal Oscillation data are from N. Mantua, NMFS/SWFSC, and are served on the CCIEA ERDDAP server (<https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_PDO.html>). 
-North Pacific Gyre Oscillation data are from E. Di Lorenzo, Brown University (<https://www.o3d.org/npgo/index.html>).
+Pacific Decadal Oscillation data are served on the CCIEA ERDDAP server (<https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_PDO.html>). 
+North Pacific Gyre Oscillation data are from E. Di Lorenzo (<https://www.o3d.org/npgo/index.html>).
 
 
 **Figures**
@@ -109,9 +110,6 @@ Seasonal values of the Oceanic Niño Index (ONI), Pacific Decadal Oscillation (P
 
 **`{python} cciea_yr` Conditions**
 
-+ @fig-oni_pdo_npgo_M and @fig-oni_pdo_npgo_S show monthly and seasonal means of the three indices.
-+ El Niño event spanned the winter and spring 2023-24 and ENSO neutral by summer 2024 (@fig-oni_pdo_npgo_M and @fig-oni_S).
-+ Short duration La Niña conditions are expected by Jan 2024 (59% chance), with a quick transition to ENSO neutral by March-May 2024 (61% chance), see <https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/>.
-+ PDO and NPGO both have the 5-year mean below 1 standard deviation (@fig-oni_pdo_npgo_M), with the PDO having a negative 5-year trend.
+{{< include conditions_2024.qmd >}}
 
 **References**

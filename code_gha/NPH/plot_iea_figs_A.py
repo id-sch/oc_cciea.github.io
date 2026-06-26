@@ -15,7 +15,7 @@ rcParams.update({'font.size': 12})
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # end year
-iea_yr = 2024
+iea_yr = 2026
 
 # iea directory of the current yearly update
 dir_iea = 'nph'

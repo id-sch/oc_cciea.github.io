@@ -34,12 +34,12 @@ def fun_script_IDS(df1, cell2_wnt, ds_id, ts_id_list):
     for i in range(len(ts_id_list)):
         df3 = df1.loc[df1['CCIEA_timeseries_ID'] == ts_id_list[i]]
         rgn = df3['region'].values[0]
-        lat = df3['latitude'].values[0]
+        lat = float(df3['latitude'].values[0])
         lon = df3['longitude'].values[0]
         lat2 = df3['latitude2'].values[0]
         lon2 = df3['longitude2'].values[0]
         if not np.isnan(lat):
-            if np.isnan(lon):
+            if not np.isnan(lon):
                 latlon = '{} ({:4.1f}N, {:4.1f}W)'.format(rgn, lat, lon)
             else:
                 latlon = '{} ({:4.1f}N)'.format(rgn, lat)

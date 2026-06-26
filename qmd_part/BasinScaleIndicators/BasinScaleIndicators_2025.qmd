@@ -9,10 +9,8 @@ format:
 
 
 ```{python}
-# importing module
 import sys
 
-# appending a path
 sys.path.append('../../')
 from script_IDS import fun_script_IDS
 
@@ -80,8 +78,8 @@ Positive NPGO values are associated with increased equatorward flow, along with 
 Negative NPGO values are associated with decreases in such values, implying less subarctic source water and generally lower productivity. 
 
 Oceanic Niño Index information and data are from the NOAA Climate Prediction Center (<https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php>). 
-Pacific Decadal Oscillation data are from N. Mantua, NMFS/SWFSC, and are served on the CCIEA ERDDAP server (<https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_PDO.html>). 
-North Pacific Gyre Oscillation data are from E. Di Lorenzo, Brown University (<https://www.o3d.org/npgo/index.html>).
+Pacific Decadal Oscillation data are served on the CCIEA ERDDAP server (<https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_PDO.html>). 
+North Pacific Gyre Oscillation data are from E. Di Lorenzo (<https://www.o3d.org/npgo/index.html>).
 
 
 **Figures**
@@ -111,6 +109,7 @@ Seasonal values of the Oceanic Niño Index (ONI), Pacific Decadal Oscillation (P
 :::
 
 **`{python} cciea_yr` Conditions**
-{{< include test1.qmd >}}
+
+{{< include conditions_2025.qmd >}}
 
 **References**

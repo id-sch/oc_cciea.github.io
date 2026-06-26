@@ -45,7 +45,7 @@ rcParams.update(params)
 # --BEGIN: Change These
 # ----------------------------------------------------------------------
 # iea year
-iea_yr = 2024
+iea_yr = 2026
 
 # prelim ctd OxAve_StaCorr data has a few problems
 # eg winter 2023 90-110, Spring 2023  86.7-60 and 86.7-70
