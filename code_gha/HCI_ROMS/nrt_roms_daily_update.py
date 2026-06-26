@@ -327,3 +327,9 @@ if os.path.isfile(fn1_in_nrt):
     # filename out
     fn_out = '{}sal_temp_nrt_update.nc'.format(dir_out)
     ds_out.to_netcdf(fn_out)
+
+    # remove old filename
+    os.remove(fn1_in_nrt)
+
+    # rename update filename to the old one
+    os.rename(fn_out, fn1_in_nrt)
