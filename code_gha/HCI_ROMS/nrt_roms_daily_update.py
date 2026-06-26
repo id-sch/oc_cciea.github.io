@@ -325,5 +325,5 @@ if os.path.isfile(fn1_in_nrt):
         ds_out['{}_mtrx'.format(var_wnt[i])] = da1i
 
     # filename out
-    fn_out = '{}sal_temp_nrt.nc'.format(dir_out)
+    fn_out = '{}sal_temp_nrt_update.nc'.format(dir_out)
     ds_out.to_netcdf(fn_out)
