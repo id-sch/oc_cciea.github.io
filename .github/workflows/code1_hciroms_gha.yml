@@ -29,7 +29,7 @@ jobs:
         # The `-l` is needed so conda environment activation works correctly
         shell: bash -l {0}
         run: |
-          mamba install -c conda-forge numpy pandas scipy matplotlib xarray dask netCDF4 bottleneck requests cartopy seawater
+          mamba install -c conda-forge numpy pandas scipy matplotlib xarray dask netCDF4 bottleneck requests cartopy seawater pydap
 
       - name: set pythonpath
         run: |
