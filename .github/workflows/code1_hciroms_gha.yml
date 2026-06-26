@@ -13,6 +13,9 @@ jobs:
       - name: Checkout LFS objects
         run: git lfs checkout
 
+      - name: disable ssl
+        run: git config --global http.sslVerify false
+
 
       - name: Install Conda
         uses: conda-incubator/setup-miniconda@v3
