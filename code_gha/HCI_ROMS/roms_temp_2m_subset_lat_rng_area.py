@@ -19,7 +19,7 @@ fn_hist_in = './data_gha/HCI_ROMS/sal_temp_hist.nc'
 # x distance and lat range list
 xdis_km = [75, 150]
 # fn_dis_shore_in = './data_x13/HCI_ROMS/roms_distance_to_shore_dis_75_100_150_175_200_225_250_275_300_325_350km.nc'
-fn_dis_shore_in = './data_gha/HCI_ROMS/HCI_ROMS/roms_distance_to_shore_dis_75_100_150_175_200_225_250_275_300_325_350km.nc'
+fn_dis_shore_in = './data_gha/HCI_ROMS/roms_distance_to_shore_dis_75_100_150_175_200_225_250_275_300_325_350km.nc'
 
 lat_rgn = [[43.5, 48], [40, 43.5], [35.5, 40], [30, 35.5], [30, 48]]
 
