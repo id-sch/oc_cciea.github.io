@@ -311,24 +311,23 @@ if os.path.isfile(fn1_in_nrt):
     da2 = xr.DataArray(lat_mtrx, coords=[lat_indx, lon_indx],
                        dims=['lat_indx', 'lon_indx'])
     da3 = xr.DataArray(num_day_missing, coords=[time_out], dims=['time'])
+    da3_cmbn = xr.concat([ds3['day_missing'], da3], dim='time')
 
     ds_out = da1.to_dataset(name='lon_mtrx')
     ds_out['lat_mtrx'] = da2
-    ds_out['day_missing'] = da3
+    ds_out['day_missing'] = da3_cmbn
 
     for i in range(num_var_wnt):
         da1i = xr.DataArray(varM_mtrx[i, :, :, :].squeeze(),
                             coords=[time_out, depth, lat_indx, lon_indx],
                             dims=['time', 'depth', 'lat_indx', 'lon_indx'])
-
-        ds_out['{}_mtrx'.format(var_wnt[i])] = da1i
-
-    # concat to the original nrt dataset
-    ds_final = xr.concat([ds3, ds_out],dim='time')
+        # combine the original with the new downloaded NRT data
+        da1i_cmbn = xr.concat([ds3['{}_mtrx'.format(var_wnt[i])], da1i], dim='time')
+        ds_out['{}_mtrx'.format(var_wnt[i])] = da1i_cmbn
 
     # filename out
     fn_out = '{}sal_temp_nrt_update.nc'.format(dir_out)
-    ds_final.to_netcdf(fn_out)
+    ds_out.to_netcdf(fn_out)
 
     # remove old filename
     os.remove(fn1_in_nrt)
