@@ -55,8 +55,6 @@ name_wnt = 'sal_temp_nrt'
 file_type = 'nc'
 
 # erddap url for all dates of the SST OI
-# url = 'https://oceanmodeling.ucsc.edu/thredds/dodsC/ccsra_2016a_phys_agg_zlevs/fmrc/'
-# fn1 = 'CCSRA_2016a_Phys_ROMS_z-level_(depth)_Aggregation_best.ncd'
 url_fn1 = 'https://thredds.cencoos.org/thredds/dodsC/UCSC.nc?'
 
 var_wnt = ['temp', 'salt']
@@ -67,8 +65,9 @@ out_lbl = 'TS_nrt'
 # file name of hist and nrt roms
 fn1_in_hist = './data_gha/HCI_ROMS/sal_temp_hist.nc'
 fn1_in_nrt = './data_gha/HCI_ROMS/sal_temp_nrt.nc'
-# fn1_in_hist = './oc_cciea.github.io/data_gha/HCI_ROMS/sal_temp_hist.nc'
-# fn1_in_nrt = './oc_cciea.github.io/data_gha/HCI_ROMS/sal_temp_nrt.nc'
+# fn1_in_hist = './data_x13/HCI_ROMS/sal_temp_hist.nc'
+# fn1_in_nrt = './data_x13/HCI_ROMS/sal_temp_nrt.nc'
+
 
 # only download if there are these number of days available in the month
 day_check = 24
@@ -79,9 +78,9 @@ z_int = np.array([-250., -200., -150., -100.,  -80.,  -60.,  -40.,  -20., -10., 
 # subset by distance from shore
 xdis = 55
 
-# dir out, will use artifacts to download this data
-dir_out = './data_gha/HCI_ROMS/'
+# name of the output directory
 # dir_out = './data_x13/HCI_ROMS/'
+dir_out = './data_gha/HCI_ROMS/'
 dir_in = dir_out
 
 # -----------------------------------------------------------------------------
@@ -324,9 +323,12 @@ if os.path.isfile(fn1_in_nrt):
 
         ds_out['{}_mtrx'.format(var_wnt[i])] = da1i
 
+    # concat to the original nrt dataset
+    ds_final = xr.concat([ds3, ds_out],dim='time')
+
     # filename out
     fn_out = '{}sal_temp_nrt_update.nc'.format(dir_out)
-    ds_out.to_netcdf(fn_out)
+    ds_final.to_netcdf(fn_out)
 
     # remove old filename
     os.remove(fn1_in_nrt)
