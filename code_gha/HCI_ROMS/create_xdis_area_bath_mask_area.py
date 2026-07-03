@@ -57,8 +57,8 @@ fn_out = '{}roms_distance_to_shore_dis_{}km.nc'.format(dir_out, dis_str)
 
 # only calculate the mask grid if fn_out doesn't exist
 if os.path.isfile(fn_out):
-    print("Land Masks for {} km have already been calculated".format(dis_str))
-else:
+#    print("Land Masks for {} km have already been calculated".format(dis_str))
+#else:
     print("Calculating Land Masks for {} km".format(dis_str))
 
 
@@ -140,7 +140,8 @@ else:
             if da1.data[i, j] == water_mask:
                 for k in range(ny):
                     dis1 = sw.dist((lati, lat_land[k][0]), (loni, lon_land[k][0]), units='km')
-                    dis_mtrx[i, j, k] = dis1[0]
+                    dis1_km = dis1[0][0]
+                    dis_mtrx[i, j, k] = dis1_km
 
     # now that each grid location has the distance to all shore locations, find the minimum
     # distance that is within the desired distance (set with dis_wnt array)
