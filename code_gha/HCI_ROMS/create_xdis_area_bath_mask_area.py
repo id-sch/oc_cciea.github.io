@@ -25,7 +25,7 @@ ylm2 = 48
 var_roms = ['lon_rho', 'lat_rho', 'mask_rho']
 
 # bath file name
-fn_bath = './data_gha/HCI/bath.nc'
+fn_bath = './data_gha/HCI_ROMS/bath.nc'
 # fn_bath = './oc_cciea.github.io/data_gha/HCI/bath.nc'
 
 # distance
