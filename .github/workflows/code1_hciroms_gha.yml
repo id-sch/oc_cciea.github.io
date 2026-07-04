@@ -50,6 +50,10 @@ jobs:
         shell: bash -l {0}
         run: python code_gha/HCI_ROMS/calc_thresholds_roms_area.py
 
+      - name: finally calculate the HCI for the 4 regions
+        shell: bash -l {0}
+        run: python code_gha/HCI_ROMS/calc_hci_coastwide_dffrnt_threshold.py
+
       - name: Print dir tree and check disk space
         shell: bash {0}
         run: |
