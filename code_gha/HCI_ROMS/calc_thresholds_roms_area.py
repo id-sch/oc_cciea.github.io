@@ -106,7 +106,8 @@ for i in range(num_lat_rgn):
         threshold1_mon_vec = np.zeros(num_mon)
         for iii in range(num_mon):
             in_mon = np.where(da2_mn_mon.month.data == tt_mon[iii])[0]
-            threshold1_mon_vec[iii] = np.round(2*da2_mn_mon[in_mon])/2
+            thrsh_half_deg = np.round(2*da2_mn_mon[in_mon])/2
+            threshold1_mon_vec[iii] = thrsh_half_deg.data[0]
 
         # write the monthly thresholds ot dataarrays
         da1M = xr.DataArray(threshold1_mon_vec, coords=[mon_order], dims=['month'])
