@@ -57,10 +57,9 @@ fn_out = '{}roms_distance_to_shore_dis_{}km.nc'.format(dir_out, dis_str)
 
 # only calculate the mask grid if fn_out doesn't exist
 if os.path.isfile(fn_out):
-#    print("Land Masks for {} km have already been calculated".format(dis_str))
-#else:
+    print("Land Masks for {} km have already been calculated".format(dis_str))
+else:
     print("Calculating Land Masks for {} km".format(dis_str))
-
 
     # open Bath netcdf file as an xarray
     ds1_bath = xr.open_dataset(fn_bath)
