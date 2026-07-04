@@ -30,7 +30,7 @@ tt_mon = np.arange(1, 13)
 indx_ssn = np.arange(0, 12)
 
 # ouput directory
-dir_out = './data_gha/HCI/'
+dir_out = './data_gha/HCI_ROMS/'
 # dir_out = './data_x13/HCI_ROMS/'
 
 # directory of temperature data
