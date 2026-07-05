@@ -33,7 +33,7 @@ file_pre = 'oc_hci'
 num_pre = len(file_pre)
 
 # --IEA year clim
-yr_clim_bgn = 1982
+yr_clim_bgn = 1980
 yr_clim_end = iea_yr
 
 # --IEA window size
