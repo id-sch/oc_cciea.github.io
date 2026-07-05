@@ -109,19 +109,13 @@ def fun_pd_df2csvR_time(clmns_iea, df_list, lat, lon, depth, metric_lbl, timeser
 
         # --6) metric and timeseries labels
         if isinstance(metric_lbl, str):
-            lbl_array = np.chararray(
-                df_order.shape[0], itemsize=len(metric_lbl), unicode=True)
-            lbl_array[:] = metric_lbl
+            lbl_array = np.array([metric_lbl]*df_order.shape[0])
         if isinstance(metric_lbl, list):
-            lbl_array = np.chararray(
-                df_order.shape[0], itemsize=len(metric_lbl[iii]), unicode=True)
-            lbl_array[:] = metric_lbl[iii]
+            lbl_array = np.array([metric_lbl[iii]]*df_order.shape[0])
 
         df_order[clmns_iea[in_mrkr+4]] = pd.Series(lbl_array)
 
-        lbl_array1 = np.chararray(
-            df_order.shape[0], itemsize=len(timeseries_lbl[iii]), unicode=True)
-        lbl_array1[:] = timeseries_lbl[iii]
+        lbl_array1 = np.array([timeseries_lbl[iii]]*df_order.shape[0])
         df_order[clmns_iea[in_mrkr+5]] = pd.Series(lbl_array1)
 
         # --7) lat, lon, depth
