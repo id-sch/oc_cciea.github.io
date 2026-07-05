@@ -1,4 +1,4 @@
-name: Code 3, HCI -- IEA plots
+name: Code 2, hci ROMS -- IEA plots
 on:
   workflow_dispatch
 
