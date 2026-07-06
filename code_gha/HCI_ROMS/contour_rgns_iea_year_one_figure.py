@@ -112,7 +112,6 @@ num_clmn = 8
 
 # months
 mons = np.arange(1, 13)
-mons = np.arange(1, 2)
 
 # lat and lon position of text labels 
 yr_lbl = [[-122.55, 47.3],[-123.1, 42.7],[-120.9, 39.2],[-115.4, 34.4]]
@@ -277,7 +276,7 @@ for iii in np.arange(0, num_rgn):
 
             plt.text(pnts_lbl[iii][0], pnts_lbl[iii][1],
                      'HCI \n{:3.2f}'.format(num1), fontsize=7, ha='center',
-                     bbox=dict(boxstyle='circle,pad=0.2', fc=sd_lnd_clr, ec='none'))
+                     bbox=dict(boxstyle='circle,pad=0.1', fc=sd_lnd_clr, ec='none'))
 
             # coastlines
             ax.add_feature(land1)
