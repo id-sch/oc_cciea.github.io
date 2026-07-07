@@ -36,7 +36,6 @@ ts_lbl = 'Habitat Compression Index'
 lon = [np.nan]
 lat = [np.nan]
 
-
 # --names of time, depth, lat dimensions
 var_time = 'time'
 
