@@ -651,7 +651,7 @@ for iii in np.arange(0, num_rgn):
 
             plt.text(pnts_lbl[iii][0], pnts_lbl[iii][1],
                      'HCI \n{:3.2f}'.format(num1), fontsize=7, ha='center',
-                     bbox=dict(boxstyle='circle,pad=0.1', fc=sd_lnd_clr, ec='none'))
+                     bbox=dict(boxstyle='circle,pad=0.02', fc=sd_lnd_clr, ec='none'))
 
             # coastlines
             ax.add_feature(land1)
