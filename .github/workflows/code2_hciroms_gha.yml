@@ -46,5 +46,9 @@ jobs:
         shell: bash -l {0}
         run: python code_gha/HCI_ROMS/contour_rgns_iea_year_one_figure.py
 
+      - name: contour the HCI maps -- separate figure for year/month
+        shell: bash -l {0}
+        run: python code_gha/HCI_ROMS/contour_rgns_iea_all_months.py
+
       - name: git auto commit -- save distance to shore mask netcdf
         uses: stefanzweifel/git-auto-commit-action@v7

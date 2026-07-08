@@ -486,7 +486,6 @@ num_clmn = 8
 
 # months
 mons = np.arange(1, 13)
-mons = np.arange(1, 2)
 
 # lat and lon position of text labels 
 yr_lbl = [[-122.55, 47.3],[-123.1, 42.7],[-120.9, 39.2],[-115.4, 34.4]]
@@ -635,7 +634,7 @@ for iii in np.arange(0, num_rgn):
             long, latg = np.meshgrid(lon, lat)
 
             # get locations below threshold
-            in_lvl_thrsh = np.where(lvl1 == 1)
+            in_lvl_thrsh = np.where(lvl1 > 0)
             xp = long[in_lvl_thrsh]
             yp = latg[in_lvl_thrsh]
 
