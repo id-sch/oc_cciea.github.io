@@ -278,14 +278,14 @@ for iii in np.arange(0, num_rgn):
 
             # Text on land: month and year
             mon_yr_txt = '{}\n{}'.format(clndr.month_name[mons[i]], yrs[j])
-            plt.text(yr_lbl[iii][0], yr_lbl[iii][1], mon_yr_txt, fontsize=20, ha='right', bbox=dict(boxstyle='square,pad=0.1', fc='lightgray', ec='none'))
+            plt.text(yr_lbl[iii][0], yr_lbl[iii][1], mon_yr_txt, fontsize=18, ha='right', bbox=dict(boxstyle='square,pad=0.0', fc='lightgray', ec='none'))
 
             # Text on land: number of points
             num1 = hci1
 
             plt.text(pnts_lbl[iii][0], pnts_lbl[iii][1],
-                     'HCI \n{:3.2f}'.format(num1), fontsize=12, ha='center',
-                     bbox=dict(boxstyle='circle,pad=0.5', fc=sd_lnd_clr, ec='none'))
+                     'HCI \n{:3.2f}'.format(num1), fontsize=11, ha='center',
+                     bbox=dict(boxstyle='circle,pad=0.3', fc=sd_lnd_clr, ec='none'))
 
             # coastlines
             ax.add_feature(land1)
