@@ -707,3 +707,9 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2025,10,2025-10,3.762128950975419,nan,nan,nan,Area (10^6 km^2),Monthly North Pacific High Area,nan,nan,nan,1.0
 2025,11,2025-11,1.901615588254288,nan,nan,nan,Area (10^6 km^2),Monthly North Pacific High Area,nan,nan,nan,1.0
 2025,12,2025-12,0.7816024850120639,nan,nan,nan,Area (10^6 km^2),Monthly North Pacific High Area,nan,nan,nan,1.0
+2026,1,2026-01,1.313659192650887,nan,nan,nan,Area (10^6 km^2),Monthly North Pacific High Area,nan,nan,nan,1.0
+2026,2,2026-02,3.1853078980382925,nan,nan,nan,Area (10^6 km^2),Monthly North Pacific High Area,nan,nan,nan,1.0
+2026,3,2026-03,3.114436601734682,nan,nan,nan,Area (10^6 km^2),Monthly North Pacific High Area,nan,nan,nan,1.0
+2026,4,2026-04,3.7072546963909447,nan,nan,nan,Area (10^6 km^2),Monthly North Pacific High Area,nan,nan,nan,1.0
+2026,5,2026-05,5.590729307532632,nan,nan,nan,Area (10^6 km^2),Monthly North Pacific High Area,nan,nan,nan,1.0
+2026,6,2026-06,4.827286182648623,nan,nan,nan,Area (10^6 km^2),Monthly North Pacific High Area,nan,nan,nan,1.0
