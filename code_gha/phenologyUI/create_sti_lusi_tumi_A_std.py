@@ -22,7 +22,7 @@ lat_wnt = [33, 39, 45]
 roll = 1
 
 # output directory
-
+dir_out = './data_gha/phenologyUI/'
 dir_nc_out = dir_out
 dir_out = './csv_for_erddap/'
 
