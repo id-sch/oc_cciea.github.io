@@ -1,3 +1,4 @@
+import os
 import datetime as DT
 import numpy as np
 import numpy.ma as ma
@@ -21,6 +22,8 @@ lat_wnt = [33, 39, 45]
 roll = 1
 
 # output directory
+
+dir_nc_out = dir_out
 dir_out = './csv_for_erddap/'
 
 # -----------------------------------------------------------------------------
@@ -34,6 +37,10 @@ ds1 = xr.open_dataset(fn_in)
 
 var_ds1 = list(ds1.keys())
 coord_ds1 = list(ds1.coords.keys())
+
+# all lats
+lat_all = ds1.lat.data
+num_lat_all = len(lat_all)
 
 # construct time array to check if any missing dates
 dtD = np.arange(ds1.time.data[0].astype('datetime64[D]'),
@@ -56,15 +63,15 @@ if mon_end < 6:
 yrs = np.arange(yr_bgn, yr_end + 1)
 num_yrs = len(yrs)
 
-# --loop over all lats wanted, open file and create sti,lusi,tumi
-ftiA = np.zeros([num_yrs, num_wnt])
-stiA = np.zeros([num_yrs, num_wnt])
-lusiA = np.zeros([num_yrs, num_wnt])
-tumiA = np.zeros([num_yrs, num_wnt])
+# --loop over all lats, open file and create sti,lusi,tumi
+fti_all = np.zeros([num_yrs, num_lat_all])
+sti_all = np.zeros([num_yrs, num_lat_all])
+lusi_all = np.zeros([num_yrs, num_lat_all])
+tumi_all = np.zeros([num_yrs, num_lat_all])
 
-for i in range(0, num_wnt):
+for i in range(0, num_lat_all):
     # get lat
-    da1_lat = ds1[var_ds1[0]].sel(lat=lat_wnt[i])
+    da1_lat = ds1[var_ds1[0]].sel(lat=lat_all[i])
     ui1D = da1_lat.data
     tt1D = da1_lat.time.data.astype('datetime64[D]')
 
@@ -156,14 +163,40 @@ for i in range(0, num_wnt):
             fti = in_fti + 1
             lusi = in_lusi + 1
 
-        ftiA[j, i] = fti
-        stiA[j, i] = sti
-        lusiA[j, i] = lusi
-        tumiA[j, i] = tumi
+        fti_all[j, i] = fti
+        sti_all[j, i] = sti
+        lusi_all[j, i] = lusi
+        tumi_all[j, i] = tumi
+
+da1_out = xr.DataArray(fti_all, coords=[yrs, lat_all], dims=['tear', 'lat'])
+da2_out = xr.DataArray(sti_all, coords=[yrs, lat_all], dims=['tear', 'lat'])
+da3_out = xr.DataArray(lusi_all, coords=[yrs, lat_all], dims=['tear', 'lat'])
+da4_out = xr.DataArray(tumi_all, coords=[yrs, lat_all], dims=['tear', 'lat'])
+
+ds1_out = da1_out.to_dataset(name='FTI')
+ds1_out['STI'] = da2_out
+ds1_out['LUSI'] = da3_out
+ds1_out['TUMI'] = da4_out
+
+# --check if directory exist, if it doesn't then create
+try:
+    os.makedirs(dir_nc_out)
+except OSError:
+    if not os.path.isdir(dir_nc_out):
+        raise
+
+# --Save Dataset to a netcdf file
+fn1_nc = '{}/phenologyUI_indices.nc'.format(dir_nc_out)
+ds1_out.to_netcdf(fn1_nc)
+
 
 # --------------------------------------
 # --Write R-style (IEA format) CSV files
 # --------------------------------------
+ftiA = ds1_out['FTI'].sel(lat=lat_wnt)
+stiA = ds1_out['STI'].sel(lat=lat_wnt)
+lusiA = ds1_out['LUSI'].sel(lat=lat_wnt)
+tumiA = ds1_out['TUMI'].sel(lat=lat_wnt)
 
 lon = np.zeros(num_wnt)
 depth = np.zeros(num_wnt)
