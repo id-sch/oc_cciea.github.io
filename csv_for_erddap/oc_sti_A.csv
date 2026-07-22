@@ -58,6 +58,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2023,2023,5.0,0.0,5.0,5.0,STI (yearday),Spring Transition Index @ 33N,33.0,0.0,0.0,1.0
 2024,2024,1.0,0.0,1.0,1.0,STI (yearday),Spring Transition Index @ 33N,33.0,0.0,0.0,1.0
 2025,2025,2.0,0.0,2.0,2.0,STI (yearday),Spring Transition Index @ 33N,33.0,0.0,0.0,1.0
+2026,2026,37.0,0.0,37.0,37.0,STI (yearday),Spring Transition Index @ 33N,33.0,0.0,0.0,1.0
 1967,1967,30.0,0.0,30.0,30.0,STI (yearday),Spring Transition Index @ 39N,39.0,0.0,0.0,2.0
 1968,1968,84.0,0.0,84.0,84.0,STI (yearday),Spring Transition Index @ 39N,39.0,0.0,0.0,2.0
 1969,1969,61.0,0.0,61.0,61.0,STI (yearday),Spring Transition Index @ 39N,39.0,0.0,0.0,2.0
@@ -117,6 +118,7 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2023,2023,15.0,0.0,15.0,15.0,STI (yearday),Spring Transition Index @ 39N,39.0,0.0,0.0,2.0
 2024,2024,65.0,0.0,65.0,65.0,STI (yearday),Spring Transition Index @ 39N,39.0,0.0,0.0,2.0
 2025,2025,5.0,0.0,5.0,5.0,STI (yearday),Spring Transition Index @ 39N,39.0,0.0,0.0,2.0
+2026,2026,56.0,0.0,56.0,56.0,STI (yearday),Spring Transition Index @ 39N,39.0,0.0,0.0,2.0
 1967,1967,84.0,0.0,84.0,84.0,STI (yearday),Spring Transition Index @ 45N,45.0,0.0,0.0,3.0
 1968,1968,88.0,0.0,88.0,88.0,STI (yearday),Spring Transition Index @ 45N,45.0,0.0,0.0,3.0
 1969,1969,116.0,0.0,116.0,116.0,STI (yearday),Spring Transition Index @ 45N,45.0,0.0,0.0,3.0
@@ -176,3 +178,4 @@ year,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2023,2023,114.0,0.0,114.0,114.0,STI (yearday),Spring Transition Index @ 45N,45.0,0.0,0.0,3.0
 2024,2024,89.0,0.0,89.0,89.0,STI (yearday),Spring Transition Index @ 45N,45.0,0.0,0.0,3.0
 2025,2025,100.0,0.0,100.0,100.0,STI (yearday),Spring Transition Index @ 45N,45.0,0.0,0.0,3.0
+2026,2026,85.0,0.0,85.0,85.0,STI (yearday),Spring Transition Index @ 45N,45.0,0.0,0.0,3.0
