@@ -168,10 +168,10 @@ for i in range(0, num_lat_all):
         lusi_all[j, i] = lusi
         tumi_all[j, i] = tumi
 
-da1_out = xr.DataArray(fti_all, coords=[yrs, lat_all], dims=['tear', 'lat'])
-da2_out = xr.DataArray(sti_all, coords=[yrs, lat_all], dims=['tear', 'lat'])
-da3_out = xr.DataArray(lusi_all, coords=[yrs, lat_all], dims=['tear', 'lat'])
-da4_out = xr.DataArray(tumi_all, coords=[yrs, lat_all], dims=['tear', 'lat'])
+da1_out = xr.DataArray(fti_all, coords=[yrs, lat_all], dims=['year', 'lat'])
+da2_out = xr.DataArray(sti_all, coords=[yrs, lat_all], dims=['year', 'lat'])
+da3_out = xr.DataArray(lusi_all, coords=[yrs, lat_all], dims=['year', 'lat'])
+da4_out = xr.DataArray(tumi_all, coords=[yrs, lat_all], dims=['year', 'lat'])
 
 ds1_out = da1_out.to_dataset(name='FTI')
 ds1_out['STI'] = da2_out
