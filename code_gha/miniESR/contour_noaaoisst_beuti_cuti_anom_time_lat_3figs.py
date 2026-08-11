@@ -26,8 +26,8 @@ class nf(float):
 # Input variables, change these
 # -----------------------------------------------------------------------------
 # .1) sst time series
-iea_yr = 2026
 # iea_yr = 2026
+iea_yr = 2026
 
 # clim year period
 yr_clim_bgn = 1982
@@ -38,14 +38,14 @@ yr_clim_end = 2010
 lat_wnt = [31, 47]
 
 # file name of NOAA OI sst
-# fn_sst = './oc_cciea.github.io/data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
-fn_sst = './data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
+fn_sst = './oc_cciea.github.io/data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
+# fn_sst = './data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
 
 # file name of the BEUTI an CUTI 
-# fn_beuti = './oc_cciea.github.io/data_gha/newUI/BEUTI_monthly.nc'
-# fn_cuti = './oc_cciea.github.io/data_gha/newUI/CUTI_monthly.nc'
-fn_beuti = './data_gha/newUI/BEUTI_monthly.nc'
-fn_cuti = './data_gha/newUI/CUTI_monthly.nc'
+fn_beuti = './oc_cciea.github.io/data_gha/newUI/BEUTI_monthly.nc'
+fn_cuti = './oc_cciea.github.io/data_gha/newUI/CUTI_monthly.nc'
+# fn_beuti = './data_gha/newUI/BEUTI_monthly.nc'
+# fn_cuti = './data_gha/newUI/CUTI_monthly.nc'
 
 
 # files list
@@ -77,6 +77,7 @@ num_row = 2
 # ylim and ticks
 ylm = [30, 48]
 y_tck = np.arange(ylm[0], ylm[1]+3, 3)
+y_tck = np.arange(31, 49+2, 2)
 
 # CalCOFI figures usually focus discussion over the last 3 years, change
 # if more years are wanted
@@ -117,8 +118,8 @@ clrbr_lbl_cuti = 'CUTI (m$^2$ s$^{-1}$)'
 clrbr_list = [clrbr_lbl_sst, clrbr_lbl_beuti, clrbr_lbl_cuti]
 
 # .5) plot directory
-dir_plot_out = './figures_gha/miniESR/'
-# dir_plot_out = './figures_x13/miniESR/'
+# dir_plot_out = './figures_gha/miniESR/'
+dir_plot_out = './figures_x13/miniESR/'
 
 # -----------------------------------------------------------------------------
 # END: Input variables, change these
@@ -148,6 +149,14 @@ for iii in range(num_file_list):
         da1 = ds1[var_list[iii][0]].mean(dim_list[iii][2]).T
     else:
         da1 = ds1[var_list[iii][0]]
+
+    num_lat, nt = da1.shape
+    # check to see if last month is all NaNs
+    data_last = da1[:, -1].data
+    in_nan = np.isnan(data_last).nonzero()[0]
+    num_nan_last = len(in_nan)
+    if num_nan_last == num_lat:
+        da1 = da1[:, :nt-1]
 
     da1_clim = da1.sel(time=da1.time.dt.year.isin(yrs_clim)).groupby('time.month').mean('time')
     da1_anom = da1.groupby('time.month') - da1_clim
