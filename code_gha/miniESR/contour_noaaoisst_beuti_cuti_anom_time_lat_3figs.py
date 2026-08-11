@@ -26,8 +26,8 @@ class nf(float):
 # Input variables, change these
 # -----------------------------------------------------------------------------
 # .1) sst time series
-# iea_yr = 2026
 iea_yr = 2026
+# iea_yr = 2026
 
 # clim year period
 yr_clim_bgn = 1982
@@ -38,14 +38,14 @@ yr_clim_end = 2010
 lat_wnt = [31, 47]
 
 # file name of NOAA OI sst
-fn_sst = './oc_cciea.github.io/data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
-# fn_sst = './data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
+# fn_sst = './oc_cciea.github.io/data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
+fn_sst = './data_gha/HCI/sst_oi_lat_30_48_xdis_150km.nc'
 
 # file name of the BEUTI an CUTI 
-fn_beuti = './oc_cciea.github.io/data_gha/newUI/BEUTI_monthly.nc'
-fn_cuti = './oc_cciea.github.io/data_gha/newUI/CUTI_monthly.nc'
-# fn_beuti = './data_gha/newUI/BEUTI_monthly.nc'
-# fn_cuti = './data_gha/newUI/CUTI_monthly.nc'
+# fn_beuti = './oc_cciea.github.io/data_gha/newUI/BEUTI_monthly.nc'
+# fn_cuti = './oc_cciea.github.io/data_gha/newUI/CUTI_monthly.nc'
+fn_beuti = './data_gha/newUI/BEUTI_monthly.nc'
+fn_cuti = './data_gha/newUI/CUTI_monthly.nc'
 
 
 # files list
@@ -118,8 +118,8 @@ clrbr_lbl_cuti = 'CUTI (m$^2$ s$^{-1}$)'
 clrbr_list = [clrbr_lbl_sst, clrbr_lbl_beuti, clrbr_lbl_cuti]
 
 # .5) plot directory
-# dir_plot_out = './figures_gha/miniESR/'
-dir_plot_out = './figures_x13/miniESR/'
+dir_plot_out = './figures_gha/miniESR/'
+# dir_plot_out = './figures_x13/miniESR/'
 
 # -----------------------------------------------------------------------------
 # END: Input variables, change these
