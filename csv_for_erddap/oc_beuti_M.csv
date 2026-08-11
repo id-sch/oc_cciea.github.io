@@ -459,7 +459,9 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2026,2,2026-02,0.19628571428571415,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (45 °N),45.0,nan,nan,1.0
 2026,3,2026-03,1.5769032258064517,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (45 °N),45.0,nan,nan,1.0
 2026,4,2026-04,1.2937333333333332,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (45 °N),45.0,nan,nan,1.0
-2026,5,2026-05,2.635600000000001,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (45 °N),45.0,nan,nan,1.0
+2026,5,2026-05,2.6663548387096783,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (45 °N),45.0,nan,nan,1.0
+2026,6,2026-06,3.9157333333333333,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (45 °N),45.0,nan,nan,1.0
+2026,7,2026-07,nan,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (45 °N),45.0,nan,nan,1.0
 1988,1,1988-01,2.718516129032258,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
 1988,2,1988-02,8.655482758620694,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
 1988,3,1988-03,26.922580645161297,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
@@ -920,7 +922,9 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2026,2,2026-02,3.716464285714285,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
 2026,3,2026-03,26.134999999999998,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
 2026,4,2026-04,8.4986,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
-2026,5,2026-05,34.908766666666665,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
+2026,5,2026-05,35.37022580645161,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
+2026,6,2026-06,34.52016666666667,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
+2026,7,2026-07,nan,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (39 °N),39.0,nan,nan,2.0
 1988,1,1988-01,0.7281612903225807,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0
 1988,2,1988-02,0.5854827586206897,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0
 1988,3,1988-03,0.49358064516129035,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0
@@ -1381,4 +1385,6 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2026,2,2026-02,0.11210714285714284,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0
 2026,3,2026-03,0.8561612903225806,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0
 2026,4,2026-04,0.2831666666666666,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0
-2026,5,2026-05,0.5175666666666667,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0
+2026,5,2026-05,0.5129677419354839,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0
+2026,6,2026-06,0.08703333333333334,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0
+2026,7,2026-07,nan,nan,nan,nan,BEUTI (mmol s^-1 m^-1),Monthly BEUTI (33 °N),33.0,nan,nan,3.0

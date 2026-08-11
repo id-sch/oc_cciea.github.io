@@ -459,7 +459,9 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2026,2,2026-02,-0.010214285714285707,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (45 °N),45.0,nan,nan,1.0
 2026,3,2026-03,0.19038709677419355,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (45 °N),45.0,nan,nan,1.0
 2026,4,2026-04,0.3088333333333333,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (45 °N),45.0,nan,nan,1.0
-2026,5,2026-05,0.5782333333333335,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (45 °N),45.0,nan,nan,1.0
+2026,5,2026-05,0.5794838709677421,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (45 °N),45.0,nan,nan,1.0
+2026,6,2026-06,0.5432000000000001,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (45 °N),45.0,nan,nan,1.0
+2026,7,2026-07,nan,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (45 °N),45.0,nan,nan,1.0
 1988,1,1988-01,0.23958064516129032,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
 1988,2,1988-02,0.6804137931034484,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
 1988,3,1988-03,1.5658387096774196,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
@@ -920,7 +922,9 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2026,2,2026-02,0.7340714285714285,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
 2026,3,2026-03,1.90158064516129,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
 2026,4,2026-04,0.7879999999999999,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
-2026,5,2026-05,2.200466666666667,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
+2026,5,2026-05,2.2315483870967747,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
+2026,6,2026-06,1.8736666666666664,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
+2026,7,2026-07,nan,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (39 °N),39.0,nan,nan,2.0
 1988,1,1988-01,0.2184516129032258,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
 1988,2,1988-02,0.15610344827586203,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
 1988,3,1988-03,0.2903870967741936,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
@@ -1381,4 +1385,6 @@ year,month,time,index,error,SElo,SEup,metric,timeseries,lat,lon,depth,order
 2026,2,2026-02,0.20699999999999993,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
 2026,3,2026-03,0.5146774193548388,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
 2026,4,2026-04,0.8555333333333334,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
-2026,5,2026-05,0.8546666666666669,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
+2026,5,2026-05,0.8661290322580648,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
+2026,6,2026-06,0.6974000000000001,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
+2026,7,2026-07,nan,nan,nan,nan,CUTI (m^2 s^{-1}),Monthly CUTI (33 °N),33.0,nan,nan,3.0
