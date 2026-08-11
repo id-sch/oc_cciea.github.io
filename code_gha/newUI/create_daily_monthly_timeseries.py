@@ -18,7 +18,7 @@ lat_bgn = 31
 lat_end = 47
 dlat = 1
 
-# variable name in the xr.d
+# variable name in the xr.ds
 ds1_var = ['year', 'month', 'day']
 ds1_coord = ['latitude', 'time']
 
@@ -32,6 +32,10 @@ dir_out = './data_gha/newUI/'
 # dir_out ='./data_x13/newUI/'
 dir_in = dir_out
 
+# files that were downloaded
+files_download = ['{}CUTI_daily_mgj.nc'.format(dir_in), '{}BEUTI_daily_mgj.nc'.format(dir_in)]
+files_download = ['CUTI_daily_mgj.nc', 'BEUTI_daily_mgj.nc']
+
 # -------------------------------------------------------
 # -- END: Input variables, change these
 # -------------------------------------------------------
@@ -40,14 +44,11 @@ dir_in = dir_out
 lat_wnt = np.arange(lat_bgn, lat_end, dlat)
 num_lat = len(lat_wnt)
 
-# get the final set of files that have the 6 hr data
-files = os.listdir(dir_in)
-num_files = len(files)
-
 #
+num_files = len(files_download)
 for iii in range(num_files):
-    var_wnt = files[iii].split('_')[0]
-    fn1 = '{}{}'.format(dir_in, files[iii])
+    fn1 = '{}{}'.format(dir_in, files_download[iii])
+    var_wnt = files_download[iii].split('_')[0]
     ds1 = xr.open_dataset(fn1)
 
     # create proper time coord
