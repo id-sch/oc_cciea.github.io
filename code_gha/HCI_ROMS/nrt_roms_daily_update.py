@@ -183,6 +183,7 @@ if os.path.isfile(fn1_in_nrt):
 
     yr_end = ds3.time.dt.year.data[-1]
     mon_end = ds3.time.dt.month.data[-1]
+
     date1 = np.datetime64('{}-{:02d}'.format(yr_end, mon_end), 'M')
 
     # make the output directory to save monthly and daily datasets
@@ -283,6 +284,11 @@ if os.path.isfile(fn1_in_nrt):
                 else:
                     ds1_out_intrp[var_wnt[jjj]] = da1_out
 
+            # # test -- save interp data
+            # fn_out_daily_intrp = '{}{}_daily_intrp.{}'.format(dir1, out_lbl, file_type)
+            # print('Daily Download and Save INTERP, i={}, {}'.format(i, fn_out_daily))
+            # ds1_out_intrp.to_netcdf(fn_out_daily_intrp)
+            
             # monthly means of the 2 m interp
             yr_intrp = ds1_out_intrp.time.dt.year.data[0]
             ds1M = ds1_out_intrp.groupby('time.month').mean('time')
@@ -318,7 +324,7 @@ if os.path.isfile(fn1_in_nrt):
     ds_out['day_missing'] = da3_cmbn
 
     for i in range(num_var_wnt):
-        da1i = xr.DataArray(varM_mtrx[i, :, :, :].squeeze(),
+        da1i = xr.DataArray(varM_mtrx[i, :, :, :, :],
                             coords=[time_out, depth, lat_indx, lon_indx],
                             dims=['time', 'depth', 'lat_indx', 'lon_indx'])
         # combine the original with the new downloaded NRT data
