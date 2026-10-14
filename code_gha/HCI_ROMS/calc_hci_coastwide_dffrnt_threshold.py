@@ -182,10 +182,10 @@ for i in range(num_lat_rgn):
     # dataset, save both old and new method
     ds1_out = da1f.to_dataset(name=var_wnt)
     ds1_out['thresholdM_vec'] = da1_out
-    ds1_out['hci_old'] = da2_old_out
-    ds1_out['lvlM_old_mtrx'] = da4_old_out
-    ds1_out['hci'] = da2_new_out
-    ds1_out['lvlM_mtrx'] = da4_new_out
+    ds1_out['hci'] = da2_old_out
+    ds1_out['lvlM_mtrx'] = da4_old_out
+    ds1_out['hci_new'] = da2_new_out
+    ds1_out['lvlM_new_mtrx'] = da4_new_out
 
     # place the thresholds into the dataset
     for k in range(num_thrsh):
