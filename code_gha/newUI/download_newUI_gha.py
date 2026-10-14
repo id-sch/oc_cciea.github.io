@@ -12,8 +12,8 @@ var1_wnt = 'CUTI'
 var2_wnt = 'BEUTI'
 
 file_type = 'nc'
-dir_out = './data_gha/newUI/'
-# dir_out = './data_x13/newUI'
+# dir_out = './data_gha/newUI/'
+dir_out = './data_x13/newUI'
 
 
 # -- End: Input variables, change these
