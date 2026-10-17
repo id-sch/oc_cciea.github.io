@@ -4,6 +4,7 @@ import urllib.request
 import requests  
 import xarray as xr
 import numpy as np
+from shutil import copyfile  # py36
 
 
 # -----------------------------------------------------------------------------
@@ -35,7 +36,10 @@ file_type_in = 'nc'
 
 # dir out, will use artifacts to download this data
 dir_out = './data_gha/NPH/'
-dir_download_out = './data_x13/NPH/'
+#dir_in =  './data_x13/NPH/'
+#dir_download_out = './data_x13/NPH/'
+#dir_out = './data_x13/NPH/'
+
 
 # -----------------------------------------------------------------------------
 # END: Input variables, change these
@@ -49,11 +53,18 @@ print("Files and directories in  :")
 print(dir_list)
 
 
-# Get the time available in the NRT SST OI data product
-ddd = requests.get(url_nph_time, timeout=800)
+ddd = urllib.request.urlretrieve(url_nph_time)  # py36
+# copyfile(ddd[0], fn1_time)
 
 with open(fn1_time, 'wb') as file_time:
-    file_time.write(ddd.content)
+    copyfile(ddd[0], fn1_time)
+
+
+# # Get the time available in the NRT SST OI data product
+# ddd = requests.get(url_nph_time, timeout=1800)
+
+# with open(fn1_time, 'wb') as file_time:
+#     file_time.write(ddd.content)
 
 ds1nph = xr.open_dataset(fn1_time)
 time_nph = ds1nph.time.data.astype('datetime64[D]')
